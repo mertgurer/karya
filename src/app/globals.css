@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  /* light values */
+  --primary: #1f2937;
+  --primary-variant: #1f2937;
+  --secondary: #1f2937;
+  --secondary-variant: #1f2937;
+  --surface: #ebebeb;
+  --background: #fbfbfb;
+  --on-primary: #d6dbdc;
+  --on-secondary: #d6dbdc;
+  --on-background: #000000;
+  --on-surface: #000000;
+}
+
+.dark {
+  /* dark values */
+  --primary: #1f2937;
+  --primary-variant: #1f2937;
+  --secondary: #1f2937;
+  --secondary-variant: #1f2937;
+  --surface: #121212;
+  --background: #080808;
+  --on-primary: #d6dbdc;
+  --on-secondary: #d6dbdc;
+  --on-background: #d6dbdc;
+  --on-surface: #d6dbdc;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-variant: var(--primary-variant);
+  --color-secondary: var(--secondary);
+  --color-secondary-variant: var(--secondary-variant);
+  --color-surface: var(--surface);
+  --color-background: var(--background);
+  --color-on-primary: var(--on-primary);
+  --color-on-secondary: var(--on-secondary);
+  --color-on-surface: var(--on-surface);
+  --color-on-background: var(--on-background);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+  }
+
+  body {
+    color: var(--text);
+    background: var(--background);
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  input {
+    outline: none;
+  }
+
+  textarea {
+    outline: none;
+    resize: none;
+  }
+
+  select {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
