@@ -1,7 +1,8 @@
 "use client";
 
-import { ButtonLProps } from "./ButtonL.types";
+import { AnimatedButtonLProps } from "./ButtonL.types";
 import { SpanL } from "../SpanL/SpanL";
+import { motion } from "motion/react";
 
 export const ButtonL = ({
   children,
@@ -12,20 +13,22 @@ export const ButtonL = ({
   disabled = false,
   onClick,
   type = "button",
-}: ButtonLProps) => {
+  ...rest
+}: AnimatedButtonLProps) => {
   return (
-    <button
+    <motion.button
       type={type}
       onClick={onClick}
       style={{ ...style }}
       disabled={disabled}
-      className={`flex items-center gap-2 text-balance w-max bg-primary px-4 py-1 rounded-sm ${className} ${
+      className={`flex items-center gap-2 text-balance w-max px-4 py-1 rounded-sm ${className} ${
         disabled ? "opacity-60 cursor-not-allowed" : ""
       }`}
+      {...rest}
     >
       {beforeElement}
       <SpanL>{children}</SpanL>
       {afterElement}
-    </button>
+    </motion.button>
   );
 };

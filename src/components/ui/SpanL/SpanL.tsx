@@ -1,14 +1,24 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { SpanLProps } from "./SpanL.types";
+import { AnimatedSpanLProps } from "./SpanL.types";
+import { motion } from "motion/react";
 
-export const SpanL = ({ children, className, style }: SpanLProps) => {
+export const SpanL = ({
+  children,
+  className,
+  style,
+  ...rest
+}: AnimatedSpanLProps) => {
   const t = useTranslations();
 
   return (
-    <span style={style} className={`text-balance ${className}`}>
+    <motion.span
+      style={style}
+      className={`text-balance ${className}`}
+      {...rest}
+    >
       {t(children)}
-    </span>
+    </motion.span>
   );
 };

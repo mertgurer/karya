@@ -1,15 +1,53 @@
 {
-    "Locale": {
-        "en": "English",
-        "tr": "Türkçe",
-        "es": "Español"
+  "Locale": {
+    "en": "English",
+    "tr": "Türkçe",
+    "es": "Español"
+  },
+  "Theme": {
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  },
+  "Common": {
+    "welcome": "Welcome",
+    "goodbye": "Good Bye"
+  },
+  "Navbar": {
+    "home": "Home",
+    "corporate": "Corporate",
+    "services": "Services",
+    "projects": "Projects",
+    "hse": "HSE",
+    "quality": "Quality",
+    "contact": "Contact",
+    "careers": "Careers"
+  },
+  "Home": {
+    "Welcome": {
+      "title": "Karya Engineering",
+      "subtitle": "Crafting Excellence in Every Project",
+      "motto": "Innovate. Implement. Inspire.",
+      "explore": "EXPLORE"
     },
-    "Theme": {
-        "darkMode": "Dark Mode",
-        "lightMode": "Light Mode"
+    "About": {
+      "sectionTitle": "Why Karya",
+      "title": "Forged Excellence in Every Project",
+      "description": "Since 1919, our reputation has been founded on building quality electrical and communications installations, building value for clients, and building people in a diverse, safe, and inclusive environment. We serve customers with highly complex construction projects, who rely on us for knowledge, scalability, quality, and safety. Infused with a sense of shared ownership, our entire team focuses on building relationships that deliver results.",
+      "learnMore": "Learn More"
     },
-    "Common": {
-        "welcome": "Welcome",
-        "goodbye": "Good Bye"
+    "Performance": {
+      "sectionTitle": "What We Achieved",
+      "title": "Delivering Outstanding Results",
+      "description": "Our team is comprised of unique individuals who bring the intelligence, talent and skill required to make Rosendin one of the nation’s finest electrical contractors. If you’ve got what it takes to join us, we want to hear from you.",
+      "yearsOfExperience": "Years of Experience",
+      "projectsCompleted": "Projects Completed",
+      "employees": "Employees",
+      "cablesInstalled": "Cables Installed"
+    },
+    "Projects": {
+      "sectionTitle": "Our Projects",
+      "title": "Leading Projects Across Multiple Sectors",
+      "viewAllProjects": "View All Projects"
     }
+  }
 }

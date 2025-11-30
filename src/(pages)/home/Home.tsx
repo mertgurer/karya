@@ -1,11 +1,17 @@
-import { SpanL } from "@/components/ui/SpanL";
+"use client";
+
+import { About } from "./About";
+import { Performance } from "./Performance";
+import { Projects } from "./Projects";
+import { Welcome } from "./Welcome";
 
 export const Home = () => {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-center gap-3">
-      <SpanL className="font-medium text-on-background mb-4">
-        Common.welcome
-      </SpanL>
+    <main className="flex flex-col min-h-screen items-center justify-center">
+      <Welcome />
+      <About />
+      <Performance />
+      <Projects />
     </main>
   );
 };

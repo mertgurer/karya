@@ -1,8 +1,9 @@
 "use client";
 
 import { Link } from "@/i18n";
-import { LinkLProps } from "./LinkL.types";
+import { AnimatedLinkLProps } from "./LinkL.types";
 import { SpanL } from "../SpanL";
+import { motion } from "motion/react";
 
 export const LinkL = ({
   children,
@@ -13,26 +14,29 @@ export const LinkL = ({
   disabled = false,
   onClick,
   href,
-}: LinkLProps) => {
+  ...rest
+}: AnimatedLinkLProps) => {
   return (
-    <Link
-      href={disabled ? "#" : href}
-      style={{ ...style }}
-      onClick={(e) => {
-        if (disabled) {
-          e.preventDefault();
-          e.stopPropagation();
-          return;
-        }
-        onClick?.(e);
-      }}
-      className={`flex items-center gap-2 text-balance w-max bg-primary px-4 py-1 rounded-sm ${className} ${
-        disabled ? "opacity-60 cursor-not-allowed" : ""
-      }`}
-    >
-      {beforeElement}
-      <SpanL>{children}</SpanL>
-      {afterElement}
-    </Link>
+    <motion.div {...rest}>
+      <Link
+        href={disabled ? "#" : href}
+        style={{ ...style }}
+        onClick={(e) => {
+          if (disabled) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+          }
+          onClick?.(e);
+        }}
+        className={`flex items-center gap-2 text-balance w-max px-2 py-1 rounded-sm ${className} ${
+          disabled ? "opacity-60 cursor-not-allowed" : ""
+        }`}
+      >
+        {beforeElement}
+        <SpanL>{children}</SpanL>
+        {afterElement}
+      </Link>
+    </motion.div>
   );
 };

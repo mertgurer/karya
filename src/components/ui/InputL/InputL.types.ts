@@ -1,4 +1,9 @@
 import { Props } from "@/types";
+import { HTMLMotionProps } from "motion/react";
+
+export type AnimatedInputLProps = InputLProps &
+  HTMLMotionProps<"input"> &
+  HTMLMotionProps<"textarea">;
 
 export enum InputType {
   TEXT = "text",

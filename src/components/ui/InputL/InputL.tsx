@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { InputLProps, InputType } from "./InputL.types";
+import { AnimatedInputLProps, InputType } from "./InputL.types";
 import { useTranslations } from "next-intl";
 import { SpanL } from "../SpanL";
+import { motion } from "motion/react";
 
 export const InputL = ({
   className,
@@ -17,7 +18,8 @@ export const InputL = ({
   value,
   onValueChange,
   onBlur,
-}: InputLProps) => {
+  ...rest
+}: AnimatedInputLProps) => {
   const t = useTranslations();
 
   const commonProps = {
@@ -40,6 +42,7 @@ export const InputL = ({
         ? (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
             onValueChange(e.target.value)
         : undefined,
+    ...rest,
   };
 
   return (
@@ -51,12 +54,12 @@ export const InputL = ({
       )}
 
       {type === "text-area" ? (
-        <textarea
+        <motion.textarea
           {...commonProps}
           className={`${commonProps.className} min-h-44 max-md:min-h-32`}
         />
       ) : (
-        <input
+        <motion.input
           {...commonProps}
           type={type === InputType.PASSWORD ? "password" : "text"}
         />
