@@ -47,7 +47,34 @@
     "Projects": {
       "sectionTitle": "Our Projects",
       "title": "Leading Projects Across Multiple Sectors",
-      "viewAllProjects": "View All Projects"
+      "viewAllProjects": "View All Projects",
+      "Projects": {
+        "Alpha": {
+          "title": "Project Alpha",
+          "location": "New York, USA",
+          "description": "A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges."
+        },
+        "Beta": {
+          "title": "Project Beta",
+          "location": "Los Angeles, USA",
+          "description": "Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges."
+        },
+        "Gamma": {
+          "title": "Project Gamma",
+          "location": "Chicago, USA",
+          "description": "Sustainable development for future generations. Innovative solutions for modern architectural challenges."
+        },
+        "Delta": {
+          "title": "Project Delta",
+          "location": "Houston, USA",
+          "description": "Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges."
+        },
+        "Epsilon": {
+          "title": "Project Epsilon",
+          "location": "San Francisco, USA",
+          "description": "Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges."
+        }
+      }
     }
   }
 }

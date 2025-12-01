@@ -14,8 +14,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Template Next.js",
-  description: "Starting template for Next.js app",
+  title: "Karya",
+  description:
+    "Karya is a leading provider of innovative engineering solutions, specializing in electrical and mechanical systems for commercial and industrial projects. With a commitment to excellence and sustainability, Karya delivers cutting-edge designs and reliable installations that meet the highest industry standards.",
 };
 
 export default async function RootLayout({

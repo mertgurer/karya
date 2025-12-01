@@ -29,33 +29,44 @@ export const About = () => {
         </motion.div>
       </div>
       <div className="absolute bottom-0 flex flex-col gap-2 h-28 w-0.5 bg-primary z-10" />
-      <div className="flex flex-col gap-4 w-[65%] -ml-2 mt-52 mb-40 text-primary">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ amount: 0.5 }}
+        className="flex flex-col gap-4 w-[65%] -ml-2 mt-52 mb-40 text-primary"
+      >
         <SpanL
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.65, ease: "easeInOut" }}
+          variants={{
+            hidden: { opacity: 0, y: 24 },
+            show: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
           className="text-5xl mb-1"
         >
           Home.About.title
         </SpanL>
         <SpanL
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7, ease: "easeInOut" }}
+          variants={{
+            hidden: { opacity: 0, y: 24 },
+            show: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 1, delay: 0.55, ease: "easeOut" }}
           className="text-lg"
         >
           Home.About.description
         </SpanL>
         <LinkL
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.75, ease: "easeInOut" }}
+          variants={{
+            hidden: { opacity: 0, y: 24 },
+            show: { opacity: 1, y: 0 },
+          }}
+          transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
           href="/corporate"
-          className="bg-secondary text-on-secondary px-4 py-2"
+          className="bg-secondary text-on-secondary px-4 py-2 "
         >
           Home.About.learnMore
         </LinkL>
-      </div>
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -3,6 +3,7 @@
 import { About } from "./About";
 import { Performance } from "./Performance";
 import { Projects } from "./Projects";
+import { Reference } from "./Reference";
 import { Welcome } from "./Welcome";
 
 export const Home = () => {
@@ -12,6 +13,7 @@ export const Home = () => {
       <About />
       <Performance />
       <Projects />
+      <Reference />
     </main>
   );
 };

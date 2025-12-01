@@ -44,7 +44,7 @@ export const Welcome = () => {
             lenis.scrollTo(`#about`, {
               duration: 0.77,
               easing: easeInOut,
-              offset: 0,
+              offset: -72,
             });
           }}
           className="absolute left-0.5 -top-2 origin-left -rotate-90 font-medium hover:-top-4 duration-300"

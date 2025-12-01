@@ -35,22 +35,25 @@ export const Performance = () => {
       className="relative w-full shadow-[0_-20px_25px_-5px_rgba(0,0,0,0.20)]"
     >
       <div className="bg-primary px-[15%] z-10">
-        <div className="absolute top-0 flex flex-col gap-2">
-          <div className="h-28 w-0.5 bg-on-primary z-10" />
+        <motion.div
+          initial={{ height: 0 }}
+          whileInView={{ height: "288px" }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="absolute top-0  w-0.5 bg-on-primary z-10"
+        />
+        <div className="flex flex-col gap-3 pt-32 pb-28 ml-10">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="-ml-2 text-secondary"
+            className="text-secondary mb-4"
           >
             <span className="">02. </span>
             <SpanL className="font-semibold">
               Home.Performance.sectionTitle
             </SpanL>
           </motion.div>
-        </div>
-        <div className="flex flex-col gap-3 pt-44 pb-16 -ml-2">
           <SpanL
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
