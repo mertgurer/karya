@@ -1,13 +1,17 @@
-import Image from "next/image";
+"use client";
 
 import ServiceImage1 from "@/assets/images/home/services/service1.jpg";
 import ServiceImage2 from "@/assets/images/home/services/service2.jpg";
 import ServiceImage3 from "@/assets/images/home/services/service3.jpg";
 import ServiceImage4 from "@/assets/images/home/services/service4.jpg";
 import { SpanL } from "@/components/ui/SpanL";
-import { motion } from "motion/react";
+import { easeInOut, motion } from "motion/react";
 import { Lightning } from "./components/Lightning";
-import { LinkL } from "@/components/ui/LinkL";
+import ServiceCard from "./components/ServiceCard";
+import { ButtonL } from "@/components/ui/ButtonL";
+import { Link } from "@/i18n";
+import { HiArrowRight } from "react-icons/hi";
+import { useLenis } from "lenis/react";
 
 const ServiceDetails = [
   {
@@ -28,15 +32,19 @@ const ServiceDetails = [
   },
 ];
 
-export const Services = () => {
+export const Services = ({ index }: { index: number }) => {
+  const lenis = useLenis();
+
+  if (!lenis) return;
+
   return (
-    <section id="services" className="flex w-full py-80 bg-primary">
-      <div className="ml-[10%] mr-[5%] flex-1">
+    <section id="services" className="flex w-full py-40 flex-row-reverse">
+      <div className="mr-[10%] ml-[3%] flex-1">
         <motion.div
           variants={{ hidden: {}, show: {} }}
           initial="hidden"
           whileInView="show"
-          className="relative flex flex-col self-end"
+          className="relative flex flex-col self-end text-end -mt-40 mr-20"
         >
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -45,7 +53,7 @@ export const Services = () => {
             viewport={{ once: true }}
             className="text-secondary"
           >
-            <span className="">04. </span>
+            <span className="">0{index}. </span>
             <SpanL className="font-semibold">Home.Services.sectionTitle</SpanL>
           </motion.div>
           <SpanL
@@ -55,71 +63,84 @@ export const Services = () => {
             }}
             transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="text-5xl text-surface"
+            className="text-5xl text-primary"
           >
             Home.Services.title
           </SpanL>
-          <div className="absolute -left-4 -bottom-10">
-            <Lightning height={500} light />
+          <div className="absolute -right-4 -bottom-10">
+            <Lightning height={280} reverse />
           </div>
         </motion.div>
-        <div className="sticky top-40 ml-10 mt-30 ">
+        <div className="sticky top-1/4 mr-10 mt-32">
           <SpanL
             variants={{
               hidden: { opacity: 0, y: 16 },
               show: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-            className="text-3xl text-surface"
+            className="text-4xl text-primary"
           >
             Home.Services.subtitle
           </SpanL>
-          <div className="w-full h-0.5 bg-secondary mt-8 mb-4" />
+          <div className="w-full h-0.5 bg-secondary/20 mt-6 mb-6" />
           <SpanL
-            variants={{
-              hidden: { opacity: 0, y: 16 },
-              show: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-            className="text-xl text-surface"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="text-xl text-primary"
           >
             Home.Services.description
           </SpanL>
-          <LinkL
-            variants={{
-              hidden: { opacity: 0, y: 24 },
-              show: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
-            href="/corporate"
-            className="bg-secondary text-on-secondary px-4 py-2 mt-7"
+          <motion.div
+            initial={{ opacity: 0, x: -16 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
+            viewport={{ once: true }}
           >
-            Common.seeAll
-          </LinkL>
+            <Link
+              href="/corporate"
+              className="group flex items-center gap-3 text-secondary mt-6 w-max"
+            >
+              <SpanL className="group-hover:translate-x-2 duration-700">
+                Common.seeAll
+              </SpanL>
+              <div className="bg-secondary text-on-secondary p-1 group-hover:translate-x-6 duration-700">
+                <HiArrowRight size={16} />
+              </div>
+            </Link>
+          </motion.div>
+          <div className="w-full h-0.5 bg-secondary/20 mt-6 mb-20" />
+          <SpanL
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="text-lg font-medium text-primary"
+          >
+            Home.Services.linkText
+          </SpanL>
+          <ButtonL
+            initial={{ opacity: 0, x: -16 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            onClick={() => {
+              lenis.scrollTo(`#projects`, {
+                duration: 0.77,
+                easing: easeInOut,
+                offset: -72,
+              });
+            }}
+            className="bg-secondary text-on-secondary rounded-none! py-1.5 mt-5"
+          >
+            Home.Services.seeProject
+          </ButtonL>
         </div>
       </div>
-      <div className="flex flex-col w-1/2 mr-[10%]">
+      <div className="flex flex-col w-1/2 ml-[10%]">
         {ServiceDetails.map((service) => (
-          <div
-            key={service.id}
-            className="group flex relative w-full aspect-[3.8]"
-          >
-            <div className="absolute inset-0 grayscale-100 group-hover:grayscale-0 duration-500">
-              <Image
-                src={service.image}
-                alt={service.id}
-                fill
-                priority
-                sizes="100%"
-                className="object-cover"
-              />
-            </div>
-            <div className="absolute inset-0 bg-on-surface/40" />
-            <div className="relative flex self-end mb-10 ml-10 z-10 w-max">
-              <SpanL className="text-surface font-medium text-4xl">{`Home.Services.${service.id}.title`}</SpanL>
-              <div className="absolute -bottom-7 left-0 bg-surface h-1 origin-left w-0 group-hover:w-full duration-300" />
-            </div>
-          </div>
+          <ServiceCard key={service.id} service={service} />
         ))}
       </div>
     </section>

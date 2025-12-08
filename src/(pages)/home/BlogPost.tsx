@@ -50,8 +50,10 @@ export const BlogPost = ({ blog, reverse = false }: BlogProps) => {
           initial={{ filter: "blur(8px)" }}
           whileInView={{ filter: "blur(0px)" }}
           transition={{ duration: 0.7, delay: 0.3, ease: "easeInOut" }}
-          viewport={{ once: false }}
-          className="relative w-[65%] aspect-[2.5] shrink-0"
+          viewport={{ once: true }}
+          className={`relative w-[65%] aspect-[2.5] shrink-0 border-primary ${
+            reverse ? "border-l-2" : "border-r-2"
+          }`}
         >
           <Image
             src={image}

@@ -28,7 +28,7 @@ const PerformanceStats = [
   },
 ];
 
-export const Performance = () => {
+export const Performance = ({ index }: { index: number }) => {
   return (
     <section
       id="performance"
@@ -49,7 +49,7 @@ export const Performance = () => {
             viewport={{ once: true }}
             className="text-secondary mb-4"
           >
-            <span className="">02. </span>
+            <span className="">0{index}. </span>
             <SpanL className="font-semibold">
               Home.Performance.sectionTitle
             </SpanL>

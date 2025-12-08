@@ -32,17 +32,17 @@ const ProjectDetails = [
   },
 ] as Project[];
 
-export const Projects = () => {
+export const Projects = ({ index }: { index: number }) => {
   return (
     <section
       id="projects"
-      className="relative flex flex-col w-full px-[5%] gap-10 mb-56"
+      className="relative flex flex-col w-full gap-10 pb-48 pt-44 bg-primary/80 backdrop-blur-md"
     >
       <motion.div
         variants={{ hidden: {}, show: {} }}
         initial="hidden"
         whileInView="show"
-        className="relative flex flex-col w-[40%] self-end"
+        className="relative flex flex-col w-[34%] -translate-x-[5px] self-end"
       >
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -51,7 +51,7 @@ export const Projects = () => {
           viewport={{ once: true }}
           className="text-secondary"
         >
-          <span className="">03. </span>
+          <span className="">0{index}. </span>
           <SpanL className="font-semibold">Home.Projects.sectionTitle</SpanL>
         </motion.div>
         <SpanL
@@ -60,7 +60,7 @@ export const Projects = () => {
             show: { opacity: 1, y: 0 },
           }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="text-4xl text-primary"
+          className="text-4xl text-on-primary"
         >
           Home.Projects.title
         </SpanL>
@@ -70,20 +70,20 @@ export const Projects = () => {
             show: { y: 0 },
           }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="absolute h-56 w-0.5 bg-primary -left-4 bottom-2"
+          className="absolute h-[300px] w-0.5 bg-on-primary -left-4 bottom-2"
         />
       </motion.div>
       <motion.div
         initial="hidden"
         animate="show"
         viewport={{ amount: 0.5 }}
-        className="relative grid grid-cols-4 gap-2"
+        className="relative grid grid-cols-4 gap-2 px-[5%]"
       >
         <motion.div
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="absolute w-0.5 h-52 left-0 -bottom-56 bg-primary"
+          className="absolute w-0.5 h-44 left-[5%] -bottom-48 bg-on-primary"
         />
         {ProjectDetails.map((project, index) => {
           return (

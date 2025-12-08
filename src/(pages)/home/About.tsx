@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import AboutImage from "@/assets/images/home/about.jpg";
 
-export const About = () => {
+export const About = ({ index }: { index: number }) => {
   return (
     <section
       id="about"
@@ -25,7 +25,7 @@ export const About = () => {
           viewport={{ once: true }}
           className="-ml-2 text-secondary"
         >
-          <span className="">01. </span>
+          <span className="">0{index}. </span>
           <SpanL className="font-semibold">Home.About.sectionTitle</SpanL>
         </motion.div>
       </div>

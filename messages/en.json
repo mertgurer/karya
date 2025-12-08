@@ -99,8 +99,10 @@
     "Services": {
       "sectionTitle": "Our Services",
       "title": "What We Provide",
-      "subtitle": "Comprehensive Engineering Solutions",
+      "subtitle": "Engineering Solutions",
       "description": "Karya Engineering offers a comprehensive range of services tailored to meet the diverse needs of our clients. Our expertise spans multiple sectors, ensuring innovative solutions and exceptional results.",
+      "linkText": "Discover our full range of services and how we can assist with your next project.",
+      "seeProject": "See Projects",
       "ElectricalPower": {
         "title": "ELECTRICAL POWER"
       },
@@ -113,6 +115,7 @@
       "Specialty": {
         "title": "SPECIALTY"
       }
-    }
+    },
+    "References": {}
   }
 }

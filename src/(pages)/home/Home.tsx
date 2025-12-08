@@ -28,13 +28,13 @@ export const Home = () => {
   return (
     <main className="flex flex-col min-h-screen items-center justify-center">
       <Welcome />
-      <About />
-      <Performance />
-      <Projects />
+      <About index={1} />
+      <Performance index={2} />
+      <Services index={3} />
       <BlogPost blog={Blogs.hse} />
+      <Projects index={4} />
       <BlogPost blog={Blogs.quality} />
-      <Services />
-      <Reference />
+      <Reference index={5} />
     </main>
   );
 };

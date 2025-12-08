@@ -21,3 +21,12 @@ export interface BlogProps {
   blog: Blog;
   reverse?: boolean;
 }
+
+export interface Service {
+  id: string;
+  image: StaticImageData;
+}
+
+export interface ServiceCardProps {
+  service: Service;
+}

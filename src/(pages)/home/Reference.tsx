@@ -24,7 +24,7 @@ const References = [
   { name: "Fortum", image: FORTUM },
 ];
 
-export const Reference = () => {
+export const Reference = ({ index }: { index: number }) => {
   return (
     <section id="reference" className="w-full px-[15%] py-32">
       <div className="grid grid-cols-5 gap-0.5 mx-[10%] bg-primary shadow-lg shadow-black/10">
