@@ -37,7 +37,11 @@ export const Navbar = () => {
       transition={{ duration: 0.3, delay: 0.7 }}
       className={`
         fixed flex justify-between items-center text-on-primary w-full z-20 px-32
-         ${isScrolled ? "bg-primary/60 backdrop-blur-sm h-[72px]" : "h-20 pt-6"}
+         ${
+           isScrolled
+             ? "bg-primary/80 backdrop-blur-sm h-[72px] shadow-lg shadow-black/10"
+             : "h-20 pt-6"
+         }
         max-md:h-16 max-md:px-8 duration-500`}
     >
       <Link href={"/"} className="relative h-[52px] aspect-[2]">

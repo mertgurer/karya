@@ -10,7 +10,9 @@
   },
   "Common": {
     "welcome": "Welcome",
-    "goodbye": "Good Bye"
+    "goodbye": "Good Bye",
+    "learnMore": "Learn More",
+    "seeAll": "See All"
   },
   "Navbar": {
     "home": "Home",
@@ -22,6 +24,11 @@
     "contact": "Contact",
     "careers": "Careers"
   },
+  "Footer": {
+    "copyRight": "© 2025 Karya Engineering. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
   "Home": {
     "Welcome": {
       "title": "Karya Engineering",
@@ -32,8 +39,7 @@
     "About": {
       "sectionTitle": "Why Karya",
       "title": "Forged Excellence in Every Project",
-      "description": "Since 1919, our reputation has been founded on building quality electrical and communications installations, building value for clients, and building people in a diverse, safe, and inclusive environment. We serve customers with highly complex construction projects, who rely on us for knowledge, scalability, quality, and safety. Infused with a sense of shared ownership, our entire team focuses on building relationships that deliver results.",
-      "learnMore": "Learn More"
+      "description": "Since 1919, our reputation has been founded on building quality electrical and communications installations, building value for clients, and building people in a diverse, safe, and inclusive environment. We serve customers with highly complex construction projects, who rely on us for knowledge, scalability, quality, and safety. Infused with a sense of shared ownership, our entire team focuses on building relationships that deliver results."
     },
     "Performance": {
       "sectionTitle": "What We Achieved",
@@ -52,28 +58,60 @@
         "Alpha": {
           "title": "Project Alpha",
           "location": "New York, USA",
-          "description": "A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges."
+          "description": "A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges. A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges. A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges."
         },
         "Beta": {
           "title": "Project Beta",
           "location": "Los Angeles, USA",
-          "description": "Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges."
+          "description": "Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges."
         },
         "Gamma": {
           "title": "Project Gamma",
           "location": "Chicago, USA",
-          "description": "Sustainable development for future generations. Innovative solutions for modern architectural challenges."
+          "description": "Sustainable development for future generations. Innovative solutions for modern architectural challenges. Sustainable development for future generations. Innovative solutions for modern architectural challenges. Sustainable development for future generations. Innovative solutions for modern architectural challenges."
         },
         "Delta": {
           "title": "Project Delta",
           "location": "Houston, USA",
-          "description": "Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges."
+          "description": " Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges."
         },
         "Epsilon": {
           "title": "Project Epsilon",
           "location": "San Francisco, USA",
-          "description": "Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges."
+          "description": "Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges. Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges. Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges."
         }
+      }
+    },
+    "Blogs": {
+      "hseBlog": {
+        "motto": "We Care for Your Safety",
+        "title": "Enhancing Workplace Safety",
+        "subtitle": "Health, Safety, and Environment Practices",
+        "description": "At Karya Engineering, we prioritize the health and safety of our employees and clients. Our comprehensive HSE practices ensure a safe working environment, minimizing risks and promoting well-being."
+      },
+      "qualityBlog": {
+        "motto": "Commitment to Excellence",
+        "title": "Quality Assurance in Engineering",
+        "subtitle": "Delivering Superior Quality",
+        "description": "Quality is at the core of everything we do at Karya Engineering. Our rigorous quality assurance processes guarantee that every project meets the highest standards, ensuring client satisfaction and long-term success."
+      }
+    },
+    "Services": {
+      "sectionTitle": "Our Services",
+      "title": "What We Provide",
+      "subtitle": "Comprehensive Engineering Solutions",
+      "description": "Karya Engineering offers a comprehensive range of services tailored to meet the diverse needs of our clients. Our expertise spans multiple sectors, ensuring innovative solutions and exceptional results.",
+      "ElectricalPower": {
+        "title": "ELECTRICAL POWER"
+      },
+      "UndergroundUtilities": {
+        "title": "UNDERGROUND UTILITY"
+      },
+      "RenewableEnergy": {
+        "title": "RENEWABLE ENERGY"
+      },
+      "Specialty": {
+        "title": "SPECIALTY"
       }
     }
   }

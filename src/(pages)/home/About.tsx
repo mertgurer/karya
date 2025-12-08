@@ -13,8 +13,9 @@ export const About = () => {
       <div className="absolute top-0 flex flex-col gap-2">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{ opacity: 1 }}
           transition={{ duration: 0.2, delay: 0.4 }}
+          viewport={{ once: true }}
           className="h-32 w-0.5 bg-primary z-10"
         />
         <motion.div
@@ -64,7 +65,7 @@ export const About = () => {
           href="/corporate"
           className="bg-secondary text-on-secondary px-4 py-2 "
         >
-          Home.About.learnMore
+          Common.learnMore
         </LinkL>
       </motion.div>
       <motion.div

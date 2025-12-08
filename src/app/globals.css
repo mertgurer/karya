@@ -17,15 +17,15 @@
 .dark {
   /* dark values */
   --primary: #14578c;
-  --primary-variant: #3b97e3;
-  --secondary: #6db1d2;
-  --secondary-variant: #86beca;
-  --surface: #1e2019;
-  --background: #080808;
-  --on-primary: #d6dbdc;
-  --on-secondary: #d6dbdc;
-  --on-background: #d6dbdc;
-  --on-surface: #d6dbdc;
+  --primary-variant: #001b94;
+  --secondary: #ffa300;
+  --secondary-variant: #439a86;
+  --surface: #ebebeb;
+  --background: #fbfbfb;
+  --on-primary: #fefefe;
+  --on-secondary: #fefefe;
+  --on-background: #1e2019;
+  --on-surface: #1e2019;
 }
 
 @theme {
