@@ -37,7 +37,7 @@ function ProjectCard({ index, project }: ProjectCardProps) {
         ease: "easeInOut",
       }}
       viewport={{ once: true }}
-      className={`group flex shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10)] shadow-background/20 rounded-xs overflow-hidden aspect-4/5 hover:-translate-y-4 duration-700`}
+      className={`group flex shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10)] shadow-background/20 rounded-xs overflow-hidden aspect-4/5 hover:-translate-y-2 duration-700`}
     >
       <Link href={"/"} className="relative flex w-full">
         <div className="absolute inset-0 h-full w-full">
