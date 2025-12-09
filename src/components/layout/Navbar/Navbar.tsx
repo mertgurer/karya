@@ -42,7 +42,7 @@ export const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.7 }}
             className={`
-        fixed flex justify-between items-center text-on-primary overflow-hidden w-full z-20 px-32
+        fixed flex justify-between items-center text-on-primary w-full z-20 px-32
          ${
              isScrolled || isMenuOpen
                  ? "bg-primary/80 backdrop-blur-sm h-[72px] shadow-lg shadow-black/10"
@@ -65,7 +65,7 @@ export const Navbar = () => {
                     flex gap-3 items-center justify-center max-md:flex-col
                     max-md:absolute max-md:py-10 max-md:pl-12 max-md:pr-8 max-md:gap-5
                     max-md:bg-primary/95 max-md:backdrop-blur-sm max-md:rounded-bl-xl 
-                    max-md:items-end max-md:top-16 max-md:right-0 max-md:w-max
+                    max-md:items-center max-md:top-20 max-md:right-0 max-md:w-max max-md:shadow-xl max-md:shadow-black/20
                     ${!isMenuOpen ? "max-md:translate-x-full" : ""}
                     ${isScrolled ? "md:pt-2" : ""} duration-300`}
             >
