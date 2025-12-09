@@ -9,66 +9,77 @@ import UkFlag from "@/assets/images/flags/uk.png";
 import { LinkL } from "@/components/ui/LinkL";
 
 const Flags = {
-  tr: TrFlag,
-  en: UkFlag,
+    tr: TrFlag,
+    en: UkFlag,
 };
 
 export const Footer = () => {
-  const pathname = usePathname();
+    const pathname = usePathname();
 
-  return (
-    <div className="bg-primary text-on-primary px-40 py-8 flex gap-20">
-      <div className="flex items-center gap-10 justify-between w-full">
-        <Link href={"/"} className="relative h-16 aspect-[2]">
-          <Image
-            src={Logo}
-            alt={"logo"}
-            fill
-            priority
-            sizes="100%"
-            className="object-contain"
-          />
-        </Link>
-        <div className="flex flex-col text-sm gap-2 items-end">
-          <div className="flex gap-2 mb-5">
-            {routing.locales.map((locale) => {
-              return (
+    return (
+        <div className="bg-primary text-on-primary px-40 py-8 flex gap-20 max-2xl:px-20 max-2xl:py-6 max-md:px-6">
+            <div className="flex items-center gap-10 justify-between w-full max-md:flex-col">
                 <Link
-                  key={locale}
-                  href={pathname}
-                  locale={locale}
-                  className="font-light relative h-7 aspect-[1.7]"
+                    href={"/"}
+                    className="relative h-16 aspect-[2] max-md:hidden"
                 >
-                  <Image
-                    src={Flags[locale as keyof typeof Flags]}
-                    alt={"logo"}
-                    fill
-                    priority
-                    sizes="100%"
-                    className="object-cover"
-                  />
+                    <Image
+                        src={Logo}
+                        alt={"logo"}
+                        fill
+                        priority
+                        sizes="100%"
+                        className="object-contain"
+                    />
                 </Link>
-              );
-            })}
-          </div>
-          <div className="flex gap-7">
-            <LinkL href="privacy-policy" className="font-medium underline">
-              Footer.privacyPolicy
-            </LinkL>
-            <LinkL href="terms-of-service" className="font-medium underline">
-              Footer.termsOfService
-            </LinkL>
-          </div>
-          <SpanL className="font-light">Footer.copyRight</SpanL>
-        </div>
-      </div>
-      {/* <div className="flex flex-col self-end text-sm font-light">
+                <div className="flex flex-col text-sm gap-2 items-end max-md:items-center">
+                    <div className="flex gap-2 mb-5 max-2xl:mb-2">
+                        {routing.locales.map((locale) => {
+                            return (
+                                <Link
+                                    key={locale}
+                                    href={pathname}
+                                    locale={locale}
+                                    className="font-light relative h-7 aspect-[1.7]"
+                                >
+                                    <Image
+                                        src={
+                                            Flags[locale as keyof typeof Flags]
+                                        }
+                                        alt={"logo"}
+                                        fill
+                                        priority
+                                        sizes="100%"
+                                        className="object-cover"
+                                    />
+                                </Link>
+                            );
+                        })}
+                    </div>
+                    <div className="flex gap-7">
+                        <LinkL
+                            href="privacy-policy"
+                            className="font-medium underline"
+                        >
+                            Footer.privacyPolicy
+                        </LinkL>
+                        <LinkL
+                            href="terms-of-service"
+                            className="font-medium underline"
+                        >
+                            Footer.termsOfService
+                        </LinkL>
+                    </div>
+                    <SpanL className="font-light">Footer.copyRight</SpanL>
+                </div>
+            </div>
+            {/* <div className="flex flex-col self-end text-sm font-light">
         {NavigationLinks.map((link, index) => (
           <LinkL key={index} href={link.href}>
             {`Navbar.${link.label}`}
           </LinkL>
         ))}
       </div> */}
-    </div>
-  );
+        </div>
+    );
 };

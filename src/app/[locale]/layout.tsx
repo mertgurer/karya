@@ -9,55 +9,55 @@ import { Navbar } from "@/components/layout/Navbar";
 import "../globals.css";
 
 const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "Karya",
-  description:
-    "Karya is a leading provider of innovative engineering solutions, specializing in electrical and mechanical systems for commercial and industrial projects. With a commitment to excellence and sustainability, Karya delivers cutting-edge designs and reliable installations that meet the highest industry standards.",
+    title: "Karya",
+    description:
+        "Karya is a leading provider of innovative engineering solutions, specializing in electrical and mechanical systems for commercial and industrial projects. With a commitment to excellence and sustainability, Karya delivers cutting-edge designs and reliable installations that meet the highest industry standards.",
 };
 
 export default async function RootLayout({
-  children,
-  params,
+    children,
+    params,
 }: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+    children: React.ReactNode;
+    params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  const messages = await getMessages();
+    const { locale } = await params;
+    const messages = await getMessages();
 
-  return (
-    <html lang={locale}>
-      <body className={poppins.className}>
-        <NextIntlClientProvider messages={messages}>
-          <ReactLenis root>
-            <Toaster
-              position="top-right"
-              containerStyle={{ marginTop: "80px" }}
-              toastOptions={{
-                style: {
-                  background:
-                    "color-mix(in srgb, var(--primary), transparent 40%)",
-                  color: "var(--accent)",
-                  border: "1px solid var(--primary)",
-                  borderRadius: "12px",
-                  paddingLeft: "20px",
-                  paddingRight: "20px",
-                  paddingTop: "12px",
-                  paddingBlock: "12px",
-                  gap: "8px",
-                },
-              }}
-            />
-            <Navbar />
-            {children}
-            <Footer />
-          </ReactLenis>
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+    return (
+        <html lang={locale}>
+            <body className={poppins.className}>
+                <NextIntlClientProvider messages={messages}>
+                    <ReactLenis root>
+                        <Toaster
+                            position="top-right"
+                            containerStyle={{ marginTop: "80px" }}
+                            toastOptions={{
+                                style: {
+                                    background:
+                                        "color-mix(in srgb, var(--primary), transparent 40%)",
+                                    color: "var(--accent)",
+                                    border: "1px solid var(--primary)",
+                                    borderRadius: "12px",
+                                    paddingLeft: "20px",
+                                    paddingRight: "20px",
+                                    paddingTop: "12px",
+                                    paddingBlock: "12px",
+                                    gap: "8px",
+                                },
+                            }}
+                        />
+                        <Navbar />
+                        {children}
+                        <Footer />
+                    </ReactLenis>
+                </NextIntlClientProvider>
+            </body>
+        </html>
+    );
 }

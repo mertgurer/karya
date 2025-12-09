@@ -33,7 +33,7 @@ export const Home = () => {
       <Services index={3} />
       <BlogPost blog={Blogs.hse} />
       <Projects index={4} />
-      <BlogPost blog={Blogs.quality} />
+      <BlogPost blog={Blogs.quality} reverse />
       <Reference index={5} />
     </main>
   );
