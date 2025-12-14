@@ -8,6 +8,8 @@ export const SpanL = ({
   children,
   className,
   style,
+  noWrap = false,
+  upperCase = false,
   ...rest
 }: AnimatedSpanLProps) => {
   const t = useTranslations();
@@ -15,10 +17,10 @@ export const SpanL = ({
   return (
     <motion.span
       style={style}
-      className={`text-balance ${className}`}
+      className={`${noWrap ? "" : "text-balance"} ${className}`}
       {...rest}
     >
-      {t(children)}
+      {upperCase ? t(children).toUpperCase() : t(children)}
     </motion.span>
   );
 };

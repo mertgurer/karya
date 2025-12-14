@@ -12,7 +12,15 @@
     "welcome": "Welcome",
     "goodbye": "Good Bye",
     "learnMore": "Learn More",
-    "seeAll": "See All"
+    "seeAll": "See All",
+    "client": "Client",
+    "date": "Date",
+    "duration": "Duration",
+    "budget": "Budget",
+    "months": "Months",
+    "USD": "$",
+    "size": "Size",
+    "sqm": "sqm"
   },
   "Navbar": {
     "home": "Home",
@@ -53,34 +61,7 @@
     "Projects": {
       "sectionTitle": "Our Projects",
       "title": "Leading Projects Across Multiple Sectors",
-      "viewAllProjects": "View All Projects",
-      "Projects": {
-        "Alpha": {
-          "title": "Project Alpha",
-          "location": "New York, USA",
-          "description": "A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges. A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges. A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges."
-        },
-        "Beta": {
-          "title": "Project Beta",
-          "location": "Los Angeles, USA",
-          "description": "Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges."
-        },
-        "Gamma": {
-          "title": "Project Gamma",
-          "location": "Chicago, USA",
-          "description": "Sustainable development for future generations. Innovative solutions for modern architectural challenges. Sustainable development for future generations. Innovative solutions for modern architectural challenges. Sustainable development for future generations. Innovative solutions for modern architectural challenges."
-        },
-        "Delta": {
-          "title": "Project Delta",
-          "location": "Houston, USA",
-          "description": " Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges."
-        },
-        "Epsilon": {
-          "title": "Project Epsilon",
-          "location": "San Francisco, USA",
-          "description": "Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges. Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges. Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges."
-        }
-      }
+      "viewAllProjects": "View All Projects"
     },
     "Blogs": {
       "hseBlog": {
@@ -120,6 +101,58 @@
       "sectionTitle": "Our Clients",
       "title": "Trusted by Industry Leaders",
       "description": "Karya Engineering has had the privilege of working with some of the most respected names in various industries. Our commitment to excellence and client satisfaction has earned us long-lasting partnerships."
+    }
+  },
+  "Projects": {
+    "title": "Our Project Showcase",
+    "subtitle": "Innovative Solutions Across Industries",
+    "summary": "Project Summary",
+    "details": "Project Details",
+    "projectPresentation": "Project Presentation",
+    "certificates": "Certificates",
+    "services": "Services Provided",
+    "Services": {
+      "electrical": "Electrical Infrastructure",
+      "safety": "Safety Systems",
+      "communication": "Communication Networks"
+    },
+    "Project": {
+      "alpha": {
+        "title": "Project Alpha",
+        "location": "New York, USA",
+        "smallDescription": "A groundbreaking infrastructure project that redefines urban connectivity.",
+        "description": "A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges. A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges. A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges."
+      },
+      "beta": {
+        "title": "Project Beta",
+        "location": "Los Angeles, USA",
+        "smallDescription": "Innovative solutions for modern architectural challenges.",
+        "description": "Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges."
+      },
+      "gamma": {
+        "title": "Project Gamma",
+        "location": "Chicago, USA",
+        "smallDescription": "Sustainable development for future generations.",
+        "description": "Sustainable development for future generations. Innovative solutions for modern architectural challenges. Sustainable development for future generations. Innovative solutions for modern architectural challenges. Sustainable development for future generations. Innovative solutions for modern architectural challenges."
+      },
+      "delta": {
+        "title": "Project Delta",
+        "location": "Houston, USA",
+        "smallDescription": " Revolutionizing urban landscapes.",
+        "description": "Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban"
+      },
+      "epsilon": {
+        "title": "Project Epsilon",
+        "location": "San Francisco, USA",
+        "smallDescription": "Cutting-edge technology integration in commercial spaces.",
+        "description": "Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges. Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges. Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges."
+      },
+      "zeta": {
+        "title": "Project Zeta",
+        "location": "Miami, USA",
+        "smallDescription": "Transforming waterfront properties with innovative designs.",
+        "description": "Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges. Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges. Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges."
+      }
     }
   }
 }

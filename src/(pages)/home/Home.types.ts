@@ -1,10 +1,5 @@
 import { StaticImageData } from "next/image";
-
-export interface Project {
-  id: string;
-  company: string;
-  image: StaticImageData;
-}
+import { Project } from "../project/Project.types";
 
 export interface ProjectCardProps {
   index: number;

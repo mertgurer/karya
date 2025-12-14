@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { BlogProps } from "./Home.types";
+import { BlogProps } from "../Home.types";
 import { SpanL } from "@/components/ui/SpanL";
 import { motion } from "motion/react";
-import { Lightning } from "./components/Lightning";
+import { Lightning } from "./Lightning";
 import { Link } from "@/i18n";
 import { HiArrowRight } from "react-icons/hi";
 

@@ -1,12 +1,12 @@
 "use client";
 
-import { About } from "./About";
-import { BlogPost } from "./BlogPost";
-import { Performance } from "./Performance";
-import { Projects } from "./Projects";
-import { Reference } from "./Reference";
-import { Services } from "./Services";
-import { Welcome } from "./Welcome";
+import { About } from "./components/About";
+import { BlogPost } from "./components/BlogPost";
+import { Performance } from "./components/Performance";
+import { Projects } from "./components/Projects";
+import { Reference } from "./components/Reference";
+import { Services } from "./components/Services";
+import { Welcome } from "./components/Welcome";
 
 import HseBlogPhoto from "@/assets/images/home/blog/hse-blog.jpg";
 import QualityBlogPhoto from "@/assets/images/home/blog/quality-blog.jpg";
