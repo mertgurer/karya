@@ -36,7 +36,7 @@ export const Project = ({ project }: ProjectProps) => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="px-7 pb-5 text-5xl font-semibold text-on-primary"
           >{`Projects.Project.${project.id}.location`}</SpanL>
-          <div className="flex flex-col px-7 pt-20 mb-10 bg-background text-on-background">
+          <div className="flex flex-col px-7 pt-20 mb-16 bg-background text-on-background">
             <SpanL className="text-secondary font-semibold">
               Projects.summary
             </SpanL>
@@ -89,7 +89,7 @@ export const Project = ({ project }: ProjectProps) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col flex-38 p-10 bg-primary shadow-[0_10px_25px_5px_rgba(0,0,0,0.15)]">
+        <div className="flex flex-col flex-38 p-10 bg-primary h-max shadow-[0_10px_25px_5px_rgba(0,0,0,0.15)]">
           <div className="flex gap-1 items-center">
             |<SpanL className="font-medium text-sm">Projects.details</SpanL>
           </div>
