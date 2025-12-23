@@ -15,7 +15,7 @@ export const Projects = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="relative flex h-[50vh] items-end">
+      <div className="relative flex h-[50vh] items-end max-md:h-[40vh]">
         <div className="absolute inset-0">
           <Image
             src={Welcome}
@@ -31,15 +31,17 @@ export const Projects = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="flex flex-col pl-[14%] pb-16 gap-2 z-10"
+          className="flex flex-col pl-[14%] pb-16 gap-2 z-10 max-2xl:pl-[8%] max-md:pl-0 max-md:items-center max-md:mx-auto max-md:pb-8"
         >
-          <SpanL className="text-5xl font-bold">Projects.title</SpanL>
-          <SpanL className="text-xl text-primary bg-surface w-max px-4 py-1">
+          <SpanL className="text-5xl font-bold max-2xl:text-4xl max-md:w-min max-md:self-start">
+            Projects.title
+          </SpanL>
+          <SpanL className="text-xl text-primary bg-surface w-max px-4 py-1 max-2xl:text-lg">
             Projects.subtitle
           </SpanL>
         </motion.div>
       </div>
-      <div className="grid grid-cols-3 w-full px-[14%] py-32 gap-10">
+      <div className="grid grid-cols-3 w-full px-[14%] py-32 gap-10 max-2xl:px-[8%] max-md:grid-cols-1 max-md:gap-5 max-md:py-16">
         {ProjectDetails.map((x, index) => (
           <motion.div
             key={x.id}
@@ -75,9 +77,9 @@ export const Projects = () => {
               <div className="flex flex-col group-hover:ml-2 duration-300">
                 <div className="flex items-center gap-1 opacity-70 my-2">
                   <IoMdPin size={16} />
-                  <SpanL className="">{`Projects.Project.${x.id}.location`}</SpanL>
+                  <SpanL className="max-2xl:text-sm">{`Projects.Project.${x.id}.location`}</SpanL>
                 </div>
-                <SpanL className="text-3xl">{`Projects.Project.${x.id}.title`}</SpanL>
+                <SpanL className="text-3xl max-2xl:text-2xl">{`Projects.Project.${x.id}.title`}</SpanL>
                 <span className="font-medium opacity-70">{x.client}</span>
               </div>
             </Link>
