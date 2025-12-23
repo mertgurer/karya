@@ -14,6 +14,7 @@ export const LinkL = ({
   disabled = false,
   onClick,
   href,
+  upperCase,
   ...rest
 }: AnimatedLinkLProps) => {
   return (
@@ -34,7 +35,7 @@ export const LinkL = ({
         }`}
       >
         {beforeElement}
-        <SpanL>{children}</SpanL>
+        <SpanL upperCase={upperCase}>{children}</SpanL>
         {afterElement}
       </Link>
     </motion.div>

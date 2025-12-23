@@ -12,6 +12,7 @@ export const ButtonL = ({
   afterElement,
   disabled = false,
   onClick,
+  upperCase = false,
   type = "button",
   ...rest
 }: AnimatedButtonLProps) => {
@@ -27,7 +28,7 @@ export const ButtonL = ({
       {...rest}
     >
       {beforeElement}
-      <SpanL>{children}</SpanL>
+      <SpanL upperCase={upperCase}>{children}</SpanL>
       {afterElement}
     </motion.button>
   );
