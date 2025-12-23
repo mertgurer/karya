@@ -4,4 +4,5 @@ export interface LocaleButtonProps extends LocaleProps {
   beforeElement?: React.ReactNode;
   afterElement?: React.ReactNode;
   disabled?: boolean;
+  upperCase?: boolean;
 }

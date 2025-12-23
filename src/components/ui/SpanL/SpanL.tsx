@@ -14,13 +14,26 @@ export const SpanL = ({
 }: AnimatedSpanLProps) => {
   const t = useTranslations();
 
+  const text = upperCase ? t(children).toUpperCase() : t(children);
+  const lines = text.split(/<br\s*\/?>/i);
+
   return (
     <motion.span
       style={style}
       className={`${noWrap ? "" : "text-balance"} ${className}`}
       {...rest}
     >
-      {upperCase ? t(children).toUpperCase() : t(children)}
+      {lines.map((line, index) => (
+        <span key={index}>
+          {line}
+          {index < lines.length - 1 && (
+            <>
+              <br />
+              <br />
+            </>
+          )}
+        </span>
+      ))}
     </motion.span>
   );
 };

@@ -154,5 +154,41 @@
         "description": "Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges. Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges. Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges."
       }
     }
+  },
+  "Corporate": {
+    "title": "About Kayra Engineering",
+    "subtitle": "Engineering Excellence Built on Trust",
+    "about": "About Us",
+    "approach": "Our Approach",
+    "history": "History",
+    "About": {
+      "title": "SINCE",
+      "description": "Karya Electrical Engineering Company is a trusted provider of comprehensive electrical engineering solutions, delivering reliable, efficient, and innovative services across residential, commercial, and industrial sectors. With a strong foundation built on technical expertise and industry best practices, we are committed to meeting the evolving needs of our clients while maintaining the highest standards of safety and quality.<br/>Our team of skilled engineers and technicians brings years of hands-on experience to every project, from electrical design and installation to maintenance, troubleshooting, and system upgrades. We pride ourselves on our attention to detail, timely project execution, and ability to deliver customized solutions that align with each client’s specific requirements.<br/>At Karya Electrical Engineering Company, our mission is to build long-term partnerships through integrity, professionalism, and excellence. By embracing modern technologies and continuously improving our processes, we strive to power progress and contribute to sustainable, energy-efficient infrastructure for the future.",
+      "team": "At Kayra Engineering, our strength lies in our people. Our team is made up of dedicated engineers, technicians, and project specialists who bring a strong blend of technical expertise, hands-on experience, and problem-solving mindset to every project. United by a commitment to quality, safety, and continuous improvement, we work collaboratively to deliver reliable engineering solutions while building lasting trust with our clients."
+    },
+    "Approach": {
+      "title": "Our Values",
+      "subtitle": "We are guided by our core values",
+      "commitment": {
+        "title": "Commitment",
+        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+      },
+      "sprit": {
+        "title": "Team spirit",
+        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+      },
+      "professionalism": {
+        "title": "Professionalism",
+        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+      },
+      "accountability": {
+        "title": "Accountability",
+        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+      }
+    }
   }
 }
