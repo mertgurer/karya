@@ -4,7 +4,7 @@ import Team from "@/assets/images/corporate/team.jpg";
 
 export const About = () => {
   return (
-    <div className="flex flex-col px-[20%] w-full gap-7 max-2xl:px-[13%] max-md:px-[5%]">
+    <div className="flex flex-col px-[20%] w-full gap-7 max-2xl:px-[13%] max-md:px-[6%]">
       <div className="flex ml-1 gap-3 text-4xl">
         <SpanL className="font-extralight">Corporate.About.title</SpanL>
         <span className="font-semibold">2007</span>

@@ -17,7 +17,7 @@ const ApproachTypes = [
 
 export const Approach = () => {
   return (
-    <div className="flex flex-col px-[20%] w-full gap-14 max-2xl:px-[13%] max-md:px-[5%]">
+    <div className="flex flex-col px-[20%] w-full gap-14 max-2xl:px-[13%] max-md:px-[6%]">
       <div className="flex flex-col">
         <SpanL className="text-4xl font-extralight text-secondary">
           Corporate.Approach.title
