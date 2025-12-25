@@ -6,10 +6,10 @@ export const Careers = () => {
     <div className="flex flex-col w-full">
       <WelcomeHeader
         image={Welcome}
-        title={"Contact.title"}
-        subtitle={"Contact.subtitle"}
+        title={"Careers.title"}
+        subtitle={"Careers.subtitle"}
       />
-      Carrers
+      Careers
     </div>
   );
 };
