@@ -12,6 +12,7 @@
     "welcome": "Welcome",
     "goodbye": "Good Bye",
     "learnMore": "Learn More",
+    "selectOption": "Select an option",
     "seeAll": "See All",
     "client": "Client",
     "date": "Date",
@@ -158,15 +159,17 @@
   "Corporate": {
     "title": "About Kayra Engineering",
     "subtitle": "Engineering Excellence Built on Trust",
-    "about": "About Us",
-    "approach": "Our Approach",
-    "history": "History",
+    "about": "Who We Are",
+    "values": "Our Values",
+    "mission": "Mission & Vision",
+    "brochure": "Company Brochure",
+    "presence": "Global Presence",
+    "privacyPolicy": "Privacy Policy",
     "About": {
       "title": "SINCE",
-      "description": "Karya Electrical Engineering Company is a trusted provider of comprehensive electrical engineering solutions, delivering reliable, efficient, and innovative services across residential, commercial, and industrial sectors. With a strong foundation built on technical expertise and industry best practices, we are committed to meeting the evolving needs of our clients while maintaining the highest standards of safety and quality.<br/>Our team of skilled engineers and technicians brings years of hands-on experience to every project, from electrical design and installation to maintenance, troubleshooting, and system upgrades. We pride ourselves on our attention to detail, timely project execution, and ability to deliver customized solutions that align with each client’s specific requirements.<br/>At Karya Electrical Engineering Company, our mission is to build long-term partnerships through integrity, professionalism, and excellence. By embracing modern technologies and continuously improving our processes, we strive to power progress and contribute to sustainable, energy-efficient infrastructure for the future.",
-      "team": "At Kayra Engineering, our strength lies in our people. Our team is made up of dedicated engineers, technicians, and project specialists who bring a strong blend of technical expertise, hands-on experience, and problem-solving mindset to every project. United by a commitment to quality, safety, and continuous improvement, we work collaboratively to deliver reliable engineering solutions while building lasting trust with our clients."
+      "description": "Karya Electrical Engineering Company is a trusted provider of comprehensive electrical engineering solutions, delivering reliable, efficient, and innovative services across residential, commercial, and industrial sectors. With a strong foundation built on technical expertise and industry best practices, we are committed to meeting the evolving needs of our clients while maintaining the highest standards of safety and quality.<br/>Our team of skilled engineers and technicians brings years of hands-on experience to every project, from electrical design and installation to maintenance, troubleshooting, and system upgrades. We pride ourselves on our attention to detail, timely project execution, and ability to deliver customized solutions that align with each client’s specific requirements.<br/>At Karya Electrical Engineering Company, our mission is to build long-term partnerships through integrity, professionalism, and excellence. By embracing modern technologies and continuously improving our processes, we strive to power progress and contribute to sustainable, energy-efficient infrastructure for the future.<br/>At Kayra Engineering, our strength lies in our people. Our team is made up of dedicated engineers, technicians, and project specialists who bring a strong blend of technical expertise, hands-on experience, and problem-solving mindset to every project. United by a commitment to quality, safety, and continuous improvement, we work collaboratively to deliver reliable engineering solutions while building lasting trust with our clients."
     },
-    "Approach": {
+    "Values": {
       "title": "Our Values",
       "subtitle": "We are guided by our core values",
       "commitment": {
@@ -188,6 +191,80 @@
       "accountability": {
         "title": "Accountability",
         "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+      }
+    },
+    "Mission": {
+      "missionTitle": "Our Mission",
+      "missionDescription": "To deliver comprehensive, reliable, and innovative electrical engineering solutions across residential, commercial, and industrial sectors. We are dedicated to exceeding client expectations through technical expertise, unwavering safety standards, and a commitment to integrity and professional excellence.",
+      "visionTitle": "Our Vision",
+      "visionDescription": "To be the trusted partner in powering progress, setting the standard for sustainable, energy-efficient infrastructure and becoming the leading provider of future-ready electrical systems."
+    },
+    "Brochure": {
+      "title": "Company Brochure",
+      "description": "Discover more about Karya Engineering, our services, and our commitment to excellence in our comprehensive company brochure.",
+      "download": "Download Brochure"
+    },
+    "Privacy": {
+      "title": "Privacy Policy",
+      "Sections": {
+        "dataCollection": {
+          "title": "Data Collection",
+          "content": "We collect personal information necessary to facilitate our engineering services and client communications. This includes direct identifiers such as your name, email address, phone number, company affiliation, and project-specific documentation you provide. Additionally, when you visit our website, we may automatically collect technical data, including your IP address, browser type, and operating system, to ensure site compatibility and security.We collect personal information necessary to facilitate our engineering services and client communications. This includes direct identifiers such as your name, email address, phone number, company affiliation, and project-specific documentation you provide. Additionally, when you visit our website, we may automatically collect technical data, including your IP address, browser type, and operating system, to ensure site compatibility and security.We collect personal information necessary to facilitate our engineering services and client communications. This includes direct identifiers such as your name, email address, phone number, company affiliation, and project-specific documentation you provide. Additionally, when you visit our website, we may automatically collect technical data, including your IP address, browser type, and operating system, to ensure site compatibility and security.We collect personal information necessary to facilitate our engineering services and client communications. This includes direct identifiers such as your name, email address, phone number, company affiliation, and project-specific documentation you provide. Additionally, when you visit our website, we may automatically collect technical data, including your IP address, browser type, and operating system, to ensure site compatibility and security.We collect personal information necessary to facilitate our engineering services and client communications. This includes direct identifiers such as your name, email address, phone number, company affiliation, and project-specific documentation you provide. Additionally, when you visit our website, we may automatically collect technical data, including your IP address, browser type, and operating system, to ensure site compatibility and security.We collect personal information necessary to facilitate our engineering services and client communications. This includes direct identifiers such as your name, email address, phone number, company affiliation, and project-specific documentation you provide. Additionally, when you visit our website, we may automatically collect technical data, including your IP address, browser type, and operating system, to ensure site compatibility and security.We collect personal information necessary to facilitate our engineering services and client communications. This includes direct identifiers such as your name, email address, phone number, company affiliation, and project-specific documentation you provide. Additionally, when you visit our website, we may automatically collect technical data, including your IP address, browser type, and operating system, to ensure site compatibility and security."
+        },
+        "dataUsage": {
+          "title": "Data Usage",
+          "content": "The information we collect is utilized primarily to execute engineering projects, manage client accounts, and process transactions. We also use this data to respond to technical inquiries, send administrative notifications, and improve our service offerings. With your consent, we may occasionally send updates regarding new technologies or company news, though you may opt out of these communications at any time. The information we collect is utilized primarily to execute engineering projects, manage client accounts, and process transactions. We also use this data to respond to technical inquiries, send administrative notifications, and improve our service offerings. With your consent, we may occasionally send updates regarding new technologies or company news, though you may opt out of these communications at any time.The information we collect is utilized primarily to execute engineering projects, manage client accounts, and process transactions. We also use this data to respond to technical inquiries, send administrative notifications, and improve our service offerings. With your consent, we may occasionally send updates regarding new technologies or company news, though you may opt out of these communications at any time.The information we collect is utilized primarily to execute engineering projects, manage client accounts, and process transactions. We also use this data to respond to technical inquiries, send administrative notifications, and improve our service offerings. With your consent, we may occasionally send updates regarding new technologies or company news, though you may opt out of these communications at any time.The information we collect is utilized primarily to execute engineering projects, manage client accounts, and process transactions. We also use this data to respond to technical inquiries, send administrative notifications, and improve our service offerings. With your consent, we may occasionally send updates regarding new technologies or company news, though you may opt out of these communications at any time.The information we collect is utilized primarily to execute engineering projects, manage client accounts, and process transactions. We also use this data to respond to technical inquiries, send administrative notifications, and improve our service offerings. With your consent, we may occasionally send updates regarding new technologies or company news, though you may opt out of these communications at any time."
+        },
+        "dataProtection": {
+          "title": "Data Protection",
+          "content": "We implement robust, industry-standard security measures to safeguard your personal data. These include Secure Socket Layer (SSL) technology for encrypted data transmission, firewalls, and strict internal access controls. We regularly review our data collection, storage, and processing practices to prevent unauthorized access, alteration, disclosure, or destruction of your personal information. We implement robust, industry-standard security measures to safeguard your personal data. These include Secure Socket Layer (SSL) technology for encrypted data transmission, firewalls, and strict internal access controls. We regularly review our data collection, storage, and processing practices to prevent unauthorized access, alteration, disclosure, or destruction of your personal information.We implement robust, industry-standard security measures to safeguard your personal data. These include Secure Socket Layer (SSL) technology for encrypted data transmission, firewalls, and strict internal access controls. We regularly review our data collection, storage, and processing practices to prevent unauthorized access, alteration, disclosure, or destruction of your personal information.We implement robust, industry-standard security measures to safeguard your personal data. These include Secure Socket Layer (SSL) technology for encrypted data transmission, firewalls, and strict internal access controls. We regularly review our data collection, storage, and processing practices to prevent unauthorized access, alteration, disclosure, or destruction of your personal information.We implement robust, industry-standard security measures to safeguard your personal data. These include Secure Socket Layer (SSL) technology for encrypted data transmission, firewalls, and strict internal access controls. We regularly review our data collection, storage, and processing practices to prevent unauthorized access, alteration, disclosure, or destruction of your personal information."
+        },
+        "cookies": {
+          "title": "Cookies Policy",
+          "content": "We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. These include 'essential cookies' required for the site to function and 'analytical cookies' that help us understand user behavior. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent; however, some portions of our website may not function properly without them. We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. These include 'essential cookies' required for the site to function and 'analytical cookies' that help us understand user behavior. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent; however, some portions of our website may not function properly without them. We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. These include 'essential cookies' required for the site to function and 'analytical cookies' that help us understand user behavior. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent; however, some portions of our website may not function properly without them. We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. These include 'essential cookies' required for the site to function and 'analytical cookies' that help us understand user behavior. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent; however, some portions of our website may not function properly without them. We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. These include 'essential cookies' required for the site to function and 'analytical cookies' that help us understand user behavior. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent; however, some portions of our website may not function properly without them.We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. These include 'essential cookies' required for the site to function and 'analytical cookies' that help us understand user behavior. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent; however, some portions of our website may not function properly without them.We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. These include 'essential cookies' required for the site to function and 'analytical cookies' that help us understand user behavior. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent; however, some portions of our website may not function properly without them.We use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. These include 'essential cookies' required for the site to function and 'analytical cookies' that help us understand user behavior. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent; however, some portions of our website may not function properly without them."
+        },
+        "thirdPartySharing": {
+          "title": "Third-Party Sharing",
+          "content": "We strictly do not sell, trade, or rent your personal identification information to others. We may share data with trusted third-party service providers who assist us in operating our website or conducting our business (such as hosting providers or payment processors), provided that those parties agree to keep this information confidential and comply with applicable data protection laws. We strictly do not sell, trade, or rent your personal identification information to others. We may share data with trusted third-party service providers who assist us in operating our website or conducting our business (such as hosting providers or payment processors), provided that those parties agree to keep this information confidential and comply with applicable data protection laws."
+        },
+        "yourRights": {
+          "title": "Your Rights",
+          "content": "Under applicable data protection laws, you retain the right to request access to, correction of, or deletion of your personal data. You may also object to the processing of your data or request data portability. To exercise these rights, or for any questions regarding our privacy practices, please contact us directly. We are committed to responding to all legitimate requests within a reasonable timeframe. Under applicable data protection laws, you retain the right to request access to, correction of, or deletion of your personal data. You may also object to the processing of your data or request data portability. To exercise these rights, or for any questions regarding our privacy practices, please contact us directly. We are committed to responding to all legitimate requests within a reasonable timeframe. Under applicable data protection laws, you retain the right to request access to, correction of, or deletion of your personal data. You may also object to the processing of your data or request data portability. To exercise these rights, or for any questions regarding our privacy practices, please contact us directly. We are committed to responding to all legitimate requests within a reasonable timeframe."
+        }
+      }
+    }
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd Love to Hear From You",
+    "contactTitle": "Get in touch with the nation’s largest employee-owned electrical contractor.",
+    "contactDescriptionTitle": "Request For Information",
+    "contactDescription": "For more information on Rosendin and how we can meet your needs, please fill out the form below and someone will respond to your inquiry within 24 hours.",
+    "addressesTitle": "Our Offices",
+    "addressesDescription": "Feel free to visit or contact our offices located in Turkey and the USA. We are here to assist you with your engineering needs.",
+    "Form": {
+      "nameSurname": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "phone": "Phone Number",
+      "message": "Your Message",
+      "submit": "Submit Message",
+      "Reasons": {
+        "general": "General Inquiry",
+        "services": "Services Information",
+        "careers": "Careers",
+        "partnership": "Partnership Opportunities",
+        "other": "Other"
+      }
+    },
+    "Addresses": {
+      "turkey": {
+        "title": "Turkey Office",
+        "address": "Altıntepe Mahallesi, Sevgi Çiçeği Sokak, Sevgi Apartmanı, No 19-21, Kat 3, Daire 24, 34840 Istanbul İstanbul Turkey"
+      },
+      "usa": {
+        "title": "USA Office",
+        "address": "Altıntepe Mahallesi, Sevgi Çiçeği Sokak, Sevgi Apartmanı, No 19-21, Kat 3, Daire 24, 34840 Istanbul İstanbul Turkey"
       }
     }
   }

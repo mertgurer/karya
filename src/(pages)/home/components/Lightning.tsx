@@ -8,6 +8,11 @@ interface LightningProps {
   light?: boolean;
 }
 
+const lightningVariants = {
+  hidden: { scaleY: 0 },
+  visible: { scaleY: 1 },
+};
+
 export const Lightning = ({
   height,
   reverse = false,
@@ -16,8 +21,7 @@ export const Lightning = ({
   return (
     <div className="relative flex">
       <motion.div
-        initial={{ scaleY: 0 }}
-        whileInView={{ scaleY: 1 }}
+        variants={lightningVariants}
         transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
         style={{ height: height }}
         className={`w-0.5  origin-bottom ${
@@ -33,8 +37,7 @@ export const Lightning = ({
           } ${light ? "bg-surface" : "bg-primary"}`}
         />
         <motion.div
-          initial={{ scaleY: 0 }}
-          whileInView={{ scaleY: 1 }}
+          variants={lightningVariants}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
           className={`absolute h-8 w-0.5 -top-4 bg-primary origin-top ${
             reverse ? "-left-3.5" : "left-3.5"

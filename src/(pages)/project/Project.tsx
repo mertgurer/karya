@@ -91,7 +91,7 @@ export const Project = ({ project }: ProjectProps) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col flex-38 p-10 bg-primary h-max shadow-[0_10px_25px_5px_rgba(0,0,0,0.15)] max-md:p-8">
+        <div className="flex flex-col flex-38 p-10 bg-primary text-on-primary h-max shadow-[0_10px_25px_5px_rgba(0,0,0,0.15)] max-md:p-8">
           <div className="flex gap-1 items-center">
             |<SpanL className="font-medium text-sm">Projects.details</SpanL>
           </div>

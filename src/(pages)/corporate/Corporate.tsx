@@ -1,19 +1,23 @@
 "use client";
 
-import Image from "next/image";
 import Welcome from "@/assets/images/corporate/welcome.jpg";
-import { SpanL } from "@/components/ui/SpanL";
 import { useState } from "react";
 import { ButtonL } from "@/components/ui/ButtonL";
 import { About } from "./components/About";
-import { Approach } from "./components/Approach";
-import { History } from "./components/History";
-import { motion } from "motion/react";
+import { Values } from "./components/Values";
+import { Mission } from "./components/Mission";
+import { Brochure } from "./components/Brochure";
+import { Global } from "./components/Global";
+import { Privacy } from "./components/Privacy";
+import { WelcomeHeader } from "@/components/layout/WelcomeHeader";
 
 const CorporateTabs = [
   { id: "about", view: <About /> },
-  { id: "approach", view: <Approach /> },
-  { id: "history", view: <History /> },
+  { id: "values", view: <Values /> },
+  { id: "mission", view: <Mission /> },
+  { id: "brochure", view: <Brochure /> },
+  { id: "presence", view: <Global /> },
+  { id: "privacyPolicy", view: <Privacy /> },
 ];
 
 export const Corporate = () => {
@@ -21,33 +25,12 @@ export const Corporate = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="relative flex h-[50vh] items-end max-md:h-[40vh]">
-        <div className="absolute inset-0">
-          <Image
-            src={Welcome}
-            alt="welcome-image"
-            fill
-            priority
-            sizes="100%"
-            className="object-cover -scale-x-100"
-          />
-          <div className="absolute inset-0 bg-black/30" />
-        </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="flex flex-col pl-[14%] pb-16 gap-2 z-10 max-2xl:pl-[8%] max-md:pl-0 max-md:items-center max-md:mx-auto max-md:pb-8"
-        >
-          <SpanL className="text-5xl font-bold max-2xl:text-4xl max-md:w-min max-md:self-start">
-            Corporate.title
-          </SpanL>
-          <SpanL className="text-xl text-primary bg-surface w-max px-4 py-1 max-2xl:text-lg">
-            Corporate.subtitle
-          </SpanL>
-        </motion.div>
-      </div>
-      <div className="flex self-center max-md:w-full">
+      <WelcomeHeader
+        image={Welcome}
+        title={"Corporate.title"}
+        subtitle={"Corporate.subtitle"}
+      />
+      <div className="flex self-center max-md:w-full max-md:grid max-md:grid-cols-2">
         {CorporateTabs.map((tab, index) => {
           return (
             <ButtonL
@@ -95,7 +78,7 @@ export const Corporate = () => {
               }}
               className={`flex w-full text-on-background py-20 max-md:py-10 ${
                 index !== selectedTabIndex ? `absolute` : "relative"
-              } duration-700`}
+              } duration-1000 ease-in-out`}
             >
               {tab.view}
             </div>

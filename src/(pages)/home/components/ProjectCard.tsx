@@ -41,7 +41,7 @@ function ProjectCard({ index, project }: ProjectCardProps) {
       viewport={{ once: true }}
       className={`flex z-30 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10)] shadow-background/20 rounded-xs overflow-hidden aspect-4/5 max-2xl:aspect-[0.65] max-md:aspect-[0.86] hover:-translate-y-2 hover:max-2xl:-translate-y-1 duration-700`}
     >
-      <Link href={"/"} className="relative flex w-full">
+      <Link href={"/"} className="relative flex w-full text-on-primary">
         <motion.div
           initial={{ filter: "grayscale(0)" }}
           animate={{
@@ -78,10 +78,10 @@ function ProjectCard({ index, project }: ProjectCardProps) {
           <motion.div
             initial={{ top: "80%" }}
             animate={{ top: isHovered ? 48 : "80%" }}
-            transition={{ duration: 1, ease: "easeInOut" }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             className="absolute flex flex-col"
           >
-            <div className="flex items-center gap-1 -ml-0.5 text-on-primary">
+            <div className="flex items-center gap-1 -ml-0.5">
               <IoMdPin size={16} />
               <SpanL className="font-light max-2xl:text-sm">{`Projects.Project.${project.id}.location`}</SpanL>
             </div>
@@ -96,14 +96,14 @@ function ProjectCard({ index, project }: ProjectCardProps) {
             initial={{ marginBottom: -340 }}
             animate={isHovered ? "expanded" : "collapsed"}
             transition={{
-              duration: 0.6,
-              delay: 0.1,
+              duration: 0.45,
+              delay: 0.2,
               ease: "easeOut",
             }}
             className={`flex flex-col gap-1 self-end`}
           >
             <span className="font-medium text-xl ml-1">{project.client}</span>
-            <SpanL className="text-surface font-light text-sm">{`Projects.Project.${project.id}.description`}</SpanL>
+            <SpanL className="font-light text-sm">{`Projects.Project.${project.id}.description`}</SpanL>
           </motion.div>
         </div>
       </Link>

@@ -6,8 +6,8 @@
   --primary-variant: #0a1b68;
   --secondary: #297ec4;
   --secondary-variant: #439a86;
-  --surface: #ebebeb;
-  --background: #fbfbfb;
+  --surface: #ffffff;
+  --background: #efefef;
   --on-primary: #fefefe;
   --on-secondary: #fefefe;
   --on-background: #1e2019;
@@ -54,7 +54,7 @@
   }
 
   body {
-    color: var(--on-primary);
+    color: var(--on-background);
     background: var(--background);
   }
 

@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { AnimatedSpanLProps } from "./SpanL.types";
 import { motion } from "motion/react";
+import { Fragment } from "react";
 
 export const SpanL = ({
   children,
@@ -20,11 +21,13 @@ export const SpanL = ({
   return (
     <motion.span
       style={style}
-      className={`${noWrap ? "" : "text-balance"} ${className}`}
+      className={`${noWrap ? "2" : "text-balance 1"} ${
+        className ? className : ""
+      }`}
       {...rest}
     >
       {lines.map((line, index) => (
-        <span key={index}>
+        <Fragment key={index}>
           {line}
           {index < lines.length - 1 && (
             <>
@@ -32,7 +35,7 @@ export const SpanL = ({
               <br />
             </>
           )}
-        </span>
+        </Fragment>
       ))}
     </motion.span>
   );

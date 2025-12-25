@@ -22,13 +22,15 @@ export const InputL = ({
 }: AnimatedInputLProps) => {
   const t = useTranslations();
 
+  const placeHolderText = placeholder ? t(placeholder) : "";
+
   const commonProps = {
-    className: `border border-primary/30 rounded-xl px-4 py-2 ${
+    className: `bg-surface rounded-sm px-4 py-3 shadow-md shadow-black/10 ${
       className || ""
     }`,
     style,
     name,
-    placeholder: placeholder ? t(placeholder) : "",
+    placeholder: placeHolderText + (required && !label ? " *" : ""),
     required,
     value,
     defaultValue,

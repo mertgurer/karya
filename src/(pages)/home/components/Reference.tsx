@@ -34,14 +34,15 @@ export const Reference = ({ index }: { index: number }) => {
       className="flex items-center w-full px-[5%] py-32 max-2xl:gap-8 max-2xl:pl-[7%] max-md:flex-col max-md:py-10 max-md:px-10"
     >
       <motion.div
-        variants={{ hidden: {}, show: {} }}
         initial="hidden"
-        whileInView="show"
+        whileInView="visible"
         className="relative flex flex-col h-max w-[40%] max-md:w-full"
       >
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          variants={{
+            hidden: { opacity: 0, y: 16 },
+            visible: { opacity: 1, y: 0 },
+          }}
           transition={{
             duration: 0.6,
             delay: 0.6,
@@ -53,19 +54,15 @@ export const Reference = ({ index }: { index: number }) => {
           <span className="">0{index}. </span>
           <SpanL className="font-semibold">Home.References.sectionTitle</SpanL>
         </motion.div>
-        <div className="relative">
+        <div className="relative flex">
           <SpanL
             variants={{
               hidden: { opacity: 0, y: 16 },
-              show: { opacity: 1, y: 0 },
+              visible: { opacity: 1, y: 0 },
             }}
-            transition={{
-              duration: 1,
-              delay: 0.3,
-              ease: "easeInOut",
-            }}
+            transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="text-5xl text-primary w-2/3"
+            className="text-5xl text-primary "
           >
             Home.References.title
           </SpanL>
@@ -76,7 +73,7 @@ export const Reference = ({ index }: { index: number }) => {
         <SpanL
           variants={{
             hidden: { opacity: 0, y: 16 },
-            show: { opacity: 1, y: 0 },
+            visible: { opacity: 1, y: 0 },
           }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
           viewport={{ once: true }}
