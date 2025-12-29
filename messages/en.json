@@ -14,6 +14,7 @@
     "learnMore": "Learn More",
     "selectOption": "Select an option",
     "seeAll": "See All",
+    "acceptedFormats": "Accepted Formats",
     "client": "Client",
     "date": "Date",
     "duration": "Duration",
@@ -249,6 +250,7 @@
       "phone": "Phone Number",
       "message": "Your Message",
       "submit": "Submit Message",
+      "reason": "Reason for Contact",
       "Reasons": {
         "general": "General Inquiry",
         "services": "Services Information",
@@ -270,6 +272,32 @@
   },
   "Careers": {
     "title": "Join Our Team",
-    "subtitle": "Build Your Future with Karya Engineering"
+    "subtitle": "Build Your Future with Karya Engineering",
+    "description": "Join us at Karya Engineering and be part of a dynamic team dedicated to excellence in electrical engineering. We are always looking for talented individuals who are passionate about making a difference in the industry. Whether you're an experienced professional or just starting your career, we offer opportunities for growth, learning, and development in a supportive work environment.",
+    "formTitle": "Application Form",
+    "formDescription": "Please fill out the form below to apply for a position with Karya Engineering. We look forward to reviewing your application and potentially welcoming you to our team.",
+    "Form": {
+      "nameSurname": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "position": "Position Applied For",
+      "resume": "Upload Resume",
+      "workedHere": "Have you worked with us before?",
+      "message": "Your Message",
+      "submit": "Submit Application",
+      "Positions": {
+        "engineer": "Engineer",
+        "projectManager": "Project Manager",
+        "manager": "Manager",
+        "intern": "Intern"
+      }
+    },
+    "Benefits": {
+      "competitiveSalary": "Competitive Salary",
+      "healthInsurance": "Health Insurance",
+      "careerGrowth": "Career Growth Opportunities",
+      "inclusiveEnvironment": "Inclusive Work Environment",
+      "trainingPrograms": "Ongoing Training Programs"
+    }
   }
 }

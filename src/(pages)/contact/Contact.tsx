@@ -7,39 +7,6 @@ import { motion } from "motion/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdMailOutline, MdOutlinePhoneEnabled } from "react-icons/md";
 
-const ContactFormFields = [
-  {
-    name: "name",
-    placeholder: "Contact.Form.name",
-    required: true,
-    type: InputType.TEXT,
-  },
-  {
-    name: "email",
-    placeholder: "Contact.Form.email",
-    required: true,
-    type: InputType.TEXT,
-  },
-  {
-    name: "subject",
-    placeholder: "Contact.Form.subject",
-    required: true,
-    type: InputType.TEXT,
-  },
-  {
-    name: "phone",
-    placeholder: "Contact.Form.phone",
-    required: false,
-    type: InputType.TEXT,
-  },
-  {
-    name: "message",
-    placeholder: "Contact.Form.message",
-    required: true,
-    type: InputType.TEXT_AREA,
-  },
-];
-
 const formReasonOptions = [
   { value: "general", label: "Contact.Form.Reasons.general" },
   { value: "services", label: "Contact.Form.Reasons.services" },
@@ -77,7 +44,7 @@ export const Contact = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.2 }}
+        viewport={{ amount: 0.6, once: true }}
         className="flex flex-col bg-secondary px-[13%] py-32 gap-36 max-2xl:px-[8%] max-md:px-[6%] max-md:py-16 max-md:gap-20"
       >
         <SpanL
@@ -108,21 +75,25 @@ export const Contact = () => {
             transition={{ delay: 0.5, duration: 0.3 }}
             className="flex-5 flex flex-col gap-4"
           >
-            <ComboBoxL options={formReasonOptions} required />
+            <ComboBoxL
+              options={formReasonOptions}
+              placeholder="Contact.Form.reason"
+              required
+            />
             <div className="flex gap-4 max-md:flex-col">
               <InputL
                 required
                 name="nameSurname"
                 placeholder="Contact.Form.nameSurname"
               />
-              <InputL required name="email" placeholder="Contact.Form.email" />
-            </div>
-            <div className="flex gap-4 max-md:flex-col">
               <InputL
                 required
                 name="subject"
                 placeholder="Contact.Form.subject"
               />
+            </div>
+            <div className="flex gap-4 max-md:flex-col">
+              <InputL required name="email" placeholder="Contact.Form.email" />
               <InputL name="phone" placeholder="Contact.Form.phone" />
             </div>
             <InputL

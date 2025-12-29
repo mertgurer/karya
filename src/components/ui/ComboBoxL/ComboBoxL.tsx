@@ -22,7 +22,7 @@ export const ComboBoxL = ({
   ...rest
 }: AnimatedComboBoxLProps) => {
   const t = useTranslations();
-  const placeHolderText = placeholder ? t(placeholder) : "Select an option";
+  const placeHolderText = placeholder ? t(placeholder) : null;
 
   const [internalValue, setInternalValue] = useState(defaultValue || "");
 
@@ -70,7 +70,9 @@ export const ComboBoxL = ({
       <div className="relative w-full">
         <motion.select {...commonProps}>
           <option value="" disabled hidden className="text-primary/40">
-            {placeHolderText} {required && !label ? " *" : ""}
+            {placeHolderText
+              ? `${placeHolderText}${required && !label ? " *" : ""}`
+              : ""}
           </option>
           {options.map((option) => (
             <option
