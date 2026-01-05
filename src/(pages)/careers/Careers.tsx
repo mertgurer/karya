@@ -88,7 +88,7 @@ export const Careers = () => {
             required
             type={InputType.TEXT_AREA}
             name="message"
-            placeholder="Contact.Form.message"
+            placeholder="Careers.Form.message"
           />
           <FileUploaderL
             variants={blockVariants}

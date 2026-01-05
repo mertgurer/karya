@@ -1,9 +1,5 @@
 "use client";
 
-import ServiceImage1 from "@/assets/images/home/services/service1.jpg";
-import ServiceImage2 from "@/assets/images/home/services/service2.jpg";
-import ServiceImage3 from "@/assets/images/home/services/service3.jpg";
-import ServiceImage4 from "@/assets/images/home/services/service4.jpg";
 import { SpanL } from "@/components/ui/SpanL";
 import { easeInOut, motion } from "motion/react";
 import { Lightning } from "./Lightning";
@@ -12,25 +8,7 @@ import { ButtonL } from "@/components/ui/ButtonL";
 import { Link } from "@/i18n";
 import { HiArrowRight } from "react-icons/hi";
 import { useLenis } from "lenis/react";
-
-const ServiceDetails = [
-  {
-    id: "ElectricalPower",
-    image: ServiceImage1,
-  },
-  {
-    id: "UndergroundUtilities",
-    image: ServiceImage2,
-  },
-  {
-    id: "RenewableEnergy",
-    image: ServiceImage3,
-  },
-  {
-    id: "Specialty",
-    image: ServiceImage4,
-  },
-];
+import { ServiceDetails } from "@/constants";
 
 export const Services = ({ index }: { index: number }) => {
   const lenis = useLenis();

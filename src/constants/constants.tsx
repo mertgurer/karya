@@ -3,9 +3,17 @@ import ProjectImage1 from "@/assets/images/home/projects/project1.jpg";
 import ProjectImage2 from "@/assets/images/home/projects/project2.jpg";
 import ProjectImage3 from "@/assets/images/home/projects/project3.jpg";
 import ProjectImage4 from "@/assets/images/home/projects/project4.jpg";
-import { Project, Service } from "@/(pages)/project/Project.types";
+import ServiceImage1 from "@/assets/images/home/services/service1.jpg";
+import ServiceImage2 from "@/assets/images/home/services/service2.jpg";
+import ServiceImage3 from "@/assets/images/home/services/service3.jpg";
+import ServiceImage4 from "@/assets/images/home/services/service4.jpg";
+import {
+  ProjectModel,
+  Service as ProjectServices,
+} from "@/(pages)/project/Project.types";
 import { GiMeshNetwork, GiPowerGenerator } from "react-icons/gi";
 import { FaHelmetSafety } from "react-icons/fa6";
+import { ServiceModel } from "@/(pages)/service";
 
 export const REGEX = {
   EMAIL: /\S+@\S+\.\S+/,
@@ -15,6 +23,10 @@ export const MOBILE_VIEW_WIDTH = 768;
 export const SCROLL_UPDATE_THRESHOLD = 80;
 
 export const NavigationLinks: NavigationButtonProps[] = [
+  {
+    label: "home",
+    href: "/",
+  },
   {
     label: "corporate",
     href: "/corporate",
@@ -49,19 +61,19 @@ const ElectricalService = {
   id: "electrical",
   label: "Projects.Services.electrical",
   icon: <GiPowerGenerator size={80} />,
-} as Service;
+} as ProjectServices;
 
 const SafetyService = {
   id: "safety",
   label: "Projects.Services.safety",
   icon: <FaHelmetSafety size={80} />,
-} as Service;
+} as ProjectServices;
 
 const CommunicationService = {
   id: "communication",
   label: "Projects.Services.communication",
   icon: <GiMeshNetwork size={80} />,
-} as Service;
+} as ProjectServices;
 
 export const ProjectDetails = [
   {
@@ -130,7 +142,7 @@ export const ProjectDetails = [
     services: [ElectricalService, SafetyService, CommunicationService],
     image: ProjectImage1,
   },
-] as Project[];
+] as ProjectModel[];
 
 export const DetailFields = [
   {
@@ -164,3 +176,22 @@ export const DetailFields = [
     unit: "sqm",
   },
 ];
+
+export const ServiceDetails = [
+  {
+    id: "engineering",
+    image: ServiceImage1,
+  },
+  {
+    id: "procurement",
+    image: ServiceImage2,
+  },
+  {
+    id: "construction",
+    image: ServiceImage3,
+  },
+  {
+    id: "commissioning",
+    image: ServiceImage4,
+  },
+] as ServiceModel[];

@@ -2,10 +2,10 @@ import { StaticImageData } from "next/image";
 import { JSX } from "react";
 
 export interface ProjectProps {
-  project: Project;
+  project: ProjectModel;
 }
 
-export interface Project {
+export interface ProjectModel {
   id: string;
   client: string;
   date: string;

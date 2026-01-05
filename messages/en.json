@@ -85,19 +85,7 @@
       "subtitle": "Engineering Solutions",
       "description": "Karya Engineering offers a comprehensive range of services tailored to meet the diverse needs of our clients. Our expertise spans multiple sectors, ensuring innovative solutions and exceptional results.",
       "linkText": "Discover our full range of services and how we can assist with your next project.",
-      "seeProject": "See Projects",
-      "ElectricalPower": {
-        "title": "ELECTRICAL POWER"
-      },
-      "UndergroundUtilities": {
-        "title": "UNDERGROUND UTILITY"
-      },
-      "RenewableEnergy": {
-        "title": "RENEWABLE ENERGY"
-      },
-      "Specialty": {
-        "title": "SPECIALTY"
-      }
+      "seeProject": "See Projects"
     },
     "References": {
       "sectionTitle": "Our Clients",
@@ -283,7 +271,7 @@
       "position": "Position Applied For",
       "resume": "Upload Resume",
       "workedHere": "Have you worked with us before?",
-      "message": "Your Message",
+      "message": "Cover Letter / Additional Information",
       "submit": "Submit Application",
       "Positions": {
         "engineer": "Engineer",
@@ -298,6 +286,28 @@
       "careerGrowth": "Career Growth Opportunities",
       "inclusiveEnvironment": "Inclusive Work Environment",
       "trainingPrograms": "Ongoing Training Programs"
+    }
+  },
+  "Services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive Electrical Engineering Solutions",
+    "secondTitle": "We offer a wide range of services to meet your electrical engineering needs.",
+    "description": "At Karya Engineering, we provide a full spectrum of electrical engineering services designed to support projects of all sizes and complexities. Our experienced team is equipped to handle every phase of the project lifecycle, from initial design and procurement to construction and commissioning. We are committed to delivering high-quality, efficient, and innovative solutions that align with our clients' goals and industry standards.",
+    "engineering": {
+      "title": "Engineering",
+      "description": "Our engineering services encompass comprehensive electrical system design, analysis, and optimization. We leverage cutting-edge technology and industry best practices to deliver innovative solutions that meet the unique needs of each project."
+    },
+    "procurement": {
+      "title": "Procurement",
+      "description": "We provide end-to-end procurement services, sourcing high-quality electrical components and materials from trusted suppliers. Our team ensures timely delivery and cost-effective solutions to support project timelines and budgets."
+    },
+    "construction": {
+      "title": "Construction",
+      "description": "Our construction services include the installation, testing, and commissioning of electrical systems. We prioritize safety, quality, and efficiency to ensure successful project completion and client satisfaction."
+    },
+    "commissioning": {
+      "title": "Commissioning",
+      "description": "We offer comprehensive commissioning services to verify that electrical systems are designed, installed, and functioning according to project specifications. Our team conducts thorough testing and documentation to ensure optimal performance and reliability."
     }
   }
 }
