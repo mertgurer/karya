@@ -3,11 +3,13 @@ import Image from "next/image";
 import { ServiceCardProps } from "../Home.types";
 import { useState } from "react";
 import { motion } from "motion/react";
+import { Link } from "@/i18n";
 
 function ServiceCard({ service }: ServiceCardProps) {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div
+    <Link
+      href={`/services/${service.id}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={() => setIsHovered(true)}
@@ -45,7 +47,7 @@ function ServiceCard({ service }: ServiceCardProps) {
           className="absolute -bottom-7 left-0 bg-surface h-1 origin-left max-md:-bottom-3"
         />
       </div>
-    </div>
+    </Link>
   );
 }
 

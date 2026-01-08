@@ -9,6 +9,7 @@ import { Link } from "@/i18n";
 import { HiArrowRight } from "react-icons/hi";
 import { useLenis } from "lenis/react";
 import { ServiceDetails } from "@/constants";
+import { LinkL } from "@/components/ui";
 
 export const Services = ({ index }: { index: number }) => {
   const lenis = useLenis();
@@ -96,7 +97,7 @@ export const Services = ({ index }: { index: number }) => {
             viewport={{ once: true }}
           >
             <Link
-              href="/corporate"
+              href="/services"
               className="group flex items-center gap-3 text-secondary mt-6 w-max"
             >
               <SpanL className="group-hover:translate-x-2 duration-700">
@@ -117,7 +118,8 @@ export const Services = ({ index }: { index: number }) => {
           >
             Home.Services.linkText
           </SpanL>
-          <ButtonL
+          <LinkL
+            href="/projects"
             initial={{ opacity: 0, x: -16 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
@@ -136,7 +138,7 @@ export const Services = ({ index }: { index: number }) => {
             className="bg-secondary text-on-secondary rounded-none! py-1.5 mt-5"
           >
             Home.Services.seeProject
-          </ButtonL>
+          </LinkL>
         </div>
       </motion.div>
       <div className="flex flex-col w-1/2 ml-[10%] max-2xl:ml-[7%] max-md:w-full max-md:mx-0">

@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image";
-import { Project } from "../project/Project.types";
+import { ProjectModel } from "../project";
 
 export interface ProjectCardProps {
   index: number;
-  project: Project;
+  project: ProjectModel;
 }
 
 export interface Blog {

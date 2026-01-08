@@ -41,7 +41,10 @@ function ProjectCard({ index, project }: ProjectCardProps) {
       viewport={{ once: true }}
       className={`flex z-30 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10)] shadow-background/20 rounded-xs overflow-hidden aspect-4/5 max-2xl:aspect-[0.65] max-md:aspect-[0.86] hover:-translate-y-2 hover:max-2xl:-translate-y-1 duration-700`}
     >
-      <Link href={"/"} className="relative flex w-full text-on-primary">
+      <Link
+        href={`/projects/${project.id}`}
+        className="relative flex w-full text-on-primary"
+      >
         <motion.div
           initial={{ filter: "grayscale(0)" }}
           animate={{
