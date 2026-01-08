@@ -42,20 +42,24 @@ export const ServiceSplitRow = ({
           onMouseEnter={() => setHoveredSide("left")}
           onMouseLeave={() => setHoveredSide(null)}
         >
-          <div className="relative w-full h-full grayscale-60 group-hover:grayscale-0 transition-all duration-500">
+          <div className="relative w-full h-full grayscale-80 group-hover:grayscale-0 duration-500">
             <Image
               src={leftService.image}
               alt={leftService.id}
               fill
-              className="object-cover group-hover:scale-105 transition-all duration-500"
+              className="object-cover group-hover:scale-105 duration-500"
             />
-            <div className="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/20 transition-all duration-500" />
+            <div className="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/20 duration-500" />
             <div className="absolute inset-0 flex flex-col justify-center items-center p-10 text-center pointer-events-none">
-              <div className="max-w-[40%] ml-10 mr-auto text-left group-hover:translate-x-20 transition-all duration-300">
-                <SpanL className="text-5xl font-medium block mb-6 group-hover:translate-x-4 transition-all duration-300">
+              <div
+                className="max-w-[40%] ml-10 mr-auto text-left p-6 rounded-md
+                            group-hover:bg-surface/70 group-hover:backdrop-blur-lg group-hover:text-on-surface/80 group-hover:translate-x-20 
+                            duration-500"
+              >
+                <SpanL className="text-5xl font-medium block mb-2 translate-y-full group-hover:translate-y-0 group-hover:translate-x-4 duration-500">
                   {`Services.${leftService.id}.title`}
                 </SpanL>
-                <SpanL className="font-medium text-lg opacity-80 group-hover:opacity-90">
+                <SpanL className="font-medium opacity-0 text-on-surface/80 group-hover:opacity-90 duration-300 group-hover:delay-200">
                   {`Services.${leftService.id}.description`}
                 </SpanL>
               </div>
@@ -78,20 +82,24 @@ export const ServiceSplitRow = ({
           onMouseEnter={() => setHoveredSide("right")}
           onMouseLeave={() => setHoveredSide(null)}
         >
-          <div className="relative w-full h-full grayscale-60 group-hover:grayscale-0 transition-all duration-500">
+          <div className="relative w-full h-full grayscale-80 group-hover:grayscale-0 duration-500">
             <Image
               src={rightService.image}
               alt={rightService.id}
               fill
-              className="object-cover group-hover:scale-105 transition-all duration-500"
+              className="object-cover group-hover:scale-105 duration-500"
             />
-            <div className="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/20 transition-all duration-500" />
+            <div className="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/20 duration-500" />
             <div className="absolute inset-0 flex flex-col justify-center items-center p-10 text-center pointer-events-none">
-              <div className="max-w-[40%] gap-5 mr-10 ml-auto text-right group-hover:-translate-x-20 transition-all duration-300">
-                <SpanL className="text-5xl font-medium block mb-6 group-hover:-translate-x-4 transition-all duration-300">
+              <div
+                className="max-w-[40%] gap-5 mr-10 ml-auto text-right p-6 rounded-md
+                            group-hover:bg-surface/70 group-hover:backdrop-blur-lg group-hover:text-on-surface/80 group-hover:-translate-x-20 
+                            duration-500"
+              >
+                <SpanL className="text-5xl font-medium block mb-2 translate-y-full group-hover:translate-y-0 group-hover:-translate-x-4 duration-500">
                   {`Services.${rightService.id}.title`}
                 </SpanL>
-                <SpanL className="font-medium text-lg opacity-80 group-hover:opacity-90">
+                <SpanL className="font-medium opacity-0 text-on-surface/80 group-hover:opacity-90 duration-300 group-hover:delay-200">
                   {`Services.${rightService.id}.description`}
                 </SpanL>
               </div>

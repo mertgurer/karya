@@ -293,9 +293,44 @@
     "subtitle": "Comprehensive Electrical Engineering Solutions",
     "secondTitle": "We offer a wide range of services to meet your electrical engineering needs.",
     "description": "At Karya Engineering, we provide a full spectrum of electrical engineering services designed to support projects of all sizes and complexities. Our experienced team is equipped to handle every phase of the project lifecycle, from initial design and procurement to construction and commissioning. We are committed to delivering high-quality, efficient, and innovative solutions that align with our clients' goals and industry standards.",
+    "label": "Our Expertise",
+    "keyFeatures": "Key Capabilities",
+    "benefitsTitle": "Why Choose Our Solutions",
+    "contactUs": "Contact Us",
     "engineering": {
       "title": "Engineering",
-      "description": "Our engineering services encompass comprehensive electrical system design, analysis, and optimization. We leverage cutting-edge technology and industry best practices to deliver innovative solutions that meet the unique needs of each project."
+      "description": "Our engineering services encompass comprehensive electrical system design, analysis, and optimization. We leverage cutting-edge technology and industry best practices to deliver innovative solutions that meet the unique needs of each project.",
+      "introduction": "Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and practical reality. From initial feasibility studies to complex detailed engineering, we utilize state-of-the-art simulation software and global best practices to ensure every project is safe, efficient, and innovative. Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and practical reality. From initial feasibility studies to complex detailed engineering, we utilize state-of-the-art simulation software and global best practices to ensure every project is safe, efficient, and innovative. Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and ",
+      "longDescription": "Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and practical reality. From initial feasibility studies to complex detailed engineering, we utilize state-of-the-art simulation software and global best practices to ensure every project is safe, efficient, and innovative.",
+      "pullQuote": "Engineering is not merely about construction; it is about creating a legacy of efficiency and safety.",
+      "ctaTitle": "Ready to engineer your vision?",
+      "ctaDescription": "Connect with our technical directors to discuss the specific requirements of your upcoming project.",
+      "features": {
+        "0": {
+          "title": "Feasibility Studies",
+          "description": "In-depth technical and economic analysis to determine project viability before major capital investment."
+        },
+        "1": {
+          "title": "Front-End Design (FEED)",
+          "description": "Establishing the technical requirements and rough investment costs to ensure project control."
+        },
+        "2": {
+          "title": "Detailed Engineering",
+          "description": "Full-scale 3D modeling, structural calculations, and MEP layouts ready for construction teams."
+        },
+        "3": {
+          "title": "Safety & Compliance",
+          "description": "Rigorous HAZOP studies and code compliance checks to meet international safety standards."
+        }
+      },
+      "benefits": {
+        "0": "Reduction in material waste through optimized design",
+        "1": "Full compliance with ISO 9001 & ISO 14001",
+        "2": "Seamless integration with procurement teams",
+        "3": "Advanced 3D visualization for stakeholder buy-in",
+        "4": "Risk mitigation through early-stage analysis",
+        "5": "Sustainable and energy-efficient methodologies"
+      }
     },
     "procurement": {
       "title": "Procurement",
