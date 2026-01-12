@@ -344,5 +344,70 @@
       "title": "Commissioning",
       "description": "We offer comprehensive commissioning services to verify that electrical systems are designed, installed, and functioning according to project specifications. Our team conducts thorough testing and documentation to ensure optimal performance and reliability."
     }
+  },
+  "Hse": {
+    "title": "HSE Commitment",
+    "subtitle": "Prioritizing Safety and Sustainability",
+    "Policy": {
+      "title": "HSE Policy",
+      "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of compliance with legal requirements, continuous improvement, and active engagement of all employees in HSE practices. We strive to minimize our environmental impact through sustainable practices and responsible resource management. By integrating HSE considerations into every aspect of our business, we aim to protect our people, communities, and the environment while delivering high-quality engineering solutions."
+    },
+    "Culture": {
+      "title": "A Culture of Safety",
+      "subtitleOne": "Construction Safety Week",
+      "textOne": "We are fully committed to providing a safe and healthy workplace for our employees, and accident prevention is paramount. Our highly-trained Safety Professionals diligently work to create an Injury, Incident and Impact Free (I-3 Free) environment on every project. This I-3 Free culture permeates our entire organization, as we continuously work to eliminate risk. We place this value above all others and strive to provide our people with the tools, equipment and working conditions that will help them safely and efficiently do their very best work.",
+      "subtitleTwo": "I-3 Free Environment",
+      "textTwo": "We are fully committed to providing a safe and healthy workplace for our employees, and accident prevention is paramount. Our highly-trained Safety Professionals diligently work to create an Injury, Incident and Impact Free (I-3 Free) environment on every project. This I-3 Free culture permeates our entire organization, as we continuously work to eliminate risk. We place this value above all others and strive to provide our people with the tools, equipment and working conditions that will help them safely and efficiently do their very best work."
+    },
+    "FocusAreas": {
+      "FocusAreaOne": {
+        "title": "Employee Safety",
+        "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preve."
+      },
+      "FocusAreaTwo": {
+        "title": "Environmental Stewardship",
+        "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is ile delivering high-quality engineering solutions."
+      },
+      "FocusAreaThree": {
+        "title": "Community Engagement",
+        "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of."
+      },
+      "FocusAreaFour": {
+        "title": "Regulatory Compliance",
+        "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incid."
+      }
+    },
+    "ManagementSystem": {
+      "title": "HSE Management Systems",
+      "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of compliance with legal requirements, continuous improvement, and active engagement of all employees in HSE practices. We strive to minimize our environmental impact through sustainable practices and responsible resource management. By integrating HSE considerations into every aspect of our business, we aim to protect our people, communities, and the environment while delivering high-quality engineering solutions. Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of compliance with legal requirements, continuous improvement, and active engagement of all employees in HSE practices. We strive to minimize our environmental impact through sustainable practices and responsible resource management. By integrating HSE considerations into every aspect of our business, we aim to protect our people, communities, and the environment while delivering high-quality engineering solutions."
+    },
+    "Competency": {
+      "title": "Training & Competency",
+      "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of compliance with legal requirements, continuous improvement, and active engagement of all employees in HSE practices. We strive to minimize our environmental impact through sustainable practices and responsible resource management. By integrating HSE considerations into every aspect of our business, we aim to protect our people, communities, and the environment while delivering high-quality engineering solutions. "
+    },
+    "Procedures": {
+      "title": "Training Procedures",
+      "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of compliance with legal requirements, continuous improvement, and active engagement of all employees in HSE practices. We strive to minimize our environmental impact through sustainable practices and responsible resource management. By integrating HSE considerations into every aspect of our business, we aim to protect our people, communities, and the environment while delivering high-quality engineering solutions."
+    },
+    "Performance": {
+      "title": "HSE Performance Metrics",
+      "description": "At Karya Engineering, we are committed to maintaining the highest standards of Health, Safety, and Environmental (HSE) performance. Our dedication to safety is reflected in our key performance metrics, which demonstrate our ongoing efforts to create a safe and sustainable work environment. We continuously monitor and evaluate our HSE practices to ensure we meet and exceed industry standards, fostering a culture of safety and responsibility across all levels of our organization.",
+      "safetyAudits": {
+        "title": "Safety Audits Conducted",
+        "value": "500+"
+      },
+      "safetyTrainingHours": {
+        "title": "Safety Training Hours Delivered",
+        "value": "10,000+"
+      },
+      "incidentReduction": {
+        "title": "Incident Rate Reduction",
+        "value": "30%"
+      }
+    },
+    "Environmental": {
+      "title": "Environmental Impact",
+      "description": "Karya Engineering is deeply committed to minimizing our environmental footprint and promoting sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions.<br/>sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions.sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions."
+    }
   }
 }
