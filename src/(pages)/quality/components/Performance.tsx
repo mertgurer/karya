@@ -50,7 +50,9 @@ export const Performance = () => {
             <span className="text-7xl font-extrabold text-secondary max-2xl:text-6xl max-2xl:font-bold">
               {metric.value}
             </span>
-            <SpanL className="text-lg opacity-80">{metric.description}</SpanL>
+            <SpanL noWrap className="text-lg opacity-80 text-center">
+              {metric.description}
+            </SpanL>
           </motion.div>
         ))}
       </div>
