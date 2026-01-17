@@ -29,7 +29,7 @@ export const Performance = () => {
               }}
               className="flex flex-col gap-3"
             >
-              <SpanL className="font-light text-justify text-surface text-8xl mask-t-to-100%">
+              <SpanL className="font-light text-justify text-surface text-8xl">
                 {`Hse.Performance.${item}.value`}
               </SpanL>
               <SpanL className="font-medium text-xl bg-surface px-2 py-1 rounded-sm text-secondary">

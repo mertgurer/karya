@@ -30,23 +30,26 @@ export const Footer = () => {
           />
         </Link>
         <div className="flex flex-col text-sm gap-2 items-end max-md:items-center">
-          <div className="flex gap-2 mb-5 max-2xl:mb-2">
+          <div className="flex flex-col gap-2 mb-5 max-2xl:mb-2">
             {routing.locales.map((locale) => {
               return (
                 <Link
                   key={locale}
                   href={pathname}
                   locale={locale}
-                  className="font-light relative h-7 aspect-[1.7]"
+                  className="font-light relative h-5 flex items-center gap-2"
                 >
-                  <Image
-                    src={Flags[locale as keyof typeof Flags]}
-                    alt={"logo"}
-                    fill
-                    priority
-                    sizes="100%"
-                    className="object-cover"
-                  />
+                  <span className="font-bold">{locale.toUpperCase()}</span>
+                  <div className="relative h-full aspect-[1.7]">
+                    <Image
+                      src={Flags[locale as keyof typeof Flags]}
+                      alt={"logo"}
+                      fill
+                      priority
+                      sizes="100%"
+                      className="object-cover"
+                    />
+                  </div>
                 </Link>
               );
             })}

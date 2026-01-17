@@ -409,5 +409,82 @@
       "title": "Environmental Impact",
       "description": "Karya Engineering is deeply committed to minimizing our environmental footprint and promoting sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions.<br/>sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions.sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions."
     }
+  },
+  "Quality": {
+    "title": "Quality Assurance",
+    "subtitle": "Commitment to Excellence",
+    "Policy": {
+      "title": "Policy",
+      "text": "Karya Engineering is committed to delivering the highest quality electrical engineering services that meet or exceed our clients' expectations. Our quality policy is centered on continuous improvement, adherence to industry standards, and a proactive approach to quality management. We strive to foster a culture of excellence where every team member is empowered to contribute to quality outcomes through rigorous processes, thorough training, and effective communication. By integrating quality considerations into every phase of our projects, we aim to ensure reliability, efficiency, and customer satisfaction in all our deliverables.<br/> that meet or exceed our clients' expectations. Our quality policy is centered on continuous improvement, adherence to industry standards, and a proactive approach to quality management. We strive to foster a culture of excellence where every team member is empowered to contribute to quality outcomes through rigorous processes, thorough training, and effective communication. By integrating quality considerations into every phase of our projects, we aim to ensure reliability, efficiency, and customer satisfaction in all our deliverables."
+    },
+    "Process": {
+      "title": "Assurance Process",
+      "text": "At Karya Engineering, our quality assurance process is designed to ensure that every project we undertake meets the highest standards of excellence.",
+      "Preparation": {
+        "title": "Preparation of a Method of Statement (MOS)",
+        "Points": {
+          "0": "Comprehensive review of project specifications and requirements",
+          "1": "Development of detailed procedures and protocols",
+          "2": "Identification of necessary resources and personnel"
+        }
+      },
+      "Inspection": {
+        "title": "Inspection and Test Plan (ITP)",
+        "Points": {
+          "0": "Establishment of inspection criteria and checkpoints",
+          "1": "Scheduling of inspections and tests throughout the project lifecycle",
+          "2": "Documentation of inspection results and corrective actions"
+        }
+      },
+      "Execution": {
+        "title": "Executing and Monitoring Operations",
+        "Points": {
+          "0": "Implementation of quality control measures during construction",
+          "1": "Regular monitoring and reporting of quality performance",
+          "2": "Continuous feedback loop for process improvement"
+        }
+      },
+      "Reporting": {
+        "title": "Inspection & Test Report (ITR)",
+        "Points": {
+          "0": "Comprehensive documentation of inspection and test results",
+          "1": "Analysis of quality data to identify trends and issues",
+          "2": "Final reporting to stakeholders with recommendations for future projects"
+        }
+      }
+    },
+    "Performance": {
+      "title": "Performance Metrics",
+      "description": "Karya Engineering is dedicated to maintaining the highest standards of quality assurance in all our projects. Our commitment to excellence is reflected in our key performance metrics, which demonstrate our ongoing efforts to deliver superior engineering solutions.",
+      "onTimeDelivery": "On-Time Delivery",
+      "projectsCompleted": "Projects Completed",
+      "customers": "Satisfied Customers"
+    },
+    "Documentation": {
+      "title": "Full Traceability & Transparent Reporting",
+      "description": "We believe that documentation is a critical component of quality assurance. Our comprehensive documentation practices ensure full traceability and transparent reporting throughout the project lifecycle. From initial planning to final delivery, we maintain detailed records of all processes, inspections, and tests to provide our clients with clear insights into project progress and quality outcomes. This commitment to thorough documentation not only supports effective communication but also facilitates continuous improvement and accountability in all our engineering endeavors.",
+      "Points": {
+        "records": "Detailed records of all quality assurance activities",
+        "transparency": "Transparent reporting to clients and stakeholders",
+        "traceability": "Comprehensive traceability from project inception to completion",
+        "compliance": "Ensuring compliance with industry standards and regulations",
+        "continuousImprovement": "Facilitating continuous improvement through documented feedback and lessons learned"
+      }
+    },
+    "Improvement": {
+      "title": "Continuous Improvement",
+      "motto": "Quality is a Journey, Not a Destination",
+      "text": "We are committed to the philosophy of continuous improvement in all aspects of our operations. We actively seek feedback from clients, employees, and stakeholders to identify areas for enhancement and innovation. Through regular training, process evaluations, and the adoption of best practices, we strive to elevate our quality standards and deliver exceptional engineering solutions that exceed expectations. Our dedication to continuous improvement ensures that we remain at the forefront of the industry, consistently delivering value and excellence in every project we undertake."
+    },
+    "Certificates": {
+      "title": "Our Quality Certificates",
+      "description": "Karya Engineering is proud to hold a range of quality certificates that demonstrate our commitment to excellence and adherence to industry standards. These certifications reflect our dedication to maintaining the highest levels of quality in all our engineering services, ensuring that we consistently meet or exceed client expectations. Our quality certificates serve as a testament to our rigorous quality management systems, continuous improvement efforts, and unwavering focus on delivering superior engineering solutions.",
+      "qualityManagement": "Quality Management Systems",
+      "occupationalHealth": "Occupational Health and Safety",
+      "environmentalManagement": "Environmental Management",
+      "uStamp": "ASME U Stamp",
+      "api6D": "API 6D",
+      "api650": "API 650"
+    }
   }
 }
