@@ -10,9 +10,9 @@ const PerformanceDetails = [
 
 export const Performance = () => {
   return (
-    <div className="flex flex-col px-[12%] py-36 bg-primary">
+    <div className="flex flex-col px-[12%] py-36 bg-primary max-2xl:px-[8%]">
       <SpanL className="text-4xl text-surface">Hse.Performance.title</SpanL>
-      <SpanL className="mt-8 mb-20 text-surface">
+      <SpanL className="mt-8 mb-20 text-surface max-2xl:text-sm">
         Hse.Performance.description
       </SpanL>
       <div className="flex justify-between items-center">
@@ -27,12 +27,12 @@ export const Performance = () => {
                 delay: index * 0.2,
                 ease: "easeInOut",
               }}
-              className="flex flex-col gap-3"
+              className="flex flex-col gap-3 items-center"
             >
-              <SpanL className="font-light text-justify text-surface text-8xl">
+              <SpanL className="font-light text-justify text-surface text-8xl max-2xl:text-6xl">
                 {`Hse.Performance.${item}.value`}
               </SpanL>
-              <SpanL className="font-medium text-xl bg-surface px-2 py-1 rounded-sm text-secondary">
+              <SpanL className="font-medium text-xl bg-surface px-2 py-1 rounded-sm text-secondary max-2xl:text-base">
                 {`Hse.Performance.${item}.title`}
               </SpanL>
             </motion.div>
@@ -46,7 +46,7 @@ export const Performance = () => {
                   delay: index * 0.2 + 0.1,
                   ease: "easeInOut",
                 }}
-                className="bg-surface/20 w-1 h-48 rotate-15 rounded-sm"
+                className="bg-surface/20 w-1 h-48 rotate-15 rounded-sm max-2xl:h-36"
               />
             )}
           </Fragment>

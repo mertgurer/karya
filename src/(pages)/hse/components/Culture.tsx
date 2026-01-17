@@ -6,7 +6,7 @@ import CultureImage from "@/assets/images/hse/culture.jpg";
 
 export const Culture = () => {
   return (
-    <div className="relative flex flex-col bg-primary px-[12%] pt-100">
+    <div className="relative flex flex-col bg-primary px-[12%] pt-100 max-2xl:px-[2%]">
       <div className="absolute w-[50%] top-0 right-[10%] aspect-[1.6] -translate-y-[42%] rounded-sm overflow-hidden">
         <Image
           src={PolicyImage}
@@ -17,14 +17,14 @@ export const Culture = () => {
           className="object-cover"
         />
       </div>
-      <SpanL className="text-5xl ml-1 font-semibold text-surface">
+      <SpanL className="text-5xl ml-1 font-semibold text-surface max-2xl:ml-10">
         Hse.Culture.title
       </SpanL>
       <motion.div
         initial={"hide"}
         whileInView={"show"}
         viewport={{ amount: 0.1 }}
-        className="flex flex-col gap-20 mt-24 mb-32"
+        className="flex flex-col gap-20 mt-24 mb-32 max-2xl:mt-12 max-2xl:gap-10"
       >
         <motion.div
           variants={{
@@ -44,11 +44,11 @@ export const Culture = () => {
               className="object-cover"
             />
           </div>
-          <div className="flex flex-col gap-4 my-auto pl-10 pr-5 text-justify">
+          <div className="flex flex-col gap-4 my-auto pl-10 pr-5 text-justify py-8">
             <SpanL className="text-3xl text-secondary font-medium">
               Hse.Culture.subtitleOne
             </SpanL>
-            <SpanL className="mb-2">Hse.Culture.textOne</SpanL>
+            <SpanL className="mb-2 max-2xl:text-sm">Hse.Culture.textOne</SpanL>
           </div>
         </motion.div>
         <motion.div
@@ -69,11 +69,11 @@ export const Culture = () => {
               className="object-cover"
             />
           </div>
-          <div className="flex flex-col gap-4 my-auto pl-5 pr-10 text-justify">
+          <div className="flex flex-col gap-4 my-auto pl-5 pr-10 text-justify py-8">
             <SpanL className="text-3xl text-secondary font-medium">
               Hse.Culture.subtitleTwo
             </SpanL>
-            <SpanL className="mb-2">Hse.Culture.textTwo</SpanL>
+            <SpanL className="mb-2 max-2xl:text-sm">Hse.Culture.textTwo</SpanL>
           </div>
         </motion.div>
       </motion.div>

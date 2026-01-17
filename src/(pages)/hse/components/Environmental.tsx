@@ -4,7 +4,7 @@ import CultureImage from "@/assets/images/hse/culture.jpg";
 
 export const Environmental = () => {
   return (
-    <div className="flex gap-10 px-[12%] py-28">
+    <div className="flex gap-10 px-[12%] py-28 max-2xl:px-[8%]">
       <div className="flex-1 relative rounded-sm overflow-hidden">
         <Image
           src={CultureImage}
@@ -19,7 +19,7 @@ export const Environmental = () => {
         <SpanL className="text-4xl ml-1 font-medium mb-10 text-primary">
           Hse.Environmental.title
         </SpanL>
-        <SpanL className="tracking-wider font-light">
+        <SpanL className="tracking-wider font-light max-2xl:text-sm">
           Hse.Environmental.description
         </SpanL>
       </div>

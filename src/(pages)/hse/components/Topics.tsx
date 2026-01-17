@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 export const Topics = () => {
   return (
-    <div className="flex flex-col gap-24 mt-32 mb-48 px-[12%]">
+    <div className="flex flex-col gap-24 mt-32 mb-48 px-[12%] max-2xl:px-[8%]">
       <motion.div
         initial={{ opacity: 0, translateX: 16 }}
         whileInView={{ opacity: 1, translateX: 0 }}
@@ -21,7 +21,7 @@ export const Topics = () => {
             Hse.ManagementSystem.title
           </SpanL>
         </div>
-        <SpanL className="tracking-wider text-justify font-light">
+        <SpanL className="tracking-wider text-justify font-light max-2xl:text-sm">
           Hse.ManagementSystem.text
         </SpanL>
       </motion.div>
@@ -49,7 +49,7 @@ export const Topics = () => {
               Hse.Competency.title
             </SpanL>
           </div>
-          <SpanL className="tracking-wider text-justify font-light mb-4">
+          <SpanL className="tracking-wider text-justify font-light mb-4 max-2xl:text-sm">
             Hse.Competency.text
           </SpanL>
         </div>
@@ -68,7 +68,7 @@ export const Topics = () => {
               Hse.Procedures.title
             </SpanL>
           </div>
-          <SpanL className="tracking-wider text-justify font-light">
+          <SpanL className="tracking-wider text-justify font-light max-2xl:text-sm">
             Hse.Procedures.text
           </SpanL>
         </div>

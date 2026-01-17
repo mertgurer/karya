@@ -4,7 +4,7 @@ import PolicyImage from "@/assets/images/hse/policy-2.jpg";
 
 export const Policy = () => {
   return (
-    <div className="flex flex-col px-[12%] py-20">
+    <div className="flex flex-col px-[12%] py-20 max-2xl:px-[8%]">
       <SpanL className="text-5xl ml-1 font-semibold mb-12 text-primary">
         Hse.Policy.title
       </SpanL>
