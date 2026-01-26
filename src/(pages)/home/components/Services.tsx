@@ -28,7 +28,7 @@ export const Services = ({ index }: { index: number }) => {
         className="mr-[10%] ml-[3%] flex-1 max-2xl:mr-[5%] max-md:mx-5"
       >
         <div className="relative flex flex-col self-end text-end -mt-40 mr-20 max-md:mr-5">
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
@@ -41,7 +41,7 @@ export const Services = ({ index }: { index: number }) => {
           >
             <span className="">0{index}. </span>
             <SpanL className="font-semibold">Home.Services.sectionTitle</SpanL>
-          </motion.div>
+          </motion.div> */}
           <SpanL
             variants={{
               hidden: { opacity: 0, y: 16 },
@@ -118,7 +118,7 @@ export const Services = ({ index }: { index: number }) => {
           >
             Home.Services.linkText
           </SpanL>
-          <LinkL
+          {/* <LinkL
             href="/projects"
             initial={{ opacity: 0, x: -16 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -138,7 +138,7 @@ export const Services = ({ index }: { index: number }) => {
             className="bg-secondary text-on-secondary rounded-none! py-1.5 mt-5"
           >
             Home.Services.seeProject
-          </LinkL>
+          </LinkL> */}
         </div>
       </motion.div>
       <div className="flex flex-col w-1/2 ml-[10%] max-2xl:ml-[7%] max-md:w-full max-md:mx-0">

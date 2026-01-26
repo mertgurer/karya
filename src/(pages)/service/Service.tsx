@@ -134,23 +134,6 @@ export const Service = ({ service }: ServiceProps) => {
             ))}
           </div>
         </div>
-
-        {/* 6. BOTTOM CTA */}
-        <div className="flex flex-col items-center gap-6 mt-10 p-10 bg-primary/5 rounded-lg text-center">
-          <SpanL className="text-2xl font-medium text-primary">
-            {`Services.${service.id}.ctaTitle`}
-          </SpanL>
-          <SpanL className="text-on-background/70 max-w-2xl">
-            {`Services.${service.id}.ctaDescription`}
-          </SpanL>
-          <LinkL
-            href="/contact"
-            className="bg-primary text-on-primary px-8 py-4 text-lg font-medium rounded-sm shadow-lg hover:-translate-y-1 transition-transform"
-            afterElement={<IoArrowForward />}
-          >
-            Services.contactUs
-          </LinkL>
-        </div>
       </div>
     </div>
   );

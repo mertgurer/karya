@@ -49,7 +49,7 @@ export const Project = ({ project }: ProjectProps) => {
               className="text-lg mt-10 font-light max-2xl:text-base"
             >{`Projects.Project.${project.id}.description`}</SpanL>
           </div>
-          <div className="flex flex-col gap-3 px-7 mb-16 max-md:px-5">
+          {/* <div className="flex flex-col gap-3 px-7 mb-16 max-md:px-5">
             <SpanL className="text-secondary font-semibold">
               Projects.certificates
             </SpanL>
@@ -63,7 +63,7 @@ export const Project = ({ project }: ProjectProps) => {
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-8 px-7 max-2xl:gap-4 max-md:px-5">
             <SpanL className="text-secondary font-semibold">
               Projects.services
@@ -130,14 +130,14 @@ export const Project = ({ project }: ProjectProps) => {
                       <span>
                         {formatProjectDate(
                           project[field.key as keyof typeof Project],
-                          locale
+                          locale,
                         )}
                       </span>
                     ) : field.valueForm === "number" ? (
                       <span>
                         {formatProjectNumber(
                           project[field.key as keyof typeof Project],
-                          locale
+                          locale,
                         )}
                       </span>
                     ) : (
@@ -149,14 +149,14 @@ export const Project = ({ project }: ProjectProps) => {
               </Fragment>
             ))}
           </div>
-          <ButtonL
+          {/* <ButtonL
             afterElement={<IoCloudDownloadOutline size={24} />}
             className="
               self-stretch w-full! py-3 px-6 rounded-none! font-medium text-lg justify-between bg-secondary mt-20 
               shadow-md shadow-black/20 hover:-translate-y-1 duration-300 max-2xl:text-base max-md:mt-10"
           >
             Projects.projectPresentation
-          </ButtonL>
+          </ButtonL> */}
         </div>
       </div>
     </div>

@@ -41,9 +41,9 @@ export const Performance = ({ index }: { index: number }) => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="absolute top-0 w-0.5 bg-on-primary z-10 left-[15%] max-2xl:left-[10%] max-md:left-5"
         />
-        <div className="flex flex-col gap-3 pt-32 pb-28 max-md:pt-24 max-md:pb-0">
+        <div className="flex flex-col gap-3 pt-40 pb-28 max-md:pt-24 max-md:pb-0">
           <div className="flex flex-col gap-3 px-[15%] max-2xl:px-[10%] ml-10 max-2xl:ml-6 max-md:px-3">
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
@@ -58,7 +58,7 @@ export const Performance = ({ index }: { index: number }) => {
               <SpanL className="font-semibold">
                 Home.Performance.sectionTitle
               </SpanL>
-            </motion.div>
+            </motion.div> */}
             <SpanL
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}

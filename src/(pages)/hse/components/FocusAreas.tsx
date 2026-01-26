@@ -22,7 +22,7 @@ const FocusAreaDetails = [
 
 export const FocusAreas = () => {
   return (
-    <div className="flex mt-60 mb-44 px-[8%] justify-between gap-14 max-2xl:px-[4%]">
+    <div className="flex my-60 px-[8%] justify-between gap-14 max-2xl:px-[4%]">
       {FocusAreaDetails.map((area, index) => (
         <motion.div
           key={index}

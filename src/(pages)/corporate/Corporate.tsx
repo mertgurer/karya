@@ -7,21 +7,29 @@ import { About } from "./components/About";
 import { Values } from "./components/Values";
 import { Mission } from "./components/Mission";
 import { Brochure } from "./components/Brochure";
-import { Global } from "./components/Global";
 import { Privacy } from "./components/Privacy";
 import { WelcomeHeader } from "@/components/layout/WelcomeHeader";
+import { useSearchParams } from "next/navigation";
 
 const CorporateTabs = [
   { id: "about", view: <About /> },
   { id: "values", view: <Values /> },
   { id: "mission", view: <Mission /> },
   { id: "brochure", view: <Brochure /> },
-  { id: "presence", view: <Global /> },
   { id: "privacyPolicy", view: <Privacy /> },
 ];
 
 export const Corporate = () => {
-  const [selectedTabIndex, setSelectedTabIndex] = useState(0);
+  const searchParams = useSearchParams();
+
+  const [selectedTabIndex, setSelectedTabIndex] = useState(() => {
+    console.log(searchParams.has("privacy"));
+
+    if (searchParams.has("privacy")) {
+      return 4;
+    }
+    return 0;
+  });
 
   return (
     <div className="flex flex-col w-full">

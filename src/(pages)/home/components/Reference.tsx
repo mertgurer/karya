@@ -38,7 +38,7 @@ export const Reference = ({ index }: { index: number }) => {
         whileInView="visible"
         className="relative flex flex-col h-max w-[40%] max-md:w-full"
       >
-        <motion.div
+        {/* <motion.div
           variants={{
             hidden: { opacity: 0, y: 16 },
             visible: { opacity: 1, y: 0 },
@@ -53,7 +53,7 @@ export const Reference = ({ index }: { index: number }) => {
         >
           <span className="">0{index}. </span>
           <SpanL className="font-semibold">Home.References.sectionTitle</SpanL>
-        </motion.div>
+        </motion.div> */}
         <div className="relative flex">
           <SpanL
             variants={{

@@ -18,7 +18,7 @@ export const About = ({ index }: { index: number }) => {
           viewport={{ once: true }}
           className="h-32 w-0.5 bg-primary z-10 max-md:h-20"
         />
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -31,7 +31,7 @@ export const About = ({ index }: { index: number }) => {
         >
           <span className="">0{index}. </span>
           <SpanL className="font-semibold">Home.About.sectionTitle</SpanL>
-        </motion.div>
+        </motion.div> */}
       </div>
       <div className="absolute bottom-0 flex flex-col gap-2 h-36 w-0.5 bg-primary z-10 max-md:h-16" />
       <motion.div

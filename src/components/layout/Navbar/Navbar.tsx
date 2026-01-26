@@ -3,7 +3,7 @@
 import { MenuButton } from "./MenuButton";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Logo from "@/assets/images/logo.png";
+import Logo from "@/assets/images/logo.svg";
 import { NavigationLinks, SCROLL_UPDATE_THRESHOLD } from "@/constants";
 import { NavigationButton } from "./NavigationButton";
 import { useLenis } from "lenis/react";
@@ -54,7 +54,10 @@ export const Navbar = () => {
          }
         max-md:h-20 max-md:px-8 max-2xl:px-14 duration-500`}
     >
-      <Link href={"/"} className="relative h-[52px] aspect-[2]">
+      <Link
+        href={"/"}
+        className={`relative h-[52px] aspect-[2.29] ${isScrolled || !hideNavbar ? "" : "scale-110"} duration-300`}
+      >
         <Image
           src={Logo}
           alt={"logo"}

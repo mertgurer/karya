@@ -28,7 +28,7 @@ export const Lightning = ({
           light ? "bg-surface" : "bg-primary"
         }`}
       />
-      <div className="absolute bottom-0">
+      {/* <div className="absolute bottom-0">
         <div
           className={`absolute w-0.5 h-5 -translate-y-4.5 ${
             reverse
@@ -43,7 +43,7 @@ export const Lightning = ({
             reverse ? "-left-3.5" : "left-3.5"
           } ${light ? "bg-surface" : "bg-primary"}`}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

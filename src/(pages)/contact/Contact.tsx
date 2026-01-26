@@ -3,6 +3,8 @@
 import Welcome from "@/assets/images/contact/welcome.jpg";
 import { WelcomeHeader } from "@/components/layout/WelcomeHeader";
 import { ButtonL, ComboBoxL, InputL, InputType, SpanL } from "@/components/ui";
+import { Addresses } from "@/constants";
+import { Link } from "@/i18n";
 import { motion } from "motion/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdMailOutline, MdOutlinePhoneEnabled } from "react-icons/md";
@@ -13,19 +15,6 @@ const formReasonOptions = [
   { value: "careers", label: "Contact.Form.Reasons.careers" },
   { value: "partnership", label: "Contact.Form.Reasons.partnership" },
   { value: "other", label: "Contact.Form.Reasons.other" },
-];
-
-const Addresses = [
-  {
-    key: "turkey",
-    phone: "+1 234 567 8900",
-    email: "karya@example.com",
-  },
-  {
-    key: "usa",
-    phone: "+1 234 567 8900",
-    email: "karya@example.com",
-  },
 ];
 
 const blockVariants = {
@@ -144,16 +133,29 @@ export const Contact = () => {
               <FaMapMarkerAlt size={16} />
               <SpanL className="text-lg">{`Contact.Addresses.${address.key}.title`}</SpanL>
             </div>
-            <SpanL className="font-light">{`Contact.Addresses.${address.key}.address`}</SpanL>
+            <Link
+              href={`https://www.google.com/maps/search/?api=1&query=${address.coordinates.lat},${address.coordinates.lng}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-light hover:text-secondary transition-colors cursor-pointer text-left"
+            >
+              <SpanL className="font-light">{`Contact.Addresses.${address.key}.address`}</SpanL>
+            </Link>
             <div className="flex flex-col">
-              <div className="flex gap-3 items-center">
+              <Link
+                href={`tel:${address.phone}`}
+                className="flex gap-2 items-center hover:text-secondary transition-colors group"
+              >
                 <MdOutlinePhoneEnabled />
                 <span>{address.phone}</span>
-              </div>
-              <div className="flex gap-3 items-center">
+              </Link>
+              <Link
+                href={`mailto:${address.email}`}
+                className="flex gap-2 items-center hover:text-secondary transition-colors group"
+              >
                 <MdMailOutline />
                 <span>{address.email}</span>
-              </div>
+              </Link>
             </div>
           </motion.div>
         ))}

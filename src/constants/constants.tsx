@@ -195,3 +195,18 @@ export const ServiceDetails = [
     image: ServiceImage4,
   },
 ] as ServiceModel[];
+
+export const Addresses = [
+  {
+    key: "turkey",
+    coordinates: { lat: 39.9334, lng: 32.8597 },
+    phone: "+1 234 567 8900",
+    email: "karya@example.com",
+  },
+  {
+    key: "usa",
+    coordinates: { lat: 37.7749, lng: -122.4194 },
+    phone: "+1 234 567 8900",
+    email: "karya@example.com",
+  },
+];

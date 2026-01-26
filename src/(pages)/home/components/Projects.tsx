@@ -17,7 +17,7 @@ export const Projects = ({ index }: { index: number }) => {
         whileInView="show"
         className="relative flex flex-col w-[34%] -translate-x-[5px] self-end max-2xl:w-[33.6%] max-md:w-full max-md:px-8"
       >
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -30,7 +30,7 @@ export const Projects = ({ index }: { index: number }) => {
         >
           <span className="">0{index}. </span>
           <SpanL className="font-semibold">Home.Projects.sectionTitle</SpanL>
-        </motion.div>
+        </motion.div> */}
         <SpanL
           variants={{
             hidden: { opacity: 0, y: 16 },

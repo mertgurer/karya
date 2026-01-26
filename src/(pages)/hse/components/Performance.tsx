@@ -1,6 +1,8 @@
 import { SpanL } from "@/components/ui";
 import { motion } from "motion/react";
-import React, { Fragment } from "react";
+import Image from "next/image";
+import { Fragment } from "react";
+import PolicyImage from "@/assets/images/hse/policy.jpg";
 
 const PerformanceDetails = [
   "safetyAudits",
@@ -10,7 +12,17 @@ const PerformanceDetails = [
 
 export const Performance = () => {
   return (
-    <div className="flex flex-col px-[12%] py-36 bg-primary max-2xl:px-[8%]">
+    <div className="relative pt-120 flex flex-col px-[12%] py-36 bg-primary max-2xl:px-[8%]">
+      <div className="absolute w-[50%] top-0 left-[5%] aspect-[1.6] -translate-y-[42%] rounded-sm overflow-hidden">
+        <Image
+          src={PolicyImage}
+          alt="hse-policy"
+          fill
+          priority
+          sizes="100%"
+          className="object-cover"
+        />
+      </div>
       <SpanL className="text-4xl text-surface">Hse.Performance.title</SpanL>
       <SpanL className="mt-8 mb-20 text-surface max-2xl:text-sm">
         Hse.Performance.description
