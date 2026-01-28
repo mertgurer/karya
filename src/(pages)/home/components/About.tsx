@@ -8,7 +8,7 @@ export const About = ({ index }: { index: number }) => {
   return (
     <section
       id="about"
-      className="relative flex justify-between w-full pl-[15%] pr-[12%] gap-[8%] max-2xl:pl-[10%] max-2xl:pr-[8%] max-md:flex-col max-md:px-5"
+      className="relative flex justify-between w-full pl-[15%] pr-[12%] gap-[8%] z-20 max-2xl:pl-[10%] max-2xl:pr-[8%] max-md:flex-col max-md:px-5"
     >
       <div className="absolute top-0 flex flex-col gap-2 max-md:ml-2">
         <motion.div
@@ -38,7 +38,7 @@ export const About = ({ index }: { index: number }) => {
         initial="hidden"
         whileInView="show"
         viewport={{ amount: 0.5 }}
-        className="flex flex-col gap-4 w-[65%] -ml-2 mt-52 mb-40 text-primary max-md:w-full max-md:ml-0 max-md:mt-36 max-md:mb-20"
+        className="flex flex-col gap-4 w-[65%] -ml-2 mt-52 mb-40 max-md:w-full max-md:ml-0 max-md:mt-36 max-md:mb-20"
       >
         <SpanL
           variants={{
@@ -46,7 +46,7 @@ export const About = ({ index }: { index: number }) => {
             show: { opacity: 1, y: 0 },
           }}
           transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-          className="text-5xl mb-1 max-md:text-4xl"
+          className="text-5xl mb-1 text-primary max-md:text-4xl"
         >
           Home.About.title
         </SpanL>
@@ -79,14 +79,7 @@ export const About = ({ index }: { index: number }) => {
         viewport={{ once: true }}
         className="relative w-[35%] aspect-[0.65] self-end translate-y-32 z-10 rounded-sm overflow-hidden shadow-[0_0px_10px_0px_rgba(0,0,0,0.20)] max-md:hidden"
       >
-        <Image
-          src={AboutImage}
-          alt="about-image"
-          fill
-          priority
-          sizes="100%"
-          className="object-cover"
-        />
+        <Image src={AboutImage} alt="about-image" fill priority sizes="100%" className="object-cover" />
       </motion.div>
     </section>
   );

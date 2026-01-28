@@ -33,18 +33,16 @@ function ProjectCard({ index, project }: ProjectCardProps) {
       onTouchEnd={() => setIsHovered(false)}
       initial={{ scale: 0.95, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
+      whileHover={{ y: -8, transition: { duration: 0.7 } }}
       transition={{
         duration: 1.2,
         delay: index * 0.1,
         ease: "easeInOut",
       }}
       viewport={{ once: true }}
-      className={`flex z-30 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10)] shadow-background/20 rounded-xs overflow-hidden aspect-4/5 max-2xl:aspect-[0.65] max-md:aspect-[0.86] hover:-translate-y-2 hover:max-2xl:-translate-y-1 duration-700`}
+      className={`flex z-30 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10)] shadow-background/20 rounded-sm overflow-hidden aspect-4/5 max-2xl:aspect-[0.65] max-md:aspect-[0.86]`}
     >
-      <Link
-        href={`/projects/${project.id}`}
-        className="relative flex w-full text-on-primary"
-      >
+      <Link href={`/projects/${project.id}`} className="relative flex w-full text-on-primary">
         <motion.div
           initial={{ filter: "grayscale(0)" }}
           animate={{
@@ -53,14 +51,7 @@ function ProjectCard({ index, project }: ProjectCardProps) {
           transition={{ duration: 1.0, ease: "easeInOut" }}
           className="absolute inset-0 h-full w-full"
         >
-          <Image
-            src={project.image}
-            alt={project.id}
-            fill
-            priority
-            sizes="100%"
-            className="object-cover"
-          />
+          <Image src={project.image} alt={project.id} fill priority sizes="100%" className="object-cover" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
@@ -88,9 +79,7 @@ function ProjectCard({ index, project }: ProjectCardProps) {
               <IoMdPin size={16} />
               <SpanL className="font-light max-2xl:text-sm">{`Projects.Project.${project.id}.location`}</SpanL>
             </div>
-            <SpanL className="font-semibold text-3xl max-2xl:text-2xl">
-              {`Projects.Project.${project.id}.title`}
-            </SpanL>
+            <SpanL className="font-semibold text-3xl max-2xl:text-2xl">{`Projects.Project.${project.id}.title`}</SpanL>
           </motion.div>
 
           <motion.div

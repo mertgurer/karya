@@ -16,11 +16,7 @@ export const Projects = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <WelcomeHeader
-        image={Welcome}
-        title={"Projects.title"}
-        subtitle={"Projects.subtitle"}
-      />
+      <WelcomeHeader image={Welcome} title={"Projects.title"} subtitle={"Projects.subtitle"} />
       <div className="grid grid-cols-3 w-full px-[14%] py-32 gap-10 max-2xl:px-[8%] max-md:grid-cols-1 max-md:gap-5 max-md:py-20">
         {ProjectDetails.map((x, index) => (
           <motion.div
@@ -34,19 +30,9 @@ export const Projects = () => {
               ease: "easeInOut",
             }}
           >
-            <Link
-              href={`projects/${x.id}`}
-              className="group flex flex-col w-full aspect-[1.1] text-primary rounded-sm overflow-hidden"
-            >
+            <Link href={`projects/${x.id}`} className="group flex flex-col w-full aspect-[1.1] rounded-sm overflow-hidden">
               <div className="relative w-full h-[66%] overflow-hidden">
-                <Image
-                  src={x.image}
-                  alt={`${x.id}-image`}
-                  fill
-                  priority
-                  sizes="100%"
-                  className="object-cover"
-                />
+                <Image src={x.image} alt={`${x.id}-image`} fill priority sizes="100%" className="object-cover" />
                 <div className="absolute top-3 right-3 p-1 rounded-xs text-on-primary text-sm bg-black/20 backdrop-blur-md opacity-0 group-hover:opacity-100 duration-300">
                   {formatProjectDate(x.date, locale)}
                 </div>
@@ -55,7 +41,7 @@ export const Projects = () => {
                 </div>
               </div>
               <div className="flex flex-col group-hover:ml-2 duration-300">
-                <div className="flex items-center gap-1 opacity-70 my-2">
+                <div className="flex items-center gap-1 opacity-70 my-2 text-primary">
                   <IoMdPin size={16} />
                   <SpanL className="max-2xl:text-sm">{`Projects.Project.${x.id}.location`}</SpanL>
                 </div>

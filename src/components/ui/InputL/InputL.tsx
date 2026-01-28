@@ -25,30 +25,20 @@ export const InputL = ({
   const placeHolderText = placeholder ? t(placeholder) : "";
 
   const commonProps = {
-    className: `bg-surface rounded-sm px-4 py-3 shadow-md shadow-black/10 ${
-      className || ""
-    }`,
+    className: `bg-surface rounded-sm px-4 py-3 shadow-md shadow-black/10 ${className || ""}`,
     style,
     name,
     placeholder: placeHolderText + (required && !label ? " *" : ""),
     required,
     value,
     defaultValue,
-    onChange:
-      onValueChange && !onBlur
-        ? (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-            onValueChange(e.target.value)
-        : undefined,
-    onBlur:
-      onValueChange && onBlur
-        ? (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-            onValueChange(e.target.value)
-        : undefined,
+    onChange: onValueChange && !onBlur ? (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => onValueChange(e.target.value) : undefined,
+    onBlur: onValueChange && onBlur ? (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => onValueChange(e.target.value) : undefined,
     ...rest,
   };
 
   return (
-    <div className="flex flex-col gap-1 w-full text-primary">
+    <div className="flex flex-col gap-1 w-full">
       {label && (
         <div className="flex gap-1 ml-1">
           <SpanL>{label}</SpanL> {required && "*"}
@@ -56,15 +46,9 @@ export const InputL = ({
       )}
 
       {type === "text-area" ? (
-        <motion.textarea
-          {...commonProps}
-          className={`${commonProps.className} min-h-44 max-md:min-h-32`}
-        />
+        <motion.textarea {...commonProps} className={`${commonProps.className} min-h-44 max-md:min-h-32`} />
       ) : (
-        <motion.input
-          {...commonProps}
-          type={type === InputType.PASSWORD ? "password" : "text"}
-        />
+        <motion.input {...commonProps} type={type === InputType.PASSWORD ? "password" : "text"} />
       )}
     </div>
   );

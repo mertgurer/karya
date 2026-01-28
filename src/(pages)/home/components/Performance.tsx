@@ -30,11 +30,8 @@ const PerformanceStats = [
 
 export const Performance = ({ index }: { index: number }) => {
   return (
-    <section
-      id="performance"
-      className="relative w-full shadow-[0_-20px_25px_-5px_rgba(0,0,0,0.20)] overflow-hidden"
-    >
-      <div className="bg-primary z-10">
+    <section id="performance" className="relative w-full shadow-[0_-20px_25px_-5px_rgba(0,0,0,0.20)] overflow-hidden z-10">
+      <div className="bg-primary-variant z-10">
         <motion.div
           initial={{ height: 0 }}
           whileInView={{ height: "288px" }}
@@ -95,20 +92,14 @@ export const Performance = ({ index }: { index: number }) => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
                       duration: 0.6,
-                      delay:
-                        Math.abs((PerformanceStats.length - 1) / 2 - index) *
-                        0.6,
+                      delay: Math.abs((PerformanceStats.length - 1) / 2 - index) * 0.6,
                       ease: "easeInOut",
                     }}
                     className="flex flex-col items-center"
                   >
-                    <div className="flex items-center justify-center text-secondary mb-5 w-[72px] aspect-square">
-                      {stat.icon}
-                    </div>
+                    <div className="flex items-center justify-center text-secondary mb-5 w-[72px] aspect-square">{stat.icon}</div>
                     <SpanL className="text-on-primary mb-1">{`Home.Performance.${stat.label}`}</SpanL>
-                    <span className="text-5xl text-on-primary whitespace-nowrap">
-                      {stat.value}
-                    </span>
+                    <span className="text-5xl text-on-primary whitespace-nowrap">{stat.value}</span>
                   </motion.div>
                   {index < PerformanceStats.length - 1 && (
                     <motion.div
@@ -116,9 +107,7 @@ export const Performance = ({ index }: { index: number }) => {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{
                         duration: 0.6,
-                        delay:
-                          Math.abs(PerformanceStats.length / 2 - 1 - index) *
-                          0.6,
+                        delay: Math.abs(PerformanceStats.length / 2 - 1 - index) * 0.6,
                         ease: "easeInOut",
                       }}
                       className="h-10 w-px bg-on-primary mx-auto max-md:hidden"
@@ -131,7 +120,7 @@ export const Performance = ({ index }: { index: number }) => {
         </div>
       </div>
       <div className="overflow-hidden h-48 -translate-y-1">
-        <div className="bg-primary h-32 scale-150 -translate-y-[65%] -rotate-3 shadow-xl shadow-black/20 z-0" />
+        <div className="bg-primary-variant h-32 scale-150 -translate-y-[65%] -rotate-3 shadow-xl shadow-black/20 z-0" />
       </div>
     </section>
   );

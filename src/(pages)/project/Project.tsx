@@ -18,14 +18,7 @@ export const Project = ({ project }: ProjectProps) => {
   return (
     <div className="flex flex-col">
       <div className="relative inset-0 h-[60vh] max-md:h-[40vh]">
-        <Image
-          src={project.image}
-          alt={`${project.id}-image`}
-          fill
-          priority
-          sizes="100%"
-          className="object-cover"
-        />
+        <Image src={project.image} alt={`${project.id}-image`} fill priority sizes="100%" className="object-cover" />
         <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent" />
       </div>
       <div className="flex gap-[12%] pl-[10%] pr-[13%] -mt-32 mb-20 z-10 max-2xl:pl-[6%] max-2xl:pr-[9%] max-2xl:gap-[8%] max-md:flex-col max-md:gap-10 max-md:px-[3%]">
@@ -37,9 +30,7 @@ export const Project = ({ project }: ProjectProps) => {
             className="px-7 pb-5 text-5xl font-semibold text-on-primary max-2xl:text-4xl max-md:px-5"
           >{`Projects.Project.${project.id}.location`}</SpanL>
           <div className="flex flex-col px-7 pt-20 mb-16 bg-background text-on-background max-2xl:pt-16 max-2xl:mb-12 max-md:pt-10 max-md:px-5">
-            <SpanL className="text-secondary font-semibold">
-              Projects.summary
-            </SpanL>
+            <SpanL className="text-primary-variant font-semibold">Projects.summary</SpanL>
             <SpanL className="text-4xl max-2xl:text-3xl">{`Projects.Project.${project.id}.title`}</SpanL>
             <SpanL
               noWrap
@@ -65,27 +56,20 @@ export const Project = ({ project }: ProjectProps) => {
             </div>
           </div> */}
           <div className="flex flex-col gap-8 px-7 max-2xl:gap-4 max-md:px-5">
-            <SpanL className="text-secondary font-semibold">
-              Projects.services
-            </SpanL>
+            <SpanL className="text-primary-variant font-semibold">Projects.services</SpanL>
             <div className="grid grid-cols-3 max-md:grid-cols-2">
               {project.services.map((service) => (
-                <div
-                  key={service.id}
-                  className="flex flex-col items-center gap-3 text-secondary max-2xl:scale-85"
-                >
+                <div key={service.id} className="flex flex-col items-center gap-3 text-secondary max-2xl:scale-85">
                   <div className="relative flex items-center">
-                    <div className="absolute right-full w-1/2 scale-x-[0.7] -translate-x-1 overflow-hidden text-primary opacity-80">
+                    <div className="absolute right-full w-1/2 scale-x-[0.7] -translate-x-1 overflow-hidden  opacity-80">
                       <GiLaurels size={72} />
                     </div>
-                    <div className="text-primary">{service.icon}</div>
-                    <div className="absolute left-full w-1/2 -scale-x-[0.7] translate-x-1 overflow-hidden text-primary opacity-80">
+                    <div>{service.icon}</div>
+                    <div className="absolute left-full w-1/2 -scale-x-[0.7] translate-x-1 overflow-hidden opacity-80">
                       <GiLaurels size={72} />
                     </div>
                   </div>
-                  <SpanL className="text-primary text-center px-2">
-                    {service.label}
-                  </SpanL>
+                  <SpanL className=" text-center px-2">{service.label}</SpanL>
                 </div>
               ))}
             </div>
@@ -95,9 +79,7 @@ export const Project = ({ project }: ProjectProps) => {
           <div className="flex gap-1 items-center">
             |<SpanL className="font-medium text-sm">Projects.details</SpanL>
           </div>
-          <SpanL className="font-medium text-xl mt-5">
-            {`Projects.Project.${project.id}.location`}
-          </SpanL>
+          <SpanL className="font-medium text-xl mt-5">{`Projects.Project.${project.id}.location`}</SpanL>
           <SpanL noWrap className="font-light mt-2 mb-7 max-2xl:text-sm">
             {`Projects.Project.${project.id}.smallDescription`}
           </SpanL>
@@ -117,29 +99,16 @@ export const Project = ({ project }: ProjectProps) => {
                   transition={{ duration: 0.5, delay: (index * 2 + 1) * 0.1 }}
                   className="flex items-center justify-between"
                 >
-                  <SpanL
-                    upperCase
-                    className="text-sm font-extralight max-2xl:text-xs"
-                  >
+                  <SpanL upperCase className="text-sm font-extralight max-2xl:text-xs">
                     {field.label}
                   </SpanL>
                   <div className="flex gap-1 items-center font-semibold max-2xl:text-sm">
                     {field.valueForm === "object" ? (
                       <span>{project[field.key as keyof typeof Project]}</span>
                     ) : field.valueForm === "date" ? (
-                      <span>
-                        {formatProjectDate(
-                          project[field.key as keyof typeof Project],
-                          locale,
-                        )}
-                      </span>
+                      <span>{formatProjectDate(project[field.key as keyof typeof Project], locale)}</span>
                     ) : field.valueForm === "number" ? (
-                      <span>
-                        {formatProjectNumber(
-                          project[field.key as keyof typeof Project],
-                          locale,
-                        )}
-                      </span>
+                      <span>{formatProjectNumber(project[field.key as keyof typeof Project], locale)}</span>
                     ) : (
                       <span>No value</span>
                     )}

@@ -29,15 +29,8 @@ const References = [
 
 export const Reference = ({ index }: { index: number }) => {
   return (
-    <section
-      id="reference"
-      className="flex items-center w-full px-[5%] py-32 max-2xl:gap-8 max-2xl:pl-[7%] max-md:flex-col max-md:py-10 max-md:px-10"
-    >
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        className="relative flex flex-col h-max w-[40%] max-md:w-full"
-      >
+    <section id="reference" className="flex items-center w-full px-[5%] py-32 max-2xl:gap-8 max-2xl:pl-[7%] max-md:flex-col max-md:py-10 max-md:px-10">
+      <motion.div initial="hidden" whileInView="visible" className="relative flex flex-col h-max w-[40%] max-md:w-full">
         {/* <motion.div
           variants={{
             hidden: { opacity: 0, y: 16 },
@@ -77,7 +70,7 @@ export const Reference = ({ index }: { index: number }) => {
           }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-primary/80 text-lg mt-6 ml-5 max-2xl:text-base max-md:text-sm max-md:ml-2"
+          className="text-on-surface/90 text-lg mt-6 ml-5 max-2xl:text-base max-md:text-sm max-md:ml-2"
         >
           Home.References.description
         </SpanL>
@@ -96,14 +89,7 @@ export const Reference = ({ index }: { index: number }) => {
             className="w-full h-full p-10 aspect-square overflow-hidden"
           >
             <div className="relative w-full h-full">
-              <Image
-                src={reference.image}
-                alt={reference.name}
-                fill
-                priority
-                sizes="100%"
-                className="object-contain"
-              />
+              <Image src={reference.image} alt={reference.name} fill priority sizes="100%" className="object-contain" />
             </div>
           </motion.div>
         ))}

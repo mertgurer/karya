@@ -13,20 +13,14 @@ const lightningVariants = {
   visible: { scaleY: 1 },
 };
 
-export const Lightning = ({
-  height,
-  reverse = false,
-  light = false,
-}: LightningProps) => {
+export const Lightning = ({ height, reverse = false, light = false }: LightningProps) => {
   return (
     <div className="relative flex">
       <motion.div
         variants={lightningVariants}
         transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
         style={{ height: height }}
-        className={`w-0.5  origin-bottom ${
-          light ? "bg-surface" : "bg-primary"
-        }`}
+        className={`w-0.5  origin-bottom ${light ? "bg-surface" : "bg-primary"}`}
       />
       {/* <div className="absolute bottom-0">
         <div

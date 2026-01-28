@@ -46,26 +46,16 @@ export const Navbar = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3, delay: 0.7 }}
       className={`
-        fixed flex justify-between items-center text-on-primary w-full z-20 px-32
+        fixed flex justify-between items-center text-on-primary w-full z-30 px-32
          ${
            isScrolled || !hideNavbar || isMenuOpen
-             ? "bg-primary/90 backdrop-blur-sm h-[72px] shadow-lg shadow-black/10"
+             ? "bg-primary-variant/90 backdrop-blur-sm h-[72px] shadow-lg shadow-black/10"
              : "h-20 md:pt-6 max-md:-translate-y-full"
          }
         max-md:h-20 max-md:px-8 max-2xl:px-14 duration-500`}
     >
-      <Link
-        href={"/"}
-        className={`relative h-[52px] aspect-[2.29] ${isScrolled || !hideNavbar ? "" : "scale-110"} duration-300`}
-      >
-        <Image
-          src={Logo}
-          alt={"logo"}
-          fill
-          priority
-          sizes="100%"
-          className="object-contain"
-        />
+      <Link href={"/"} className={`relative h-[52px] aspect-[2.29] ${isScrolled || !hideNavbar ? "" : "scale-110"} duration-300`}>
+        <Image src={Logo} alt={"logo"} fill priority sizes="100%" className="object-contain" />
       </Link>
       <div
         className={`
@@ -77,11 +67,7 @@ export const Navbar = () => {
                     ${isScrolled || !hideNavbar ? "md:pt-2" : ""} duration-300`}
       >
         {NavigationLinks.map((link) => (
-          <NavigationButton
-            key={link.label}
-            label={link.label}
-            href={link.href}
-          />
+          <NavigationButton key={link.label} label={link.label} href={link.href} />
         ))}
       </div>
       {<MenuButton isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />}

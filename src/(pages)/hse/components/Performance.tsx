@@ -4,29 +4,16 @@ import Image from "next/image";
 import { Fragment } from "react";
 import PolicyImage from "@/assets/images/hse/policy.jpg";
 
-const PerformanceDetails = [
-  "safetyAudits",
-  "safetyTrainingHours",
-  "incidentReduction",
-];
+const PerformanceDetails = ["safetyAudits", "safetyTrainingHours", "incidentReduction"];
 
 export const Performance = () => {
   return (
     <div className="relative pt-120 flex flex-col px-[12%] py-36 bg-primary max-2xl:px-[8%]">
       <div className="absolute w-[50%] top-0 left-[5%] aspect-[1.6] -translate-y-[42%] rounded-sm overflow-hidden">
-        <Image
-          src={PolicyImage}
-          alt="hse-policy"
-          fill
-          priority
-          sizes="100%"
-          className="object-cover"
-        />
+        <Image src={PolicyImage} alt="hse-policy" fill priority sizes="100%" className="object-cover" />
       </div>
       <SpanL className="text-4xl text-surface">Hse.Performance.title</SpanL>
-      <SpanL className="mt-8 mb-20 text-surface max-2xl:text-sm">
-        Hse.Performance.description
-      </SpanL>
+      <SpanL className="mt-8 mb-20 text-surface max-2xl:text-sm">Hse.Performance.description</SpanL>
       <div className="flex justify-between items-center">
         {PerformanceDetails.map((item, index) => (
           <Fragment key={index}>
@@ -41,12 +28,8 @@ export const Performance = () => {
               }}
               className="flex flex-col gap-3 items-center"
             >
-              <SpanL className="font-light text-justify text-surface text-8xl max-2xl:text-6xl">
-                {`Hse.Performance.${item}.value`}
-              </SpanL>
-              <SpanL className="font-medium text-xl bg-surface px-2 py-1 rounded-sm text-secondary max-2xl:text-base">
-                {`Hse.Performance.${item}.title`}
-              </SpanL>
+              <SpanL className="font-light text-justify text-surface text-8xl max-2xl:text-6xl">{`Hse.Performance.${item}.value`}</SpanL>
+              <SpanL className="font-medium text-xl bg-secondary px-4 py-1 rounded-sm text-on-secondary max-2xl:text-base">{`Hse.Performance.${item}.title`}</SpanL>
             </motion.div>
             {index < PerformanceDetails.length - 1 && (
               <motion.div

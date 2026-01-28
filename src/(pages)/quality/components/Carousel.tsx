@@ -2,13 +2,7 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import { SpanL } from "@/components/ui/SpanL";
-import {
-  IoRocketOutline,
-  IoDiamondOutline,
-  IoConstructOutline,
-  IoLeafOutline,
-  IoShieldCheckmarkOutline,
-} from "react-icons/io5";
+import { IoRocketOutline, IoDiamondOutline, IoConstructOutline, IoLeafOutline, IoShieldCheckmarkOutline } from "react-icons/io5";
 import { motion } from "motion/react";
 
 const carouselItems = [
@@ -58,13 +52,7 @@ export const Carousel = () => {
 
   return (
     <div className="w-full py-10 bg-background">
-      <motion.div
-        ref={emblaRef}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ amount: 0.5 }}
-        className="overflow-hidden"
-      >
+      <motion.div ref={emblaRef} initial="hidden" whileInView="visible" viewport={{ amount: 0.5 }} className="overflow-hidden">
         <div className="flex select-none">
           {carouselItems.map((item, index) => (
             <motion.div
@@ -87,23 +75,17 @@ export const Carousel = () => {
                 flex flex-col items-center p-8 h-full
                 bg-surface rounded-sm text-center
                 shadow-md shadow-black/5 
-                border-t-4 border-transparent hover:border-secondary
+                border-t-4 border-transparent hover:border-primary
                 transition-all duration-300 group
               "
               >
                 <div className="bg-surface rounded-full border border-secondary p-1 text-secondary group-hover:scale-110 duration-300">
-                  <div className="bg-surface rounded-full border border-secondary p-3">
-                    {item.icon}
-                  </div>
+                  <div className="bg-surface rounded-full border border-secondary p-3">{item.icon}</div>
                 </div>
-                <span className="text-2xl font-semibold text-primary mt-5 mb-1">
-                  {item.id}
-                </span>
-                <div className="text-primary font-medium text-sm opacity-70">
-                  {item.registered}
-                </div>
+                <span className="text-2xl font-semibold text-primary mt-5 mb-1">{item.id}</span>
+                <div className="font-medium text-sm opacity-70">{item.registered}</div>
                 <div className="h-1 w-[90%] bg-primary/10 my-8" />
-                <div className="italic text-primary font-light tracking-wide">
+                <div className="italic font-light tracking-wide">
                   "<SpanL>{item.title}</SpanL>"
                 </div>
               </div>

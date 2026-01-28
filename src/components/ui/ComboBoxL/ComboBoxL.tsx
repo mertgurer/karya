@@ -37,7 +37,7 @@ export const ComboBoxL = ({
 
   const commonProps = {
     className: `bg-surface rounded-sm w-full px-4 py-3 shadow-md shadow-black/10 appearance-none cursor-pointer ${
-      isPlaceholderActive ? "text-primary/50" : "text-primary"
+      isPlaceholderActive ? "text-on-background/50" : "text-on-background"
     } ${className || ""}`,
 
     style,
@@ -51,16 +51,12 @@ export const ComboBoxL = ({
         onValueChange(newVal);
       }
     },
-    onBlur:
-      onValueChange && onBlur
-        ? (e: React.FocusEvent<HTMLSelectElement>) =>
-            onValueChange(e.target.value)
-        : undefined,
+    onBlur: onValueChange && onBlur ? (e: React.FocusEvent<HTMLSelectElement>) => onValueChange(e.target.value) : undefined,
     ...rest,
   };
 
   return (
-    <div className="flex flex-col gap-1 w-full text-primary relative">
+    <div className="flex flex-col gap-1 w-full relative">
       {label && (
         <div className="flex gap-1 ml-1">
           <SpanL>{label}</SpanL> {required && "*"}
@@ -69,17 +65,11 @@ export const ComboBoxL = ({
 
       <div className="relative w-full">
         <motion.select {...commonProps}>
-          <option value="" disabled hidden className="text-primary/40">
-            {placeHolderText
-              ? `${placeHolderText}${required && !label ? " *" : ""}`
-              : ""}
+          <option value="" disabled hidden className="text-on-background/40">
+            {placeHolderText ? `${placeHolderText}${required && !label ? " *" : ""}` : ""}
           </option>
           {options.map((option) => (
-            <option
-              key={option.value}
-              value={option.value}
-              className="text-primary"
-            >
+            <option key={option.value} value={option.value}>
               {t(option.label)}
             </option>
           ))}

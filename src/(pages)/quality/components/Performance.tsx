@@ -10,8 +10,8 @@ const PerformanceMetrics = [
 export const Performance = () => {
   return (
     <div
-      className="bg-surface text-primary pl-[12%] pr-[8%] py-40 my-10 flex gap-20 max-2xl:pl-[7%] max-2xl:pr-[5%] 
-                    shadow-[0_-20px_25px_-5px_rgba(0,0,0,0.10),0_20px_25px_-5px_rgba(0,0,0,0.10)]"
+      className="bg-surface pl-[12%] pr-[8%] py-40 my-10 flex gap-20 max-2xl:pl-[7%] max-2xl:pr-[5%] 
+                    shadow-[0_-20px_25px_-5px_rgba(0,0,0,0.20),0_20px_25px_-5px_rgba(0,0,0,0.20)]"
     >
       <div className="flex flex-col flex-3 gap-5">
         <SpanL
@@ -19,7 +19,7 @@ export const Performance = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-4xl"
+          className="text-4xl text-primary"
         >
           Quality.Performance.title
         </SpanL>
@@ -47,13 +47,8 @@ export const Performance = () => {
             }}
             className="flex flex-col items-center justify-center flex-1"
           >
-            <span className="text-7xl font-extrabold text-secondary max-2xl:text-6xl max-2xl:font-bold">
-              {metric.value}
-            </span>
-            <SpanL
-              noWrap
-              className="text-lg opacity-80 text-center whitespace-nowrap"
-            >
+            <span className="text-7xl font-extrabold text-secondary max-2xl:text-6xl max-2xl:font-bold">{metric.value}</span>
+            <SpanL noWrap className="text-lg font-semibold text-primary opacity-80 text-center whitespace-nowrap">
               {metric.description}
             </SpanL>
           </motion.div>

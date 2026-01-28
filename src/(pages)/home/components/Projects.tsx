@@ -7,10 +7,7 @@ import { ProjectDetails } from "@/constants";
 
 export const Projects = ({ index }: { index: number }) => {
   return (
-    <section
-      id="projects"
-      className="relative flex flex-col w-full gap-10 pb-48 pt-44 bg-primary/80 backdrop-blur-md max-2xl:pt-36 max-2xl:pb-40 max-md:py-20 max-md:gap-4"
-    >
+    <section id="projects" className="relative flex flex-col w-full gap-10 pb-48 pt-10 backdrop-blur-md max-2xl:pt-36 max-2xl:pb-40 max-md:py-20 max-md:gap-4">
       <motion.div
         variants={{ hidden: {}, show: {} }}
         initial="hidden"
@@ -37,7 +34,7 @@ export const Projects = ({ index }: { index: number }) => {
             show: { opacity: 1, y: 0 },
           }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="text-4xl text-on-primary"
+          className="text-4xl text-primary mb-10"
         >
           Home.Projects.title
         </SpanL>
@@ -47,7 +44,7 @@ export const Projects = ({ index }: { index: number }) => {
             show: { y: 0 },
           }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="absolute h-[300px] w-0.5 bg-on-primary -left-4 bottom-2 max-md:left-4"
+          className="absolute h-[300px] w-0.5 bg-primary -left-4 bottom-2 max-md:left-4"
         />
       </motion.div>
       <motion.div
@@ -60,12 +57,10 @@ export const Projects = ({ index }: { index: number }) => {
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="absolute w-0.5 h-44 right-[5%] -bottom-48 bg-on-primary max-2xl:h-36 max-2xl:-bottom-40"
+          className="absolute w-0.5 h-44 right-[13.35%] -bottom-48 bg-primary max-2xl:h-36 max-2xl:-bottom-40"
         />
         {ProjectDetails.slice(0, 4).map((project, index) => {
-          return (
-            <ProjectCard key={project.id} index={index} project={project} />
-          );
+          return <ProjectCard key={project.id} index={index} project={project} />;
         })}
       </motion.div>
     </section>

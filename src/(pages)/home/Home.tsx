@@ -30,10 +30,10 @@ export const Home = () => {
       <Welcome />
       <About index={1} />
       <Performance index={2} />
-      <Services index={3} />
-      <BlogPost blog={Blogs.hse} />
       <Projects index={4} />
-      <BlogPost blog={Blogs.quality} reverse />
+      <Services index={3} />
+      <BlogPost blog={Blogs.quality} />
+      <BlogPost blog={Blogs.hse} reverse />
       <Reference index={5} />
     </main>
   );
