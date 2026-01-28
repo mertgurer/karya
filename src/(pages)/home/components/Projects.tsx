@@ -44,7 +44,7 @@ export const Projects = ({ index }: { index: number }) => {
             show: { y: 0 },
           }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="absolute h-[300px] w-0.5 bg-primary -left-4 bottom-2 max-md:left-4"
+          className="absolute h-[300px] w-0.5 bg-primary -left-4 bottom-2 max-md:left-4 max-md:h-96"
         />
       </motion.div>
       <motion.div
@@ -57,7 +57,7 @@ export const Projects = ({ index }: { index: number }) => {
           initial={{ y: "100%" }}
           whileInView={{ y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeInOut" }}
-          className="absolute w-0.5 h-44 right-[13.35%] -bottom-48 bg-primary max-2xl:h-36 max-2xl:-bottom-40"
+          className="absolute w-0.5 h-44 right-[13.35%] -bottom-48 bg-primary max-2xl:h-36 max-2xl:-bottom-40 max-md:right-[3.9%]"
         />
         {ProjectDetails.slice(0, 4).map((project, index) => {
           return <ProjectCard key={project.id} index={index} project={project} />;

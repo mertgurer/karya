@@ -78,7 +78,7 @@ export const Performance = ({ index }: { index: number }) => {
                 ease: "easeInOut",
               }}
               viewport={{ once: true }}
-              className="text-on-primary/70 font-light leading-5 mb-20 max-md:-ml-4 max-md:mb-5"
+              className="text-on-primary/70 font-light leading-5 mb-20 max-md:ml-0 max-md:mb-5"
             >
               Home.Performance.description
             </SpanL>

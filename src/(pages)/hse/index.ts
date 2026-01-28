@@ -5,3 +5,4 @@ export * from "./components/Topics";
 export * from "./components/FocusAreas";
 export * from "./components/Performance";
 export * from "./components/Environmental";
+export * from "./components/Process";

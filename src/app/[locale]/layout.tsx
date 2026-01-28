@@ -19,13 +19,7 @@ export const metadata: Metadata = {
     "Karya is a leading provider of innovative engineering solutions, specializing in electrical and mechanical systems for commercial and industrial projects. With a commitment to excellence and sustainability, Karya delivers cutting-edge designs and reliable installations that meet the highest industry standards.",
 };
 
-export default async function RootLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
+export default async function RootLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const messages = await getMessages();
 
@@ -36,19 +30,19 @@ export default async function RootLayout({
           <ReactLenis root>
             <Toaster
               position="top-right"
-              containerStyle={{ marginTop: "80px" }}
+              containerStyle={{ marginTop: "68px" }}
               toastOptions={{
                 style: {
-                  background:
-                    "color-mix(in srgb, var(--primary), transparent 40%)",
-                  color: "var(--accent)",
-                  border: "1px solid var(--primary)",
+                  background: "color-mix(in srgb, var(--surface), transparent 10%)",
+                  color: "var(--on-surface)",
+                  border: "1px solid color-mix(in srgb, var(--surface), transparent 80%)",
                   borderRadius: "12px",
                   paddingLeft: "20px",
                   paddingRight: "20px",
                   paddingTop: "12px",
                   paddingBlock: "12px",
                   gap: "8px",
+                  boxShadow: "0 4px 24px rgba(0, 0, 0, 0.2)",
                 },
               }}
             />

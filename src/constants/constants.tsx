@@ -7,13 +7,12 @@ import ServiceImage1 from "@/assets/images/home/services/service1.jpg";
 import ServiceImage2 from "@/assets/images/home/services/service2.jpg";
 import ServiceImage3 from "@/assets/images/home/services/service3.jpg";
 import ServiceImage4 from "@/assets/images/home/services/service4.jpg";
-import {
-  ProjectModel,
-  Service as ProjectServices,
-} from "@/(pages)/project/Project.types";
+import { ProjectModel, Service as ProjectServices } from "@/(pages)/project/Project.types";
 import { GiMeshNetwork, GiPowerGenerator } from "react-icons/gi";
 import { FaHelmetSafety } from "react-icons/fa6";
 import { ServiceModel } from "@/(pages)/service";
+import TrFlag from "@/assets/images/flags/tr.png";
+import UkFlag from "@/assets/images/flags/uk.png";
 
 export const REGEX = {
   EMAIL: /\S+@\S+\.\S+/,
@@ -210,3 +209,8 @@ export const Addresses = [
     email: "karya@example.com",
   },
 ];
+
+export const Flags = {
+  tr: TrFlag,
+  en: UkFlag,
+};

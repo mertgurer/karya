@@ -19,7 +19,7 @@ export const Services = ({ index }: { index: number }) => {
   return (
     <section
       id="services"
-      className="flex w-full pb-40 pt-80 z-10 flex-row-reverse bg-primary-variant text-surface max-2xl:pt-36 max-md:pt-44 max-md:pb-0 max-md:flex-col max-md:gap-20"
+      className="flex w-full pb-40 pt-80 z-10 flex-row-reverse bg-primary-variant text-surface max-2xl:pt-36 max-md:pt-84 max-md:pb-0 max-md:flex-col max-md:gap-20"
     >
       <motion.div initial="hidden" whileInView="visible" viewport={{ amount: 0.1 }} className="mr-[10%] ml-[3%] flex-1 max-2xl:mr-[5%] max-md:mx-5">
         <div className="relative flex flex-col self-end text-end -mt-40 mr-20 max-md:mr-5">

@@ -1,8 +1,8 @@
 "use client";
 
 import { SpanL } from "@/components/ui";
-import { FlowProps } from "../Quality.types";
 import { motion } from "motion/react";
+import { FlowProps } from ".";
 
 export const Flow = ({ steps }: FlowProps) => {
   return (
@@ -16,7 +16,7 @@ export const Flow = ({ steps }: FlowProps) => {
 
         return (
           <motion.div
-            key={index}
+            key={step.key}
             initial={{ opacity: 0, x: -10 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
@@ -36,26 +36,17 @@ export const Flow = ({ steps }: FlowProps) => {
               }}
             >
               <div className="flex items-start gap-5 pl-12 pr-10 max-2xl:pl-10 max-2xl:pr-6">
-                <div className="flex items-center justify-center min-w-10 min-h-10 mt-2 rounded-md bg-surface/60 text-secondary shadow-sm">
-                  {step.icon}
-                </div>
-                <SpanL className="text-lg font-semibold text-secondary max-2xl:text-base">
-                  {`Quality.Process.${step.id}.title`}
-                </SpanL>
+                <div className="flex items-center justify-center min-w-10 min-h-10 mt-2 rounded-md bg-surface/60 text-secondary shadow-sm">{step.icon}</div>
+                <SpanL className="text-lg font-semibold text-secondary max-2xl:text-base">{`${step.localeSource}.title`}</SpanL>
               </div>
 
               <div className="flex flex-col gap-3 mt-6 mb-2 pl-14 pr-10 max-2xl:pl-10 max-2xl:pr-6">
                 {Array(step.pointCount)
                   .fill(null)
                   .map((_, idx) => (
-                    <div
-                      key={idx}
-                      className="text-sm font-medium text-slate-500 flex gap-2 items-start"
-                    >
-                      <span className="text-secondary font-bold shrink-0">
-                        {">"}
-                      </span>
-                      <SpanL className="leading-snug">{`Quality.Process.${step.id}.Points.${idx}`}</SpanL>
+                    <div key={idx} className="text-sm font-medium text-slate-500 flex gap-2 items-start">
+                      <span className="text-secondary font-bold shrink-0">{">"}</span>
+                      <SpanL className="leading-snug">{`${step.localeSource}.Points.${idx}`}</SpanL>
                     </div>
                   ))}
               </div>

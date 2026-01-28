@@ -22,7 +22,12 @@
     "months": "Months",
     "USD": "$",
     "size": "Size",
-    "sqm": "sqm"
+    "sqm": "sqm",
+    "noFileChosen": "No file chosen",
+    "chooseFile": "Choose File",
+    "invalidFileType": "Invalid file type. Please upload one of the following: {types}",
+    "yes": "Yes",
+    "no": "No"
   },
   "Navbar": {
     "home": "Home",
@@ -351,6 +356,42 @@
     "Policy": {
       "title": "HSE Policy",
       "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of compliance with legal requirements, continuous improvement, and active engagement of all employees in HSE practices. We strive to minimize our environmental impact through sustainable practices and responsible resource management. By integrating HSE considerations into every aspect of our business, we aim to protect our people, communities, and the environment while delivering high-quality engineering solutions."
+    },
+    "Process": {
+      "title": "Quality Assurance Process",
+      "text": "Karya Engineering implements a robust Quality Assurance (QA) process to ensure that all proj overall success of each project.",
+      "Preparation": {
+        "title": "Preparation of a Method of Statement (MOS)",
+        "Points": {
+          "0": "Comprehensive review of project specifications and requirements",
+          "1": "Development of detailed procedures and protocols",
+          "2": "Identification of necessary resources and personnel"
+        }
+      },
+      "Inspection": {
+        "title": "Inspection and Test Plan (ITP)",
+        "Points": {
+          "0": "Establishment of inspection criteria and checkpoints",
+          "1": "Scheduling of inspections and tests throughout the project lifecycle",
+          "2": "Documentation of inspection results and corrective actions"
+        }
+      },
+      "Execution": {
+        "title": "Executing and Monitoring Operations",
+        "Points": {
+          "0": "Implementation of quality control measures during construction",
+          "1": "Regular monitoring and reporting of quality performance",
+          "2": "Continuous feedback loop for process improvement"
+        }
+      },
+      "Reporting": {
+        "title": "Inspection & Test Report (ITR)",
+        "Points": {
+          "0": "Comprehensive documentation of inspection and test results",
+          "1": "Analysis of quality data to identify trends and issues",
+          "2": "Final reporting to stakeholders with recommendations for future projects"
+        }
+      }
     },
     "Culture": {
       "title": "A Culture of Safety",

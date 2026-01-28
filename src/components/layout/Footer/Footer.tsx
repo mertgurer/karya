@@ -4,17 +4,10 @@ import { Link, routing, usePathname } from "@/i18n";
 import Image from "next/image";
 import { SpanL } from "@/components/ui/SpanL";
 import Logo from "@/assets/images/logo.svg";
-import TrFlag from "@/assets/images/flags/tr.png";
-import UkFlag from "@/assets/images/flags/uk.png";
 import { LinkL } from "@/components/ui/LinkL";
-import { Addresses } from "@/constants";
+import { Addresses, Flags } from "@/constants";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdMailOutline, MdOutlinePhoneEnabled } from "react-icons/md";
-
-const Flags = {
-  tr: TrFlag,
-  en: UkFlag,
-};
 
 export const Footer = () => {
   const pathname = usePathname();
@@ -22,7 +15,7 @@ export const Footer = () => {
   return (
     <div className="bg-primary-variant text-on-primary px-40 py-8 flex gap-20 max-2xl:px-20 max-2xl:py-6 max-md:px-6">
       <div className="flex items-center gap-10 justify-between w-full max-md:flex-col">
-        <div className="flex w-1/2 text-sm">
+        <div className="flex w-1/2 text-sm max-md:flex-col max-md:w-full">
           {Addresses.map((address, index) => (
             <div key={index} className="flex flex-col gap-1 pr-5 py-7">
               <div className="flex gap-1 items-center">
