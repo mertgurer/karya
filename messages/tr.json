@@ -63,7 +63,7 @@
       "yearsOfExperience": "Yıllık Deneyim",
       "projectsCompleted": "Tamamlanan Proje",
       "maxEmployees": "Bir Projedeki En Yüksek Çalışan Sayısı",
-      "completedManHour": "Tamamlanan Adam-Saat",
+      "completedManHour": "Tamamlanan Adam Saati",
       "cablesInstalled": "Döşenen Kablo Metrajı"
     },
     "Projects": {
@@ -598,12 +598,12 @@
       "description": "Kalite metriklerimiz, kalite süreçlerimizin etkinliğinin net bir ölçüsünü sağlar ve tutarlı performansı garanti eder. Temel göstergeleri takip ederek uyumluluğu izliyor, iyileştirme alanlarını belirliyor ve proje gereksinimleriyle uyumlu kalıyoruz. Bu yaklaşım sürekli iyileştirmeyi ve güvenilir proje sonuçlarını destekler.",
       "disclaimer": "*Eksik proje bilgileri ve/veya malzeme eksikliklerinden kaynaklanan gecikmeler hariçtir.",
       "approveRate": "İlk Muayene Onay Oranı",
-      "closureTime": "Eksik Listesi (Punch List) Kapatma Süresi",
+      "closureTime": "Kontrol Listesi Kapatma Süresi",
       "reports": "Uygunsuzluk Raporu Sayısı (NCR) (976.000 Adam-Saatlik Projede)",
       "punchMetrics": "Eksik Listesi Kapatma Süreleri",
-      "aPunch": "A Grubu Eksikler",
-      "bPunch": "B Grubu Eksikler",
-      "cPunch": "C Grubu Eksikler"
+      "aPunch": "A Kontrol Listesi",
+      "bPunch": "B Kontrol Listesi",
+      "cPunch": "C Kontrol Listesi"
     },
     "Documentation": {
       "title": "Tam İzlenebilirlik ve Şeffaf Raporlama",

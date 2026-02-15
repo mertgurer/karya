@@ -1,30 +1,30 @@
 import Image from "next/image";
 
-import DUK from "@/assets/images/home/references/DUK.png";
-import GEV from "@/assets/images/home/references/GEV.png";
-import KEP from "@/assets/images/home/references/KEP.png";
-import LG from "@/assets/images/home/references/LG.png";
-import NEE from "@/assets/images/home/references/NEE.png";
-import SO from "@/assets/images/home/references/SO.png";
-import TRN from "@/assets/images/home/references/TRN.png";
-import XEL from "@/assets/images/home/references/XEL.png";
-import ENR from "@/assets/images/home/references/ENR.png";
-import FORTUM from "@/assets/images/home/references/FORTUM.png";
+import Pearl from "@/assets/images/home/references/pearl.png";
+import HKN from "@/assets/images/home/references/hkn.png";
+import Taqa from "@/assets/images/home/references/taqa.png";
+import Gama from "@/assets/images/home/references/gama.png";
+import Havatek from "@/assets/images/home/references/havatek.png";
+import Calik from "@/assets/images/home/references/calik.png";
+import Tupras from "@/assets/images/home/references/tupras.png";
+import Shell from "@/assets/images/home/references/shell.png";
+import PO from "@/assets/images/home/references/po.png";
+import BP from "@/assets/images/home/references/bp.png";
 import { motion } from "motion/react";
 import { SpanL } from "@/components/ui/SpanL";
 import { Lightning } from "./Lightning";
 
 const References = [
-  { name: "Duke Energy", image: DUK },
-  { name: "GE Vernova", image: GEV },
-  { name: "Korea Electric Power", image: KEP },
-  { name: "LG Energy Solution", image: LG },
-  { name: "Nextera Energy", image: NEE },
-  { name: "Southern Company", image: SO },
-  { name: "Terna", image: TRN },
-  { name: "XEL", image: XEL },
-  { name: "Siemens Energy", image: ENR },
-  { name: "Fortum", image: FORTUM },
+  { name: "Pearl Petroleum Company", image: Pearl },
+  { name: "HKN Energy", image: HKN },
+  { name: "TAQA Industrial Energy", image: Taqa },
+  { name: "GAMA Power Systems", image: Gama },
+  { name: "Havatek", image: Havatek },
+  { name: "Çalık Enerji", image: Calik },
+  { name: "Tupras", image: Tupras },
+  { name: "Shell", image: Shell },
+  { name: "Petrol Ofisi", image: PO },
+  { name: "BP", image: BP },
 ];
 
 export const Reference = ({ index }: { index: number }) => {
@@ -86,7 +86,7 @@ export const Reference = ({ index }: { index: number }) => {
               ease: "easeInOut",
             }}
             key={reference.name}
-            className="w-full h-full p-10 aspect-square overflow-hidden"
+            className="w-full h-full p-8 aspect-square overflow-hidden"
           >
             <div className="relative w-full h-full">
               <Image src={reference.image} alt={reference.name} fill priority sizes="100%" className="object-contain" />
