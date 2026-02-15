@@ -43,7 +43,7 @@ export const Service = ({ service }: ServiceProps) => {
         <div className="flex flex-col gap-8">
           <SpanL className="text-2xl font-semibold text-primary">Services.keyFeatures</SpanL>
           <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1">
-            {[0, 1, 2, 3].map((idx) => (
+            {Array.from({ length: service.futureCount }, (_, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ export const Service = ({ service }: ServiceProps) => {
           <SpanL className="text-2xl font-semibold text-primary">Services.benefitsTitle</SpanL>
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-6 max-md:grid-cols-1">
-            {[0, 1, 2, 3, 4, 5].map((idx) => (
+            {Array.from({ length: service.benefitCount }, (_, idx) => (
               <motion.div
                 key={idx}
                 initial={{ opacity: 0, x: -10 }}

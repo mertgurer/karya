@@ -181,25 +181,25 @@ export const ServiceDetails = [
     id: "engineering",
     image: ServiceImage1,
     futureCount: 4,
-    benefitCount: 4,
+    benefitCount: 6,
   },
   {
     id: "procurement",
     image: ServiceImage2,
     futureCount: 4,
-    benefitCount: 4,
+    benefitCount: 6,
   },
   {
     id: "construction",
     image: ServiceImage3,
     futureCount: 4,
-    benefitCount: 4,
+    benefitCount: 6,
   },
   {
     id: "commissioning",
     image: ServiceImage4,
     futureCount: 4,
-    benefitCount: 4,
+    benefitCount: 6,
   },
 ];
 
