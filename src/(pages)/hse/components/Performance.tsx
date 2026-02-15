@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Fragment } from "react";
 import PolicyImage from "@/assets/images/hse/policy.jpg";
 
-const PerformanceDetails = ["safetyAudits", "safetyTrainingHours", "incidentReduction"];
+const PerformanceDetails = ["TRIR", "LTIR", "HSE"];
 
 export const Performance = () => {
   return (

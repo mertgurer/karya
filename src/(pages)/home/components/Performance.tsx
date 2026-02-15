@@ -3,27 +3,33 @@ import { motion } from "motion/react";
 import { FaHelmetSafety } from "react-icons/fa6";
 import { MdElectricalServices, MdOutlineBookmarkAdded } from "react-icons/md";
 import { PiBlueprintDuotone } from "react-icons/pi";
+import { BiStopwatch } from "react-icons/bi";
 import React from "react";
 
 const PerformanceStats = [
   {
     label: "yearsOfExperience",
-    value: "25",
+    value: "24+",
     icon: <MdOutlineBookmarkAdded size={64} />,
   },
   {
     label: "projectsCompleted",
-    value: "150+",
+    value: "160+",
     icon: <PiBlueprintDuotone size={72} />,
   },
   {
-    label: "employees",
-    value: "500",
+    label: "completedManHour",
+    value: "150+",
+    icon: <BiStopwatch size={72} />,
+  },
+  {
+    label: "maxEmployees",
+    value: "500+",
     icon: <FaHelmetSafety size={64} />,
   },
   {
     label: "cablesInstalled",
-    value: "200.000 +",
+    value: "200.000+",
     icon: <MdElectricalServices size={72} />,
   },
 ];
@@ -83,7 +89,7 @@ export const Performance = ({ index }: { index: number }) => {
               Home.Performance.description
             </SpanL>
           </div>
-          <div className="grid grid-cols-7 items-center px-[15%] max-2xl:px-[7%] max-md:grid-cols-1 max-md:gap-20">
+          <div className="grid grid-cols-9 px-[7%] max-2xl:px-[7%] max-md:grid-cols-1 max-md:gap-20">
             {PerformanceStats.map((stat, index) => {
               return (
                 <React.Fragment key={index}>
@@ -95,11 +101,11 @@ export const Performance = ({ index }: { index: number }) => {
                       delay: Math.abs((PerformanceStats.length - 1) / 2 - index) * 0.6,
                       ease: "easeInOut",
                     }}
-                    className="flex flex-col items-center"
+                    className="flex flex-col items-center text-center"
                   >
                     <div className="flex items-center justify-center text-secondary mb-5 w-[72px] aspect-square">{stat.icon}</div>
-                    <SpanL className="text-on-primary mb-1">{`Home.Performance.${stat.label}`}</SpanL>
-                    <span className="text-5xl text-on-primary whitespace-nowrap">{stat.value}</span>
+                    <SpanL className="text-on-primary mb-4">{`Home.Performance.${stat.label}`}</SpanL>
+                    <span className="text-5xl text-on-primary whitespace-nowrap mt-auto">{stat.value}</span>
                   </motion.div>
                   {index < PerformanceStats.length - 1 && (
                     <motion.div
@@ -110,7 +116,7 @@ export const Performance = ({ index }: { index: number }) => {
                         delay: Math.abs(PerformanceStats.length / 2 - 1 - index) * 0.6,
                         ease: "easeInOut",
                       }}
-                      className="h-10 w-px bg-on-primary mx-auto max-md:hidden"
+                      className="h-10 w-px bg-on-primary mx-auto my-auto max-md:hidden"
                     />
                   )}
                 </React.Fragment>

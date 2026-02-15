@@ -14,12 +14,8 @@ export const Services = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <WelcomeHeader
-        image={Welcome}
-        title={"Services.title"}
-        subtitle={"Services.subtitle"}
-      />
-      <div className="flex flex-col gap-5 h-[50vh] pb-[5%] mx-[5%]">
+      <WelcomeHeader image={Welcome} title={"Services.title"} subtitle={"Services.subtitle"} />
+      <div className="flex flex-col gap-5 h-[50vh] pb-[5%] my-10 mx-[5%]">
         <SpanL
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -43,14 +39,7 @@ export const Services = () => {
         {servicePairs.map((pair, index) => {
           if (pair.length < 2) return null;
 
-          return (
-            <ServiceSplitRow
-              key={index}
-              leftService={pair[0]}
-              rightService={pair[1]}
-              reverse={index % 2 === 1}
-            />
-          );
+          return <ServiceSplitRow key={index} leftService={pair[0]} rightService={pair[1]} reverse={index % 2 === 1} />;
         })}
       </div>
     </div>

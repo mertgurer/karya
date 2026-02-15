@@ -53,49 +53,50 @@
     },
     "About": {
       "sectionTitle": "Why Karya",
-      "title": "Forged Excellence in Every Project",
-      "description": "Since 1919, our reputation has been founded on building quality electrical and communications installations, building value for clients, and building people in a diverse, safe, and inclusive environment. We serve customers with highly complex construction projects, who rely on us for knowledge, scalability, quality, and safety. Infused with a sense of shared ownership, our entire team focuses on building relationships that deliver results."
+      "title": "Trusted E&I Solution Partners",
+      "description": "Karya Mühendislik A.Ş., established in 2002, is a trusted E&I solution partner for Oil & Gas projects across the Middle East. Headquartered in Izmir, Türkiye with a regional branch in Iraq, Erbil, we deliver quality-driven solutions aligned with international standards."
     },
     "Performance": {
       "sectionTitle": "What We Achieved",
       "title": "Delivering Outstanding Results",
-      "description": "Our team is comprised of unique individuals who bring the intelligence, talent and skill required to make Rosendin one of the nation’s finest electrical contractors. If you’ve got what it takes to join us, we want to hear from you.",
+      "description": "Our performance reflects our commitment to delivering reliable, innovative, and high-quality E&I solutions across every project we undertake. Through consistent execution, technical excellence, and a client-focused approach, we continue to build long-term partnerships and measurable success.",
       "yearsOfExperience": "Years of Experience",
       "projectsCompleted": "Projects Completed",
-      "employees": "Employees",
+      "maxEmployees": "Peak # of Employee in one project",
+      "completedManHour": "Completed Man Hour",
       "cablesInstalled": "Cables Installed"
     },
     "Projects": {
       "sectionTitle": "Our Projects",
-      "title": "Leading Projects Across Multiple Sectors",
+      "title": "Building Value Through Every Project",
       "viewAllProjects": "View All Projects"
     },
     "Blogs": {
       "hseBlog": {
-        "motto": "We Care for Your Safety",
+        "motto": "We Care for Safety",
         "title": "Enhancing Workplace Safety",
         "subtitle": "Health, Safety, and Environment Practices",
-        "description": "At Karya Engineering, we prioritize the health and safety of our employees and clients. Our comprehensive HSE practices ensure a safe working environment, minimizing risks and promoting well-being."
+        "description": "Health, Safety, and Environment are at the core of our operations, guiding every decision we make on site and beyond. We are committed to maintaining safe work practices, protecting the environment, and ensuring full compliance with international standards."
       },
       "qualityBlog": {
         "motto": "Commitment to Excellence",
-        "title": "Quality Assurance in Engineering",
+        "title": "Integrated Quality Management for EPC Projects",
         "subtitle": "Delivering Superior Quality",
-        "description": "Quality is at the core of everything we do at Karya Engineering. Our rigorous quality assurance processes guarantee that every project meets the highest standards, ensuring client satisfaction and long-term success."
+        "description": "Our quality system is based on internationally recognized standards and strict control processes applied throughout all phases of project execution. We ensure compliance, traceability, and consistent performance to deliver reliable and technically sound results."
       }
     },
     "Services": {
       "sectionTitle": "Our Services",
       "title": "What We Provide",
-      "subtitle": "Engineering Solutions",
-      "description": "Karya Engineering offers a comprehensive range of services tailored to meet the diverse needs of our clients. Our expertise spans multiple sectors, ensuring innovative solutions and exceptional results.",
+      "subtitle": "EPCC Solutions",
+      "description": "We deliver integrated E&I services across engineering, procurement, construction, and commissioning to support projects from concept to completion. Our streamlined approach ensures efficient execution, quality, and reliability at every stage.",
       "linkText": "Discover our full range of services and how we can assist with your next project.",
       "seeProject": "See Projects"
     },
     "References": {
       "sectionTitle": "Our Clients",
       "title": "Trusted by Industry Leaders",
-      "description": "Karya Engineering has had the privilege of working with some of the most respected names in various industries. Our commitment to excellence and client satisfaction has earned us long-lasting partnerships."
+      "description": "We collaborate with leading companies across the Oil&Gas and Energy sectors, building long-term partnerships based on technical expertise, reliability, and consistent performance. Our clients trust us to deliver high-standard E&I solutions that meet complex operational and project requirements."
     }
   },
   "Projects": {
@@ -161,37 +162,33 @@
     "privacyPolicy": "Privacy Policy",
     "About": {
       "title": "SINCE",
-      "description": "Karya Electrical Engineering Company is a trusted provider of comprehensive electrical engineering solutions, delivering reliable, efficient, and innovative services across residential, commercial, and industrial sectors. With a strong foundation built on technical expertise and industry best practices, we are committed to meeting the evolving needs of our clients while maintaining the highest standards of safety and quality.<br/>Our team of skilled engineers and technicians brings years of hands-on experience to every project, from electrical design and installation to maintenance, troubleshooting, and system upgrades. We pride ourselves on our attention to detail, timely project execution, and ability to deliver customized solutions that align with each client’s specific requirements.<br/>At Karya Electrical Engineering Company, our mission is to build long-term partnerships through integrity, professionalism, and excellence. By embracing modern technologies and continuously improving our processes, we strive to power progress and contribute to sustainable, energy-efficient infrastructure for the future.<br/>At Kayra Engineering, our strength lies in our people. Our team is made up of dedicated engineers, technicians, and project specialists who bring a strong blend of technical expertise, hands-on experience, and problem-solving mindset to every project. United by a commitment to quality, safety, and continuous improvement, we work collaboratively to deliver reliable engineering solutions while building lasting trust with our clients."
+      "description": "Karya Engineering was established in 2002. Since its foundation, the company has been providing engineering, procurement, construction and commissioning services in the Electrical and Instrumentation field. Karya Engineering specializes in electrical and instrumentation projects for petroleum, gas, and petrochemical facilities, as well as pipelines, land and marine terminals, tank farms, oil refineries, pumping stations, and power plants. The company operates primarily in the Middle East region, particularly in Northern Iraq. Its headquarters are located in İzmir, Turkey, and since 2015, it has also been serving through its branch office in Erbil, Iraq. Our activities are carried out in accordance with internationally recognized standards such as ISO 9001:2015 Quality Management System and ISO 45001 Occupational Health & Safety Management System. With our experienced team that has been part of our organization for many years, we aim to continue delivering successful projects in the industry we have specialized in."
     },
     "Values": {
       "title": "Our Values",
       "subtitle": "We are guided by our core values",
-      "commitment": {
-        "title": "Commitment",
-        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+      "excellence": {
+        "title": "Engineering Excellence",
+        "description": "We base every project decision on sound engineering principles to deliver accurate, durable and high-performance results."
       },
-      "sprit": {
-        "title": "Team spirit",
-        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+      "hse": {
+        "title": "Safety & Quality First",
+        "description": "We operate with zero compromise on safety and quality, ensuring full compliance with international EPC standards."
+      },
+      "reliability": {
+        "title": "Reliability & On Time Delivery",
+        "description": "We commit to executing projects as planned — on time, on budget and with consistency you can depend on."
       },
       "integrity": {
-        "title": "Integrity",
-        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
-      },
-      "professionalism": {
-        "title": "Professionalism",
-        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
-      },
-      "accountability": {
-        "title": "Accountability",
-        "description": "We are committed to improving the quality of life and standard of living for people in the communities we develop. We do not rest on our accomplishments, but rather build on them to be the best we can."
+        "title": "Integrity & Accountability",
+        "description": "We act transparently and responsibly, honoring our commitments and taking ownership at every stage of the project."
       }
     },
     "Mission": {
-      "missionTitle": "Our Mission",
-      "missionDescription": "To deliver comprehensive, reliable, and innovative electrical engineering solutions across residential, commercial, and industrial sectors. We are dedicated to exceeding client expectations through technical expertise, unwavering safety standards, and a commitment to integrity and professional excellence.",
-      "visionTitle": "Our Vision",
-      "visionDescription": "To be the trusted partner in powering progress, setting the standard for sustainable, energy-efficient infrastructure and becoming the leading provider of future-ready electrical systems."
+      "missionTitle": "Mission",
+      "missionDescription": "To deliver safe, high-quality and reliable E&I solutions through engineering excellence and strong HSE practices, ensuring on-time project execution in full compliance with international standards.",
+      "visionTitle": "Vision",
+      "visionDescription": "To become a preferred Electrical & Instrumentation contractor in the Middle East, recognized for EPC-level capabilities, consistent quality, safety and engineering-driven performance."
     },
     "Brochure": {
       "title": "Company Brochure",
@@ -295,17 +292,17 @@
   },
   "Services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive Electrical Engineering Solutions",
-    "secondTitle": "We offer a wide range of services to meet your electrical engineering needs.",
-    "description": "At Karya Engineering, we provide a full spectrum of electrical engineering services designed to support projects of all sizes and complexities. Our experienced team is equipped to handle every phase of the project lifecycle, from initial design and procurement to construction and commissioning. We are committed to delivering high-quality, efficient, and innovative solutions that align with our clients' goals and industry standards.",
+    "subtitle": "Comprehensive E&I Solutions",
+    "secondTitle": "We deliver integrated solutions to address the technical and operational requirements of up-to-date E & I systems.",
+    "description": "Our services cover the full scope of electrical and instrumentation activities, from detailed engineering and material procurement to site installation and system commissioning. We apply internationally recognized standards and proven methodologies to ensure safety, quality, and operational reliability.",
     "label": "Our Expertise",
     "keyFeatures": "Key Capabilities",
     "benefitsTitle": "Why Choose Our Solutions",
     "contactUs": "Contact Us",
     "engineering": {
       "title": "Engineering",
-      "description": "Our engineering services encompass comprehensive electrical system design, analysis, and optimization. We leverage cutting-edge technology and industry best practices to deliver innovative solutions that meet the unique needs of each project.",
-      "introduction": "Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and practical reality. From initial feasibility studies to complex detailed engineering, we utilize state-of-the-art simulation software and global best practices to ensure every project is safe, efficient, and innovative. Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and practical reality. From initial feasibility studies to complex detailed engineering, we utilize state-of-the-art simulation software and global best practices to ensure every project is safe, efficient, and innovative. Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and ",
+      "description": "We deliver detailed E&I engineering solutions aligned with project specifications, international standards, and operational requirements.",
+      "introduction": "We deliver front-end and detailed engineering that aligns with international standards and project-specific requirements. Safety, compliance, and system integrity are integrated into every stage of our design process. Through technical evaluations and feasibility support, we help clients make informed decisions and ensure reliable, field-ready E&I solutions.",
       "longDescription": "Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and practical reality. From initial feasibility studies to complex detailed engineering, we utilize state-of-the-art simulation software and global best practices to ensure every project is safe, efficient, and innovative.",
       "pullQuote": "Engineering is not merely about construction; it is about creating a legacy of efficiency and safety.",
       "ctaTitle": "Ready to engineer your vision?",
@@ -339,83 +336,91 @@
     },
     "procurement": {
       "title": "Procurement",
-      "description": "We provide end-to-end procurement services, sourcing high-quality electrical components and materials from trusted suppliers. Our team ensures timely delivery and cost-effective solutions to support project timelines and budgets."
+      "description": "We manage the sourcing and supply of certified materials and equipment to ensure quality, compliance, and timely project delivery."
     },
     "construction": {
       "title": "Construction",
-      "description": "Our construction services include the installation, testing, and commissioning of electrical systems. We prioritize safety, quality, and efficiency to ensure successful project completion and client satisfaction."
+      "description": "We execute E&I installation activities with a focus on safety, technical accuracy, and efficient field performance."
     },
     "commissioning": {
       "title": "Commissioning",
-      "description": "We offer comprehensive commissioning services to verify that electrical systems are designed, installed, and functioning according to project specifications. Our team conducts thorough testing and documentation to ensure optimal performance and reliability."
+      "description": "We perform systematic testing, validation, and handover of E&I systems to ensure reliable and compliant operational readiness."
     }
   },
   "Hse": {
-    "title": "HSE Commitment",
-    "subtitle": "Prioritizing Safety and Sustainability",
+    "title": "Health, Safety & Environment",
+    "subtitle": "Prioritizing Safety",
     "Policy": {
       "title": "HSE Policy",
-      "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of compliance with legal requirements, continuous improvement, and active engagement of all employees in HSE practices. We strive to minimize our environmental impact through sustainable practices and responsible resource management. By integrating HSE considerations into every aspect of our business, we aim to protect our people, communities, and the environment while delivering high-quality engineering solutions."
+      "text": "We implement a meticulous planning and process management policy regarding Health, Safety, and Environment (HSE) Operations. Given the nature of the industries in which we operate and specialize, HSE practices hold vital importance. Fully aware of this responsibility, we adopt a human-centered approach, designing our HSE operations in line with international standards, continuously monitoring all processes, and improving them based on the most up to-date methodologies."
     },
     "Process": {
       "title": "Quality Assurance Process",
       "text": "Karya Engineering implements a robust Quality Assurance (QA) process to ensure that all proj overall success of each project.",
       "Preparation": {
-        "title": "Preparation of a Method of Statement (MOS)",
+        "title": "Preparation of Risk Assessment (RA) and Job Safety Analysis (JSA)",
         "Points": {
-          "0": "Comprehensive review of project specifications and requirements",
-          "1": "Development of detailed procedures and protocols",
-          "2": "Identification of necessary resources and personnel"
+          "0": "Identification of task-specific hazards and risk levels",
+          "1": "Definition of control measures and mitigation actions",
+          "2": "Determining tasks of each personnel relevant to potential risks"
         }
       },
-      "Inspection": {
-        "title": "Inspection and Test Plan (ITP)",
+      "Toolbox": {
+        "title": "Toolbox Talks",
         "Points": {
-          "0": "Establishment of inspection criteria and checkpoints",
-          "1": "Scheduling of inspections and tests throughout the project lifecycle",
-          "2": "Documentation of inspection results and corrective actions"
+          "0": "Daily briefings on task-related safety topics",
+          "1": "Reinforcement of safe work practices and procedures",
+          "2": "Confirmation of workforce understanding and engagement"
         }
       },
-      "Execution": {
-        "title": "Executing and Monitoring Operations",
+      "FieldInspection": {
+        "title": "Regular Field Inspection from HSE Team",
         "Points": {
-          "0": "Implementation of quality control measures during construction",
-          "1": "Regular monitoring and reporting of quality performance",
-          "2": "Continuous feedback loop for process improvement"
+          "0": "Routine monitoring of site safety conditions",
+          "1": "Verification of compliance with HSE procedures",
+          "2": "Immediate reporting of unsafe acts or conditions"
         }
       },
       "Reporting": {
-        "title": "Inspection & Test Report (ITR)",
+        "title": "Incident & Near-Miss Reporting System",
         "Points": {
-          "0": "Comprehensive documentation of inspection and test results",
-          "1": "Analysis of quality data to identify trends and issues",
-          "2": "Final reporting to stakeholders with recommendations for future projects"
+          "0": "Structured documentation of incidents and observations",
+          "1": "Root cause analysis and event classification",
+          "2": "Sharing lessons learned across project teams"
+        }
+      },
+      "Actions": {
+        "title": "Corrective and Preventive Actions (CAPA)",
+        "Points": {
+          "0": "Development of action plans to address findings",
+          "1": "Tracking and verification of implementation",
+          "2": "Continuous improvement of safety processes"
         }
       }
     },
     "Culture": {
       "title": "A Culture of Safety",
-      "subtitleOne": "Construction Safety Week",
-      "textOne": "We are fully committed to providing a safe and healthy workplace for our employees, and accident prevention is paramount. Our highly-trained Safety Professionals diligently work to create an Injury, Incident and Impact Free (I-3 Free) environment on every project. This I-3 Free culture permeates our entire organization, as we continuously work to eliminate risk. We place this value above all others and strive to provide our people with the tools, equipment and working conditions that will help them safely and efficiently do their very best work.",
-      "subtitleTwo": "I-3 Free Environment",
-      "textTwo": "We are fully committed to providing a safe and healthy workplace for our employees, and accident prevention is paramount. Our highly-trained Safety Professionals diligently work to create an Injury, Incident and Impact Free (I-3 Free) environment on every project. This I-3 Free culture permeates our entire organization, as we continuously work to eliminate risk. We place this value above all others and strive to provide our people with the tools, equipment and working conditions that will help them safely and efficiently do their very best work."
+      "subtitleOne": "Technical Training for Enhancing Job Safety",
+      "textOne": "In addition to formal HSE training, we provide task-specific technical training that addresses the operational and equipment-related aspects of each role. By focusing on the technical details of the work performed, these programs enhance hazard awareness and safe execution beyond general safety instruction. This layered approach strengthens competency, reduces risk, and contributes to safer job performance across all activities.",
+      "subtitleTwo": "Safety Observation Card",
+      "textTwo": "Our Safety Observation Card System encourages the proactive identification and reporting of unsafe acts, conditions, and positive safety behaviors. The system enables not only HSE specialists but all employees to actively contribute to the HSE process, strengthening engagement across the workforce. This structured approach supports early intervention, continuous improvement, and a safer working environment."
     },
     "FocusAreas": {
       "FocusAreaOne": {
-        "title": "Employee Safety",
-        "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preve."
+        "title": "Workplace Safety",
+        "text": "We maintain safe working conditions by systematically identifying hazards, implementing control measures, and ensuring adherence to approved procedures. Continuous supervision and workforce engagement help reduce risks and prevent incidents across all project activities."
       },
       "FocusAreaTwo": {
-        "title": "Environmental Stewardship",
-        "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is ile delivering high-quality engineering solutions."
+        "title": "Environmental Protection",
+        "text": "We are committed to minimizing environmental impact through responsible resource use, waste management, and compliance with applicable environmental regulations. Our practices aim to protect surrounding ecosystems while supporting sustainable project execution."
       },
       "FocusAreaThree": {
-        "title": "Community Engagement",
-        "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incident is preventable and are committed to fostering a culture where safety is a core value. Our HSE policy is built on the principles of."
+        "title": "Training and Awareness",
+        "text": "We promote a strong safety culture through ongoing training programs and awareness initiatives aligned to site-specific risks. By improving workforce competency and accountability, we ensure safe practices are consistently applied in daily operations."
       },
       "FocusAreaFour": {
-        "title": "Regulatory Compliance",
-        "text": "Karya Engineering is dedicated to achieving excellence in Health, Safety, and Environmental (HSE) performance across all our operations. We believe that every incid."
+        "title": "Risk Management",
+        "text": "We proactively identify, assess, and mitigate operational risks through structured evaluation processes and continuous monitoring. This approach supports safer decision-making and ensures stable, uninterrupted project execution."
       }
     },
     "ManagementSystem": {
@@ -432,18 +437,18 @@
     },
     "Performance": {
       "title": "HSE Performance Metrics",
-      "description": "At Karya Engineering, we are committed to maintaining the highest standards of Health, Safety, and Environmental (HSE) performance. Our dedication to safety is reflected in our key performance metrics, which demonstrate our ongoing efforts to create a safe and sustainable work environment. We continuously monitor and evaluate our HSE practices to ensure we meet and exceed industry standards, fostering a culture of safety and responsibility across all levels of our organization.",
-      "safetyAudits": {
-        "title": "Safety Audits Conducted",
-        "value": "500+"
+      "description": "Our HSE performance metrics reflect our commitment to maintaining safe and responsible operations across all project activities. We monitor key indicators to evaluate performance, ensure compliance with applicable standards, and drive continuous improvement. This structured approach supports effective risk management and reinforces a strong safety culture throughout our organization.",
+      "TRIR": {
+        "title": "Total Recordable Incident Rate",
+        "value": "0.47"
       },
-      "safetyTrainingHours": {
-        "title": "Safety Training Hours Delivered",
-        "value": "10,000+"
+      "LTIR": {
+        "title": "Lost Time Injury Rate",
+        "value": "0.21"
       },
-      "incidentReduction": {
-        "title": "Incident Rate Reduction",
-        "value": "30%"
+      "HSE": {
+        "title": "HSE Training Hours (Last Year)",
+        "value": "3047"
       }
     },
     "Environmental": {

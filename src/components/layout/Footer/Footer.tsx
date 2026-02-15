@@ -26,7 +26,7 @@ export const Footer = () => {
                 href={`https://www.google.com/maps/search/?api=1&query=${address.coordinates.lat},${address.coordinates.lng}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-light hover:text-secondary transition-colors cursor-pointer text-left"
+                className="font-light hover:text-secondary transition-colors cursor-pointer text-left max-md:w-1/2"
               >
                 <SpanL className="font-light">{`Contact.Addresses.${address.key}.address`}</SpanL>
               </Link>

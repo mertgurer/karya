@@ -1,19 +1,14 @@
 import { SpanL } from "@/components/ui/SpanL";
 import { motion } from "motion/react";
 import { FaBalanceScale } from "react-icons/fa";
-import {
-  FaBriefcase,
-  FaClipboardCheck,
-  FaHandshake,
-  FaUsers,
-} from "react-icons/fa6";
+import { FaClipboardCheck, FaHelmetSafety } from "react-icons/fa6";
+import { IoStar } from "react-icons/io5";
 
 const ValueTypes = [
-  { id: "commitment", icon: <FaHandshake size={20} /> },
-  { id: "sprit", icon: <FaUsers size={20} /> },
+  { id: "excellence", icon: <IoStar size={20} /> },
+  { id: "hse", icon: <FaHelmetSafety size={20} /> },
+  { id: "reliability", icon: <FaClipboardCheck size={20} /> },
   { id: "integrity", icon: <FaBalanceScale size={20} /> },
-  { id: "professionalism", icon: <FaBriefcase size={20} /> },
-  { id: "accountability", icon: <FaClipboardCheck size={20} /> },
 ];
 
 export const Values = () => {
@@ -25,9 +20,7 @@ export const Values = () => {
       className="flex flex-col px-[20%] w-full gap-14 max-2xl:px-[13%] max-md:px-[6%]"
     >
       <div className="flex flex-col">
-        <SpanL className="text-4xl font-extralight text-secondary">
-          Corporate.Values.title
-        </SpanL>
+        <SpanL className="text-4xl font-extralight text-secondary">Corporate.Values.title</SpanL>
         <SpanL className="opacity-70">Corporate.Values.subtitle</SpanL>
       </div>
       <div className="grid grid-cols-2 gap-7 max-md:grid-cols-1">
