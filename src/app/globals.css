@@ -2,6 +2,20 @@
 
 :root {
   /* light values */
+  --primary: #0a1b68;
+  --primary-variant: #515961;
+  --secondary: #297ec4;
+  --secondary-variant: #439a86;
+  --surface: #ebebeb;
+  --background: #fbfbfb;
+  --on-primary: #fefefe;
+  --on-secondary: #fefefe;
+  --on-background: #1e2019;
+  --on-surface: #1e2019;
+}
+
+.dark {
+  /* dark values */
   --primary: #14578c;
   --primary-variant: #0f4a7a;
   --secondary: #20b2aa;
@@ -10,20 +24,6 @@
   --background: #efefef;
   --on-primary: #fefefe;
   --on-secondary: #fdfff5;
-  --on-background: #1e2019;
-  --on-surface: #1e2019;
-}
-
-.dark {
-  /* dark values */
-  --primary: #14578c;
-  --primary-variant: #001b94;
-  --secondary: #ffa300;
-  --secondary-variant: #439a86;
-  --surface: #ebebeb;
-  --background: #fbfbfb;
-  --on-primary: #fefefe;
-  --on-secondary: #fefefe;
   --on-background: #1e2019;
   --on-surface: #1e2019;
 }
