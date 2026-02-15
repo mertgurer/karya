@@ -5,34 +5,16 @@ import { IoCheckmarkSharp } from "react-icons/io5";
 import { motion } from "motion/react";
 import { delay } from "motion";
 
-const DocumentationPoints = [
-  "records",
-  "transparency",
-  "traceability",
-  "compliance",
-  "continuousImprovement",
-];
+const DocumentationPoints = ["traceability", "transparency", "handover", "continuousImprovement"];
 
 export const Documentation = () => {
   return (
     <div className="flex px-[12%] gap-[5%] my-40 max-2xl:px-[8%]">
       <div className="flex-8 relative h-auto rounded-md overflow-hidden shadow-md shadow-black/10">
-        <Image
-          src={image}
-          alt="welcome-image"
-          fill
-          priority
-          sizes="100%"
-          className="object-cover"
-        />
+        <Image src={image} alt="welcome-image" fill priority sizes="100%" className="object-cover" />
       </div>
       <div className="flex-12 flex flex-col gap-7 py-10">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ amount: 0.8, once: true }}
-          className="flex flex-col gap-7"
-        >
+        <motion.div initial="hidden" whileInView="visible" viewport={{ amount: 0.8, once: true }} className="flex flex-col gap-7">
           <SpanL
             variants={{
               hidden: { x: 40, opacity: 0 },

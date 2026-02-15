@@ -24,24 +24,6 @@ const carouselItems = [
     registered: "Reg. No: EMS/1234/5678",
     icon: <IoDiamondOutline size={40} />,
   },
-  {
-    id: "ASME U Stamp",
-    title: "Quality.Certificates.uStamp",
-    registered: "Cert. No: U-1234-5678",
-    icon: <IoRocketOutline size={40} />,
-  },
-  {
-    id: "API 6D",
-    title: "Quality.Certificates.api6D",
-    registered: "Reg. No: API6D/1234/5678",
-    icon: <IoLeafOutline size={40} />,
-  },
-  {
-    id: "API 650",
-    title: "Quality.Certificates.api650",
-    registered: "Reg. No: API650/1234/5678",
-    icon: <IoLeafOutline size={40} />,
-  },
 ];
 
 export const Carousel = () => {

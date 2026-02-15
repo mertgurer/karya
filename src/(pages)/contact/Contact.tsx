@@ -11,9 +11,8 @@ import { MdMailOutline, MdOutlinePhoneEnabled } from "react-icons/md";
 
 const formReasonOptions = [
   { value: "general", label: "Contact.Form.Reasons.general" },
+  { value: "quotation", label: "Contact.Form.Reasons.quotation" },
   { value: "services", label: "Contact.Form.Reasons.services" },
-  { value: "careers", label: "Contact.Form.Reasons.careers" },
-  { value: "partnership", label: "Contact.Form.Reasons.partnership" },
   { value: "other", label: "Contact.Form.Reasons.other" },
 ];
 
@@ -65,9 +64,9 @@ export const Contact = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.8 }}
-        className="grid grid-cols-3 items-center px-[12%] py-32 text-on-surface self-center max-2xl:px-[5%] max-md:grid-cols-1 max-md:gap-5 max-md:py-16"
+        className="grid grid-cols-3 px-[12%] py-32 text-on-surface self-center max-2xl:px-[5%] max-md:grid-cols-1 max-md:gap-5 max-md:py-16"
       >
-        <div className="flex flex-col flex-2 text-lg gap-4 max-md:text-center max-md:mb-7">
+        <div className="flex flex-col flex-2 text-lg 2xl:my-auto gap-4 max-md:text-center max-md:mb-7">
           <SpanL variants={blockVariants} transition={{ delay: 0.1, duration: 0.4 }} className="font-semibold text-primary-variant">
             Contact.addressesTitle
           </SpanL>
@@ -95,10 +94,12 @@ export const Contact = () => {
               <SpanL className="font-light">{`Contact.Addresses.${address.key}.address`}</SpanL>
             </Link>
             <div className="flex flex-col">
-              <Link href={`tel:${address.phone}`} className="flex gap-2 items-center hover:text-secondary transition-colors group">
-                <MdOutlinePhoneEnabled />
-                <span>{address.phone}</span>
-              </Link>
+              {address.phone && (
+                <Link href={`tel:${address.phone}`} className="flex gap-2 items-center hover:text-secondary transition-colors group">
+                  <MdOutlinePhoneEnabled />
+                  <span>{address.phone}</span>
+                </Link>
+              )}
               <Link href={`mailto:${address.email}`} className="flex gap-2 items-center hover:text-secondary transition-colors group">
                 <MdMailOutline />
                 <span>{address.email}</span>

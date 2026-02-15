@@ -226,13 +226,13 @@
     }
   },
   "Contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd Love to Hear From You",
-    "contactTitle": "Get in touch with the nation’s largest employee-owned electrical contractor.",
+    "title": "Contact Us",
+    "subtitle": "We invite you to get in touch",
+    "contactTitle": "Get in touch with us for your E&I needs",
     "contactDescriptionTitle": "Request For Information",
     "contactDescription": "For more information on Rosendin and how we can meet your needs, please fill out the form below and someone will respond to your inquiry within 24 hours.",
     "addressesTitle": "Our Offices",
-    "addressesDescription": "Feel free to visit or contact our offices located in Turkey and the USA. We are here to assist you with your engineering needs.",
+    "addressesDescription": "Feel free to contact our offices located in Türkiye and Iraq.",
     "Form": {
       "nameSurname": "Full Name",
       "email": "Email Address",
@@ -243,27 +243,26 @@
       "reason": "Reason for Contact",
       "Reasons": {
         "general": "General Inquiry",
-        "services": "Services Information",
-        "careers": "Careers",
-        "partnership": "Partnership Opportunities",
+        "quotation": "Request for Quotation",
+        "services": "More Information about Our Services",
         "other": "Other"
       }
     },
     "Addresses": {
       "turkey": {
         "title": "Turkey Office",
-        "address": "Altıntepe Mahallesi, Sevgi Çiçeği Sokak, Sevgi Apartmanı, No 19-21, Kat 3, Daire 24, 34840 Istanbul İstanbul Turkey"
+        "address": "Akdeniz Mahallesi Cumhuriyet Bulvarı No.97 D.41 Konak İzmir"
       },
-      "usa": {
-        "title": "USA Office",
-        "address": "Altıntepe Mahallesi, Sevgi Çiçeği Sokak, Sevgi Apartmanı, No 19-21, Kat 3, Daire 24, 34840 Istanbul İstanbul Turkey"
+      "iraq": {
+        "title": "Iraq Office",
+        "address": "Iraq, Erbil, Atconz Village Villa No. S3/10"
       }
     }
   },
   "Careers": {
     "title": "Join Our Team",
     "subtitle": "Build Your Future with Karya Engineering",
-    "description": "Join us at Karya Engineering and be part of a dynamic team dedicated to excellence in electrical engineering. We are always looking for talented individuals who are passionate about making a difference in the industry. Whether you're an experienced professional or just starting your career, we offer opportunities for growth, learning, and development in a supportive work environment.",
+    "description": "Join us at Karya Engineering and be part of a dynamic team dedicated to excellence in E&I Engineering and Construction. We are always looking for talented individuals who are passionate about making a difference in the industry. Whether you're an experienced professional or just starting your career, we offer opportunities for growth, learning, and development in a supportive work environment.",
     "formTitle": "Application Form",
     "formDescription": "Please fill out the form below to apply for a position with Karya Engineering. We look forward to reviewing your application and potentially welcoming you to our team.",
     "Form": {
@@ -276,18 +275,19 @@
       "message": "Cover Letter / Additional Information",
       "submit": "Submit Application",
       "Positions": {
-        "engineer": "Engineer",
-        "projectManager": "Project Manager",
-        "manager": "Manager",
+        "siteEngineer": "Site Engineer",
+        "qaQcEngineer": "QA/QC Engineer-Supervisor",
+        "hseSupervisor": "HSE  Supervisor",
+        "inspector": "Inspector",
+        "sitePersonnel": "Site Personnel",
         "intern": "Intern"
       }
     },
     "Benefits": {
-      "competitiveSalary": "Competitive Salary",
-      "healthInsurance": "Health Insurance",
-      "careerGrowth": "Career Growth Opportunities",
-      "inclusiveEnvironment": "Inclusive Work Environment",
-      "trainingPrograms": "Ongoing Training Programs"
+      "growth": "Career Growth Opportunities",
+      "challengingProjects": "Challenging and Impactful Projects",
+      "collaborative": "Collaborative Team Culture",
+      "inclusiveEnvironment": "Inclusive Work Environment"
     }
   },
   "Services": {
@@ -303,48 +303,141 @@
       "title": "Engineering",
       "description": "We deliver detailed E&I engineering solutions aligned with project specifications, international standards, and operational requirements.",
       "introduction": "We deliver front-end and detailed engineering that aligns with international standards and project-specific requirements. Safety, compliance, and system integrity are integrated into every stage of our design process. Through technical evaluations and feasibility support, we help clients make informed decisions and ensure reliable, field-ready E&I solutions.",
-      "longDescription": "Our engineering division delivers comprehensive design solutions that bridge the gap between conceptual vision and practical reality. From initial feasibility studies to complex detailed engineering, we utilize state-of-the-art simulation software and global best practices to ensure every project is safe, efficient, and innovative.",
+      "longDescription": "Our engineering services are designed to support the technical and operational demands of complex industrial sectors, including oil & gas, energy and petrochemical sectors. We deliver tailored electrical and instrumentation solutions that align with industry standards and site-specific requirements.",
       "pullQuote": "Engineering is not merely about construction; it is about creating a legacy of efficiency and safety.",
       "ctaTitle": "Ready to engineer your vision?",
       "ctaDescription": "Connect with our technical directors to discuss the specific requirements of your upcoming project.",
       "features": {
         "0": {
-          "title": "Feasibility Studies",
-          "description": "In-depth technical and economic analysis to determine project viability before major capital investment."
+          "title": "FEED Engineering",
+          "description": "We develop front-end engineering solutions that define technical scope, system architecture, and cost-effective project execution strategies."
         },
         "1": {
-          "title": "Front-End Design (FEED)",
-          "description": "Establishing the technical requirements and rough investment costs to ensure project control."
+          "title": "Detailed Engineering",
+          "description": "We produce comprehensive technical designs and documentation to ensure accurate installation, compliance, and operational reliability."
         },
         "2": {
-          "title": "Detailed Engineering",
-          "description": "Full-scale 3D modeling, structural calculations, and MEP layouts ready for construction teams."
+          "title": "Project Feasibility",
+          "description": "We perform technical and operational assessments to support informed decision-making and early-stage project validation."
         },
         "3": {
           "title": "Safety & Compliance",
-          "description": "Rigorous HAZOP studies and code compliance checks to meet international safety standards."
+          "description": "We apply structured safety studies and regulatory standards to ensure system integrity, risk mitigation, and operational compliance."
         }
       },
       "benefits": {
-        "0": "Reduction in material waste through optimized design",
-        "1": "Full compliance with ISO 9001 & ISO 14001",
-        "2": "Seamless integration with procurement teams",
-        "3": "Advanced 3D visualization for stakeholder buy-in",
-        "4": "Risk mitigation through early-stage analysis",
-        "5": "Sustainable and energy-efficient methodologies"
+        "0": "Engineering Complied with ISO 9001 and ISO 14001",
+        "1": "Proven Field Execution",
+        "2": "End-to-End Project Integration",
+        "3": "Safety and Compliance Focus",
+        "4": "Experienced Technical Teams",
+        "5": "Reliable Project Delivery"
       }
     },
     "procurement": {
       "title": "Procurement",
-      "description": "We manage the sourcing and supply of certified materials and equipment to ensure quality, compliance, and timely project delivery."
+      "description": "We manage the sourcing and supply of certified materials and equipment to ensure quality, compliance, and timely project delivery.",
+      "introduction": "Our procurement services ensure the reliable sourcing and supply of certified materials and equipment to support complex E&I project requirements. We work with qualified vendors and manufacturers to maintain compliance with international standards and project specifications. Through structured procurement planning and vendor evaluation, we ensure quality, traceability, and cost-effective delivery. Our processes are designed to minimize supply chain risk and maintain schedule alignment across all project phases. This disciplined approach supports consistent performance and reliable system integration in the field.",
+      "longDescription": "Our procurement experience extends across a wide range of project environments, with a strong focus on technically demanding facilities such as Gas Treatment Facilities and Early Production Facilities. In addition to these specialized sites, we support all our operational areas with structured sourcing and supply processes. We ensure the procurement of certified materials and equipment that meet strict project, quality, and operational requirements, enabling reliable and compliant system integration across diverse project scopes.",
+      "pullQuote": "Engineering is not merely about construction; it is about creating a legacy of efficiency and safety.",
+      "ctaTitle": "Ready to engineer your vision?",
+      "ctaDescription": "Connect with our technical directors to discuss the specific requirements of your upcoming project.",
+      "features": {
+        "0": {
+          "title": "Vendor Pre-qualification and Evaluation",
+          "description": "We assess and qualify vendors based on technical capability, compliance, and performance criteria to ensure reliable sourcing."
+        },
+        "1": {
+          "title": "Material and Equipment Sourcing",
+          "description": "We source certified materials and equipment that meet project specifications, quality standards, and delivery requirements."
+        },
+        "2": {
+          "title": "Quality Inspection and Certification",
+          "description": "We perform inspections and manage certification processes to verify compliance with international and project-specific standards."
+        },
+        "3": {
+          "title": "Vendor Document Control and Data Management",
+          "description": "We manage technical documentation and data flow to ensure traceability, accuracy, and regulatory compliance throughout procurement."
+        }
+      },
+      "benefits": {
+        "0": "Qualified Global Vendor Network",
+        "1": "Standards-Based Procurement Processes",
+        "2": "Certified Material Sourcing",
+        "3": "Quality and Compliance Assurance",
+        "4": "Transparent Documentation Management",
+        "5": "Reliable Supply Chain Performance"
+      }
     },
     "construction": {
       "title": "Construction",
-      "description": "We execute E&I installation activities with a focus on safety, technical accuracy, and efficient field performance."
+      "description": "We execute E&I installation activities with a focus on safety, technical accuracy, and efficient field performance.",
+      "introduction": "Our construction services deliver precise and reliable electrical and instrumentation installation for complex industrial project environments. We execute site activities in accordance with international standards, approved engineering documentation, and strict safety requirements. Through structured field management and coordination, we ensure quality workmanship, schedule alignment, and technical compliance. Our approach minimizes execution risk and supports the seamless integration of E&I systems into operational facilities.",
+      "longDescription": "We have successfully executed technically demanding E&I works across complex industrial projects, demonstrating our capability in high-voltage power systems and large-scale instrumentation facilities. Our electrical scope includes 400 kV HV cable pulling and termination, generator step-up transformer installations up to 204 MVA, 45 MVA unit auxiliary transformers, and isolated phase busbar systems. On the instrumentation side, we have delivered full-scope works for facilities handling up to 60,000 BOPD oil processing capacity and gas treatment plants with capacities of up to 250 MMscf/d. This proven track record reflects our ability to manage critical systems in challenging operational environments.",
+      "pullQuote": "Engineering is not merely about construction; it is about creating a legacy of efficiency and safety.",
+      "ctaTitle": "Ready to engineer your vision?",
+      "ctaDescription": "Connect with our technical directors to discuss the specific requirements of your upcoming project.",
+      "features": {
+        "0": {
+          "title": "E&I Installation",
+          "description": "We perform accurate installation and system integration in line with approved engineering documents and technical standards."
+        },
+        "1": {
+          "title": "Site Supervision and Field Management",
+          "description": "We coordinate on-site activities to ensure safe, efficient, and schedule-aligned project execution."
+        },
+        "2": {
+          "title": "Quality Control and Compliance",
+          "description": "We apply inspection and verification processes to maintain compliance with project specifications and international standards."
+        },
+        "3": {
+          "title": "HSE Management and Site Safety",
+          "description": "We implement structured HSE practices to ensure safe working conditions and regulatory compliance across all site operations."
+        }
+      },
+      "benefits": {
+        "0": "Experience in the Industry’s Most Complex Projects",
+        "1": "Field-Proven Installation Practices",
+        "2": "Standards-Based Construction Processes",
+        "3": "Integrated HSE Management",
+        "4": "Experienced Site Teams",
+        "5": "Reliable Schedule and Quality Control"
+      }
     },
     "commissioning": {
       "title": "Commissioning",
-      "description": "We perform systematic testing, validation, and handover of E&I systems to ensure reliable and compliant operational readiness."
+      "description": "We perform systematic testing, validation, and handover of E&I systems to ensure reliable and compliant operational readiness.",
+      "introduction": "Our commissioning services prepare facilities for safe and reliable operation by thoroughly testing and validating electrical and instrumentation systems. We perform structured pre-commissioning and commissioning activities to confirm system functionality and performance. Through coordinated testing and clear handover documentation, we ensure a smooth transition from construction to full operational readiness.",
+      "longDescription": "We deliver full-scope commissioning services across a wide range of industrial facilities, including Combined Cycle Power Plants, Thermal Power Plants, Gas Treatment Facilities, EPF and WPF units, and refinery projects. Our team manages all phases of pre-commissioning, testing, and system validation to ensure safe and reliable start-up. This comprehensive approach enables a smooth transition to operations and long-term system performance across complex plant environments.",
+      "pullQuote": "Engineering is not merely about construction; it is about creating a legacy of efficiency and safety.",
+      "ctaTitle": "Ready to engineer your vision?",
+      "ctaDescription": "Connect with our technical directors to discuss the specific requirements of your upcoming project.",
+      "features": {
+        "0": {
+          "title": "Pre-Commissioning and System Testing",
+          "description": "We conduct structured testing and inspections to verify installation completeness and system readiness."
+        },
+        "1": {
+          "title": "Functional and Performance Verification",
+          "description": "We validate system functionality and performance against approved specifications and acceptance criteria."
+        },
+        "2": {
+          "title": "Handover Documentation and As-Built Records",
+          "description": "We prepare complete technical documentation to support compliant and efficient system handover to operations."
+        },
+        "3": {
+          "title": "Operational Readiness and Start-Up Support",
+          "description": "We support start-up activities to ensure safe, stable, and reliable transition to full operational status."
+        }
+      },
+      "benefits": {
+        "0": "Structured Commissioning Methodology",
+        "1": "In-House Laboratories and Wide Range of Dedicated Test Equipment",
+        "2": "Operational Readiness Focus",
+        "3": "Comprehensive Documentation Control",
+        "4": "Experienced Start-Up Teams",
+        "5": "Reliable Handover and System Performance"
+      }
     }
   },
   "Hse": {
@@ -406,6 +499,7 @@
       "textTwo": "Our Safety Observation Card System encourages the proactive identification and reporting of unsafe acts, conditions, and positive safety behaviors. The system enables not only HSE specialists but all employees to actively contribute to the HSE process, strengthening engagement across the workforce. This structured approach supports early intervention, continuous improvement, and a safer working environment."
     },
     "FocusAreas": {
+      "title": "Our HSE Approach",
       "FocusAreaOne": {
         "title": "Workplace Safety",
         "text": "We maintain safe working conditions by systematically identifying hazards, implementing control measures, and ensuring adherence to approved procedures. Continuous supervision and workforce engagement help reduce risks and prevent incidents across all project activities."
@@ -453,15 +547,15 @@
     },
     "Environmental": {
       "title": "Environmental Impact",
-      "description": "Karya Engineering is deeply committed to minimizing our environmental footprint and promoting sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions.<br/>sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions.sustainable practices across all our operations. We recognize the importance of protecting our planet for future generations and actively work to reduce waste, conserve energy, and utilize eco-friendly materials in our projects. Our environmental initiatives are designed to align with global sustainability goals, ensuring that we not only comply with regulatory requirements but also lead by example in the engineering industry. Through continuous improvement and innovation, we strive to make a positive impact on the environment while delivering high-quality engineering solutions."
+      "description": "At Karya Engineering, we recognize that protecting the environment is not just a responsibility but a commitment to future generations. We strive to minimize our ecological footprint by promoting sustainable work practices, efficient resource management, and strict waste control. Our aim is to ensure that every project we undertake contributes not only to industrial progress but also to a greener and safer planet."
     }
   },
   "Quality": {
     "title": "Quality Assurance",
     "subtitle": "Commitment to Excellence",
     "Policy": {
-      "title": "Policy",
-      "text": "Karya Engineering is committed to delivering the highest quality electrical engineering services that meet or exceed our clients' expectations. Our quality policy is centered on continuous improvement, adherence to industry standards, and a proactive approach to quality management. We strive to foster a culture of excellence where every team member is empowered to contribute to quality outcomes through rigorous processes, thorough training, and effective communication. By integrating quality considerations into every phase of our projects, we aim to ensure reliability, efficiency, and customer satisfaction in all our deliverables.<br/> that meet or exceed our clients' expectations. Our quality policy is centered on continuous improvement, adherence to industry standards, and a proactive approach to quality management. We strive to foster a culture of excellence where every team member is empowered to contribute to quality outcomes through rigorous processes, thorough training, and effective communication. By integrating quality considerations into every phase of our projects, we aim to ensure reliability, efficiency, and customer satisfaction in all our deliverables."
+      "title": "Quality Policy",
+      "text": "Field quality control procedures form a fundamental part of our operations and are embedded in every phase of project execution. In line with the demands of our industry, we adhere strictly to internationally recognized quality standards across all activities, ensuring consistency, traceability, and technical reliability. To achieve full compliance with project specifications and client-specific quality systems, our procedures are systematically aligned with the unique requirements of each project. Through continuous monitoring, documentation, and verification processes, we maintain high levels of performance and reinforce our commitment to delivering dependable, high-quality outcomes."
     },
     "Process": {
       "title": "Assurance Process",
@@ -469,65 +563,69 @@
       "Preparation": {
         "title": "Preparation of a Method of Statement (MOS)",
         "Points": {
-          "0": "Comprehensive review of project specifications and requirements",
-          "1": "Development of detailed procedures and protocols",
-          "2": "Identification of necessary resources and personnel"
+          "0": "Definition of work execution methodology and sequence",
+          "1": "Identification of resources, tools, and safety controls",
+          "2": "Approval and communication to relevant project teams"
         }
       },
       "Inspection": {
-        "title": "Inspection and Test Plan (ITP)",
+        "title": "Inspection & Test Plan (ITP)",
         "Points": {
-          "0": "Establishment of inspection criteria and checkpoints",
-          "1": "Scheduling of inspections and tests throughout the project lifecycle",
-          "2": "Documentation of inspection results and corrective actions"
+          "0": "Establishment of inspection and verification points",
+          "1": "Definition of acceptance criteria and standards",
+          "2": "Coordination with client and third-party inspections"
         }
       },
       "Execution": {
-        "title": "Executing and Monitoring Operations",
+        "title": "Executing and Monitoring Field Operations",
         "Points": {
-          "0": "Implementation of quality control measures during construction",
-          "1": "Regular monitoring and reporting of quality performance",
-          "2": "Continuous feedback loop for process improvement"
+          "0": "Implementation of approved procedures on site",
+          "1": "Continuous supervision and quality verification",
+          "2": "Recording of deviations and corrective actions"
         }
       },
       "Reporting": {
         "title": "Inspection & Test Report (ITR)",
         "Points": {
-          "0": "Comprehensive documentation of inspection and test results",
-          "1": "Analysis of quality data to identify trends and issues",
-          "2": "Final reporting to stakeholders with recommendations for future projects"
+          "0": "Documentation of inspection and test results",
+          "1": "Verification of compliance with specifications",
+          "2": "Archiving records for traceability and handover"
         }
       }
     },
     "Performance": {
-      "title": "Performance Metrics",
-      "description": "Karya Engineering is dedicated to maintaining the highest standards of quality assurance in all our projects. Our commitment to excellence is reflected in our key performance metrics, which demonstrate our ongoing efforts to deliver superior engineering solutions.",
-      "onTimeDelivery": "On-Time Delivery",
-      "projectsCompleted": "Projects Completed",
-      "customers": "Satisfied Customers"
+      "title": "Quality Performance Metrics",
+      "description": "Our quality metrics provide a clear measure of the effectiveness of our quality processes and ensure consistent performance. By tracking key indicators, we monitor compliance, identify areas for improvement, and stay aligned with project requirements. This approach supports continuous improvement and reliable project outcomes. ",
+      "disclaimer": "*Excluding delays resulting from missing project information and/or material shortages.",
+      "approveRate": "First Inspection Approval Rate",
+      "closureTime": "Punch List Closure Time",
+      "reports": "Number of Non Conformance Reports (NCR)(in 976,000 MH Project)",
+      "punchMetrics": "Punch List Closure Times",
+      "aPunch": "A Punch",
+      "bPunch": "B Punch",
+      "cPunch": "C Punch"
     },
     "Documentation": {
       "title": "Full Traceability & Transparent Reporting",
-      "description": "We believe that documentation is a critical component of quality assurance. Our comprehensive documentation practices ensure full traceability and transparent reporting throughout the project lifecycle. From initial planning to final delivery, we maintain detailed records of all processes, inspections, and tests to provide our clients with clear insights into project progress and quality outcomes. This commitment to thorough documentation not only supports effective communication but also facilitates continuous improvement and accountability in all our engineering endeavors.",
+      "description": "We maintain full traceability and transparency throughout our quality processes by ensuring that all activities, inspections, and test results are properly documented and recorded. Structured reporting systems enable clear visibility into project status, compliance, and performance for both internal teams and clients. This disciplined approach supports accountability, facilitates audits and reviews, and strengthens confidence in the integrity and reliability of delivered work.",
       "Points": {
-        "records": "Detailed records of all quality assurance activities",
-        "transparency": "Transparent reporting to clients and stakeholders",
         "traceability": "Comprehensive traceability from project inception to completion",
-        "compliance": "Ensuring compliance with industry standards and regulations",
-        "continuousImprovement": "Facilitating continuous improvement through documented feedback and lessons learned"
+        "transparency": "Transparent reporting to clients",
+        "handover": "Excellent handover to clients",
+        "continuousImprovement": "Continuous improvement through documented feedback and lessons learned"
       }
     },
     "Improvement": {
       "title": "Continuous Improvement",
       "motto": "Quality is a Journey, Not a Destination",
-      "text": "We are committed to the philosophy of continuous improvement in all aspects of our operations. We actively seek feedback from clients, employees, and stakeholders to identify areas for enhancement and innovation. Through regular training, process evaluations, and the adoption of best practices, we strive to elevate our quality standards and deliver exceptional engineering solutions that exceed expectations. Our dedication to continuous improvement ensures that we remain at the forefront of the industry, consistently delivering value and excellence in every project we undertake."
+      "text": "Continuous improvement is embedded in our quality approach through regular performance evaluation, feedback integration, and process refinement. We analyze project outcomes, inspection data, and lessons learned to identify opportunities for optimization. By systematically implementing corrective and preventive actions, we enhance efficiency, strengthen compliance, and maintain consistent quality across all activities."
     },
     "Certificates": {
-      "title": "Quality Certificates",
-      "description": "Karya Engineering is proud to hold a range of quality certificates that demonstrate our commitment to excellence and adherence to industry standards. These certifications reflect our dedication to maintaining the highest levels of quality in all our engineering services, ensuring that we consistently meet or exceed client expectations. Our quality certificates serve as a testament to our rigorous quality management systems, continuous improvement efforts, and unwavering focus on delivering superior engineering solutions.",
+      "title": "Our Certificates",
+      "description": "Our ISO certifications reflect our commitment to internationally recognized management and quality standards. These certifications demonstrate our dedication to consistent performance, regulatory compliance, and continuous improvement across all operations.",
       "qualityManagement": "Quality Management Systems",
-      "occupationalHealth": "Occupational Health and Safety",
-      "environmentalManagement": "Environmental Management",
+      "occupationalHealth": "Occupational Health and Safety Management Systems",
+      "environmentalManagement": "Environmental Management Systems",
       "uStamp": "ASME U Stamp",
       "api6D": "API 6D",
       "api650": "API 650"

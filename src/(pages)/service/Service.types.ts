@@ -8,18 +8,6 @@ export interface ServiceProps {
 export interface ServiceModel {
   id: string;
   image: StaticImageData;
-  icon: ReactNode;
-  title: string;
-  description: string;
-  shortDescription: string;
-  features: {
-    title: string;
-    description: string;
-    icon?: ReactNode;
-  }[];
-  benefits: string[];
-  details: {
-    label: string;
-    value: string;
-  }[];
+  futureCount: number;
+  benefitCount: number;
 }

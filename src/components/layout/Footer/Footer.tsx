@@ -31,10 +31,12 @@ export const Footer = () => {
                 <SpanL className="font-light">{`Contact.Addresses.${address.key}.address`}</SpanL>
               </Link>
               <div className="flex flex-col mt-2">
-                <Link href={`tel:${address.phone}`} className="flex gap-2 items-center hover:text-secondary transition-colors group">
-                  <MdOutlinePhoneEnabled />
-                  <span>{address.phone}</span>
-                </Link>
+                {address.phone && (
+                  <Link href={`tel:${address.phone}`} className="flex gap-2 items-center hover:text-secondary transition-colors group">
+                    <MdOutlinePhoneEnabled />
+                    <span>{address.phone}</span>
+                  </Link>
+                )}
                 <Link href={`mailto:${address.email}`} className="flex gap-2 items-center hover:text-secondary transition-colors group">
                   <MdMailOutline />
                   <span>{address.email}</span>

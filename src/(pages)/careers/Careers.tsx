@@ -2,18 +2,20 @@
 
 import { WelcomeHeader } from "@/components/layout/WelcomeHeader";
 import Welcome from "@/assets/images/careers/welcome.jpg";
-import { ButtonL, CheckboxL, ComboBoxL, FileUploaderL, InputL, InputType, SpanL } from "@/components/ui";
+import { ButtonL, ComboBoxL, FileUploaderL, InputL, InputType, SpanL } from "@/components/ui";
 import { motion } from "motion/react";
-import { FaChartLine, FaMoneyBillTrendUp } from "react-icons/fa6";
-import { MdHealthAndSafety } from "react-icons/md";
-import { GiTeamIdea } from "react-icons/gi";
+import { FaChartLine } from "react-icons/fa6";
+import { GiProgression, GiTeamIdea } from "react-icons/gi";
 import { RadioGroupL } from "@/components/ui/RadioGroupL";
+import { RiTeamFill } from "react-icons/ri";
 
 const formPositionOptions = [
+  { value: "siteEngineer", label: "Careers.Form.Positions.siteEngineer" },
+  { value: "qaQcEngineer", label: "Careers.Form.Positions.qaQcEngineer" },
+  { value: "hseSupervisor", label: "Careers.Form.Positions.hseSupervisor" },
+  { value: "inspector", label: "Careers.Form.Positions.inspector" },
+  { value: "sitePersonnel", label: "Careers.Form.Positions.sitePersonnel" },
   { value: "intern", label: "Careers.Form.Positions.intern" },
-  { value: "engineer", label: "Careers.Form.Positions.engineer" },
-  { value: "projectManager", label: "Careers.Form.Positions.projectManager" },
-  { value: "manager", label: "Careers.Form.Positions.manager" },
 ];
 
 const haveYouWorkedOptions = [
@@ -88,17 +90,17 @@ export const Careers = () => {
         <div className="flex flex-3 flex-col gap-12 sticky top-1/4 h-max mt-2 max-2xl:gap-8 max-2xl:top-1/5 max-md:static max-md:px-[5%]">
           <SpanL className="opacity-70">Careers.description</SpanL>
           <div className="flex flex-col gap-8 text-xl max-2xl:gap-4 max-2xl:-ml-10">
+            <motion.div variants={blockVariants} transition={{ delay: 0.5, duration: 0.3 }} className="flex items-center gap-4 max-2xl:scale-80">
+              <GiProgression size={48} className="text-secondary bg-background p-2 rounded-sm" />
+              <SpanL>Careers.Benefits.growth</SpanL>
+            </motion.div>
             <motion.div variants={blockVariants} transition={{ delay: 0.3, duration: 0.3 }} className="flex items-center gap-4 max-2xl:scale-80">
-              <FaMoneyBillTrendUp size={48} className="text-secondary bg-background p-2 rounded-sm" />
-              <SpanL>Careers.Benefits.competitiveSalary</SpanL>
+              <FaChartLine size={48} className="text-secondary bg-background p-2 rounded-sm" />
+              <SpanL>Careers.Benefits.challengingProjects</SpanL>
             </motion.div>
             <motion.div variants={blockVariants} transition={{ delay: 0.4, duration: 0.3 }} className="flex items-center gap-4 max-2xl:scale-80">
-              <MdHealthAndSafety size={48} className="text-secondary bg-background p-2 rounded-sm" />
-              <SpanL>Careers.Benefits.healthInsurance</SpanL>
-            </motion.div>
-            <motion.div variants={blockVariants} transition={{ delay: 0.5, duration: 0.3 }} className="flex items-center gap-4 max-2xl:scale-80">
-              <FaChartLine size={48} className="text-secondary bg-background p-2 rounded-sm" />
-              <SpanL>Careers.Benefits.careerGrowth</SpanL>
+              <RiTeamFill size={48} className="text-secondary bg-background p-2 rounded-sm" />
+              <SpanL>Careers.Benefits.collaborative</SpanL>
             </motion.div>
             <motion.div variants={blockVariants} transition={{ delay: 0.6, duration: 0.3 }} className="flex items-center gap-4 max-2xl:scale-80">
               <GiTeamIdea size={48} className="text-secondary bg-background p-2 rounded-sm" />

@@ -1,21 +1,13 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "motion/react";
-
-// UI Components
-import { ButtonL } from "@/components/ui/ButtonL/ButtonL";
 import { SpanL } from "@/components/ui/SpanL";
 import { ServiceProps } from "./Service.types";
-
-// Icons for visual helpers
-import { IoCheckmarkCircle, IoArrowForward } from "react-icons/io5";
+import { IoCheckmarkCircle } from "react-icons/io5";
 import { LuLayoutTemplate, LuShieldCheck, LuZap, LuUsers } from "react-icons/lu";
-import { LinkL } from "@/components/ui";
 
-// Visual Helper Icons Configuration
 const FeatureIcons = [<LuLayoutTemplate key={1} size={32} />, <LuZap key={2} size={32} />, <LuShieldCheck key={3} size={32} />, <LuUsers key={4} size={32} />];
 
 export const Service = ({ service }: ServiceProps) => {

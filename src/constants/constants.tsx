@@ -180,33 +180,40 @@ export const ServiceDetails = [
   {
     id: "engineering",
     image: ServiceImage1,
+    futureCount: 4,
+    benefitCount: 4,
   },
   {
     id: "procurement",
     image: ServiceImage2,
+    futureCount: 4,
+    benefitCount: 4,
   },
   {
     id: "construction",
     image: ServiceImage3,
+    futureCount: 4,
+    benefitCount: 4,
   },
   {
     id: "commissioning",
     image: ServiceImage4,
+    futureCount: 4,
+    benefitCount: 4,
   },
-] as ServiceModel[];
+];
 
 export const Addresses = [
   {
     key: "turkey",
-    coordinates: { lat: 39.9334, lng: 32.8597 },
-    phone: "+1 234 567 8900",
-    email: "karya@example.com",
+    coordinates: { lat: 38.42721585476637, lng: 27.132775266201087 },
+    phone: "+90 232 422 0230",
+    email: "info@karyaengineering.com",
   },
   {
-    key: "usa",
-    coordinates: { lat: 37.7749, lng: -122.4194 },
-    phone: "+1 234 567 8900",
-    email: "karya@example.com",
+    key: "iraq",
+    coordinates: { lat: 36.24687972761957, lng: 44.01631725357656 },
+    email: "info.erbil@karyaengineering.com",
   },
 ];
 
