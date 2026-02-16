@@ -25,26 +25,16 @@ function ServiceCard({ service }: ServiceCardProps) {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         className="absolute inset-0"
       >
-        <Image
-          src={service.image}
-          alt={service.id}
-          fill
-          priority
-          sizes="100%"
-          className="object-cover"
-        />
+        <Image src={service.image} alt={service.id} fill priority sizes="100%" className="object-cover" />
       </motion.div>
       <div className="absolute inset-0 bg-on-surface/40" />
       <div className="relative flex self-end mb-10 ml-10 z-10 w-max max-md:mb-4 max-md:ml-4">
-        <SpanL
-          upperCase
-          className="text-surface font-medium text-4xl max-md:text-2xl"
-        >{`Services.${service.id}.title`}</SpanL>
+        <SpanL upperCase className="text-surface font-medium text-4xl max-md:text-2xl">{`Services.${service.id}.title`}</SpanL>
         <motion.div
           initial={{ width: 0 }}
           animate={{ width: isHovered ? "100%" : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="absolute -bottom-7 left-0 bg-surface h-1 origin-left max-md:-bottom-3"
+          className="absolute -bottom-3 left-0 bg-surface h-1 origin-left"
         />
       </div>
     </Link>

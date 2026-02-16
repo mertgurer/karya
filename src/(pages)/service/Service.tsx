@@ -36,7 +36,7 @@ export const Service = ({ service }: ServiceProps) => {
       <div className="flex flex-col self-center w-full max-w-5xl px-8 pt-16 pb-20 gap-20 max-md:px-5 max-md:py-12 max-md:gap-12">
         {/* 2. INTRODUCTION TEXT */}
         <div className="flex flex-col gap-6">
-          <SpanL className="font-light text-lg leading-relaxed text-on-background max-md:text-2xl">{`Services.${service.id}.introduction`}</SpanL>
+          <SpanL className="font-light text-lg leading-relaxed text-on-background text-center max-md:text-2xl">{`Services.${service.id}.introduction`}</SpanL>
           <div className="w-24 h-0.5 bg-secondary mx-auto mt-4" />
         </div>
         {/* 3. VISUAL HELPER: ICON GRID (Key Features) */}

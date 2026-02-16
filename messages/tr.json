@@ -54,7 +54,7 @@
     "About": {
       "sectionTitle": "Neden Karya",
       "title": "Güvenilir E&I Çözüm Ortağınız",
-      "description": "2002 yılında kurulan Karya Mühendislik A.Ş., Orta Doğu genelindeki Petrol ve Gaz projeleri için güvenilir bir E&I (Elektrik & Enstrümantasyon) çözüm ortağıdır. Merkezi İzmir, Türkiye'de bulunan ve Irak, Erbil'de bölge müdürlüğü olan firmamız, uluslararası standartlarla uyumlu, kalite odaklı çözümler sunmaktadır."
+      "description": "2002 yılında kurulan Karya Mühendislik, Orta Doğu genelindeki Petrol ve Gaz projeleri için güvenilir bir E&I (Elektrik & Enstrümantasyon) çözüm ortağıdır. Merkezi İzmir, Türkiye'de bulunan ve Irak, Erbil'de bölge müdürlüğü olan firmamız, uluslararası standartlarla uyumlu, kalite odaklı çözümler sunmaktadır."
     },
     "Performance": {
       "sectionTitle": "Başarılarımız",
@@ -230,7 +230,7 @@
     "subtitle": "Sizi iletişime geçmeye davet ediyoruz",
     "contactTitle": "E&I ihtiyaçlarınız için bizimle iletişime geçin",
     "contactDescriptionTitle": "Bilgi Talebi",
-    "contactDescription": "Hizmetlerimiz ve ihtiyaçlarınızı nasıl karşılayabileceğimiz hakkında daha fazla bilgi için lütfen aşağıdaki formu doldurun; 24 saat içinde talebinize yanıt verilecektir.",
+    "contactDescription": "Karya Engineering ve ihtiyaçlarınızı nasıl karşılayabileceğimiz hakkında daha fazla bilgi edinmek için lütfen aşağıdaki formu doldurun; talebinize 24 saat içinde yanıt vereceğiz.",
     "addressesTitle": "Ofislerimiz",
     "addressesDescription": "Türkiye ve Irak'ta bulunan ofislerimizle dilediğiniz zaman iletişime geçebilirsiniz.",
     "Form": {
@@ -448,8 +448,8 @@
       "text": "Sağlık, Emniyet ve Çevre (İSG-Ç) operasyonları konusunda titiz bir planlama ve süreç yönetimi politikası uyguluyoruz. Faaliyet gösterdiğimiz ve uzmanlaştığımız sektörlerin doğası gereği İSG uygulamaları hayati önem taşımaktadır. Bu sorumluluğun bilinciyle insan odaklı bir yaklaşım benimsiyor, İSG operasyonlarımızı uluslararası standartlara uygun olarak tasarlıyor, tüm süreçleri sürekli izliyor ve güncel metodolojilerle geliştiriyoruz."
     },
     "Process": {
-      "title": "Kalite Güvence Süreci",
-      "text": "Karya Mühendislik, her projenin genel başarısını sağlamak için sağlam bir Kalite Güvence (QA) süreci uygular.",
+      "title": "HSE Süreci",
+      "text": "Karya Mühendislik, her projenin genel başarısını sağlamak için sağlam bir HSE (Sağlık, Emniyet ve Çevre) süreci uygular.",
       "Preparation": {
         "title": "Risk Değerlendirmesi (RA) ve İş Güvenliği Analizi (JSA) Hazırlığı",
         "Points": {

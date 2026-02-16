@@ -25,7 +25,6 @@ export const FocusAreas = () => {
   return (
     <div className="flex flex-col gap-20 my-60 px-[8%] max-2xl:px-[4%]">
       <div className="flex items-center text-primary">
-        <RxDotFilled size={40} className="pb-2" />
         <SpanL className="text-4xl font-bold px-2 pb-2">Hse.FocusAreas.title</SpanL>
       </div>
       <div className="flex justify-between gap-14">

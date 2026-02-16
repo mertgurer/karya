@@ -54,7 +54,7 @@
     "About": {
       "sectionTitle": "Why Karya",
       "title": "Trusted E&I Solution Partners",
-      "description": "Karya Mühendislik A.Ş., established in 2002, is a trusted E&I solution partner for Oil & Gas projects across the Middle East. Headquartered in Izmir, Türkiye with a regional branch in Iraq, Erbil, we deliver quality-driven solutions aligned with international standards."
+      "description": "Karya Engineering, established in 2002, is a trusted E&I solution partner for Oil & Gas projects across the Middle East. Headquartered in Izmir, Türkiye with a regional branch in Iraq, Erbil, we deliver quality-driven solutions aligned with international standards."
     },
     "Performance": {
       "sectionTitle": "What We Achieved",
@@ -230,7 +230,7 @@
     "subtitle": "We invite you to get in touch",
     "contactTitle": "Get in touch with us for your E&I needs",
     "contactDescriptionTitle": "Request For Information",
-    "contactDescription": "For more information on Rosendin and how we can meet your needs, please fill out the form below and someone will respond to your inquiry within 24 hours.",
+    "contactDescription": "For more information on Karya Engineering and how we can meet your needs, please fill out the form below and we will respond to your inquiry within 24 hours.",
     "addressesTitle": "Our Offices",
     "addressesDescription": "Feel free to contact our offices located in Türkiye and Iraq.",
     "Form": {
@@ -250,7 +250,7 @@
     },
     "Addresses": {
       "turkey": {
-        "title": "Turkey Office",
+        "title": "Türkiye Office",
         "address": "Akdeniz Mahallesi Cumhuriyet Bulvarı No.97 D.41 Konak İzmir"
       },
       "iraq": {
@@ -293,7 +293,7 @@
   "Services": {
     "title": "Our Services",
     "subtitle": "Comprehensive E&I Solutions",
-    "secondTitle": "We deliver integrated solutions to address the technical and operational requirements of up-to-date E & I systems.",
+    "secondTitle": "We deliver integrated solutions to address the technical and operational requirements of up-to-date E&I systems.",
     "description": "Our services cover the full scope of electrical and instrumentation activities, from detailed engineering and material procurement to site installation and system commissioning. We apply internationally recognized standards and proven methodologies to ensure safety, quality, and operational reliability.",
     "label": "Our Expertise",
     "keyFeatures": "Key Capabilities",
@@ -448,8 +448,8 @@
       "text": "We implement a meticulous planning and process management policy regarding Health, Safety, and Environment (HSE) Operations. Given the nature of the industries in which we operate and specialize, HSE practices hold vital importance. Fully aware of this responsibility, we adopt a human-centered approach, designing our HSE operations in line with international standards, continuously monitoring all processes, and improving them based on the most up to-date methodologies."
     },
     "Process": {
-      "title": "Quality Assurance Process",
-      "text": "Karya Engineering implements a robust Quality Assurance (QA) process to ensure that all proj overall success of each project.",
+      "title": "HSE Process",
+      "text": "Our HSE process is structured around key focus areas that ensure comprehensive management of workplace safety, environmental protection, training and awareness, and risk management. By systematically addressing these areas, we create a safer working environment and promote a culture of safety across all project activities.",
       "Preparation": {
         "title": "Preparation of Risk Assessment (RA) and Job Safety Analysis (JSA)",
         "Points": {

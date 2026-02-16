@@ -8,7 +8,7 @@ const PerformanceDetails = ["TRIR", "LTIR", "HSE"];
 
 export const Performance = () => {
   return (
-    <div className="relative pt-120 flex flex-col px-[12%] py-36 bg-primary max-2xl:px-[8%]">
+    <div className="relative pt-120 flex flex-col px-[12%] py-36 bg-primary-variant max-2xl:px-[8%]">
       <div className="absolute w-[50%] top-0 left-[5%] aspect-[1.6] -translate-y-[42%] rounded-sm overflow-hidden">
         <Image src={PolicyImage} alt="hse-policy" fill priority sizes="100%" className="object-cover" />
       </div>
@@ -29,7 +29,7 @@ export const Performance = () => {
               className="flex flex-col gap-3 items-center"
             >
               <SpanL className="font-light text-justify text-surface text-8xl max-2xl:text-6xl">{`Hse.Performance.${item}.value`}</SpanL>
-              <SpanL className="font-medium text-xl bg-secondary px-4 py-1 rounded-sm text-on-secondary max-2xl:text-base">{`Hse.Performance.${item}.title`}</SpanL>
+              <SpanL className="font-medium text-xl bg-primary px-4 py-1 rounded-sm text-on-secondary max-2xl:text-base">{`Hse.Performance.${item}.title`}</SpanL>
             </motion.div>
             {index < PerformanceDetails.length - 1 && (
               <motion.div

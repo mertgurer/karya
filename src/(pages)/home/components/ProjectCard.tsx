@@ -57,7 +57,7 @@ function ProjectCard({ index, project }: ProjectCardProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: isHovered ? 1 : 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="absolute inset-0  bg-on-background/50 backdrop-blur-xs"
+          className="absolute inset-0 bg-on-background/50 backdrop-blur-xs"
         />
         <motion.div
           initial={{ opacity: 1 }}

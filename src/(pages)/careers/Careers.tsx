@@ -69,7 +69,6 @@ export const Careers = () => {
           <InputL
             variants={blockVariants}
             transition={{ delay: 0.7, duration: 0.3 }}
-            required
             type={InputType.TEXT_AREA}
             name="message"
             placeholder="Careers.Form.message"

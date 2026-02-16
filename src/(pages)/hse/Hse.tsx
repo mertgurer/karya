@@ -16,7 +16,7 @@ export const Hse = () => {
       <Policy />
       <Performance />
       <div className="h-32 w-full overflow-hidden">
-        <div className="h-32 scale-200 -translate-y-full -rotate-3 bg-primary" />
+        <div className="h-32 scale-200 -translate-y-full -rotate-3 bg-primary-variant" />
       </div>
       <Process />
       <Culture />
