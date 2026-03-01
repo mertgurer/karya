@@ -39,7 +39,6 @@ export const Performance = () => {
           >
             Quality.Performance.description
           </SpanL>
-          <SpanL className="text-xs opacity-60">Quality.Performance.disclaimer</SpanL>
         </div>
         <div className="flex flex-col gap-24 flex-4">
           <div className={`gap-10 grid grid-cols-2 items-start max-md:grid-cols-1`}>
@@ -65,7 +64,10 @@ export const Performance = () => {
         </div>
       </div>
       <div className="flex flex-col gap-20">
-        <SpanL className="text-4xl text-primary self-center">Quality.Performance.punchMetrics</SpanL>
+        <div className="flex flex-col items-start gap-2">
+          <SpanL className="text-4xl text-primary">Quality.Performance.punchMetrics</SpanL>
+          <SpanL className="text-xs opacity-60">Quality.Performance.disclaimer</SpanL>
+        </div>
         <div className={`gap-10 grid grid-cols-3 items-start max-md:grid-cols-1`}>
           {PunchMetrics.map((metric, index) => (
             <motion.div

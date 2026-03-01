@@ -106,6 +106,7 @@
     "details": "Project Details",
     "projectPresentation": "Project Presentation",
     "certificates": "Certificates",
+    "scope": "Project Scope",
     "services": "Services Provided",
     "Services": {
       "electrical": "Electrical Infrastructure",
@@ -113,41 +114,119 @@
       "communication": "Communication Networks"
     },
     "Project": {
-      "alpha": {
-        "title": "Project Alpha",
-        "location": "New York, USA",
-        "smallDescription": "A groundbreaking infrastructure project that redefines urban connectivity.",
-        "description": "A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges. A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges. A groundbreaking infrastructure project that redefines urban connectivity. Innovative solutions for modern architectural challenges."
+      "erbil-airport": {
+        "title": "Erbil International Airport Fuel Farm Rehabilitation",
+        "location": "Erbil, Iraq",
+        "smallDescription": "Engineering and Procurement of E&I Works for airport fuel infrastructure.",
+        "description": "Rehabilitation of storage tanks and re-building of facilities to meet airport concession standards. Karya Engineering provided E&I engineering and procurement.",
+        "scope": {
+          "1": "Tank Gauging System",
+          "2": "4 x Jet fuel Storage Tank E&I Works",
+          "3": "Replacement of pumps and filter water separators",
+          "4": "New Bridger offloading and Refueler loading facilities",
+          "5": "DCS and ESD System",
+          "6": "F&G System",
+          "7": "New Office Building, Control & Electrical Room E&I"
+        }
       },
-      "beta": {
-        "title": "Project Beta",
-        "location": "Los Angeles, USA",
-        "smallDescription": "Innovative solutions for modern architectural challenges.",
-        "description": "Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges. Innovative solutions for modern architectural challenges."
+      "khabat-power": {
+        "title": "Khabat Thermal Power Plant",
+        "location": "Khabat – Erbil, Iraq",
+        "smallDescription": "2×150 MW power generation facility installation and commissioning.",
+        "description": "A major thermal power project designed to enhance grid stability. Karya Engineering acted as the LV/HV Electrical Subcontractor.",
+        "scope": {
+          "1": "900,000 m MV–LV Power Cable Installation",
+          "2": "250,000 m Instrument Cable Installation",
+          "3": "100,000 LV–MV Terminations",
+          "4": "30,000 m Cable Tray Installation",
+          "5": "2×45 MVA UAT & 2×204 MVA Step-Up Transformers",
+          "6": "2×200 MVA Generator Circuit Breakers",
+          "7": "Isolated Phase Bus Duct Installation",
+          "8": "1,000+ LV/MV Siemens Switchgear Cubicles"
+        }
       },
-      "gamma": {
-        "title": "Project Gamma",
-        "location": "Chicago, USA",
-        "smallDescription": "Sustainable development for future generations.",
-        "description": "Sustainable development for future generations. Innovative solutions for modern architectural challenges. Sustainable development for future generations. Innovative solutions for modern architectural challenges. Sustainable development for future generations. Innovative solutions for modern architectural challenges."
+      "hkn-sarsang": {
+        "title": "HKN Energy Sarsang Block Wellsite Production",
+        "location": "Sarsang Region, Northern Iraq",
+        "smallDescription": "Electrical and Instrumentation works for crude oil processing.",
+        "description": "Development of production facilities to increase crude oil capacity in the Sarsang field. We executed all E&I works for safe and timely commissioning.",
+        "scope": {
+          "1": "387,000 m MV-LV Power Cable Installation",
+          "2": "469,000 m Instrumentation Cable Installation",
+          "3": "115,000 LV and MV Cable Terminations",
+          "4": "39,000 m Cable Tray Installation",
+          "5": "9 Prefabricated Substation Installations",
+          "6": "196 LV/MV Cubicles and 148 Control System Cubicles",
+          "7": "4235 Field Instrument Installation & Calibration",
+          "8": "Plant Fire & Gas Alarm System",
+          "9": "14,000 m Stainless Steel Instrument Tubing",
+          "10": "Pre-commissioning support"
+        }
       },
-      "delta": {
-        "title": "Project Delta",
-        "location": "Houston, USA",
-        "smallDescription": " Revolutionizing urban landscapes.",
-        "description": "Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban Revolutionizing urban landscapes. Innovative solutions for modern architectural challenges. Revolutionizing urban"
+      "khor-mor": {
+        "title": "KM500 Gas Treatment Plant Project",
+        "location": "Kor Mor Region, Sulaymaniyah, Iraq",
+        "smallDescription": "Major natural gas development increasing capacity to 750 MMSCFD.",
+        "description": "Khor Mor KM250 Expansion for Pearl Petroleum. Karya Engineering contributed to the electrical and instrumentation installation.",
+        "scope": {
+          "1": "513,750 m MV–LV Power Cable Installation",
+          "2": "541,210 m Instrumentation Cable Installation",
+          "3": "17,181 LV & MV Terminations",
+          "4": "42,000 m Cable Tray Installation",
+          "5": "6,210 Field Instrument Installations & Tests",
+          "6": "Main Substation (MSS) and CCR Installation",
+          "7": "8 Prefabricated Substation Installations",
+          "8": "315 LV/MV Cubicles & 192 Control System Panels",
+          "9": "Fire & Gas Alarm System",
+          "10": "98,000 m Fiber Optic Cable Installation"
+        }
       },
-      "epsilon": {
-        "title": "Project Epsilon",
-        "location": "San Francisco, USA",
-        "smallDescription": "Cutting-edge technology integration in commercial spaces.",
-        "description": "Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges. Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges. Cutting-edge technology integration in commercial spaces. Innovative solutions for modern architectural challenges."
+      "nainawa-power": {
+        "title": "Nainawa 6x125 MW Power Plant EBOP",
+        "location": "Nainawa, Iraq",
+        "smallDescription": "E&I installation for six high-efficiency gas turbine units.",
+        "description": "Strengthening Iraq’s electricity capacity through 750MW total generation. We completed all E&I works for reliable commissioning.",
+        "scope": {
+          "1": "15,000 m 400 kV HV Cable Installation",
+          "2": "512,000 m MV–LV Power Cable Installation",
+          "3": "Siemens UAT Transformer Commissioning",
+          "4": "28,750 m Cable Tray Installation",
+          "5": "190,000 m Instrument Cable Installation",
+          "6": "Boiler & Turbine Instrumentation (GE Units)",
+          "7": "Perimeter Lighting & Pre-commissioning"
+        }
       },
-      "zeta": {
-        "title": "Project Zeta",
-        "location": "Miami, USA",
-        "smallDescription": "Transforming waterfront properties with innovative designs.",
-        "description": "Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges. Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges. Transforming waterfront properties with innovative designs. Innovative solutions for modern architectural challenges."
+      "tupras-aliaga": {
+        "title": "Tüpraş Aliağa Refinery U-7000 Revamp",
+        "location": "Aliağa – İzmir, Turkey",
+        "smallDescription": "Modernization and efficiency revamp of refinery process units.",
+        "description": "Performed all installation and commissioning works in accordance with refinery safety and quality standards for capacity enhancement.",
+        "scope": {
+          "1": "75,000 m LV Power Cable Installation",
+          "2": "155,000 m Instrument Cable Installation",
+          "3": "15,000 LV–MV Terminations",
+          "4": "9,000 m Cable Tray Installation",
+          "5": "1,100 Ex-Proof Instruments Calibration",
+          "6": "15,000 m SS Tubing Design & Installation",
+          "7": "25,000 m Electrical Heat Tracing",
+          "8": "250 Ex-Proof LED Lighting Fixtures"
+        }
+      },
+      "taqa-atrush": {
+        "title": "TAQA Atrush PF-1 Phase 1A EPF",
+        "location": "Atrush – Duhok, Iraq",
+        "smallDescription": "Early Production Facilities (EPF) E&I installation and commissioning.",
+        "description": "Establishing early crude oil production capability in the Atrush Block, including gas turbine generation and flowline installation.",
+        "scope": {
+          "1": "240,000 m MV–LV Power Cable Installation",
+          "2": "4 Siemens E-Houses Installation",
+          "3": "9,000 m Cable Tray Installation",
+          "4": "140,000 m Instrument Cable Installation",
+          "5": "MV–LV Transformer Substations",
+          "6": "2×5.5 MW Gas Turbine Power Units",
+          "7": "Flare Area E&I Works (80m height)",
+          "8": "10 km Flowline HV & Fiber Optic Installation"
+        }
       }
     }
   },
@@ -451,7 +530,7 @@
       "title": "HSE Process",
       "text": "Our HSE process is structured around key focus areas that ensure comprehensive management of workplace safety, environmental protection, training and awareness, and risk management. By systematically addressing these areas, we create a safer working environment and promote a culture of safety across all project activities.",
       "Preparation": {
-        "title": "Preparation of Risk Assessment (RA) and Job Safety Analysis (JSA)",
+        "title": "Risk Assessment & Job Safety Analysis",
         "Points": {
           "0": "Identification of task-specific hazards and risk levels",
           "1": "Definition of control measures and mitigation actions",
@@ -547,7 +626,7 @@
     },
     "Environmental": {
       "title": "Environmental Impact",
-      "description": "At Karya Engineering, we recognize that protecting the environment is not just a responsibility but a commitment to future generations. We strive to minimize our ecological footprint by promoting sustainable work practices, efficient resource management, and strict waste control. Our aim is to ensure that every project we undertake contributes not only to industrial progress but also to a greener and safer planet."
+      "description": "At Karya Engineering, we recognize that protecting the environment is not only a responsibility but a long-term commitment to future generations. We strive to minimize our ecological footprint by promoting sustainable work practices, efficient resource management, and strict waste control across all project phases. Environmental considerations are systematically integrated into our planning, engineering, procurement, and site execution activities to ensure full compliance with applicable regulations and internationally recognized standards.<br/>We continuously assess our operations to identify opportunities for reducing emissions, optimizing energy consumption, preventing pollution, and improving resource efficiency. Through structured monitoring, reporting, and performance evaluation, we maintain transparency and accountability in our environmental management practices. In parallel, we promote environmental awareness among our workforce, encouraging responsible behavior and active participation in sustainability initiatives.<br/>Our objective is to ensure that every project we undertake contributes not only to industrial progress but also to a greener, safer, and more sustainable future for the communities and environments in which we operate."
     }
   },
   "Quality": {
@@ -558,7 +637,7 @@
       "text": "Field quality control procedures form a fundamental part of our operations and are embedded in every phase of project execution. In line with the demands of our industry, we adhere strictly to internationally recognized quality standards across all activities, ensuring consistency, traceability, and technical reliability. To achieve full compliance with project specifications and client-specific quality systems, our procedures are systematically aligned with the unique requirements of each project. Through continuous monitoring, documentation, and verification processes, we maintain high levels of performance and reinforce our commitment to delivering dependable, high-quality outcomes."
     },
     "Process": {
-      "title": "Assurance Process",
+      "title": "Quality Assurance Process",
       "text": "At Karya Engineering, our quality assurance process is designed to ensure that every project we undertake meets the highest standards of excellence.",
       "Preparation": {
         "title": "Preparation of a Method of Statement (MOS)",
@@ -600,7 +679,7 @@
       "approveRate": "First Inspection Approval Rate",
       "closureTime": "Punch List Closure Time",
       "reports": "Number of Non Conformance Reports (NCR)(in 976,000 MH Project)",
-      "punchMetrics": "Punch List Closure Times",
+      "punchMetrics": "Punch List Closure Times (Days)",
       "aPunch": "A Punch",
       "bPunch": "B Punch",
       "cPunch": "C Punch"

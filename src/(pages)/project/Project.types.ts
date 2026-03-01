@@ -15,6 +15,7 @@ export interface ProjectModel {
   certificates: string[];
   services: Service[];
   image: StaticImageData;
+  scopeCount: number;
 }
 
 export interface Service {

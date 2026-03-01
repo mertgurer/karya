@@ -40,7 +40,7 @@ export const Projects = () => {
                   <SpanL className="text-on-primary line-clamp-4">{`Projects.Project.${x.id}.description`}</SpanL>
                 </div>
               </div>
-              <div className="flex flex-col group-hover:ml-2 duration-300">
+              <div className="flex flex-col group-hover:translate-x-2 duration-300">
                 <div className="flex items-center gap-1 opacity-70 my-2 text-primary">
                   <IoMdPin size={16} />
                   <SpanL className="max-2xl:text-sm">{`Projects.Project.${x.id}.location`}</SpanL>

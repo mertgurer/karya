@@ -1,6 +1,6 @@
 import { Flow, StepItem } from "@/components/ui/Flow";
 import { SpanL } from "@/components/ui";
-import { CheckCircle, ClipboardList, FileText, HardHat } from "lucide-react";
+import { CheckCircle, FileText, HardHat, PencilRuler, ShieldQuestionMark } from "lucide-react";
 
 const HseSteps: StepItem[] = [
   {
@@ -12,7 +12,7 @@ const HseSteps: StepItem[] = [
   {
     key: "Toolbox",
     localeSource: "Hse.Process.Toolbox",
-    icon: <ClipboardList size={20} />,
+    icon: <PencilRuler size={20} />,
     pointCount: 3,
   },
   {
@@ -30,7 +30,7 @@ const HseSteps: StepItem[] = [
   {
     key: "Actions",
     localeSource: "Hse.Process.Actions",
-    icon: <CheckCircle size={20} />,
+    icon: <ShieldQuestionMark size={20} />,
     pointCount: 3,
   },
 ];

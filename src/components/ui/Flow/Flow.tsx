@@ -29,18 +29,18 @@ export const Flow = ({ steps }: FlowProps) => {
           >
             <div
               className={`
-                  h-full bg-primary-variant/20 py-10 flex flex-col justify-between max-2xl:py-8`}
+                  h-full bg-primary-variant/20 py-10 flex flex-col max-2xl:py-8`}
               style={{
                 clipPath: getClipPath(isFirst, isLast),
                 transform: `translateX(${moveAmount}%)`,
               }}
             >
-              <div className="flex items-start gap-5 pl-12 pr-10 max-2xl:pl-10 max-2xl:pr-6">
+              <div className="h-[30%] flex items-start gap-3 pl-12 pr-10 max-2xl:pl-10 max-2xl:pr-6">
                 <div className="flex items-center justify-center min-w-10 min-h-10 mt-2 rounded-md bg-surface/60 text-secondary shadow-sm">{step.icon}</div>
-                <SpanL className="my-auto text-lg font-semibold text-secondary max-2xl:text-base">{`${step.localeSource}.title`}</SpanL>
+                <SpanL noWrap className="mt-2 text-lg font-semibold text-secondary max-2xl:text-base">{`${step.localeSource}.title`}</SpanL>
               </div>
 
-              <div className="flex flex-col gap-3 mt-6 mb-2 pl-14 pr-10 max-2xl:pl-10 max-2xl:pr-6">
+              <div className="h-[70%] flex-3 flex flex-col gap-3 mt-6 mb-2 pl-14 pr-10 max-2xl:pl-10 max-2xl:pr-6">
                 {Array(step.pointCount)
                   .fill(null)
                   .map((_, idx) => (

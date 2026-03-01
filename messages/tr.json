@@ -106,6 +106,7 @@
     "details": "Proje Detayları",
     "projectPresentation": "Proje Sunumu",
     "certificates": "Sertifikalar",
+    "scope": "Proje Kapsamı",
     "services": "Sunulan Hizmetler",
     "Services": {
       "electrical": "Elektrik Altyapısı",
@@ -451,7 +452,7 @@
       "title": "HSE Süreci",
       "text": "Karya Mühendislik, her projenin genel başarısını sağlamak için sağlam bir HSE (Sağlık, Emniyet ve Çevre) süreci uygular.",
       "Preparation": {
-        "title": "Risk Değerlendirmesi (RA) ve İş Güvenliği Analizi (JSA) Hazırlığı",
+        "title": "Risk Değerlendirmesi & İş Güvenliği Analizi",
         "Points": {
           "0": "Görevi özgü tehlikelerin ve risk seviyelerinin belirlenmesi",
           "1": "Kontrol önlemlerinin ve hafifletme eylemlerinin tanımlanması",
@@ -547,7 +548,7 @@
     },
     "Environmental": {
       "title": "Çevresel Etki",
-      "description": "Karya Mühendislik olarak, çevreyi korumanın sadece bir sorumluluk değil, gelecek nesillere bir borç olduğunun bilincindeyiz. Sürdürülebilir çalışma uygulamalarını, verimli kaynak yönetimini ve sıkı atık kontrolünü teşvik ederek ekolojik ayak izimizi en aza indirmeye çalışıyoruz. Amacımız, üstlendiğimiz her projenin sadece endüstriyel ilerlemeye değil, aynı zamanda daha yeşil ve daha güvenli bir gezegene katkıda bulunmasını sağlamaktır."
+      "description": "Karya Mühendislik olarak, çevreyi korumanın sadece bir sorumluluk değil, gelecek nesillere yönelik uzun vadeli bir taahhüt olduğunun bilincindeyiz. Tüm proje aşamalarında sürdürülebilir çalışma uygulamalarını, verimli kaynak yönetimini ve sıkı atık kontrolünü teşvik ederek ekolojik ayak izimizi en aza indirmeye gayret ediyoruz. Çevresel hususlar; yürürlükteki mevzuatlara ve uluslararası düzeyde kabul görmüş standartlara tam uyum sağlamak amacıyla planlama, mühendislik, tedarik ve saha uygulama faaliyetlerimize sistematik olarak entegre edilmiştir.<br/>Emisyonları azaltmak, enerji tüketimini optimize etmek, kirliliği önlemek ve kaynak verimliliğini artırmak için operasyonlarımızı sürekli olarak değerlendiriyoruz. Yapılandırılmış izleme, raporlama ve performans değerlendirme süreçleri aracılığıyla çevre yönetimi uygulamalarımızda şeffaflık ve hesap verebilirliği sürdürüyoruz. Buna paralel olarak, iş gücümüz arasında çevre farkındalığını artırıyor, sorumlu davranışları ve sürdürülebilirlik girişimlerine aktif katılımı teşvik ediyoruz.<br/>Temel amacımız, üstlendiğimiz her projenin sadece endüstriyel ilerlemeye değil, aynı zamanda faaliyet gösterdiğimiz topluluklar ve çevreler için daha yeşil, daha güvenli ve daha sürdürülebilir bir geleceğe katkıda bulunmasını sağlamaktır."
     }
   },
   "Quality": {
@@ -558,7 +559,7 @@
       "text": "Saha kalite kontrol prosedürleri, operasyonlarımızın temel bir parçasını oluşturur ve proje yürütmenin her aşamasına gömülüdür. Sektörümüzün talepleri doğrultusunda, tüm faaliyetlerde uluslararası kabul görmüş kalite standartlarına sıkı sıkıya bağlı kalarak tutarlılık, izlenebilirlik ve teknik güvenilirlik sağlıyoruz. Proje şartnamelerine ve müşteriye özgü kalite sistemlerine tam uyum sağlamak için prosedürlerimiz her projenin kendine özgü gereksinimleriyle sistematik olarak hizalanır. Sürekli izleme, dokümantasyon ve doğrulama süreçleri aracılığıyla yüksek performans seviyelerini koruyor ve güvenilir, yüksek kaliteli sonuçlar sunma taahhüdümüzü pekiştiriyoruz."
     },
     "Process": {
-      "title": "Güvence Süreci",
+      "title": "Kalite Güvence Süreci",
       "text": "Karya Mühendislik'te kalite güvence sürecimiz, üstlendiğimiz her projenin en yüksek mükemmellik standartlarını karşılamasını sağlamak üzere tasarlanmıştır.",
       "Preparation": {
         "title": "Uygulama Yöntemi Bildirimi (MOS) Hazırlığı",
@@ -600,7 +601,7 @@
       "approveRate": "İlk Muayene Onay Oranı",
       "closureTime": "Kontrol Listesi Kapatma Süresi",
       "reports": "Uygunsuzluk Raporu Sayısı (NCR) (976.000 Adam-Saatlik Projede)",
-      "punchMetrics": "Eksik Listesi Kapatma Süreleri",
+      "punchMetrics": "Eksik Listesi Kapatma Süreleri (Gün)",
       "aPunch": "A Kontrol Listesi",
       "bPunch": "B Kontrol Listesi",
       "cPunch": "C Kontrol Listesi"

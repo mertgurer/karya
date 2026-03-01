@@ -11,6 +11,7 @@ import { Fragment } from "react/jsx-runtime";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { motion } from "motion/react";
 import { GiLaurels } from "react-icons/gi";
+import { Dot } from "lucide-react";
 
 export const Project = ({ project }: ProjectProps) => {
   const locale = useLocale();
@@ -55,6 +56,17 @@ export const Project = ({ project }: ProjectProps) => {
               ))}
             </div>
           </div> */}
+          <div className="flex flex-col gap-4 px-7 mb-16">
+            <SpanL className="text-primary-variant font-semibold">Projects.scope</SpanL>
+            <div className="flex flex-col gap-1">
+              {Array.from({ length: project.scopeCount }, (_, i) => i + 1).map((num) => (
+                <div key={num} className="flex gap-1">
+                  <Dot size={20} className="text-primary" />
+                  <SpanL>{`Projects.Project.${project.id}.scope.${num}`}</SpanL>
+                </div>
+              ))}
+            </div>
+          </div>
           <div className="flex flex-col gap-8 px-7 max-2xl:gap-4 max-md:px-5">
             <SpanL className="text-primary-variant font-semibold">Projects.services</SpanL>
             <div className="grid grid-cols-3 max-md:grid-cols-2">

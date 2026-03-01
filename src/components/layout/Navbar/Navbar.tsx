@@ -4,16 +4,17 @@ import { MenuButton } from "./MenuButton";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "@/assets/images/logo.svg";
-import Language from "@/assets/images/language.png";
 import { Flags, NavigationLinks, SCROLL_UPDATE_THRESHOLD } from "@/constants";
 import { NavigationButton } from "./NavigationButton";
 import { useLenis } from "lenis/react";
 import { Link, routing, usePathname } from "@/i18n";
-import { motion } from "motion/react";
-import { Globe, Languages } from "lucide-react";
+import { easeInOut, motion } from "motion/react";
+import { Globe } from "lucide-react";
+import { useLocale } from "next-intl";
 
 export const Navbar = () => {
   const pathname = usePathname();
+  const locale = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -99,6 +100,13 @@ export const Navbar = () => {
               );
             })}
           </div>
+          <motion.div
+            animate={!isScrolled ? { opacity: 0.8, x: 0 } : { opacity: 0, x: -10 }}
+            transition={{ duration: 0.3, ease: easeInOut }}
+            className="absolute left-[125%] my-auto mt-px"
+          >
+            {locale.toLocaleUpperCase()}
+          </motion.div>
         </div>
       </div>
       {<MenuButton isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />}
