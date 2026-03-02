@@ -1,16 +1,23 @@
 import { NavigationButtonProps } from "@/components/layout/Navbar/Navbar.types";
-import ProjectImage1 from "@/assets/images/home/projects/project1.jpg";
-import ProjectImage2 from "@/assets/images/home/projects/project2.jpg";
-import ProjectImage3 from "@/assets/images/home/projects/project3.jpg";
-import ProjectImage4 from "@/assets/images/home/projects/project4.jpg";
-import ServiceImage1 from "@/assets/images/home/services/service1.jpg";
-import ServiceImage2 from "@/assets/images/home/services/service2.jpg";
-import ServiceImage3 from "@/assets/images/home/services/service3.jpg";
-import ServiceImage4 from "@/assets/images/home/services/service4.jpg";
 import { ProjectModel, Service as ProjectServices } from "@/(pages)/project/Project.types";
 import TrFlag from "@/assets/images/flags/tr.png";
 import UkFlag from "@/assets/images/flags/uk.png";
 import { Blocks, Brain, GitGraph, PackageSearch } from "lucide-react";
+
+import EngineeringImage from "@/assets/images/services/engineering.jpg";
+import CommissioningImage from "@/assets/images/services/commissioning.jpg";
+import ProcurementImage from "@/assets/images/services/procurement.jpg";
+import ConstructionImage from "@/assets/images/services/construction.jpg";
+
+import ErbilAirport from "@/assets/images/projects/erbil-airport.jpg";
+import KhabatPower from "@/assets/images/projects/khabat-power.jpg";
+import HknSarsang from "@/assets/images/projects/hkn-sarsang.jpg";
+import KhorMor from "@/assets/images/projects/khor-mor.jpg";
+import NainawaPower from "@/assets/images/projects/nainawa-power.jpg";
+import TaqaAtrush from "@/assets/images/projects/taqa-atrush.jpg";
+import TtopcoCpf2 from "@/assets/images/projects/ttopco-cpf2.jpg";
+import TtopcoTanker from "@/assets/images/projects/ttopco-tanker.jpg";
+import TuprasAliaga from "@/assets/images/projects/tupras-aliaga.jpg";
 
 export const REGEX = {
   EMAIL: /\S+@\S+\.\S+/,
@@ -88,7 +95,7 @@ export const ProjectDetails = [
     budget: 1150000,
     manHours: null,
     services: [EngineeringService, ProcurementService],
-    image: ProjectImage1,
+    image: ErbilAirport,
     scopeCount: 7,
     isCompleted: false,
   },
@@ -101,7 +108,7 @@ export const ProjectDetails = [
     manHours: 598000,
     budget: 6305500,
     services: [ConstructionService, PreCommissioningService],
-    image: ProjectImage2,
+    image: KhabatPower,
     scopeCount: 8,
     isCompleted: true,
   },
@@ -114,7 +121,7 @@ export const ProjectDetails = [
     manHours: 509060,
     budget: 5887250,
     services: [ConstructionService, PreCommissioningService],
-    image: ProjectImage3,
+    image: HknSarsang,
     scopeCount: 10,
     isCompleted: true,
   },
@@ -127,7 +134,7 @@ export const ProjectDetails = [
     manHours: 948000,
     budget: 9836000,
     services: [ConstructionService, PreCommissioningService],
-    image: ProjectImage4,
+    image: KhorMor,
     scopeCount: 10,
     isCompleted: false,
   },
@@ -140,7 +147,7 @@ export const ProjectDetails = [
     manHours: 490000,
     budget: 5065000,
     services: [ConstructionService, PreCommissioningService],
-    image: ProjectImage1,
+    image: NainawaPower,
     scopeCount: 7,
     isCompleted: true,
   },
@@ -153,7 +160,7 @@ export const ProjectDetails = [
     manHours: 125000,
     budget: 1187000,
     services: [ConstructionService, PreCommissioningService],
-    image: ProjectImage2,
+    image: TuprasAliaga,
     scopeCount: 8,
     isCompleted: true,
   },
@@ -166,7 +173,7 @@ export const ProjectDetails = [
     manHours: 195000,
     budget: 3610000,
     services: [ConstructionService, PreCommissioningService],
-    image: ProjectImage3,
+    image: TaqaAtrush,
     scopeCount: 8,
     isCompleted: true,
   },
@@ -179,7 +186,7 @@ export const ProjectDetails = [
     manHours: 90000,
     budget: 2500000,
     services: [EngineeringService, ProcurementService, ConstructionService, PreCommissioningService],
-    image: ProjectImage4,
+    image: TtopcoTanker,
     scopeCount: 9,
     isCompleted: true,
   },
@@ -192,7 +199,7 @@ export const ProjectDetails = [
     manHours: 130000,
     budget: 2250000,
     services: [ConstructionService, PreCommissioningService],
-    image: ProjectImage1,
+    image: TtopcoCpf2,
     scopeCount: 8,
     isCompleted: true,
   },
@@ -246,25 +253,25 @@ export const DetailFields = [
 export const ServiceDetails = [
   {
     id: "engineering",
-    image: ServiceImage1,
+    image: EngineeringImage,
     futureCount: 4,
     benefitCount: 6,
   },
   {
     id: "procurement",
-    image: ServiceImage2,
+    image: ProcurementImage,
     futureCount: 4,
     benefitCount: 6,
   },
   {
     id: "construction",
-    image: ServiceImage3,
+    image: ConstructionImage,
     futureCount: 4,
     benefitCount: 6,
   },
   {
     id: "commissioning",
-    image: ServiceImage4,
+    image: CommissioningImage,
     futureCount: 4,
     benefitCount: 6,
   },

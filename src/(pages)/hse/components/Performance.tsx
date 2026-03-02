@@ -9,7 +9,7 @@ const PerformanceDetails = ["TRIR", "LTIR", "HSE"];
 export const Performance = () => {
   return (
     <div className="relative pt-120 flex flex-col px-[12%] py-36 bg-primary-variant max-2xl:px-[8%]">
-      <div className="absolute w-[50%] top-0 left-[5%] aspect-[1.6] -translate-y-[42%] rounded-sm overflow-hidden">
+      <div className="absolute w-[50%] top-0 left-[5%] aspect-[2] -translate-y-[42%] rounded-sm overflow-hidden">
         <Image src={PolicyImage} alt="hse-policy" fill priority sizes="100%" className="object-cover" />
       </div>
       <SpanL className="text-4xl text-surface">Hse.Performance.title</SpanL>

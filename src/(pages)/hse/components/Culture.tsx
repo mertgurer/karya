@@ -1,8 +1,8 @@
 import Image from "next/image";
-import PolicyImage from "@/assets/images/hse/policy.jpg";
 import { SpanL } from "@/components/ui";
 import { motion } from "motion/react";
 import CultureImage from "@/assets/images/hse/culture.jpg";
+import Culture2Image from "@/assets/images/hse/culture-2.jpg";
 
 export const Culture = () => {
   return (
@@ -34,7 +34,7 @@ export const Culture = () => {
           className="flex flex-row-reverse bg-surface shadow-md shadow-surface/20 rounded-sm overflow-hidden"
         >
           <div className="relative w-[180%] aspect-[1.5]">
-            <Image src={PolicyImage} alt="hse-policy" fill priority sizes="100%" className="object-cover" />
+            <Image src={Culture2Image} alt="hse-culture-2" fill priority sizes="100%" className="object-cover" />
           </div>
           <div className="flex flex-col gap-4 my-auto pl-5 pr-10 text-justify py-8">
             <SpanL className="text-3xl text-primary font-medium">Hse.Culture.subtitleTwo</SpanL>

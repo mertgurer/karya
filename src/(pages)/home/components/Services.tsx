@@ -1,15 +1,13 @@
 "use client";
 
 import { SpanL } from "@/components/ui/SpanL";
-import { easeInOut, motion } from "motion/react";
+import { motion } from "motion/react";
 import { Lightning } from "./Lightning";
 import ServiceCard from "./ServiceCard";
-import { ButtonL } from "@/components/ui/ButtonL";
 import { Link } from "@/i18n";
 import { HiArrowRight } from "react-icons/hi";
 import { useLenis } from "lenis/react";
 import { ServiceDetails } from "@/constants";
-import { LinkL } from "@/components/ui";
 
 export const Services = ({ index }: { index: number }) => {
   const lenis = useLenis();

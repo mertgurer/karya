@@ -9,7 +9,7 @@ export const About = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.5 }}
-      className="flex px-[20%] w-full gap-10 max-2xl:px-[13%] max-md:px-[6%] max-md:flex-col max-md:gap-0"
+      className="flex flex-col px-[20%] w-full gap-6 max-2xl:px-[13%] max-md:px-[6%] max-md:flex-col max-md:gap-0"
     >
       <motion.div
         variants={{
@@ -21,21 +21,11 @@ export const About = () => {
           delay: 0.3,
           ease: "easeInOut",
         }}
-        className="flex flex-col gap-2 h-full"
+        className="flex flex-col gap-2"
       >
         <div className="flex px-4 gap-3 text-4xl">
           <SpanL className="font-extralight">Corporate.About.title</SpanL>
           <span className="font-semibold">2007</span>
-        </div>
-        <div className="relative h-full max-md:w-full max-md:aspect-video">
-          <Image
-            src={Team}
-            alt="team-image"
-            fill
-            priority
-            sizes="100%"
-            className="object-cover -scale-x-100"
-          />
         </div>
       </motion.div>
       <SpanL
@@ -48,10 +38,13 @@ export const About = () => {
           delay: 0.3,
           ease: "easeInOut",
         }}
-        className="mt-12"
+        className=""
       >
         Corporate.About.description
       </SpanL>
+      <div className="relative h-100 w-full max-md:w-full max-md:aspect-video">
+        <Image src={Team} alt="team-image" fill priority sizes="100%" className="object-cover -scale-x-100" />
+      </div>
     </motion.div>
   );
 };

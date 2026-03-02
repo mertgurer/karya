@@ -71,7 +71,7 @@ function ProjectCard({ index, project }: ProjectCardProps) {
         <div className="flex py-12 mx-10 gap-10 z-20 overflow-hidden h-full max-2xl:py-8 max-2xl:mx-5">
           <motion.div
             initial={{ top: "80%" }}
-            animate={{ top: isHovered ? 48 : "80%" }}
+            animate={{ top: isHovered ? 48 : "72%" }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
             className="absolute flex flex-col"
           >
@@ -95,7 +95,7 @@ function ProjectCard({ index, project }: ProjectCardProps) {
             className={`flex flex-col gap-1 self-end`}
           >
             <span className="font-medium text-xl ml-1">{project.client}</span>
-            <SpanL className="font-light text-sm">{`Projects.Project.${project.id}.description`}</SpanL>
+            <SpanL className="font-light text-sm line-clamp-8">{`Projects.Project.${project.id}.description`}</SpanL>
           </motion.div>
         </div>
       </Link>
