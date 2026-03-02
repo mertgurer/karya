@@ -8,8 +8,10 @@ import { LinkL } from "@/components/ui/LinkL";
 import { Addresses, Flags } from "@/constants";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdMailOutline, MdOutlinePhoneEnabled } from "react-icons/md";
+import { useLocale } from "next-intl";
 
 export const Footer = () => {
+  const locale = useLocale();
   const pathname = usePathname();
 
   return (
@@ -51,7 +53,7 @@ export const Footer = () => {
               {routing.locales.map((locale) => {
                 return (
                   <Link key={locale} href={pathname} locale={locale} className="font-light relative h-5 flex items-center gap-2">
-                    <span className="font-bold">{locale.toUpperCase()}</span>
+                    <span className="font-bold">{locale.toLocaleUpperCase(locale)}</span>
                     <div className="relative h-full aspect-[1.7]">
                       <Image src={Flags[locale as keyof typeof Flags]} alt={"logo"} fill priority sizes="100%" className="object-cover" />
                     </div>

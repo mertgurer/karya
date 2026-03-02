@@ -17,7 +17,14 @@
     "acceptedFormats": "Accepted Formats",
     "client": "Client",
     "date": "Date",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "manHours": "Completed Man Hours",
+    "manHoursShort": "MH",
     "duration": "Duration",
+    "status": "Status",
+    "completed": "Completed",
+    "onGoing": "On Going",
     "budget": "Budget",
     "months": "Months",
     "USD": "$",
@@ -106,19 +113,22 @@
     "details": "Project Details",
     "projectPresentation": "Project Presentation",
     "certificates": "Certificates",
+    "scopeDescription": "Scope Description",
     "scope": "Project Scope",
     "services": "Services Provided",
     "Services": {
-      "electrical": "Electrical Infrastructure",
-      "safety": "Safety Systems",
-      "communication": "Communication Networks"
+      "engineering": "Engineering",
+      "procurement": "Procurement",
+      "construction": "Construction",
+      "preCommissioning": "Pre-Commissioning"
     },
     "Project": {
       "erbil-airport": {
         "title": "Erbil International Airport Fuel Farm Rehabilitation",
         "location": "Erbil, Iraq",
         "smallDescription": "Engineering and Procurement of E&I Works for airport fuel infrastructure.",
-        "description": "Rehabilitation of storage tanks and re-building of facilities to meet airport concession standards. Karya Engineering provided E&I engineering and procurement.",
+        "description": "Erbil International Airport (EIA) has extended the concession agreement with Mach Monument Aviation Fueling Company (MMAFCO). MMAFCO must rehabilitate the Storage Tanks, re-design and re-build all other Facilities, build additional Facilities, testing and commissioning and recertify the new fuel farm facilities, owned by EIA, and built in 2007, but was never commissioned post construction.  As per the terms of the extended concession agreement, work plan for the rehabilitation and commissioning works shall be submitted to EIA and the full refurbishment of the New Fuel Farm shall be completed and commissioned in 2 years.<br/>Karya Engineering participated as the E&I subcontractor, performing Electrical and Instrumentation engineering and procurement works.",
+        "scopeDescription": "Engineering and Procurement of E&I Works",
         "scope": {
           "1": "Tank Gauging System",
           "2": "4 x Jet fuel Storage Tank E&I Works",
@@ -133,7 +143,8 @@
         "title": "Khabat Thermal Power Plant",
         "location": "Khabat – Erbil, Iraq",
         "smallDescription": "2×150 MW power generation facility installation and commissioning.",
-        "description": "A major thermal power project designed to enhance grid stability. Karya Engineering acted as the LV/HV Electrical Subcontractor.",
+        "description": "The Khabat Thermal Power Plant Project, located near Erbil, is a 2×150 MW power generation facility designed to enhance the region’s power supply and grid stability.<br/>Karya Engineering participated as the Low-Voltage and High-Voltage Electrical Subcontractor to Gama Power System, completing all electrical and instrumentation works and supporting successful commissioning.",
+        "scopeDescription": "Installation and Commissioning of E&I Works",
         "scope": {
           "1": "900,000 m MV–LV Power Cable Installation",
           "2": "250,000 m Instrument Cable Installation",
@@ -149,7 +160,8 @@
         "title": "HKN Energy Sarsang Block Wellsite Production",
         "location": "Sarsang Region, Northern Iraq",
         "smallDescription": "Electrical and Instrumentation works for crude oil processing.",
-        "description": "Development of production facilities to increase crude oil capacity in the Sarsang field. We executed all E&I works for safe and timely commissioning.",
+        "description": "The HKN Energy, Sarsang Block Wellsite-Based Production Facilities Project, located in the Kurdistan Region of Iraq, was developed to increase crude oil production and processing capacity in the Sarsang field.<br/>Karya Engineering took part in this project as the E&I subcontractor to Havatek A.Ş, successfully executing the Electrical and Instrumentation works and supporting the safe and timely commissioning of the facilities.",
+        "scopeDescription": "Installation and Commissioning of E&I Works",
         "scope": {
           "1": "387,000 m MV-LV Power Cable Installation",
           "2": "469,000 m Instrumentation Cable Installation",
@@ -167,7 +179,8 @@
         "title": "KM500 Gas Treatment Plant Project",
         "location": "Kor Mor Region, Sulaymaniyah, Iraq",
         "smallDescription": "Major natural gas development increasing capacity to 750 MMSCFD.",
-        "description": "Khor Mor KM250 Expansion for Pearl Petroleum. Karya Engineering contributed to the electrical and instrumentation installation.",
+        "description": "The Khor Mor KM250 Expansion Project is a major natural gas development undertaken by Pearl Petroleum (Dana Gas & Crescent Petroleum) in the Kurdistan Region of Iraq, increasing the gas processing capacity from 500 to 750 MMSCFD.<br/>Karya Engineering participated in this project as the E&I subcontractor to Havatek Makina A.Ş., contributing to the successful and timely completion of the works.",
+        "scopeDescription": "Installation of Electrical & Instrumentation Works",
         "scope": {
           "1": "513,750 m MV–LV Power Cable Installation",
           "2": "541,210 m Instrumentation Cable Installation",
@@ -185,7 +198,8 @@
         "title": "Nainawa 6x125 MW Power Plant EBOP",
         "location": "Nainawa, Iraq",
         "smallDescription": "E&I installation for six high-efficiency gas turbine units.",
-        "description": "Strengthening Iraq’s electricity capacity through 750MW total generation. We completed all E&I works for reliable commissioning.",
+        "description": "The Nainawa 6×125 MW Power Plant Project was executed to strengthen Iraq’s electricity generation capacity through six high-efficiency gas turbine units.<br/>Karya Engineering completed all Electrical and Instrumentation works, contributing to reliable and timely plant commissioning.",
+        "scopeDescription": "Installation and Commissioning of E&I Works",
         "scope": {
           "1": "15,000 m 400 kV HV Cable Installation",
           "2": "512,000 m MV–LV Power Cable Installation",
@@ -200,7 +214,8 @@
         "title": "Tüpraş Aliağa Refinery U-7000 Revamp",
         "location": "Aliağa – İzmir, Turkey",
         "smallDescription": "Modernization and efficiency revamp of refinery process units.",
-        "description": "Performed all installation and commissioning works in accordance with refinery safety and quality standards for capacity enhancement.",
+        "description": "The Tüpraş Aliağa Refinery U-7000 Revamp Project was undertaken to modernize and improve process efficiency as part of Tüpraş’s capacity enhancement program.<br/>Karya Engineering acted as E&I subcontractor, performing all installation and commissioning works in accordance with refinery safety and quality standards.",
+        "scopeDescription": "Procurement, Installation and Commissioning of E&I Works",
         "scope": {
           "1": "75,000 m LV Power Cable Installation",
           "2": "155,000 m Instrument Cable Installation",
@@ -216,7 +231,8 @@
         "title": "TAQA Atrush PF-1 Phase 1A EPF",
         "location": "Atrush – Duhok, Iraq",
         "smallDescription": "Early Production Facilities (EPF) E&I installation and commissioning.",
-        "description": "Establishing early crude oil production capability in the Atrush Block, including gas turbine generation and flowline installation.",
+        "description": "The TAQA Atrush PF-1 Phase 1A Early Production Facilities Project was developed to establish early crude oil production and processing capability in the Atrush Block.<br/>Karya Engineering participated as the E&I subcontractor, performing Electrical and Instrumentation works and supporting the safe start-up and commissioning of the facilities.",
+        "scopeDescription": "Installation and Commissioning of E&I Works",
         "scope": {
           "1": "240,000 m MV–LV Power Cable Installation",
           "2": "4 Siemens E-Houses Installation",
@@ -226,6 +242,41 @@
           "6": "2×5.5 MW Gas Turbine Power Units",
           "7": "Flare Area E&I Works (80m height)",
           "8": "10 km Flowline HV & Fiber Optic Installation"
+        }
+      },
+      "ttopco-tanker": {
+        "title": "TTOPCO Tanker Loading Station Upgrading",
+        "location": "Koysinjaq, Iraq",
+        "smallDescription": "Upgrading crude oil storage capacity with additional 20,000 m³.",
+        "description": "The TTOPCO Tanker Loading Station Capacity Upgrading Project was developed to provide an additional 20,000 m³ crude oil storage capacity supplied from the TTOPCO CPF.<br/>Within the scope of this project, Electrical and Instrumentation (E&I) works were carried out for two (2) 10,000 m³ crude oil storage tanks and three (3) crude oil loading bays, including all associated utility systems.<br/>Karya Engineering participated in the project as the E&I subcontractor, undertaking the design, procurement, and installation of all electrical and instrumentation systems, and providing support for the safe start-up and commissioning of the facilities.",
+        "scopeDescription": "Engineering, Procurement, Installation and Commissioning of E&I Works",
+        "scope": {
+          "1": "Detail E&I design and engineering works",
+          "2": "DCS & ESD, Tanker Loading Automation design",
+          "3": "Electrical & Instrument material procurement",
+          "4": "3,000 meter cable tray installation",
+          "5": "75,000 meter instrument cable installation",
+          "6": "Installation of MV-LV Transformer Substations",
+          "7": "35,000 meter electrical cable installation",
+          "8": "3 Loading Bay E&I installation",
+          "9": "SIL-3 tank gauging system for 4 tanks"
+        }
+      },
+      "ttopco-cpf2": {
+        "title": "TTOPCO CPF-II Facilities Project",
+        "location": "Koysinjaq, Iraq",
+        "smallDescription": "Establishing 90,000 bopd crude oil production and processing capability.",
+        "description": "TTOPCO CPF-II Facilities Project was developed to establish  crude oil production and processing capability in the Koysinjaq, Iraq. Facility deliver 90,000 bopd. Karya Engineering participated as the E&I subcontractor, performing Electrical and Instrumentation works and supporting the safe start-up and commissioning of the facilities.",
+        "scopeDescription": "Installation and Commissioning of E&I Works",
+        "scope": {
+          "1": "15,000 meters Cable Trays installation",
+          "2": "203,000 meters L.V Electrical cable installation",
+          "3": "MV & LV Substation installation",
+          "4": "1,455 field instrument installation & calibration",
+          "5": "Plant fire & gas alarm system installation",
+          "6": "DCS & SIS system installation",
+          "7": "74,600 meters instrumentation cable installation",
+          "8": "Pre-Commissioning works"
         }
       }
     }

@@ -92,7 +92,7 @@ export const Navbar = () => {
                   locale={locale}
                   className="font-light relative h-9 px-2 py-2 flex items-center gap-2 hover:-translate-x-1 duration-200"
                 >
-                  <span className="font-bold">{locale.toUpperCase()}</span>
+                  <span className="font-bold">{locale.toLocaleUpperCase(locale)}</span>
                   <div className="relative h-full aspect-[1.7]">
                     <Image src={Flags[locale as keyof typeof Flags]} alt={"logo"} fill priority sizes="100%" className="object-cover" />
                   </div>
@@ -105,7 +105,7 @@ export const Navbar = () => {
             transition={{ duration: 0.3, ease: easeInOut }}
             className="absolute left-[125%] my-auto mt-px"
           >
-            {locale.toLocaleUpperCase()}
+            {locale.toLocaleUpperCase(locale)}
           </motion.div>
         </div>
       </div>

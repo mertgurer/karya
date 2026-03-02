@@ -17,7 +17,14 @@
     "acceptedFormats": "Kabul Edilen Formatlar",
     "client": "Müşteri",
     "date": "Tarih",
+    "startDate": "Başlangıç Tarihi",
+    "endDate": "Bitiş Tarihi",
+    "manHours": "Tamamlanan Adam Saati",
+    "manHoursShort": "AH",
     "duration": "Süre",
+    "status": "Durum",
+    "completed": "Tamamlandı",
+    "onGoing": "Devam Ediyor",
     "budget": "Bütçe",
     "months": "Ay",
     "USD": "$",
@@ -106,49 +113,171 @@
     "details": "Proje Detayları",
     "projectPresentation": "Proje Sunumu",
     "certificates": "Sertifikalar",
+    "scopeDescription": "Kapsam Açıklaması",
     "scope": "Proje Kapsamı",
     "services": "Sunulan Hizmetler",
     "Services": {
-      "electrical": "Elektrik Altyapısı",
-      "safety": "Güvenlik Sistemleri",
-      "communication": "İletişim Ağları"
+      "engineering": "Mühendislik",
+      "procurement": "Tedarik",
+      "construction": "İnşaat",
+      "preCommissioning": "Devreye Alma Öncesi"
     },
     "Project": {
-      "alpha": {
-        "title": "Alfa Projesi",
-        "location": "New York, ABD",
-        "smallDescription": "Kentsel bağlantıyı yeniden tanımlayan çığır açıcı bir altyapı projesi.",
-        "description": "Kentsel bağlantıyı yeniden tanımlayan çığır açıcı bir altyapı projesi. Modern mimari zorluklar için yenilikçi çözümler. Kentsel bağlantıyı yeniden tanımlayan ve modern mimari zorluklara yenilikçi çözümler sunan öncü bir altyapı çalışması."
+      "erbil-airport": {
+        "title": "Erbil Uluslararası Havalimanı Yakıt Çiftliği Rehabilitasyonu",
+        "location": "Erbil, Irak",
+        "smallDescription": "Havalimanı yakıt altyapısı için E&I işlerinin mühendislik ve tedarik süreçleri.",
+        "description": "Erbil Uluslararası Havalimanı (EIA), Mach Monument Aviation Fueling Company (MMAFCO) ile imtiyaz sözleşmesini uzatmıştır. MMAFCO; depolama tanklarını rehabilite etmek, diğer tüm tesisleri yeniden tasarlayıp inşa etmek, ek tesisler kurmak, test ve devreye alma işlemlerini gerçekleştirerek 2007'de inşa edilen ancak hiç devreye alınmayan yakıt çiftliği tesislerini yeniden sertifikalandırmakla yükümlüdür. Sözleşme şartları gereği, rehabilitasyon ve devreye alma iş planı EIA'ya sunulacak ve tam yenileme 2 yıl içinde tamamlanacaktır.<br/>Karya Mühendislik, E&I alt yüklenicisi olarak katılarak Elektrik ve Enstrümantasyon mühendislik ve tedarik işlerini yürütmüştür.",
+        "scopeDescription": "E&I İşleri Mühendislik ve Tedarik",
+        "scope": {
+          "1": "Tank Ölçüm Sistemi",
+          "2": "4 x Jet Yakıtı Depolama Tankı E&I İşleri",
+          "3": "Mevcut pompaların ve filtre su ayırıcıların değiştirilmesi",
+          "4": "Yeni tanker tahliye ve ikmal tesisleri",
+          "5": "DCS ve ESD Sistemi",
+          "6": "F&G (Yangın ve Gaz) Sistemi",
+          "7": "Yeni Ofis Binası, Kontrol ve Elektrik Odası E&I İşleri"
+        }
       },
-      "beta": {
-        "title": "Beta Projesi",
-        "location": "Los Angeles, ABD",
-        "smallDescription": "Modern mimari zorluklar için yenilikçi çözümler.",
-        "description": "Modern mimari zorluklar için geliştirilen yenilikçi çözümler. Bu proje, teknik mükemmellik ve modern tasarımın birleşimini temsil ederek sektördeki standartları yükseltmektedir."
+      "khabat-power": {
+        "title": "Khabat Termik Santrali",
+        "location": "Khabat – Erbil, Irak",
+        "smallDescription": "2×150 MW güç üretim tesisi kurulumu ve devreye alınması.",
+        "description": "Erbil yakınlarında bulunan Khabat Termik Santrali Projesi, bölgenin güç arzını ve şebeke istikrarını artırmak için tasarlanmış 2×150 MW kapasiteli bir enerji üretim tesisidir.<br/>Karya Mühendislik, Gama Power System'in Alçak Gerilim ve Yüksek Gerilim Elektrik alt yüklenicisi olarak yer almış; tüm elektrik ve enstrümantasyon işlerini tamamlayarak başarılı bir devreye alma sürecine destek vermiştir.",
+        "scopeDescription": "E&I İşleri Kurulum ve Devreye Alma",
+        "scope": {
+          "1": "900.000 m OG–AG Güç Kablosu Montajı",
+          "2": "250.000 m Enstrüman Kablosu Montajı",
+          "3": "100.000 AG–OG Terminasyon İşlemi",
+          "4": "30.000 m Kablo Tavası Montajı",
+          "5": "2×45 MVA UAT ve 2×204 MVA Step-Up Transformatörleri",
+          "6": "2×200 MVA Jeneratör Devre Kesicileri",
+          "7": "İzole Fazlı Bus Duct (IPB) Montajı",
+          "8": "1.000'den fazla AG/OG Siemens Şalt Hücresi"
+        }
       },
-      "gamma": {
-        "title": "Gama Projesi",
-        "location": "Chicago, ABD",
-        "smallDescription": "Gelecek nesiller için sürdürülebilir kalkınma.",
-        "description": "Gelecek nesiller için sürdürülebilir kalkınma odağıyla hazırlanan proje. Modern mimari zorluklara çevre dostu ve yenilikçi mühendislik çözümleri sunar."
+      "hkn-sarsang": {
+        "title": "HKN Energy Sarsang Bloğu Kuyu Başı Üretim Tesisleri",
+        "location": "Sarsang Bölgesi, Kuzey Irak",
+        "smallDescription": "Ham petrol işleme tesisleri için Elektrik ve Enstrümantasyon işleri.",
+        "description": "Irak Kürdistan Bölgesi'nde yer alan HKN Energy Sarsang Bloğu Kuyu Başı Üretim Tesisleri Projesi, Sarsang sahasındaki ham petrol üretim ve işleme kapasitesini artırmak amacıyla geliştirilmiştir.<br/>Karya Mühendislik, Havatek A.Ş.'nin E&I alt yüklenicisi olarak projede yer almış; Elektrik ve Enstrümantasyon işlerini başarıyla yürüterek tesislerin güvenli ve zamanında devreye alınmasını sağlamıştır.",
+        "scopeDescription": "E&I İşleri Kurulum ve Devreye Alma",
+        "scope": {
+          "1": "387.000 m OG-AG Güç Kablosu Montajı",
+          "2": "469.000 m Enstrümantasyon Kablosu Montajı",
+          "3": "115.000 adede kadar AG ve OG Kablo Terminasyonu",
+          "4": "39.000 m Kablo Tavası Montajı",
+          "5": "9 Adet Prefabrik Trafo Merkezi (Substation) Kurulumu",
+          "6": "Toplam 196 adet AG ve OG Hücresi ile 148 Kontrol Sistemi (DCS & ESD) Panosu Montajı",
+          "7": "4235 Adet Saha Enstrümanı Montajı, Testi ve Kalibrasyonu",
+          "8": "Tesis Yangın ve Gaz Alarm Sistemi Montaj İşleri",
+          "9": "14.000 m Paslanmaz Çelik Enstrüman Tüpü (Tubing) Montajı",
+          "10": "Devreye alma öncesi destek çalışmaları"
+        }
       },
-      "delta": {
-        "title": "Delta Projesi",
-        "location": "Houston, ABD",
-        "smallDescription": "Kentsel peyzajda devrim yaratıyor.",
-        "description": "Kentsel peyzajda devrim yaratan yaklaşımlar. Modern mimari zorluklar için geliştirilen yenilikçi çözümlerle kentsel alanları yeniden şekillendiriyoruz."
+      "khor-mor": {
+        "title": "KM500 Gaz İşleme Tesisi Projesi",
+        "location": "Kor Mor Bölgesi, Süleymaniye, Irak",
+        "smallDescription": "Gaz işleme kapasitesini 750 MMSCFD'ye çıkaran büyük doğal gaz projesi.",
+        "description": "Khor Mor KM250 Genişletme Projesi, Pearl Petroleum (Dana Gas & Crescent Petroleum) tarafından Irak Kürdistan Bölgesi'nde yürütülen ve gaz işleme kapasitesini 500'den 750 MMSCFD'ye çıkaran büyük bir doğal gaz geliştirme projesidir.<br/>Karya Mühendislik, Havatek Makina A.Ş.'nin E&I alt yüklenicisi olarak projeye katılmış, işlerin başarılı ve zamanında tamamlanmasına katkıda bulunmuştur.",
+        "scopeDescription": "Elektrik ve Enstrümantasyon İşleri Kurulumu",
+        "scope": {
+          "1": "513.750 m OG–AG Güç Kablosu Montajı",
+          "2": "541.210 m Enstrümantasyon Kablosu Montajı",
+          "3": "17.181 AG ve OG Terminasyon İşlemi",
+          "4": "42.000 m Kablo Tavası Montajı",
+          "5": "6.210 Saha Enstrümanı Montajı, Testi ve Kalibrasyonu",
+          "6": "Ana Trafo Merkezi (MSS) ve Merkezi Kontrol Odası (CCR) Kurulumu",
+          "7": "8 Adet Prefabrik Trafo Merkezi Kurulumu ve Devreye Alınması",
+          "8": "315 AG/OG Hücresi ve 192 Kontrol Sistemi (DCS & ESD) Panosu",
+          "9": "Yangın ve Gaz Alarm Sistemi Montajı",
+          "10": "98.000 metre fiber optik kablo montajı ve terminasyon işleri"
+        }
       },
-      "epsilon": {
-        "title": "Epsilon Projesi",
-        "location": "San Francisco, ABD",
-        "smallDescription": "Ticari alanlarda ileri teknoloji entegrasyonu.",
-        "description": "Ticari alanlarda son teknoloji entegrasyonu. Modern mimari zorluklara yönelik teknik ve fonksiyonel çözümler sunan kapsamlı bir mühendislik çalışması."
+      "nainawa-power": {
+        "title": "Nainawa 6x125 MW Enerji Santrali EBOP İşleri",
+        "location": "Nainawa, Irak",
+        "smallDescription": "Altı adet yüksek verimli gaz türbini ünitesi için E&I kurulumu.",
+        "description": "Nainawa 6×125 MW Enerji Santrali Projesi, altı adet yüksek verimli gaz türbini ünitesi aracılığıyla Irak'ın elektrik üretim kapasitesini güçlendirmek amacıyla gerçekleştirilmiştir.<br/>Karya Mühendislik, tüm Elektrik ve Enstrümantasyon işlerini tamamlayarak santralin güvenilir ve zamanında devreye alınmasına katkı sağlamıştır.",
+        "scopeDescription": "E&I İşleri Kurulum ve Devreye Alma",
+        "scope": {
+          "1": "15.000 m 400 kV Yüksek Gerilim Kablosu Montajı",
+          "2": "512.000 m OG–AG Güç Kablosu Montajı",
+          "3": "Siemens UAT Transformatör Kurulumu ve Devreye Alınması",
+          "4": "28.750 m Kablo Tavası Montajı",
+          "5": "190.000 m Enstrüman Kablosu Montajı",
+          "6": "Kazan ve Türbin Enstrümantasyonu (GE Üniteleri)",
+          "7": "Devreye alma öncesi işler ve Çevre Aydınlatma çalışmaları"
+        }
       },
-      "zeta": {
-        "title": "Zeta Projesi",
-        "location": "Miami, ABD",
-        "smallDescription": "Yenilikçi tasarımlarla sahil bölgelerinin dönüşümü.",
-        "description": "Yenilikçi tasarımlarla sahil mülklerinin dönüşümü. Mimari ve teknik zorlukları aşan, bölgenin değerini artıran modern mühendislik uygulamaları."
+      "tupras-aliaga": {
+        "title": "Tüpraş Aliağa Rafinerisi U-7000 Revizyonu",
+        "location": "Aliağa – İzmir, Türkiye",
+        "smallDescription": "Rafineri proses ünitelerinin modernizasyonu ve verimlilik artışı.",
+        "description": "Tüpraş Aliağa Rafinerisi U-7000 Revizyon Projesi, Tüpraş'ın kapasite artırım programının bir parçası olarak proses verimliliğini artırmak ve modernize etmek amacıyla yürütülmüştür.<br/>Karya Mühendislik, E&I alt yüklenicisi olarak rafineri emniyet ve kalite standartlarına uygun şekilde tüm kurulum ve devreye alma işlerini gerçekleştirmiştir.",
+        "scopeDescription": "E&I İşleri Tedarik, Kurulum ve Devreye Alma",
+        "scope": {
+          "1": "75.000 m AG Güç Kablosu Montajı",
+          "2": "155.000 m Enstrüman Kablosu Montajı",
+          "3": "15.000 AG–OG Terminasyon İşlemi",
+          "4": "9.000 m Kablo Tavası Montajı",
+          "5": "1.100 Ex-Proof Enstrüman Kalibrasyonu ve Montajı",
+          "6": "15.000 m Paslanmaz Çelik Tüp (Tubing) Tasarımı ve Montajı",
+          "7": "25.000 m Elektriksel Isı İzleme (Heat Tracing) Montajı",
+          "8": "250 Adet Ex-Proof LED Aydınlatma Armatürü"
+        }
+      },
+      "taqa-atrush": {
+        "title": "TAQA Atrush PF-1 Faz 1A EPF",
+        "location": "Atrush – Dohok, Irak",
+        "smallDescription": "Erken Üretim Tesisleri (EPF) E&I kurulumu ve devreye alınması.",
+        "description": "TAQA Atrush PF-1 Faz 1A Erken Üretim Tesisleri Projesi, Atrush Bloğu'nda erken aşama ham petrol üretimi ve işleme kabiliyeti oluşturmak için geliştirilmiştir.<br/>Karya Mühendislik, E&I alt yüklenicisi olarak Elektrik ve Enstrümantasyon işlerini yürütmüş, tesislerin güvenli başlangıcına ve devreye alınmasına destek vermiştir.",
+        "scopeDescription": "E&I İşleri Kurulum ve Devreye Alma",
+        "scope": {
+          "1": "240.000 m OG–AG Güç Kablosu Montajı",
+          "2": "4 Adet Siemens E-House Kurulumu ve Devreye Alınması",
+          "3": "9.000 m Kablo Tavası Montajı",
+          "4": "140.000 m Enstrüman Kablosu Montajı",
+          "5": "OG–AG Transformatör Merkezleri Kurulumu",
+          "6": "2×5.5 MW Gaz Türbini Güç Üretim Üniteleri",
+          "7": "Flare Bölgesi E&I İşleri (80 m yüksekliğe kadar)",
+          "8": "10 km Akış Hattı (Flowline) Yüksek Gerilim ve Fiber Optik Kablo Montajı"
+        }
+      },
+      "ttopco-tanker": {
+        "title": "TTOPCO Tanker Dolum İstasyonu Kapasite Artırımı",
+        "location": "Koysincak, Irak",
+        "smallDescription": "Ek 20.000 m³ ham petrol depolama kapasitesi artırımı.",
+        "description": "TTOPCO Tanker Dolum İstasyonu Kapasite Artırım Projesi, TTOPCO CPF'den sağlanan ek 20.000 m³ ham petrol depolama kapasitesi sağlamak amacıyla geliştirilmiştir.<br/>Bu proje kapsamında, iki (2) adet 10.000 m³ ham petrol depolama tankı ve üç (3) adet ham petrol dolum peronu ile tüm ilgili yardımcı sistemler için Elektrik ve Enstrümantasyon (E&I) işleri yürütülmüştür.<br/>Karya Mühendislik, E&I alt yüklenicisi olarak tüm sistemlerin tasarım, tedarik ve kurulumunu üstlenmiş ve devreye alma sürecine destek vermiştir.",
+        "scopeDescription": "E&I İşleri Mühendislik, Tedarik, Kurulum ve Devreye Alma",
+        "scope": {
+          "1": "Detaylı E&I tasarım ve mühendislik işleri",
+          "2": "DCS & ESD, Tanker Dolum Otomasyon Sistemi tasarımı",
+          "3": "Tüm Elektrik ve Enstrüman malzeme tedariki",
+          "4": "3.000 metre kablo tavası montajı",
+          "5": "75.000 metre enstrüman kablosu montajı",
+          "6": "OG-AG Transformatör Merkezleri Kurulumu",
+          "7": "35.000 metre elektrik kablosu montajı",
+          "8": "6 dolum kollu 3 dolum peronunun tüm E&I kurulumu",
+          "9": "4x 10.000 m3 ham petrol tankı SIL-3 tank ölçüm sistemi kurulumu"
+        }
+      },
+      "ttopco-cpf2": {
+        "title": "TTOPCO CPF-II Tesisleri Projesi",
+        "location": "Koysincak, Irak",
+        "smallDescription": "90.000 bopd ham petrol üretim ve işleme kapasitesi kurulumu.",
+        "description": "TTOPCO CPF-II Tesisleri Projesi, Irak Koysincak'ta ham petrol üretim ve işleme kapasitesi oluşturmak için geliştirilmiştir. Tesis günlük 90.000 varil kapasiteye sahiptir.<br/>Karya Mühendislik, E&I alt yüklenicisi olarak Elektrik ve Enstrümantasyon işlerini yürütmüş, tesislerin güvenli başlangıcına ve devreye alınmasına destek vermiştir.",
+        "scopeDescription": "E&I İşleri Kurulum ve Devreye Alma",
+        "scope": {
+          "1": "15.000 metre Kablo Tavası montaj işleri",
+          "2": "203.000 metre AG Elektrik kablosu montajı ve terminasyonu",
+          "3": "OG ve AG Şalt Merkezi kurulum işleri",
+          "4": "1455 saha enstrümanı montajı, testi ve kalibrasyonu",
+          "5": "Tesis yangın ve gaz alarm sistemi montajı",
+          "6": "DCS ve SIS sistemi montaj işleri",
+          "7": "74.600 metre enstrümantasyon kablosu montajı",
+          "8": "Devreye alma öncesi çalışmalar"
+        }
       }
     }
   },

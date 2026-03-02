@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { SpanL } from "../SpanL";
 import { motion } from "motion/react";
 import { AnimatedFileUploaderProps } from "./FileUploaderL.types";
@@ -21,6 +21,7 @@ export const FileUploaderL = ({
   ...rest
 }: AnimatedFileUploaderProps) => {
   const t = useTranslations();
+  const locale = useLocale();
   const [internalFile, setInternalFile] = useState<File | null>(null);
   const currentValidFile = value !== undefined ? value : internalFile;
 
@@ -37,7 +38,7 @@ export const FileUploaderL = ({
       if (!isAllowed) {
         toast.error(
           t("Common.invalidFileType", {
-            types: acceptedFileTypes.join(", ").toLocaleUpperCase(),
+            types: acceptedFileTypes.join(", ").toLocaleUpperCase(locale),
           }),
         );
 

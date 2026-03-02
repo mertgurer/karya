@@ -33,9 +33,16 @@ export const Projects = () => {
             <Link href={`projects/${x.id}`} className="group flex flex-col w-full aspect-[1.1] rounded-sm overflow-hidden">
               <div className="relative w-full h-[66%] overflow-hidden">
                 <Image src={x.image} alt={`${x.id}-image`} fill priority sizes="100%" className="object-cover" />
-                <div className="absolute top-3 right-3 p-1 rounded-xs text-on-primary text-sm bg-black/20 backdrop-blur-md opacity-0 group-hover:opacity-100 duration-300">
-                  {formatProjectDate(x.date, locale)}
-                </div>
+                {(() => {
+                  const startYear = new Date(x.startDate).getFullYear();
+                  const endYear = x.endDate ? new Date(x.endDate).getFullYear() : null;
+
+                  return (
+                    <div className="absolute flex top-3 right-3 p-1 rounded-xs text-on-primary text-sm bg-black/20 backdrop-blur-md opacity-0 group-hover:opacity-100 duration-300">
+                      {startYear === endYear || !endYear ? startYear : `${startYear} - ${endYear}`}
+                    </div>
+                  );
+                })()}
                 <div className="absolute bottom-0 p-5 text-sm bg-black/20 backdrop-blur-md w-full translate-y-full group-hover:translate-0 duration-300">
                   <SpanL className="text-on-primary line-clamp-4">{`Projects.Project.${x.id}.description`}</SpanL>
                 </div>

@@ -8,11 +8,9 @@ import ServiceImage2 from "@/assets/images/home/services/service2.jpg";
 import ServiceImage3 from "@/assets/images/home/services/service3.jpg";
 import ServiceImage4 from "@/assets/images/home/services/service4.jpg";
 import { ProjectModel, Service as ProjectServices } from "@/(pages)/project/Project.types";
-import { GiMeshNetwork, GiPowerGenerator } from "react-icons/gi";
-import { FaHelmetSafety } from "react-icons/fa6";
-import { ServiceModel } from "@/(pages)/service";
 import TrFlag from "@/assets/images/flags/tr.png";
 import UkFlag from "@/assets/images/flags/uk.png";
+import { Blocks, Brain, GitGraph, PackageSearch } from "lucide-react";
 
 export const REGEX = {
   EMAIL: /\S+@\S+\.\S+/,
@@ -56,108 +54,147 @@ export const NavigationLinks: NavigationButtonProps[] = [
   },
 ];
 
-const ElectricalService = {
-  id: "electrical",
-  label: "Projects.Services.electrical",
-  icon: <GiPowerGenerator size={80} />,
+const EngineeringService = {
+  id: "engineering",
+  label: "Projects.Services.engineering",
+  icon: <Brain size={80} />,
 } as ProjectServices;
 
-const SafetyService = {
-  id: "safety",
-  label: "Projects.Services.safety",
-  icon: <FaHelmetSafety size={80} />,
+const ProcurementService = {
+  id: "procurement",
+  label: "Projects.Services.procurement",
+  icon: <PackageSearch size={80} />,
 } as ProjectServices;
 
-const CommunicationService = {
-  id: "communication",
-  label: "Projects.Services.communication",
-  icon: <GiMeshNetwork size={80} />,
+const ConstructionService = {
+  id: "construction",
+  label: "Projects.Services.construction",
+  icon: <Blocks size={80} />,
+} as ProjectServices;
+
+const PreCommissioningService = {
+  id: "pre-commissioning",
+  label: "Projects.Services.preCommissioning",
+  icon: <GitGraph size={80} />,
 } as ProjectServices;
 
 export const ProjectDetails = [
   {
     id: "erbil-airport",
     client: "Mach Monument / Havatek",
-    date: "2024-09-01",
+    startDate: "2024-09-01",
+    endDate: "2026-04-01",
     duration: 20,
     budget: 1150000,
-    size: 0,
-    certificates: ["Engineering", "Procurement"],
-    services: [ElectricalService, SafetyService, CommunicationService],
+    manHours: null,
+    services: [EngineeringService, ProcurementService],
     image: ProjectImage1,
     scopeCount: 7,
+    isCompleted: false,
   },
   {
     id: "khabat-power",
     client: "MoE / Gama & POSCO",
-    date: "2015-06-01",
+    startDate: "2015-06-01",
+    endDate: "2018-06-01",
     duration: 36,
+    manHours: 598000,
     budget: 6305500,
-    size: 300,
-    certificates: ["Installation", "Commissioning"],
-    services: [ElectricalService],
+    services: [ConstructionService, PreCommissioningService],
     image: ProjectImage2,
     scopeCount: 8,
+    isCompleted: true,
   },
   {
     id: "hkn-sarsang",
     client: "HKN Energy / Havatek",
-    date: "2019-11-01",
+    startDate: "2019-11-01",
+    endDate: "2022-04-01",
     duration: 29,
+    manHours: 509060,
     budget: 5887250,
-    size: 0,
-    certificates: ["Installation", "Commissioning"],
-    services: [ElectricalService, SafetyService],
+    services: [ConstructionService, PreCommissioningService],
     image: ProjectImage3,
     scopeCount: 10,
+    isCompleted: true,
   },
   {
     id: "khor-mor",
     client: "Pearl Petroleum / Havatek",
-    date: "2022-02-01",
+    startDate: "2022-02-01",
+    endDate: "2025-08-01",
     duration: 42,
+    manHours: 948000,
     budget: 9836000,
-    size: 250,
-    certificates: ["Construction", "Pre-Commissioning"],
-    services: [ElectricalService, CommunicationService],
+    services: [ConstructionService, PreCommissioningService],
     image: ProjectImage4,
     scopeCount: 10,
+    isCompleted: false,
   },
   {
     id: "nainawa-power",
     client: "MoE / Çalık Enerji",
-    date: "2012-12-01",
+    startDate: "2012-12-01",
+    endDate: "2014-04-01",
     duration: 16,
+    manHours: 490000,
     budget: 5065000,
-    size: 750,
-    certificates: ["Installation", "Commissioning"],
-    services: [ElectricalService],
+    services: [ConstructionService, PreCommissioningService],
     image: ProjectImage1,
     scopeCount: 7,
+    isCompleted: true,
   },
   {
     id: "tupras-aliaga",
     client: "Tüpraş / Havatek",
-    date: "2017-09-01",
+    startDate: "2017-09-01",
+    endDate: "2018-07-01",
     duration: 10,
+    manHours: 125000,
     budget: 1187000,
-    size: 0,
-    certificates: ["Procurement", "Installation"],
-    services: [ElectricalService, SafetyService],
+    services: [ConstructionService, PreCommissioningService],
     image: ProjectImage2,
     scopeCount: 8,
+    isCompleted: true,
   },
   {
     id: "taqa-atrush",
     client: "TAQA / Havatek",
-    date: "2015-09-01",
+    startDate: "2015-09-01",
+    endDate: "2016-08-01",
     duration: 11,
+    manHours: 195000,
     budget: 3610000,
-    size: 0,
-    certificates: ["Installation", "Commissioning"],
-    services: [ElectricalService, CommunicationService],
+    services: [ConstructionService, PreCommissioningService],
     image: ProjectImage3,
     scopeCount: 8,
+    isCompleted: true,
+  },
+  {
+    id: "ttopco-tanker",
+    client: "Taq Taq Operating Co / Havatek",
+    startDate: "2013-04-01",
+    endDate: "2014-01-01",
+    duration: 10,
+    manHours: 90000,
+    budget: 2500000,
+    services: [EngineeringService, ProcurementService, ConstructionService, PreCommissioningService],
+    image: ProjectImage4,
+    scopeCount: 9,
+    isCompleted: true,
+  },
+  {
+    id: "ttopco-cpf2",
+    client: "Taq Taq Operating Co / Ventech",
+    startDate: "2015-02-01",
+    endDate: "2016-10-01",
+    duration: 21,
+    manHours: 130000,
+    budget: 2250000,
+    services: [ConstructionService, PreCommissioningService],
+    image: ProjectImage1,
+    scopeCount: 8,
+    isCompleted: true,
   },
 ] as ProjectModel[];
 
@@ -169,9 +206,15 @@ export const DetailFields = [
     unit: null,
   },
   {
-    key: "date",
-    label: "Common.date",
-    valueForm: "date",
+    key: "startDate",
+    label: "Common.startDate",
+    valueForm: "startDate",
+    unit: null,
+  },
+  {
+    key: "endDate",
+    label: "Common.endDate",
+    valueForm: "endDate",
     unit: null,
   },
   {
@@ -181,16 +224,22 @@ export const DetailFields = [
     unit: "months",
   },
   {
+    key: "manHours",
+    label: "Common.manHours",
+    valueForm: "number",
+    unit: "manHoursShort",
+  },
+  {
     key: "budget",
     label: "Common.budget",
     valueForm: "number",
     unit: "USD",
   },
   {
-    key: "size",
-    label: "Common.size",
-    valueForm: "number",
-    unit: "sqm",
+    key: "isCompleted",
+    label: "Common.status",
+    valueForm: "ProjectStatus",
+    unit: null,
   },
 ];
 

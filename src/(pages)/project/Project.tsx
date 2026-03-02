@@ -69,7 +69,7 @@ export const Project = ({ project }: ProjectProps) => {
           </div>
           <div className="flex flex-col gap-8 px-7 max-2xl:gap-4 max-md:px-5">
             <SpanL className="text-primary-variant font-semibold">Projects.services</SpanL>
-            <div className="grid grid-cols-3 max-md:grid-cols-2">
+            <div className="grid grid-cols-4 w-[120%] max-md:grid-cols-2">
               {project.services.map((service) => (
                 <div key={service.id} className="flex flex-col items-center gap-3 text-secondary max-2xl:scale-85">
                   <div className="relative flex items-center">
@@ -81,7 +81,9 @@ export const Project = ({ project }: ProjectProps) => {
                       <GiLaurels size={72} />
                     </div>
                   </div>
-                  <SpanL className=" text-center px-2">{service.label}</SpanL>
+                  <SpanL noWrap className=" text-center whitespace-nowrap px-2">
+                    {service.label}
+                  </SpanL>
                 </div>
               ))}
             </div>
@@ -92,7 +94,10 @@ export const Project = ({ project }: ProjectProps) => {
             |<SpanL className="font-medium text-sm">Projects.details</SpanL>
           </div>
           <SpanL className="font-medium text-xl mt-5">{`Projects.Project.${project.id}.location`}</SpanL>
-          <SpanL noWrap className="font-light mt-2 mb-7 max-2xl:text-sm">
+          <SpanL noWrap className="mb-2 opacity-80 max-2xl:text-sm">
+            {`Projects.Project.${project.id}.scopeDescription`}
+          </SpanL>
+          <SpanL noWrap className="font-light mt-4 mb-7 max-2xl:text-sm">
             {`Projects.Project.${project.id}.smallDescription`}
           </SpanL>
           <div className="flex flex-col gap-5">
@@ -111,16 +116,22 @@ export const Project = ({ project }: ProjectProps) => {
                   transition={{ duration: 0.5, delay: (index * 2 + 1) * 0.1 }}
                   className="flex items-center justify-between"
                 >
-                  <SpanL upperCase className="text-sm font-extralight max-2xl:text-xs">
+                  <SpanL upperCase noWrap className="text-sm font-extralight whitespace-nowrap max-2xl:text-xs">
                     {field.label}
                   </SpanL>
                   <div className="flex gap-1 items-center font-semibold max-2xl:text-sm">
                     {field.valueForm === "object" ? (
                       <span>{project[field.key as keyof typeof Project]}</span>
-                    ) : field.valueForm === "date" ? (
+                    ) : field.valueForm === "startDate" || field.valueForm === "endDate" ? (
                       <span>{formatProjectDate(project[field.key as keyof typeof Project], locale)}</span>
                     ) : field.valueForm === "number" ? (
                       <span>{formatProjectNumber(project[field.key as keyof typeof Project], locale)}</span>
+                    ) : field.valueForm === "localeString" ? (
+                      <SpanL className="text-end">{`Projects.Project.${project.id}.${field.key}`}</SpanL>
+                    ) : field.valueForm === "ProjectStatus" ? (
+                      <SpanL className={`text-end ${project[field.key as keyof typeof Project] ? "text-green-500 font-bold" : ""}`}>
+                        {`Common.${project[field.key as keyof typeof Project] ? "completed" : "onGoing"}`}
+                      </SpanL>
                     ) : (
                       <span>No value</span>
                     )}

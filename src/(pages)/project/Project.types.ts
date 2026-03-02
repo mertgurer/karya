@@ -8,10 +8,12 @@ export interface ProjectProps {
 export interface ProjectModel {
   id: string;
   client: string;
-  date: string;
+  startDate: string;
+  endDate: string;
   duration: number;
+  manHours?: number;
   budget: number;
-  size: number;
+  isCompleted: boolean;
   certificates: string[];
   services: Service[];
   image: StaticImageData;
