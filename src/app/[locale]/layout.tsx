@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -26,6 +27,7 @@ export default async function RootLayout({ children, params }: { children: React
   return (
     <html lang={locale}>
       <body className={poppins.className}>
+        <Analytics />
         <NextIntlClientProvider messages={messages}>
           <ReactLenis root>
             <Toaster
