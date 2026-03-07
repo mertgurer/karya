@@ -20,7 +20,7 @@
     "startDate": "Başlangıç Tarihi",
     "endDate": "Bitiş Tarihi",
     "manHours": "Tamamlanan Adam Saati",
-    "manHoursShort": "AH",
+    "manHoursShort": "AS",
     "duration": "Süre",
     "status": "Durum",
     "completed": "Tamamlandı",
@@ -54,24 +54,24 @@
   "Home": {
     "Welcome": {
       "title": "Karya Mühendislik",
-      "subtitle": "Her Projede Mükemmelliği Şekillendiriyoruz",
+      "subtitle": "E&I Çözümleri Partneriniz",
       "motto": "Yenilik Yap. Uygula. İlham Ver.",
       "explore": "KEŞFET"
     },
     "About": {
       "sectionTitle": "Neden Karya",
       "title": "Güvenilir E&I Çözüm Ortağınız",
-      "description": "2002 yılında kurulan Karya Mühendislik, Orta Doğu genelindeki Petrol ve Gaz projeleri için güvenilir bir E&I (Elektrik & Enstrümantasyon) çözüm ortağıdır. Merkezi İzmir, Türkiye'de bulunan ve Irak, Erbil'de bölge müdürlüğü olan firmamız, uluslararası standartlarla uyumlu, kalite odaklı çözümler sunmaktadır."
+      "description": "2002 yılında kurulan Karya Mühendislik, Orta Doğu genelindeki Petrol ve Gaz projeleri için güvenilir bir E&I (Elektrik & Enstrümantasyon) çözüm ortağıdır. Merkezi İzmir, Türkiye'de bulunan ve Irak, Erbil'de şubesi olan firmamız, uluslararası standartlarla uyumlu, kalite odaklı çözümler sunmaktadır."
     },
     "Performance": {
       "sectionTitle": "Başarılarımız",
-      "title": "Üstün Sonuçlar Sunuyoruz",
+      "title": "Yüksek Performans",
       "description": "Performansımız; üstlendiğimiz her projede güvenilir, yenilikçi ve yüksek kaliteli E&I çözümleri sunma taahhüdümüzü yansıtmaktadır. İstikrarlı uygulama, teknik mükemmellik ve müşteri odaklı yaklaşımımızla uzun vadeli ortaklıklar ve ölçülebilir başarılar inşa etmeye devam ediyoruz.",
       "yearsOfExperience": "Yıllık Deneyim",
       "projectsCompleted": "Tamamlanan Proje",
       "maxEmployees": "Bir Projedeki En Yüksek Çalışan Sayısı",
-      "completedManHour": "Tamamlanan Adam Saati",
-      "cablesInstalled": "Döşenen Kablo Metrajı"
+      "completedManHour": "Tamamlanan Adam Saati (Son Proje)",
+      "cablesInstalled": "Döşenen Kablo Metrajı (Son Proje)"
     },
     "Projects": {
       "sectionTitle": "Projelerimiz",
@@ -81,14 +81,14 @@
     "Blogs": {
       "hseBlog": {
         "motto": "Güvenliğe Önem Veriyoruz",
-        "title": "İş Yeri Güvenliğini Artırmak",
+        "title": "İş Güvenliği Önceliğimiz",
         "subtitle": "Sağlık, Emniyet ve Çevre Uygulamaları",
         "description": "Sağlık, Emniyet ve Çevre (İSG-Ç), operasyonlarımızın merkezinde yer alarak sahada ve saha dışında verdiğimiz her karara rehberlik eder. Güvenli çalışma uygulamalarını sürdürmeye, çevreyi korumaya ve uluslararası standartlara tam uyum sağlamaya kararlıyız."
       },
       "qualityBlog": {
         "motto": "Mükemmellik Taahhüdü",
         "title": "EPC Projeleri İçin Entegre Kalite Yönetimi",
-        "subtitle": "Üstün Kalite Sunumu",
+        "subtitle": "Yüksek Kalite Standartları",
         "description": "Kalite sistemimiz, uluslararası kabul görmüş standartlara ve proje yürütme aşamalarının tamamında uygulanan sıkı kontrol süreçlerine dayanmaktadır. Güvenilir ve teknik açıdan kusursuz sonuçlar sunmak için uyumluluk, izlenebilirlik ve istikrarlı performans sağlıyoruz."
       }
     },
@@ -96,7 +96,7 @@
       "sectionTitle": "Hizmetlerimiz",
       "title": "Neler Sunuyoruz",
       "subtitle": "EPCC Çözümleri",
-      "description": "Projeleri konseptten tamamlanma aşamasına kadar desteklemek için mühendislik, tedarik, inşaat ve devreye alma süreçlerinde entegre E&I hizmetleri sunuyoruz. Sadeleştirilmiş yaklaşımımız, her aşamada verimli uygulama, kalite ve güvenilirlik sağlar.",
+      "description": "Projeleri konseptten tamamlanma aşamasına kadar desteklemek için mühendislik, tedarik, inşaat ve devreye alma süreçlerinde entegre E&I hizmetleri sunuyoruz. Profesyonel yaklaşımımız, her aşamada verimli uygulama, kalite ve güvenilirlik sağlar.",
       "linkText": "Hizmet yelpazemizin tamamını ve bir sonraki projenizde size nasıl destek olabileceğimizi keşfedin.",
       "seeProject": "Projeleri Gör"
     },
@@ -119,12 +119,12 @@
     "Services": {
       "engineering": "Mühendislik",
       "procurement": "Tedarik",
-      "construction": "İnşaat",
-      "preCommissioning": "Devreye Alma Öncesi"
+      "construction": "Montaj",
+      "preCommissioning": "Devreye Alma Desteği"
     },
     "Project": {
       "erbil-airport": {
-        "title": "Erbil Uluslararası Havalimanı Yakıt Çiftliği Rehabilitasyonu",
+        "title": "Erbil Uluslararası Havalimanı Tank Sahası Rehabilitasyonu",
         "location": "Erbil, Irak",
         "smallDescription": "Havalimanı yakıt altyapısı için E&I işlerinin mühendislik ve tedarik süreçleri.",
         "description": "Erbil Uluslararası Havalimanı (EIA), Mach Monument Aviation Fueling Company (MMAFCO) ile imtiyaz sözleşmesini uzatmıştır. MMAFCO; depolama tanklarını rehabilite etmek, diğer tüm tesisleri yeniden tasarlayıp inşa etmek, ek tesisler kurmak, test ve devreye alma işlemlerini gerçekleştirerek 2007'de inşa edilen ancak hiç devreye alınmayan yakıt çiftliği tesislerini yeniden sertifikalandırmakla yükümlüdür. Sözleşme şartları gereği, rehabilitasyon ve devreye alma iş planı EIA'ya sunulacak ve tam yenileme 2 yıl içinde tamamlanacaktır.<br/>Karya Mühendislik, E&I alt yüklenicisi olarak katılarak Elektrik ve Enstrümantasyon mühendislik ve tedarik işlerini yürütmüştür.",
@@ -152,7 +152,7 @@
           "4": "30.000 m Kablo Tavası Montajı",
           "5": "2×45 MVA UAT ve 2×204 MVA Step-Up Transformatörleri",
           "6": "2×200 MVA Jeneratör Devre Kesicileri",
-          "7": "İzole Fazlı Bus Duct (IPB) Montajı",
+          "7": "Gaz İzoleli Bara (IPB) Montajı",
           "8": "1.000'den fazla AG/OG Siemens Şalt Hücresi"
         }
       },
@@ -160,7 +160,7 @@
         "title": "HKN Energy Sarsang Bloğu Kuyu Başı Üretim Tesisleri",
         "location": "Sarsang Bölgesi, Kuzey Irak",
         "smallDescription": "Ham petrol işleme tesisleri için Elektrik ve Enstrümantasyon işleri.",
-        "description": "Irak Kürdistan Bölgesi'nde yer alan HKN Energy Sarsang Bloğu Kuyu Başı Üretim Tesisleri Projesi, Sarsang sahasındaki ham petrol üretim ve işleme kapasitesini artırmak amacıyla geliştirilmiştir.<br/>Karya Mühendislik, Havatek A.Ş.'nin E&I alt yüklenicisi olarak projede yer almış; Elektrik ve Enstrümantasyon işlerini başarıyla yürüterek tesislerin güvenli ve zamanında devreye alınmasını sağlamıştır.",
+        "description": "Kuzey Irak Bölgesi'nde yer alan HKN Energy Sarsang Bloğu Kuyu Başı Üretim Tesisleri Projesi, Sarsang sahasındaki ham petrol üretim ve işleme kapasitesini artırmak amacıyla geliştirilmiştir.<br/>Karya Mühendislik, Havatek A.Ş.'nin E&I alt yüklenicisi olarak projede yer almış; Elektrik ve Enstrümantasyon işlerini başarıyla yürüterek tesislerin güvenli ve zamanında devreye alınmasını sağlamıştır.",
         "scopeDescription": "E&I İşleri Kurulum ve Devreye Alma",
         "scope": {
           "1": "387.000 m OG-AG Güç Kablosu Montajı",
@@ -179,7 +179,7 @@
         "title": "KM500 Gaz İşleme Tesisi Projesi",
         "location": "Kor Mor Bölgesi, Süleymaniye, Irak",
         "smallDescription": "Gaz işleme kapasitesini 750 MMSCFD'ye çıkaran büyük doğal gaz projesi.",
-        "description": "Khor Mor KM250 Genişletme Projesi, Pearl Petroleum (Dana Gas & Crescent Petroleum) tarafından Irak Kürdistan Bölgesi'nde yürütülen ve gaz işleme kapasitesini 500'den 750 MMSCFD'ye çıkaran büyük bir doğal gaz geliştirme projesidir.<br/>Karya Mühendislik, Havatek Makina A.Ş.'nin E&I alt yüklenicisi olarak projeye katılmış, işlerin başarılı ve zamanında tamamlanmasına katkıda bulunmuştur.",
+        "description": "Khor Mor KM250 Genişletme Projesi, Pearl Petroleum (Dana Gas & Crescent Petroleum) tarafından Kuzey Irak Bölgesi'nde yürütülen ve gaz işleme kapasitesini 500'den 750 MMSCFD'ye çıkaran büyük bir doğal gaz geliştirme projesidir.<br/>Karya Mühendislik, Havatek Makina A.Ş.'nin E&I alt yüklenicisi olarak projeye katılmış, işlerin başarılı ve zamanında tamamlanmasına katkıda bulunmuştur.",
         "scopeDescription": "Elektrik ve Enstrümantasyon İşleri Kurulumu",
         "scope": {
           "1": "513.750 m OG–AG Güç Kablosu Montajı",
@@ -253,7 +253,7 @@
         "scope": {
           "1": "Detaylı E&I tasarım ve mühendislik işleri",
           "2": "DCS & ESD, Tanker Dolum Otomasyon Sistemi tasarımı",
-          "3": "Tüm Elektrik ve Enstrüman malzeme tedariki",
+          "3": "Tüm Elektrik ve Enstrüman malzeme tedariği",
           "4": "3.000 metre kablo tavası montajı",
           "5": "75.000 metre enstrüman kablosu montajı",
           "6": "OG-AG Transformatör Merkezleri Kurulumu",
@@ -283,8 +283,8 @@
   },
   "Corporate": {
     "title": "Karya Mühendislik Hakkında",
-    "subtitle": "Güven Üzerine İnşa Edilmiş Mühendislik Mükemmelliği",
-    "about": "Biz Kimiz",
+    "subtitle": "Güven Üzerine İnşa Edilmiş Mühendislik",
+    "about": "Hakkımızda",
     "values": "Değerlerimiz",
     "mission": "Misyon & Vizyon",
     "brochure": "Şirket Kataloğu",
@@ -298,8 +298,8 @@
       "title": "Değerlerimiz",
       "subtitle": "Temel değerlerimiz bize rehberlik eder",
       "excellence": {
-        "title": "Mühendislik Mükemmelliği",
-        "description": "Doğru, dayanıklı ve yüksek performanslı sonuçlar sunmak için her proje kararını sağlam mühendislik ilkelerine dayandırıyoruz."
+        "title": "Mükemmeliyetçilik",
+        "description": "Tutarlı, uzun ömürlü ve yüksek performanslı sonuçlar sunmak için her proje kararını sağlam mühendislik ilkelerine dayandırıyoruz."
       },
       "hse": {
         "title": "Önce Güvenlik ve Kalite",
@@ -310,7 +310,7 @@
         "description": "Projeleri planlandığı gibi; zamanında, bütçesinde ve güvenebileceğiniz bir istikrarla yürütmeyi taahhüt ediyoruz."
       },
       "integrity": {
-        "title": "Dürüstlük ve Hesap Verebilirlik",
+        "title": "Dürüstlük ve Tutarlılık",
         "description": "Taahhütlerimize sadık kalarak ve projenin her aşamasında sorumluluk alarak şeffaf ve sorumlu bir şekilde hareket ediyoruz."
       }
     },
@@ -318,7 +318,7 @@
       "missionTitle": "Misyon",
       "missionDescription": "Mühendislik mükemmelliği ve güçlü İSG-Ç uygulamaları aracılığıyla; uluslararası standartlara tam uyumlu ve zamanında proje yürütme anlayışıyla güvenli, yüksek kaliteli ve güvenilir E&I çözümleri sunmak.",
       "visionTitle": "Vizyon",
-      "visionDescription": "Orta Doğu'da, EPC düzeyindeki yetkinlikleri, istikrarlı kalitesi, güvenliği ve mühendislik odaklı performansıyla tanınan, tercih edilen bir Elektrik & Enstrümantasyon müteahhidi olmak."
+      "visionDescription": "Orta Doğu'da, EPC düzeyindeki yetkinlikleri, istikrarlı kalitesi, güvenliği ve mühendislik odaklı performansıyla tanınan, alanında lider bir Elektrik & Enstrümantasyon müteahhidi olmak."
     },
     "Brochure": {
       "title": "Şirket Kataloğu",
@@ -357,10 +357,10 @@
   },
   "Contact": {
     "title": "İletişim",
-    "subtitle": "Sizi iletişime geçmeye davet ediyoruz",
-    "contactTitle": "E&I ihtiyaçlarınız için bizimle iletişime geçin",
+    "subtitle": "Bize ulaşın",
+    "contactTitle": "Hizmetlerimiz hakkında detaylı bilgi almak için bizimle iletişime geçin.",
     "contactDescriptionTitle": "Bilgi Talebi",
-    "contactDescription": "Karya Engineering ve ihtiyaçlarınızı nasıl karşılayabileceğimiz hakkında daha fazla bilgi edinmek için lütfen aşağıdaki formu doldurun; talebinize 24 saat içinde yanıt vereceğiz.",
+    "contactDescription": "Karya Mühendislik ve ihtiyaçlarınızı nasıl karşılayabileceğimiz hakkında daha fazla bilgi edinmek için lütfen aşağıdaki formu doldurun; talebinize 24 saat içinde yanıt vereceğiz.",
     "addressesTitle": "Ofislerimiz",
     "addressesDescription": "Türkiye ve Irak'ta bulunan ofislerimizle dilediğiniz zaman iletişime geçebilirsiniz.",
     "Form": {
@@ -392,7 +392,7 @@
   "Careers": {
     "title": "Ekibimize Katılın",
     "subtitle": "Geleceğinizi Karya Mühendislik ile İnşa Edin",
-    "description": "Karya Mühendislik'e katılın ve E&I Mühendisliği ile İnşaat alanında mükemmelliğe adanmış dinamik bir ekibin parçası olun. Sektörde fark yaratma konusunda tutkulu olan yetenekli bireyleri her zaman arıyoruz. İster deneyimli bir profesyonel olun ister kariyerinizin başında, destekleyici bir çalışma ortamında büyüme ve öğrenme fırsatları sunuyoruz.",
+    "description": "Karya Mühendislik'e katılın ve E&I (Elektrik & Enstrümantasyon) alanında mükemmelliğe adanmış dinamik bir ekibin parçası olun. Sektörde fark yaratma konusunda tutkulu olan yetenekli bireyleri aramızda görmekten mutluluk duyuyoruz. İster deneyimli bir profesyonel olun ister kariyerinizin başında, destekleyici bir çalışma ortamında büyüme ve öğrenme fırsatları sunuyoruz.",
     "formTitle": "Başvuru Formu",
     "formDescription": "Karya Mühendislik bünyesindeki bir pozisyona başvurmak için lütfen aşağıdaki formu doldurun. Başvurunuzu incelemekten ve sizi ekibimizde görmekten mutluluk duyarız.",
     "Form": {
@@ -416,8 +416,8 @@
     "Benefits": {
       "growth": "Kariyer Gelişim Fırsatları",
       "challengingProjects": "Zorlu ve Etki Yaratan Projeler",
-      "collaborative": "İş Birlikçi Ekip Kültürü",
-      "inclusiveEnvironment": "Kapsayıcı Çalışma Ortamı"
+      "collaborative": "Köklü Ekip Kültürü",
+      "inclusiveEnvironment": "Pozitif Çalışma Ortamı"
     }
   },
   "Services": {
@@ -432,15 +432,15 @@
     "engineering": {
       "title": "Mühendislik",
       "description": "Proje şartnameleri, uluslararası standartlar ve operasyonel gerekliliklerle uyumlu detaylı E&I mühendislik çözümleri sunuyoruz.",
-      "introduction": "Uluslararası standartlar ve projeye özgü gerekliliklerle uyumlu, ön uç (FEED) ve detaylı mühendislik hizmetleri sunuyoruz. Güvenlik, uyumluluk ve sistem bütünlüğü tasarım sürecimizin her aşamasına entegre edilmiştir. Teknik değerlendirmeler ve fizibilite desteği yoluyla, müşterilerimizin bilinçli kararlar almasına yardımcı oluyor ve sahaya hazır, güvenilir E&I çözümleri sağlıyoruz.",
-      "longDescription": "Mühendislik hizmetlerimiz; petrol ve gaz, enerji ve petrokimya sektörleri dahil olmak üzere karmaşık endüstriyel sektörlerin teknik ve operasyonel taleplerini desteklemek üzere tasarlanmıştır. Endüstri standartları ve sahaya özgü gerekliliklerle uyumlu, özel elektrik ve enstrümantasyon çözümleri sunuyoruz.",
+      "introduction": "Uluslararası standartlar ve projeye özgü gerekliliklerle uyumlu, ön (FEED) ve detaylı mühendislik hizmetleri sunuyoruz. Güvenlik, uyumluluk ve sistem bütünlüğü tasarım sürecimizin her aşamasına entegre edilmiştir. Teknik değerlendirmeler ve fizibilite desteği yoluyla, müşterilerimizin bilinçli kararlar almasına yardımcı oluyor ve sahaya hazır, güvenilir E&I çözümleri sağlıyoruz.",
+      "longDescription": "Mühendislik hizmetlerimiz; petrol ve gaz, enerji ve petrokimya sektörleri dahil olmak üzere kompleks endüstriyel sektörlerin teknik ve operasyonel taleplerini desteklemek üzere tasarlanmıştır. Endüstri standartları ve sahaya özgü gerekliliklerle uyumlu, özel elektrik ve enstrümantasyon çözümleri sunuyoruz.",
       "pullQuote": "Mühendislik sadece inşa etmekle ilgili değildir; verimlilik ve güvenlik mirası oluşturmakla ilgilidir.",
       "ctaTitle": "Vizyonunuzu projelendirmeye hazır mısınız?",
       "ctaDescription": "Gelecek projenizin özel gereksinimlerini görüşmek için teknik direktörlerimizle iletişime geçin.",
       "features": {
         "0": {
           "title": "FEED Mühendisliği",
-          "description": "Teknik kapsamı, sistem mimarisini ve maliyet etkin proje yürütme stratejilerini tanımlayan ön uç mühendislik çözümleri geliştiriyoruz."
+          "description": "Teknik kapsamı, sistem mimarisini ve maaliyet bazlı proje yürütme stratejilerini tanımlayan ön mühendislik çözümleri geliştiriyoruz."
         },
         "1": {
           "title": "Detaylı Mühendislik",
@@ -452,7 +452,7 @@
         },
         "3": {
           "title": "Güvenlik ve Uyumluluk",
-          "description": "Sistem bütünlüğünü, risk azaltmayı ve operasyonel uyumluluğu sağlamak için yapılandırılmış güvenlik çalışmaları ve düzenleyici standartlar uyguluyoruz."
+          "description": "Sistem bütünlüğünü, risk azaltmayı ve operasyonel uyumluluğu sağlamak için yapılandırılmış güvenlik çalışmaları ve standartlar uyguluyoruz."
         }
       },
       "benefits": {
@@ -466,9 +466,9 @@
     },
     "procurement": {
       "title": "Tedarik",
-      "description": "Kaliteyi, uyumluluğu ve zamanında proje teslimini sağlamak için sertifikalı malzeme ve ekipmanların tedarikini yönetiyoruz.",
-      "introduction": "Tedarik hizmetlerimiz, karmaşık E&I proje gereksinimlerini desteklemek için sertifikalı malzeme ve ekipmanların güvenilir şekilde tedarik edilmesini sağlar. Uluslararası standartlara ve proje şartnamelerine uyumu sürdürmek için kalifiye tedarikçiler ve üreticilerle çalışıyoruz. Yapılandırılmış tedarik planlaması ve satıcı değerlendirmesi yoluyla kalite, izlenebilirlik ve maliyet etkin teslimat sağlıyoruz. Süreçlerimiz, tedarik zinciri riskini en aza indirmek ve tüm proje aşamalarında takvim uyumunu sürdürmek üzere tasarlanmıştır. Bu disiplinli yaklaşım, sahada istikrarlı performans ve güvenilir sistem entegrasyonunu destekler.",
-      "longDescription": "Tedarik deneyimimiz, Gaz İşleme Tesisleri ve Erken Üretim Tesisleri (EPF) gibi teknik açıdan zorlu tesislere güçlü bir odaklanma ile geniş bir proje ortamı yelpazesine yayılmaktadır. Bu özel sahaların yanı sıra, tüm operasyonel alanlarımızı yapılandırılmış kaynak bulma ve tedarik süreçleriyle destekliyoruz. Sıkı proje, kalite ve operasyonel gereksinimleri karşılayan sertifikalı malzeme ve ekipmanların tedarikini sağlayarak çeşitli proje kapsamlarında güvenilir ve uyumlu sistem entegrasyonuna olanak tanıyoruz.",
+      "description": "Kaliteyi, uyumluluğu ve zamanında proje teslimini sağlamak için sertifikalı malzeme ve ekipmanların tedariğini yönetiyoruz.",
+      "introduction": "Tedarik hizmetlerimiz, kompleks E&I proje gereksinimlerini desteklemek için sertifikalı malzeme ve ekipmanların güvenilir şekilde tedarik edilmesini sağlar. Uluslararası standartlara ve proje şartnamelerine uyumu sürdürmek için kalifiye tedarikçiler ve üreticilerle çalışıyoruz. Yapılandırılmış tedarik planlaması ve satıcı değerlendirmesi yoluyla kalite, izlenebilirlik ve maliyet bazlı teslimat sağlıyoruz. Süreçlerimiz, tedarik zinciri riskini en aza indirmek ve tüm proje aşamalarında takvim uyumunu sürdürmek üzere tasarlanmıştır. Bu disiplinli yaklaşım, sahada istikrarlı performans ve güvenilir sistem entegrasyonunu destekler.",
+      "longDescription": "Tedarik deneyimimiz, Gaz İşleme Tesisleri ve Erken Üretim Tesisleri (EPF) gibi teknik açıdan zorlu tesislere güçlü bir odaklanma ile geniş bir proje ortamı yelpazesine yayılmaktadır. Bu özel sahaların yanı sıra, tüm operasyonel alanlarımızı yapılandırılmış kaynak bulma ve tedarik süreçleriyle destekliyoruz. Sıkı proje, kalite ve operasyonel gereksinimleri karşılayan sertifikalı malzeme ve ekipmanların tedariğini sağlayarak çeşitli proje kapsamlarında güvenilir ve uyumlu sistem entegrasyonuna olanak tanıyoruz.",
       "pullQuote": "Mühendislik sadece inşa etmekle ilgili değildir; verimlilik ve güvenlik mirası oluşturmakla ilgilidir.",
       "ctaTitle": "Vizyonunuzu projelendirmeye hazır mısınız?",
       "ctaDescription": "Gelecek projenizin özel gereksinimlerini görüşmek için teknik direktörlerimizle iletişime geçin.",
@@ -478,7 +478,7 @@
           "description": "Güvenilir tedarik sağlamak için tedarikçileri teknik yetkinlik, uyumluluk ve performans kriterlerine göre değerlendiriyor ve yetkilendiriyoruz."
         },
         "1": {
-          "title": "Malzeme ve Ekipman Tedariki",
+          "title": "Malzeme ve Ekipman Tedariği",
           "description": "Proje şartnamelerini, kalite standartlarını ve teslimat gereksinimlerini karşılayan sertifikalı malzeme ve ekipmanları tedarik ediyoruz."
         },
         "2": {
@@ -487,7 +487,7 @@
         },
         "3": {
           "title": "Tedarikçi Doküman Kontrolü ve Veri Yönetimi",
-          "description": "Tedarik süreci boyunca izlenebilirliği, doğruluğu ve düzenleyici uyumu sağlamak için teknik dokümantasyon ve veri akışını yönetiyoruz."
+          "description": "Tedarik süreci boyunca izlenebilirliği, doğruluğu ve uyumu sağlamak için teknik dokümantasyon ve veri akışını yönetiyoruz."
         }
       },
       "benefits": {
@@ -500,10 +500,10 @@
       }
     },
     "construction": {
-      "title": "İnşaat / Montaj",
+      "title": "Montaj",
       "description": "E&I kurulum faaliyetlerini güvenlik, teknik doğruluk ve verimli saha performansına odaklanarak yürütüyoruz.",
-      "introduction": "İnşaat hizmetlerimiz, karmaşık endüstriyel proje ortamları için hassas ve güvenilir elektrik ve enstrümantasyon kurulumu sunar. Saha faaliyetlerini uluslararası standartlara, onaylı mühendislik dokümanlarına ve sıkı güvenlik gereksinimlerine uygun olarak yürütüyoruz. Yapılandırılmış saha yönetimi ve koordinasyonu yoluyla kaliteli işçilik, takvim uyumu ve teknik uyumluluk sağlıyoruz. Yaklaşımımız, uygulama riskini en aza indirir ve E&I sistemlerinin operasyonel tesislere sorunsuz entegrasyonunu destekler.",
-      "longDescription": "Karmaşık endüstriyel projelerde teknik açıdan zorlu E&I işlerini başarıyla yürüterek yüksek gerilim güç sistemleri ve büyük ölçekli enstrümantasyon tesislerindeki yetkinliğimizi kanıtladık. Elektrik kapsamımız; 400 kV YG kablo çekimi ve sonlandırması, 204 MVA'ya kadar jeneratör yükseltici trafo kurulumları, 45 MVA ünite yardımcı trafoları ve izole faz bara (IPB) sistemlerini içerir. Enstrümantasyon tarafında ise günde 60.000 varil (BOPD) petrol işleme kapasitesine sahip tesisler ve 250 MMscf/g kapasiteye kadar gaz işleme tesisleri için tam kapsamlı işler teslim ettik. Bu kanıtlanmış başarı geçmişi, zorlu operasyonel ortamlarda kritik sistemleri yönetme yeteneğimizi yansıtmaktadır.",
+      "introduction": "Montaj hizmetlerimiz, karmaşık endüstriyel proje ortamları için hassas ve güvenilir elektrik ve enstrümantasyon kurulumu sunar. Saha faaliyetlerini uluslararası standartlara, onaylı mühendislik dokümanlarına ve sıkı güvenlik gereksinimlerine uygun olarak yürütüyoruz. Yapılandırılmış saha yönetimi ve koordinasyonu yoluyla kaliteli işçilik, takvim uyumu ve teknik uyumluluk sağlıyoruz. Yaklaşımımız, uygulama riskini en aza indirir ve E&I sistemlerinin operasyonel tesislere sorunsuz entegrasyonunu destekler.",
+      "longDescription": "Karmaşık endüstriyel projelerde teknik açıdan zorlu E&I işlerini başarıyla yürüterek yüksek gerilim güç sistemleri ve büyük ölçekli enstrümantasyon tesislerindeki yetkinliğimizi kanıtladık. Elektrik kapsamımız; 400 kV YG kablo çekimi ve sonlandırması, 204 MVA'ya kadar jeneratör yükseltici trafo kurulumları, 45 MVA ünite yardımcı trafoları ve gaz yalıtımlı bara (IPB) sistemlerini içerir. Enstrümantasyon tarafında ise günde 60.000 varil (BOPD) petrol işleme kapasitesine sahip tesisler ve 250 MMscf/g kapasiteye kadar gaz işleme tesisleri için tam kapsamlı işler teslim ettik. Bu kanıtlanmış başarı geçmişi, zorlu operasyonel ortamlarda kritik sistemleri yönetme yeteneğimizi yansıtmaktadır.",
       "pullQuote": "Mühendislik sadece inşa etmekle ilgili değildir; verimlilik ve güvenlik mirası oluşturmakla ilgilidir.",
       "ctaTitle": "Vizyonunuzu projelendirmeye hazır mısınız?",
       "ctaDescription": "Gelecek projenizin özel gereksinimlerini görüşmek için teknik direktörlerimizle iletişime geçin.",
@@ -514,7 +514,7 @@
         },
         "1": {
           "title": "Saha Gözetimi ve Alan Yönetimi",
-          "description": "Güvenli, verimli ve takvime uygun proje yürütümü sağlamak için saha faaliyetlerini koordine ediyoruz."
+          "description": "Güvenli, verimli ve takvime uygun proje yönetimi sağlamak için saha faaliyetlerini koordine ediyoruz."
         },
         "2": {
           "title": "Kalite Kontrol ve Uyumluluk",
@@ -522,13 +522,13 @@
         },
         "3": {
           "title": "İSG Yönetimi ve Saha Güvenliği",
-          "description": "Tüm saha operasyonlarında güvenli çalışma koşullarını ve düzenleyici uyumu sağlamak için yapılandırılmış İSG uygulamaları hayata geçiriyoruz."
+          "description": "Tüm saha operasyonlarında güvenli çalışma koşullarını ve uyumu sağlamak için yapılandırılmış uygulamaları hayata geçiriyoruz."
         }
       },
       "benefits": {
         "0": "Sektörün En Karmaşık Projelerinde Deneyim",
         "1": "Sahada Kanıtlanmış Kurulum Uygulamaları",
-        "2": "Standartlara Dayalı İnşaat Süreçleri",
+        "2": "Standartlara Dayalı Montaj Süreçleri",
         "3": "Entegre İSG-Ç Yönetimi",
         "4": "Deneyimli Saha Ekipleri",
         "5": "Güvenilir Takvim ve Kalite Kontrolü"
@@ -578,13 +578,13 @@
       "text": "Sağlık, Emniyet ve Çevre (İSG-Ç) operasyonları konusunda titiz bir planlama ve süreç yönetimi politikası uyguluyoruz. Faaliyet gösterdiğimiz ve uzmanlaştığımız sektörlerin doğası gereği İSG uygulamaları hayati önem taşımaktadır. Bu sorumluluğun bilinciyle insan odaklı bir yaklaşım benimsiyor, İSG operasyonlarımızı uluslararası standartlara uygun olarak tasarlıyor, tüm süreçleri sürekli izliyor ve güncel metodolojilerle geliştiriyoruz."
     },
     "Process": {
-      "title": "HSE Süreci",
+      "title": "İSG-Ç Süreci",
       "text": "Karya Mühendislik, her projenin genel başarısını sağlamak için sağlam bir HSE (Sağlık, Emniyet ve Çevre) süreci uygular.",
       "Preparation": {
         "title": "Risk Değerlendirmesi & İş Güvenliği Analizi",
         "Points": {
-          "0": "Görevi özgü tehlikelerin ve risk seviyelerinin belirlenmesi",
-          "1": "Kontrol önlemlerinin ve hafifletme eylemlerinin tanımlanması",
+          "0": "İşe özgü tehlikelerin ve risk seviyelerinin belirlenmesi",
+          "1": "Kontrol önlemlerinin ve önleyici eylemlerin tanımlanması",
           "2": "Her personelin potansiyel risklerle ilgili görevlerinin belirlenmesi"
         }
       },
@@ -593,7 +593,7 @@
         "Points": {
           "0": "Görevi ilgilendiren güvenlik konularında günlük bilgilendirmeler",
           "1": "Güvenli çalışma uygulamalarının ve prosedürlerinin pekiştirilmesi",
-          "2": "İş gücünün anladığının ve katılımının teyit edilmesi"
+          "2": "Görevlerin ve katılımın teyit edilmesi"
         }
       },
       "FieldInspection": {
@@ -601,7 +601,7 @@
         "Points": {
           "0": "Saha güvenlik koşullarının rutin izlenmesi",
           "1": "İSG prosedürlerine uyumun doğrulanması",
-          "2": "Güvensiz davranış veya durumların anında raporlanması"
+          "2": "Tehlikeli davranış veya durumların anında raporlanması"
         }
       },
       "Reporting": {
@@ -636,7 +636,7 @@
       },
       "FocusAreaTwo": {
         "title": "Çevrenin Korunması",
-        "text": "Sorumlu kaynak kullanımı, atık yönetimi ve geçerli çevre düzenlemelerine uyum yoluyla çevresel etkiyi en aza indirmeye kararlıyız. Uygulamalarımız, sürdürülebilir proje yürütümünü desteklerken çevre ekosistemleri korumayı amaçlar."
+        "text": "Sorumlu kaynak kullanımı, atık yönetimi ve geçerli çevre düzenlemelerine uyum yoluyla çevresel etkiyi en aza indirmeye kararlıyız. Uygulamalarımız, sürdürülebilir proje yönetiminü desteklerken çevre ekosistemleri korumayı amaçlar."
       },
       "FocusAreaThree": {
         "title": "Eğitim ve Farkındalık",
@@ -644,7 +644,7 @@
       },
       "FocusAreaFour": {
         "title": "Risk Yönetimi",
-        "text": "Yapılandırılmış değerlendirme süreçleri ve sürekli izleme yoluyla operasyonel riskleri proaktif olarak tanımlıyor, değerlendiriyor ve azaltıyoruz. Bu yaklaşım, daha güvenli karar vermeyi destekler ve istikrarlı, kesintisiz proje yürütümünü sağlar."
+        "text": "Yapılandırılmış değerlendirme süreçleri ve sürekli izleme yoluyla operasyonel riskleri proaktif olarak tanımlıyor, değerlendiriyor ve azaltıyoruz. Bu yaklaşım, daha güvenli karar vermeyi destekler ve istikrarlı, kesintisiz proje yönetiminü sağlar."
       }
     },
     "ManagementSystem": {
@@ -667,7 +667,7 @@
         "value": "0.47"
       },
       "LTIR": {
-        "title": "Kayıp Zamanlı Yaralanma Oranı (LTIR)",
+        "title": "Kayıp Zamanlı Olay Oranı (LTIR)",
         "value": "0.21"
       },
       "HSE": {
@@ -685,7 +685,7 @@
     "subtitle": "Mükemmellik Taahhüdü",
     "Policy": {
       "title": "Kalite Politikası",
-      "text": "Saha kalite kontrol prosedürleri, operasyonlarımızın temel bir parçasını oluşturur ve proje yürütmenin her aşamasına gömülüdür. Sektörümüzün talepleri doğrultusunda, tüm faaliyetlerde uluslararası kabul görmüş kalite standartlarına sıkı sıkıya bağlı kalarak tutarlılık, izlenebilirlik ve teknik güvenilirlik sağlıyoruz. Proje şartnamelerine ve müşteriye özgü kalite sistemlerine tam uyum sağlamak için prosedürlerimiz her projenin kendine özgü gereksinimleriyle sistematik olarak hizalanır. Sürekli izleme, dokümantasyon ve doğrulama süreçleri aracılığıyla yüksek performans seviyelerini koruyor ve güvenilir, yüksek kaliteli sonuçlar sunma taahhüdümüzü pekiştiriyoruz."
+      "text": "Saha kalite kontrol prosedürleri, operasyonlarımızın temel bir parçasını oluşturur ve proje yürütmenin her aşamasına dahildir. Sektörümüzün talepleri doğrultusunda, tüm faaliyetlerde uluslararası kabul görmüş kalite standartlarına sıkı sıkıya bağlı kalarak tutarlılık, izlenebilirlik ve teknik güvenilirlik sağlıyoruz. Proje şartnamelerine ve müşteriye özgü kalite sistemlerine tam uyum sağlamak için prosedürlerimiz her projenin kendine özgü gereksinimleriyle sistematik olarak düzenlenir. Sürekli izleme, dokümantasyon ve doğrulama süreçleri aracılığıyla yüksek performans seviyelerini koruyor ve güvenilir, yüksek kaliteli sonuçlar sunma taahhüdümüzü pekiştiriyoruz."
     },
     "Process": {
       "title": "Kalite Güvence Süreci",
@@ -711,7 +711,7 @@
         "Points": {
           "0": "Onaylı prosedürlerin sahada uygulanması",
           "1": "Sürekli gözetim ve kalite doğrulaması",
-          "2": "Sapmaların ve düzeltici faaliyetlerin kaydedilmesi"
+          "2": "Uygunsuzluk ve düzeltici faaliyetlerin kaydedilmesi"
         }
       },
       "Reporting": {
@@ -730,10 +730,10 @@
       "approveRate": "İlk Muayene Onay Oranı",
       "closureTime": "Kontrol Listesi Kapatma Süresi",
       "reports": "Uygunsuzluk Raporu Sayısı (NCR) (976.000 Adam-Saatlik Projede)",
-      "punchMetrics": "Eksik Listesi Kapatma Süreleri (Gün)",
-      "aPunch": "A Kontrol Listesi",
-      "bPunch": "B Kontrol Listesi",
-      "cPunch": "C Kontrol Listesi"
+      "punchMetrics": "Punch Listesi Kapatma Süreleri (Gün)",
+      "aPunch": "A Punch",
+      "bPunch": "B Punch",
+      "cPunch": "C Punch"
     },
     "Documentation": {
       "title": "Tam İzlenebilirlik ve Şeffaf Raporlama",

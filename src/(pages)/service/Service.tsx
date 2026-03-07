@@ -55,7 +55,7 @@ export const Service = ({ service }: ServiceProps) => {
                 <div className="text-secondary bg-secondary/10 p-3 rounded-full shrink-0">{FeatureIcons[idx]}</div>
                 <div className="flex flex-col gap-2">
                   <SpanL className="text-xl font-medium text-primary">{`Services.${service.id}.features.${idx}.title`}</SpanL>
-                  <SpanL className="text-on-background/70 leading-relaxed">{`Services.${service.id}.features.${idx}.description`}</SpanL>
+                  <SpanL className="text-on-background/70 text-lg leading-relaxed">{`Services.${service.id}.features.${idx}.description`}</SpanL>
                 </div>
               </motion.div>
             ))}

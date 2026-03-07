@@ -19,7 +19,7 @@ const PerformanceStats = [
   },
   {
     label: "completedManHour",
-    value: "150+",
+    value: "948.000+",
     icon: <BiStopwatch size={72} />,
   },
   {
@@ -29,7 +29,7 @@ const PerformanceStats = [
   },
   {
     label: "cablesInstalled",
-    value: "200.000+",
+    value: "1.054.960+",
     icon: <MdElectricalServices size={72} />,
   },
 ];

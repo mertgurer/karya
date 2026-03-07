@@ -25,7 +25,7 @@ export const About = () => {
       >
         <div className="flex px-4 gap-3 text-4xl">
           <SpanL className="font-extralight">Corporate.About.title</SpanL>
-          <span className="font-semibold">2007</span>
+          <span className="font-semibold">2002</span>
         </div>
       </motion.div>
       <SpanL

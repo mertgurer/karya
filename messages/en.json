@@ -70,8 +70,8 @@
       "yearsOfExperience": "Years of Experience",
       "projectsCompleted": "Projects Completed",
       "maxEmployees": "Peak # of Employee in one project",
-      "completedManHour": "Completed Man Hour",
-      "cablesInstalled": "Cables Installed"
+      "completedManHour": "Completed Man Hour (Last Project)",
+      "cablesInstalled": "Cables Installed (Last Project)"
     },
     "Projects": {
       "sectionTitle": "Our Projects",

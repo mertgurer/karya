@@ -101,45 +101,51 @@ export const Project = ({ project }: ProjectProps) => {
             {`Projects.Project.${project.id}.smallDescription`}
           </SpanL>
           <div className="flex flex-col gap-5">
-            {DetailFields.map((field, index) => (
-              <Fragment key={field.key}>
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5, delay: index * 2 * 0.1 }}
-                  className="bg-on-primary w-full h-px"
-                />
-                <motion.div
-                  key={field.label}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5, delay: (index * 2 + 1) * 0.1 }}
-                  className="flex items-center justify-between"
-                >
-                  <SpanL upperCase noWrap className="text-sm font-extralight whitespace-nowrap max-2xl:text-xs">
-                    {field.label}
-                  </SpanL>
-                  <div className="flex gap-1 items-center font-semibold max-2xl:text-sm">
-                    {field.valueForm === "object" ? (
-                      <span>{project[field.key as keyof typeof Project]}</span>
-                    ) : field.valueForm === "startDate" || field.valueForm === "endDate" ? (
-                      <span>{formatProjectDate(project[field.key as keyof typeof Project], locale)}</span>
-                    ) : field.valueForm === "number" ? (
-                      <span>{formatProjectNumber(project[field.key as keyof typeof Project], locale)}</span>
-                    ) : field.valueForm === "localeString" ? (
-                      <SpanL className="text-end">{`Projects.Project.${project.id}.${field.key}`}</SpanL>
-                    ) : field.valueForm === "ProjectStatus" ? (
-                      <SpanL className={`text-end ${project[field.key as keyof typeof Project] ? "text-green-500 font-bold" : ""}`}>
-                        {`Common.${project[field.key as keyof typeof Project] ? "completed" : "onGoing"}`}
-                      </SpanL>
-                    ) : (
-                      <span>No value</span>
-                    )}
-                    {field.unit && <SpanL>{`Common.${field.unit}`}</SpanL>}
-                  </div>
-                </motion.div>
-              </Fragment>
-            ))}
+            {DetailFields.map((field, index) => {
+              if (field.valueForm === "number" && !(field.key in project)) return null;
+
+              return (
+                <Fragment key={field.key}>
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: index * 2 * 0.1 }}
+                    className="bg-on-primary w-full h-px"
+                  />
+                  <motion.div
+                    key={field.label}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: (index * 2 + 1) * 0.1 }}
+                    className="flex items-center justify-between"
+                  >
+                    <SpanL upperCase noWrap className="text-sm font-extralight whitespace-nowrap max-2xl:text-xs">
+                      {field.label}
+                    </SpanL>
+                    <div className="flex gap-1 items-center font-semibold max-2xl:text-sm">
+                      {field.valueForm === "object" ? (
+                        <span>{project[field.key as keyof typeof Project]}</span>
+                      ) : field.valueForm === "startDate" || field.valueForm === "endDate" ? (
+                        <span>
+                          {project[field.key as keyof typeof Project] == null ? "-" : formatProjectDate(project[field.key as keyof typeof Project], locale)}
+                        </span>
+                      ) : field.valueForm === "number" ? (
+                        <span>{formatProjectNumber(project[field.key as keyof typeof Project], locale)}</span>
+                      ) : field.valueForm === "localeString" ? (
+                        <SpanL className="text-end">{`Projects.Project.${project.id}.${field.key}`}</SpanL>
+                      ) : field.valueForm === "ProjectStatus" ? (
+                        <SpanL className={`text-end ${project[field.key as keyof typeof Project] ? "text-green-500 font-bold" : ""}`}>
+                          {`Common.${project[field.key as keyof typeof Project] ? "completed" : "onGoing"}`}
+                        </SpanL>
+                      ) : (
+                        <span>No value</span>
+                      )}
+                      {field.unit && <SpanL>{`Common.${field.unit}`}</SpanL>}
+                    </div>
+                  </motion.div>
+                </Fragment>
+              );
+            })}
           </div>
           {/* <ButtonL
             afterElement={<IoCloudDownloadOutline size={24} />}
