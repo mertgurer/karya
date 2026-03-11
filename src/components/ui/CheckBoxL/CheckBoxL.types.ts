@@ -5,10 +5,11 @@ export type AnimatedCheckboxLProps = CheckboxLProps & HTMLMotionProps<"label">;
 
 export interface CheckboxLProps extends Props {
   name?: string;
-  label: string;
+  label?: string;
   checked?: boolean;
   defaultChecked?: boolean;
   required?: boolean;
   disabled?: boolean;
   onCheckedChange?: (checked: boolean) => void;
+  children?: React.ReactNode;
 }

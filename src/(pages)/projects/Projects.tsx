@@ -7,13 +7,10 @@ import { IoMdPin } from "react-icons/io";
 import { Link } from "@/i18n";
 import { motion } from "motion/react";
 import { SpanL } from "@/components/ui/SpanL";
-import { formatProjectDate } from "@/lib/helper";
 import { useLocale } from "next-intl";
 import { WelcomeHeader } from "@/components/layout/WelcomeHeader";
 
 export const Projects = () => {
-  const locale = useLocale();
-
   return (
     <div className="flex flex-col w-full">
       <WelcomeHeader image={Welcome} title={"Projects.title"} subtitle={"Projects.subtitle"} />

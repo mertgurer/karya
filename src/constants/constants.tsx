@@ -235,12 +235,12 @@ export const DetailFields = [
     valueForm: "number",
     unit: "manHoursShort",
   },
-  {
-    key: "budget",
-    label: "Common.budget",
-    valueForm: "number",
-    unit: "USD",
-  },
+  // {
+  //   key: "budget",
+  //   label: "Common.budget",
+  //   valueForm: "number",
+  //   unit: "USD",
+  // },
   {
     key: "isCompleted",
     label: "Common.status",

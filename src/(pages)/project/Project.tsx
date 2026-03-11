@@ -1,6 +1,5 @@
 "use client";
 
-import { ButtonL } from "@/components/ui/ButtonL/ButtonL";
 import { ProjectProps } from "./Project.types";
 import { SpanL } from "@/components/ui/SpanL";
 import { DetailFields } from "@/constants/constants";
@@ -8,7 +7,6 @@ import { formatProjectDate, formatProjectNumber } from "@/lib/helper";
 import { useLocale } from "next-intl";
 import Image from "next/image";
 import { Fragment } from "react/jsx-runtime";
-import { IoCloudDownloadOutline } from "react-icons/io5";
 import { motion } from "motion/react";
 import { GiLaurels } from "react-icons/gi";
 import { Dot } from "lucide-react";
@@ -69,7 +67,7 @@ export const Project = ({ project }: ProjectProps) => {
           </div>
           <div className="flex flex-col gap-8 px-7 max-2xl:gap-4 max-md:px-5">
             <SpanL className="text-primary-variant font-semibold">Projects.services</SpanL>
-            <div className="grid grid-cols-4 w-[120%] max-md:grid-cols-2">
+            <div className="grid grid-cols-4 w-[120%] max-md:w-full max-md:gap-4 max-md:grid-cols-2">
               {project.services.map((service) => (
                 <div key={service.id} className="flex flex-col items-center gap-3 text-secondary max-2xl:scale-85">
                   <div className="relative flex items-center">

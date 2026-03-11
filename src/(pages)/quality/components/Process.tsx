@@ -31,9 +31,9 @@ const QualitySteps: StepItem[] = [
 
 export const Process = () => {
   return (
-    <div className="my-32 mx-[6%] flex flex-col gap-2 max-2xl:mx-[2%]">
+    <div className="my-32 mx-[6%] flex flex-col gap-2 max-2xl:mx-[2%] max-md:mx-[4%] max-md:my-20">
       <SpanL className="text-4xl self-center text-center text-primary">Quality.Process.title</SpanL>
-      <SpanL className="self-center text-center tracking-wider font-light w-1/2 max-2xl:w-2/3">Quality.Process.text</SpanL>
+      <SpanL className="self-center text-center tracking-wider font-light w-1/2 max-2xl:w-2/3 max-md:w-full">Quality.Process.text</SpanL>
       <div>
         <Flow steps={QualitySteps} />
       </div>

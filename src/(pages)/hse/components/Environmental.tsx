@@ -5,7 +5,7 @@ import ImpactImage from "@/assets/images/hse/impact.jpg";
 export const Environmental = () => {
   return (
     <div className="flex gap-10 px-[12%] py-28 max-2xl:px-[8%]">
-      <div className="flex-1 relative rounded-sm overflow-hidden">
+      <div className="flex-1 relative rounded-sm overflow-hidden max-md:hidden">
         <Image src={ImpactImage} alt="hse-impact" fill priority sizes="100%" className="object-cover" />
       </div>
       <div className="flex-3 flex flex-col py-16">

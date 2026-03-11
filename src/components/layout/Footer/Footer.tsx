@@ -48,8 +48,8 @@ export const Footer = () => {
           ))}
         </div>
         <div className="flex flex-col text-sm gap-2 items-end max-md:items-center">
-          <div className="flex items-center mb-10 gap-7">
-            <div className="flex flex-col gap-2 max-2xl:mb-2">
+          <div className="flex items-center mb-10 gap-7 max-md:mb-0">
+            <div className="flex flex-col gap-2 max-2xl:mb-2 max-md:flex-row max-md:gap-4">
               {routing.locales.map((locale) => {
                 return (
                   <Link key={locale} href={pathname} locale={locale} className="font-light relative h-5 flex items-center gap-2">

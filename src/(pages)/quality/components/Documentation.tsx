@@ -9,8 +9,8 @@ const DocumentationPoints = ["traceability", "transparency", "handover", "contin
 
 export const Documentation = () => {
   return (
-    <div className="flex px-[12%] gap-[5%] my-40 max-2xl:px-[8%]">
-      <div className="flex-8 relative h-auto rounded-md overflow-hidden shadow-md shadow-black/10">
+    <div className="flex px-[12%] gap-[5%] my-40 max-2xl:px-[8%] max-md:px-[5%] max-md:my-20">
+      <div className="flex-8 relative h-auto rounded-md overflow-hidden shadow-md shadow-black/10 max-md:hidden">
         <Image src={image} alt="welcome-image" fill priority sizes="100%" className="object-cover" />
       </div>
       <div className="flex-12 flex flex-col gap-7 py-10">

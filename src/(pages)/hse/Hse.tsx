@@ -21,13 +21,13 @@ export const Hse = () => {
       <Process />
       <Culture />
       <FocusAreas />
-      {/* <div className="h-32 w-full overflow-hidden">
+      <div className="h-32 w-full overflow-hidden">
         <div className="h-32 scale-200 translate-y-full -rotate-3 bg-primary" />
       </div>
       <Topics />
       <div className="h-32 w-full overflow-hidden">
         <div className="h-32 scale-200 -translate-y-full -rotate-3 bg-primary" />
-      </div> */}
+      </div>
       <Environmental />
     </div>
   );

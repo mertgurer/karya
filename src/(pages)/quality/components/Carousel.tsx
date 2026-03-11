@@ -50,7 +50,7 @@ export const Carousel = () => {
                 delay: 0.15 * index,
                 ease: "easeInOut",
               }}
-              className={`min-w-0 flex-[0_0_30%] pr-6`}
+              className={`min-w-0 flex-[0_0_30%] pr-6 max-md:flex-[0_0_80%] max-md:pr-3`}
             >
               <div
                 className="

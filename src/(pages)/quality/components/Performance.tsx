@@ -15,10 +15,10 @@ const PunchMetrics = [
 export const Performance = () => {
   return (
     <div
-      className="flex flex-col bg-surface pl-[12%] pr-[8%] py-40 my-10 gap-40 max-2xl:pl-[7%] max-2xl:pr-[5%] 
+      className="flex flex-col bg-surface pl-[12%] pr-[8%] py-40 my-10 gap-40 max-2xl:pl-[7%] max-2xl:pr-[5%] max-md:py-32 max-md:px-[5%]
                     shadow-[0_-20px_25px_-5px_rgba(0,0,0,0.20),0_20px_25px_-5px_rgba(0,0,0,0.20)]"
     >
-      <div className="flex">
+      <div className="flex max-md:flex-col max-md:gap-10">
         <div className="flex flex-col flex-3 gap-5">
           <SpanL
             initial={{ opacity: 0, y: 10 }}
@@ -63,7 +63,7 @@ export const Performance = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-20 max-md:gap-10">
         <div className="flex flex-col items-start gap-2">
           <SpanL className="text-4xl text-primary">Quality.Performance.punchMetrics</SpanL>
           <SpanL className="text-xs opacity-60">Quality.Performance.disclaimer</SpanL>

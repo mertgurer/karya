@@ -8,7 +8,6 @@ export const About = () => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.5 }}
       className="flex flex-col px-[20%] w-full gap-6 max-2xl:px-[13%] max-md:px-[6%] max-md:flex-col max-md:gap-0"
     >
       <motion.div
@@ -23,7 +22,7 @@ export const About = () => {
         }}
         className="flex flex-col gap-2"
       >
-        <div className="flex px-4 gap-3 text-4xl">
+        <div className="flex px-4 gap-3 text-4xl max-md:px-0 max-md:mb-3">
           <SpanL className="font-extralight">Corporate.About.title</SpanL>
           <span className="font-semibold">2002</span>
         </div>
@@ -38,7 +37,7 @@ export const About = () => {
           delay: 0.3,
           ease: "easeInOut",
         }}
-        className=""
+        className="max-md:mb-4"
       >
         Corporate.About.description
       </SpanL>

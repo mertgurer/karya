@@ -3,10 +3,13 @@
 import { SpanL } from "@/components/ui";
 import { motion } from "motion/react";
 import { FlowProps } from ".";
+import { useMobile } from "@/hooks";
 
 export const Flow = ({ steps }: FlowProps) => {
+  const isMobile = useMobile();
+
   return (
-    <div className={`grid grid-cols-${steps.length} my-10 -gap-10`}>
+    <div className={`grid grid-cols-${steps.length} max-md:grid-cols-1 my-10 -gap-10`}>
       {steps.map((step, index) => {
         const isFirst = index === 0;
         const isLast = index === steps.length - 1;
@@ -29,10 +32,10 @@ export const Flow = ({ steps }: FlowProps) => {
           >
             <div
               className={`
-                  h-full bg-primary-variant/20 py-10 flex flex-col max-2xl:py-8`}
+                h-full bg-primary-variant/20 py-10 flex flex-col max-2xl:py-8`}
               style={{
-                clipPath: getClipPath(isFirst, isLast),
-                transform: `translateX(${moveAmount}%)`,
+                clipPath: getClipPath(isFirst, isLast, isMobile),
+                transform: !isMobile ? `translateX(${moveAmount}%)` : `translateY(${moveAmount}%)`,
               }}
             >
               <div className="h-[30%] flex items-start gap-3 pl-12 pr-10 max-2xl:pl-10 max-2xl:pr-6">
@@ -58,14 +61,24 @@ export const Flow = ({ steps }: FlowProps) => {
   );
 };
 
-const getClipPath = (isFirst: boolean, isLast: boolean) => {
+const getClipPath = (isFirst: boolean, isLast: boolean, isMobile: boolean) => {
   const dentPercentage = 7;
 
-  if (isFirst) {
-    return `polygon(0 0, ${100 - dentPercentage}% 0, 100% 50%, ${100 - dentPercentage}% 100%, 0 100%, 0 50%)`;
-  } else if (isLast) {
-    return `polygon(0 0, 100% 0, 100% 50%, 100% 99%, 0 100%, ${dentPercentage}% 50%)`;
+  if (!isMobile) {
+    if (isFirst) {
+      return `polygon(0 0, ${100 - dentPercentage}% 0, 100% 50%, ${100 - dentPercentage}% 100%, 0 100%, 0 50%)`;
+    } else if (isLast) {
+      return `polygon(0 0, 100% 0, 100% 50%, 100% 99%, 0 100%, ${dentPercentage}% 50%)`;
+    } else {
+      return `polygon(0 0, ${100 - dentPercentage}% 0, 100% 50%, ${100 - dentPercentage}% 100%, 0 100%, ${dentPercentage}% 50%)`;
+    }
   } else {
-    return `polygon(0 0, ${100 - dentPercentage}% 0, 100% 50%, ${100 - dentPercentage}% 100%, 0 100%, ${dentPercentage}% 50%)`;
+    if (isFirst) {
+      return `polygon(0 0, 100% 0, 100% ${100 - dentPercentage}%, 50% 100%, 0 ${100 - dentPercentage}%)`;
+    } else if (isLast) {
+      return `polygon(0 0, 50% ${dentPercentage}%, 100% 0, 100% 100%, 0 100%)`;
+    } else {
+      return `polygon(0 0, 50% ${dentPercentage}%, 100% 0, 100% ${100 - dentPercentage}%, 50% 100%, 0 ${100 - dentPercentage}%)`;
+    }
   }
 };

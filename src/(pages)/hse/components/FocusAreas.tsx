@@ -23,11 +23,11 @@ const FocusAreaDetails = [
 
 export const FocusAreas = () => {
   return (
-    <div className="flex flex-col gap-20 my-60 px-[8%] max-2xl:px-[4%]">
+    <div className="flex flex-col gap-20 my-60 px-[8%] max-2xl:px-[4%] max-md:my-20">
       <div className="flex items-center text-primary">
         <SpanL className="text-4xl font-bold px-2 pb-2">Hse.FocusAreas.title</SpanL>
       </div>
-      <div className="flex justify-between gap-14">
+      <div className="flex justify-between gap-14 max-md:flex-col">
         {FocusAreaDetails.map((area, index) => (
           <motion.div
             key={index}

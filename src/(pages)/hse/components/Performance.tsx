@@ -8,13 +8,13 @@ const PerformanceDetails = ["TRIR", "LTIR", "HSE"];
 
 export const Performance = () => {
   return (
-    <div className="relative pt-120 flex flex-col px-[12%] py-36 bg-primary-variant max-2xl:px-[8%]">
-      <div className="absolute w-[50%] top-0 left-[5%] aspect-[2] -translate-y-[42%] rounded-sm overflow-hidden">
+    <div className="relative pt-120 flex flex-col px-[12%] py-36 bg-primary-variant max-2xl:px-[8%] max-md:pt-60">
+      <div className="absolute w-[50%] top-0 left-[5%] aspect-[2] -translate-y-[42%] rounded-sm overflow-hidden max-md:w-[90%] max-md:-translate-y-[30%]">
         <Image src={PolicyImage} alt="hse-policy" fill priority sizes="100%" className="object-cover" />
       </div>
       <SpanL className="text-4xl text-surface">Hse.Performance.title</SpanL>
       <SpanL className="mt-8 mb-20 text-surface max-2xl:text-sm">Hse.Performance.description</SpanL>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center max-md:flex-col max-md:gap-12">
         {PerformanceDetails.map((item, index) => (
           <Fragment key={index}>
             <motion.div
@@ -29,7 +29,7 @@ export const Performance = () => {
               className="flex flex-col gap-3 items-center"
             >
               <SpanL className="font-light text-justify text-surface text-8xl max-2xl:text-6xl">{`Hse.Performance.${item}.value`}</SpanL>
-              <SpanL className="font-medium text-xl bg-primary px-4 py-1 rounded-sm text-on-secondary max-2xl:text-base">{`Hse.Performance.${item}.title`}</SpanL>
+              <SpanL className="font-medium text-xl bg-primary px-4 py-1 rounded-sm text-on-secondary text-center max-md:w-max max-2xl:text-base">{`Hse.Performance.${item}.title`}</SpanL>
             </motion.div>
             {index < PerformanceDetails.length - 1 && (
               <motion.div
@@ -41,7 +41,7 @@ export const Performance = () => {
                   delay: index * 0.2 + 0.1,
                   ease: "easeInOut",
                 }}
-                className="bg-surface/20 w-1 h-48 rotate-15 rounded-sm max-2xl:h-36"
+                className="bg-surface/20 w-1 h-48 rotate-15 rounded-sm max-2xl:h-36 max-md:hidden"
               />
             )}
           </Fragment>

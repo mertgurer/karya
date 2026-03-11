@@ -10,6 +10,7 @@ export const CheckboxL = ({
   style,
   name,
   label,
+  children,
   required,
   checked,
   defaultChecked,
@@ -26,7 +27,7 @@ export const CheckboxL = ({
   return (
     <motion.label
       className={`
-        flex items-center gap-3 w-max px-2 py-1 
+        flex items-start gap-3 w-full px-2 py-1 
         cursor-pointer select-none
         transition-colors
         ${disabled ? "opacity-50 cursor-not-allowed" : ""}
@@ -43,11 +44,23 @@ export const CheckboxL = ({
         defaultChecked={defaultChecked}
         onChange={handleChange}
         disabled={disabled}
-        className="w-4 aspect-square accent-primary cursor-pointer focus:ring-0"
+        className="w-4 aspect-square accent-primary cursor-pointer mt-0.5 focus:ring-0"
       />
 
-      <div className="flex gap-1 text-primary">
-        <SpanL>{label}</SpanL>
+      <div className="flex gap-1 items-center [&_a]:underline [&_a]:underline-offset-2 [&_a]:hover:opacity-70 [&_a]:transition-opacity">
+        {children ? (
+          <span
+            onClick={(e) => {
+              if ((e.target as HTMLElement).tagName === "A") e.stopPropagation();
+            }}
+          >
+            {children}
+          </span>
+        ) : label ? (
+          <SpanL>{label}</SpanL>
+        ) : (
+          ""
+        )}
         {required && <span className="text-red-500">*</span>}
       </div>
     </motion.label>

@@ -16,7 +16,7 @@ export const WelcomeHeader = ({ image, title, subtitle }: WelcomeHeaderProps) =>
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="flex flex-col pl-[14%] pb-16 gap-2 z-10 max-2xl:pl-[8%] max-md:pl-0 max-md:items-center max-md:mx-auto max-md:pb-8"
+        className="flex flex-col pl-[14%] pb-16 gap-2 z-10 max-2xl:pl-[8%] max-md:pl-0 max-md:items-center max-md:mx-4 max-md:pb-8"
       >
         <SpanL noWrap className="text-5xl font-bold max-2xl:text-4xl max-md:self-start">
           {title}

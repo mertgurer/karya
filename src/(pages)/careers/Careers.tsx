@@ -2,12 +2,14 @@
 
 import { WelcomeHeader } from "@/components/layout/WelcomeHeader";
 import Welcome from "@/assets/images/careers/welcome.jpg";
-import { ButtonL, ComboBoxL, FileUploaderL, InputL, InputType, SpanL } from "@/components/ui";
+import { ButtonL, CheckboxL, ComboBoxL, FileUploaderL, InputL, InputType, SpanL } from "@/components/ui";
 import { motion } from "motion/react";
 import { FaChartLine } from "react-icons/fa6";
 import { GiProgression, GiTeamIdea } from "react-icons/gi";
 import { RadioGroupL } from "@/components/ui/RadioGroupL";
 import { RiTeamFill } from "react-icons/ri";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n";
 
 const formPositionOptions = [
   { value: "siteEngineer", label: "Careers.Form.Positions.siteEngineer" },
@@ -38,6 +40,7 @@ const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 };
 
 export const Careers = () => {
+  const t = useTranslations();
   return (
     <div className="flex flex-col w-full">
       <WelcomeHeader image={Welcome} title={"Careers.title"} subtitle={"Careers.subtitle"} />
@@ -81,8 +84,17 @@ export const Careers = () => {
             required
             acceptedFileTypes={["pdf"]}
           />
-          <RadioGroupL name={"workedHere"} label="Careers.Form.workedHere" options={haveYouWorkedOptions} required className="mt-7 mb-2 ml-2" />
-          <ButtonL upperCase type="submit" className="bg-primary-variant text-on-primary text-sm font-medium px-6 py-3 h-max min-w-max mr-auto mt-5">
+          <RadioGroupL name={"workedHere"} label="Careers.Form.workedHere" options={haveYouWorkedOptions} required className="mt-5 mb-2 ml-2" />
+          <CheckboxL className="text-primary/80 text-sm mt-5" required>
+            {t.rich("Contact.Form.acceptTerms", {
+              a: (chunks) => (
+                <Link target="_blank" rel="noopener noreferrer" href="/corporate?privacy">
+                  {chunks}
+                </Link>
+              ),
+            })}
+          </CheckboxL>
+          <ButtonL upperCase type="submit" className="bg-primary-variant text-on-primary text-sm font-medium px-6 py-3 h-max min-w-max mr-auto">
             Careers.Form.submit
           </ButtonL>
         </form>

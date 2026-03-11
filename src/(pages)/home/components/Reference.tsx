@@ -15,11 +15,11 @@ import { SpanL } from "@/components/ui/SpanL";
 import { Lightning } from "./Lightning";
 
 const References = [
+  { name: "Havatek", image: Havatek },
   { name: "Pearl Petroleum Company", image: Pearl },
   { name: "HKN Energy", image: HKN },
   { name: "TAQA Industrial Energy", image: Taqa },
   { name: "GAMA Power Systems", image: Gama },
-  { name: "Havatek", image: Havatek },
   { name: "Çalık Enerji", image: Calik },
   { name: "Tupras", image: Tupras },
   { name: "Shell", image: Shell },
@@ -75,7 +75,7 @@ export const Reference = ({ index }: { index: number }) => {
           Home.References.description
         </SpanL>
       </motion.div>
-      <div className="grid grid-cols-5 gap-0.5 flex-1 mx-[7%] max-2xl:mx-0 max-md:grid-cols-2 max-md:w-full">
+      <div className="grid grid-cols-5 gap-0.5 flex-1 ml-[7%] mr-[4%] max-2xl:mx-0 max-md:grid-cols-2 max-md:w-full">
         {References.map((reference, index) => (
           <motion.div
             initial={{ opacity: 0, x: -10 }}
@@ -86,7 +86,7 @@ export const Reference = ({ index }: { index: number }) => {
               ease: "easeInOut",
             }}
             key={reference.name}
-            className="w-full h-full p-8 aspect-square overflow-hidden"
+            className="w-full h-full p-6 aspect-square overflow-hidden"
           >
             <div className="relative w-full h-full">
               <Image src={reference.image} alt={reference.name} fill priority sizes="100%" className="object-contain" />

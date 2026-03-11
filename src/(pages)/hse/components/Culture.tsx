@@ -6,8 +6,8 @@ import Culture2Image from "@/assets/images/hse/culture-2.jpg";
 
 export const Culture = () => {
   return (
-    <div className="flex flex-col pt-40 px-[12%] mx-20 max-2xl:px-[2%]">
-      <SpanL className="text-[40px] font-medium border-b border-primary text-end text-primary max-2xl:ml-10">Hse.Culture.title</SpanL>
+    <div className="flex flex-col pt-40 px-[12%] mx-20 max-2xl:px-[2%] max-md:mx-2 max-md:pt-20">
+      <SpanL className="text-[40px] font-medium border-b border-primary text-end text-primary max-2xl:ml-10 max-md:ml-0">Hse.Culture.title</SpanL>
       <motion.div initial={"hide"} whileInView={"show"} viewport={{ amount: 0.1 }} className="flex flex-col gap-20 mt-16 mb-32 max-2xl:mt-12 max-2xl:gap-10">
         <motion.div
           variants={{
@@ -15,12 +15,12 @@ export const Culture = () => {
             show: { translateY: 0 },
           }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          className="flex bg-surface shadow-md shadow-surface/20 rounded-sm overflow-hidden"
+          className="flex bg-surface shadow-md shadow-surface/20 rounded-sm overflow-hidden max-md:flex-col"
         >
-          <div className="relative w-[180%] aspect-[1.5]">
+          <div className="relative w-[180%] aspect-[1.5] max-md:aspect-video max-md:w-full">
             <Image src={CultureImage} alt="hse-policy" fill priority sizes="100%" className="object-cover" />
           </div>
-          <div className="flex flex-col gap-4 my-auto pl-10 pr-5 text-justify py-8">
+          <div className="flex flex-col gap-4 my-auto pl-10 pr-5 text-justify py-8 max-md:px-4">
             <SpanL className="text-3xl text-primary font-medium">Hse.Culture.subtitleOne</SpanL>
             <SpanL className="mb-2 max-2xl:text-sm">Hse.Culture.textOne</SpanL>
           </div>
@@ -31,12 +31,12 @@ export const Culture = () => {
             show: { translateY: 0 },
           }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          className="flex flex-row-reverse bg-surface shadow-md shadow-surface/20 rounded-sm overflow-hidden"
+          className="flex flex-row-reverse bg-surface shadow-md shadow-surface/20 rounded-sm overflow-hidden max-md:flex-col"
         >
-          <div className="relative w-[180%] aspect-[1.5]">
+          <div className="relative w-[180%] aspect-[1.5] max-md:aspect-video max-md:w-full">
             <Image src={Culture2Image} alt="hse-culture-2" fill priority sizes="100%" className="object-cover" />
           </div>
-          <div className="flex flex-col gap-4 my-auto pl-5 pr-10 text-justify py-8">
+          <div className="flex flex-col gap-4 my-auto pl-5 pr-10 text-justify py-8 max-md:px-4">
             <SpanL className="text-3xl text-primary font-medium">Hse.Culture.subtitleTwo</SpanL>
             <SpanL className="mb-2 max-2xl:text-sm">Hse.Culture.textTwo</SpanL>
           </div>

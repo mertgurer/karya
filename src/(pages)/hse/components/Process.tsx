@@ -37,7 +37,7 @@ const HseSteps: StepItem[] = [
 
 export const Process = () => {
   return (
-    <div className="mb-32 mt-48 mx-[6%] flex flex-col gap-2 max-2xl:mx-[2%]">
+    <div className="mb-32 mt-48 mx-[6%] flex flex-col gap-2 max-2xl:mx-[2%] max-md:my-20">
       <SpanL className="text-4xl self-center text-center text-primary">Hse.Process.title</SpanL>
       <SpanL className="self-center text-center tracking-wider font-light w-1/2 max-2xl:w-2/3">Hse.Process.text</SpanL>
       <div>

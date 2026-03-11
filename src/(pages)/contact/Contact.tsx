@@ -2,10 +2,11 @@
 
 import Welcome from "@/assets/images/contact/welcome.jpg";
 import { WelcomeHeader } from "@/components/layout/WelcomeHeader";
-import { ButtonL, ComboBoxL, InputL, InputType, SpanL } from "@/components/ui";
+import { ButtonL, CheckboxL, ComboBoxL, InputL, InputType, SpanL } from "@/components/ui";
 import { Addresses } from "@/constants";
 import { Link } from "@/i18n";
 import { motion } from "motion/react";
+import { useTranslations } from "next-intl";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdMailOutline, MdOutlinePhoneEnabled } from "react-icons/md";
 
@@ -22,6 +23,8 @@ const blockVariants = {
 };
 
 export const Contact = () => {
+  const t = useTranslations();
+
   return (
     <div className="flex flex-col w-full">
       <WelcomeHeader image={Welcome} title={"Contact.title"} subtitle={"Contact.subtitle"} />
@@ -54,6 +57,15 @@ export const Contact = () => {
               <InputL name="phone" placeholder="Contact.Form.phone" />
             </div>
             <InputL required type={InputType.TEXT_AREA} name="message" placeholder="Contact.Form.message" />
+            <CheckboxL className="text-surface/80 text-sm" required>
+              {t.rich("Contact.Form.acceptTerms", {
+                a: (chunks) => (
+                  <Link target="_blank" rel="noopener noreferrer" href="/corporate?privacy">
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </CheckboxL>
             <ButtonL upperCase type="submit" className="bg-primary-variant text-on-primary text-sm font-medium px-6 py-3">
               Contact.Form.submit
             </ButtonL>
