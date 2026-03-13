@@ -23,8 +23,6 @@ export const Corporate = () => {
   const searchParams = useSearchParams();
 
   const [selectedTabIndex, setSelectedTabIndex] = useState(() => {
-    console.log(searchParams.has("privacy"));
-
     if (searchParams.has("privacy")) {
       return 4;
     }
@@ -33,11 +31,7 @@ export const Corporate = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <WelcomeHeader
-        image={Welcome}
-        title={"Corporate.title"}
-        subtitle={"Corporate.subtitle"}
-      />
+      <WelcomeHeader image={Welcome} title={"Corporate.title"} subtitle={"Corporate.subtitle"} />
       <div className="flex self-center max-md:w-full max-md:grid max-md:grid-cols-2">
         {CorporateTabs.map((tab, index) => {
           return (
@@ -46,12 +40,8 @@ export const Corporate = () => {
               onClick={() => setSelectedTabIndex(index)}
               upperCase
               className={`border-r border-r-primary/30 py-4 px-6 font-medium text-sm rounded-none! max-md:w-full max-md:flex max-md:flex-col max-md:items-center max-md:px-0 ${
-                index === selectedTabIndex
-                  ? "text-secondary bg-surface"
-                  : "text-on-background"
-              } ${
-                index === 0 ? "border-l border-l-primary/30" : ""
-              } hover:text-secondary hover:bg-surface duration-300`}
+                index === selectedTabIndex ? "text-secondary bg-surface" : "text-on-background"
+              } ${index === 0 ? "border-l border-l-primary/30" : ""} hover:text-secondary hover:bg-surface duration-300`}
             >
               {`Corporate.${tab.id}`}
             </ButtonL>
@@ -84,9 +74,7 @@ export const Corporate = () => {
               style={{
                 transform: `translateX(${translate}%)`,
               }}
-              className={`flex w-full text-on-background py-20 max-md:py-10 ${
-                index !== selectedTabIndex ? `absolute` : "relative"
-              } duration-1000 ease-in-out`}
+              className={`flex w-full text-on-background py-20 max-md:py-10 ${index !== selectedTabIndex ? `absolute` : "relative"} duration-1000 ease-in-out`}
             >
               {tab.view}
             </div>

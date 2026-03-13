@@ -20,7 +20,7 @@ export const Culture = () => {
           <div className="relative w-[180%] aspect-[1.5] max-md:aspect-video max-md:w-full">
             <Image src={CultureImage} alt="hse-policy" fill priority sizes="100%" className="object-cover" />
           </div>
-          <div className="flex flex-col gap-4 my-auto pl-10 pr-5 text-justify py-8 max-md:px-4">
+          <div className="flex flex-col gap-4 my-auto pl-10 pr-5 py-8 max-md:px-4">
             <SpanL className="text-3xl text-primary font-medium">Hse.Culture.subtitleOne</SpanL>
             <SpanL className="mb-2 max-2xl:text-sm">Hse.Culture.textOne</SpanL>
           </div>
@@ -36,7 +36,7 @@ export const Culture = () => {
           <div className="relative w-[180%] aspect-[1.5] max-md:aspect-video max-md:w-full">
             <Image src={Culture2Image} alt="hse-culture-2" fill priority sizes="100%" className="object-cover" />
           </div>
-          <div className="flex flex-col gap-4 my-auto pl-5 pr-10 text-justify py-8 max-md:px-4">
+          <div className="flex flex-col gap-4 my-auto pl-5 pr-10 py-8 max-md:px-4">
             <SpanL className="text-3xl text-primary font-medium">Hse.Culture.subtitleTwo</SpanL>
             <SpanL className="mb-2 max-2xl:text-sm">Hse.Culture.textTwo</SpanL>
           </div>

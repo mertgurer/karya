@@ -36,7 +36,7 @@ export const Service = ({ service }: ServiceProps) => {
       <div className="flex flex-col self-center w-full max-w-5xl px-8 pt-16 pb-20 gap-20 max-md:px-5 max-md:py-12 max-md:gap-12">
         {/* 2. INTRODUCTION TEXT */}
         <div className="flex flex-col gap-6">
-          <SpanL className="font-light text-lg leading-relaxed text-on-background text-center max-md:text-2xl">{`Services.${service.id}.introduction`}</SpanL>
+          <SpanL className="font-light text-lg leading-relaxed text-on-background text-center">{`Services.${service.id}.introduction`}</SpanL>
           <div className="w-24 h-0.5 bg-secondary mx-auto mt-4" />
         </div>
         {/* 3. VISUAL HELPER: ICON GRID (Key Features) */}
@@ -50,12 +50,16 @@ export const Service = ({ service }: ServiceProps) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="flex gap-5 items-start p-6 rounded-md bg-surface border border-black/5 hover:border-secondary/30 hover:shadow-lg hover:shadow-secondary/5 transition-all duration-300"
+                className="flex gap-5 items-start p-6 rounded-md bg-surface border border-black/5
+                hover:border-secondary/30 hover:shadow-lg hover:shadow-secondary/5 transition-all duration-300"
               >
-                <div className="text-secondary bg-secondary/10 p-3 rounded-full shrink-0">{FeatureIcons[idx]}</div>
+                <div className="text-secondary bg-secondary/10 p-3 rounded-full shrink-0 max-md:hidden">{FeatureIcons[idx]}</div>
                 <div className="flex flex-col gap-2">
                   <SpanL className="text-xl font-medium text-primary">{`Services.${service.id}.features.${idx}.title`}</SpanL>
-                  <SpanL className="text-on-background/70 text-lg leading-relaxed">{`Services.${service.id}.features.${idx}.description`}</SpanL>
+                  <SpanL
+                    noWrap
+                    className="text-on-background/70 text-lg leading-relaxed max-md:text-base"
+                  >{`Services.${service.id}.features.${idx}.description`}</SpanL>
                 </div>
               </motion.div>
             ))}
@@ -65,7 +69,7 @@ export const Service = ({ service }: ServiceProps) => {
         {/* 2. INTRODUCTION TEXT */}
         <div className="flex flex-col gap-6 text-center">
           <div className="w-24 h-0.5 bg-secondary mx-auto mt-4" />
-          <SpanL className="text-3xl font-light leading-relaxed text-on-surface max-md:text-2xl">{`Services.${service.id}.longDescription`}</SpanL>
+          <SpanL className="text-3xl font-light leading-relaxed text-on-surface max-md:text-lg">{`Services.${service.id}.longDescription`}</SpanL>
           <div className="w-24 h-0.5 bg-secondary mx-auto mt-4" />
         </div>
 
@@ -83,8 +87,11 @@ export const Service = ({ service }: ServiceProps) => {
                 transition={{ delay: idx * 0.05 }}
                 className="flex items-center gap-4 group"
               >
-                <IoCheckmarkCircle className="text-secondary text-2xl shrink-0 group-hover:scale-110 transition-transform" />
-                <SpanL className="text-lg text-on-background/80 font-light border-b border-black/5 pb-2 w-full group-hover:text-primary transition-colors">
+                <IoCheckmarkCircle className="text-secondary text-2xl shrink-0 mb-2 group-hover:scale-110 transition-transform" />
+                <SpanL
+                  noWrap
+                  className="text-lg text-on-background/80 font-light border-b border-black/5 pb-2 w-full max-md:text-base group-hover:text-primary transition-colors"
+                >
                   {`Services.${service.id}.benefits.${idx}`}
                 </SpanL>
               </motion.div>

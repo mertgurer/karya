@@ -17,6 +17,7 @@ export const Navbar = () => {
   const locale = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileLanguage, setMobileLanguage] = useState(false);
 
   const lenis = useLenis();
 
@@ -39,6 +40,13 @@ export const Navbar = () => {
       setIsMenuOpen(false);
     }
   }, [isScrolled]);
+
+  useEffect(() => {
+    if (!mobileLanguage) return;
+    const handler = (e: MouseEvent) => setMobileLanguage(false);
+    document.addEventListener("click", handler);
+    return () => document.removeEventListener("click", handler);
+  }, [mobileLanguage]);
 
   const hiddenNavbarPaths = ["/", "/projects"];
   const hideNavbar = hiddenNavbarPaths.some((path) => pathname.includes(path));
@@ -73,32 +81,40 @@ export const Navbar = () => {
           <NavigationButton key={link.label} label={link.label} href={link.href} />
         ))}
         <div className="h-5 w-px bg-on-primary/80 max-md:h-px max-md:w-full" />
-        <div className="group relative flex flex-col cursor-pointer mt-6 max-md:mt-0">
-          {/* <Languages size={24} strokeWidth="2" className="opacity-70 ml-2 group-hover:opacity-100 duration-200" /> */}
-          <Globe size={24} strokeWidth="2" className="opacity-70 ml-2 group-hover:opacity-100 duration-200 max-md:opacity-100 max-md:ml-0 max-md:scale-150" />
-          {/* <div className="relative h-7 aspect-square mx-2">
-            <Image src={Language} alt={"language"} fill priority sizes="100%" className="object-contain brightness-0 invert" />
-          </div> */}
+        <div
+          className={`group relative flex flex-col cursor-pointer mt-6 max-md:mt-0
+            ${mobileLanguage ? "max-md:mb-8" : ""}`}
+          onClick={(e) => {
+            e.stopPropagation();
+            setMobileLanguage((prev) => !prev);
+          }}
+        >
+          <Globe
+            size={24}
+            strokeWidth="2"
+            className={`opacity-70 ml-2 group-hover:opacity-100 duration-200 max-md:opacity-100 max-md:ml-0 max-md:scale-150 
+            ${mobileLanguage ? "max-md:opacity-0!" : ""}`}
+          />
           <div className="w-full h-6 max-md:hidden" />
           <div
-            className="absolute flex flex-col px-3 py-5 gap-3 top-full self-center bg-primary-variant/90 rounded-md opacity-0 -translate-y-2 pointer-events-none
-                      duration-300 group-hover:opacity-100 group-active:opacity-100 group-hover:translate-y-0 group-active:translate-y-0 group-hover:pointer-events-auto group-active:pointer-events-auto"
+            className={`absolute flex flex-col px-3 py-5 gap-3 top-full self-center bg-primary-variant/90 rounded-md duration-300
+      opacity-0 -translate-y-2 pointer-events-none max-md:bg-transparent
+      group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto
+      ${mobileLanguage ? "max-md:opacity-100! max-md:-translate-y-6! max-md:pointer-events-auto! max-md:py-0" : ""}`}
           >
-            {routing.locales.map((locale) => {
-              return (
-                <Link
-                  key={locale}
-                  href={pathname}
-                  locale={locale}
-                  className="font-light relative h-9 px-2 py-2 flex items-center gap-2 hover:-translate-x-1 duration-200"
-                >
-                  <span className="font-bold">{locale.toLocaleUpperCase(locale)}</span>
-                  <div className="relative h-full aspect-[1.7]">
-                    <Image src={Flags[locale as keyof typeof Flags]} alt={"logo"} fill priority sizes="100%" className="object-cover" />
-                  </div>
-                </Link>
-              );
-            })}
+            {routing.locales.map((locale) => (
+              <Link
+                key={locale}
+                href={pathname}
+                locale={locale}
+                className="font-light relative h-9 px-2 py-2 flex items-center gap-2 hover:-translate-x-1 duration-200"
+              >
+                <span className="font-bold">{locale.toLocaleUpperCase(locale)}</span>
+                <div className="relative h-full aspect-[1.7]">
+                  <Image src={Flags[locale as keyof typeof Flags]} alt={"logo"} fill priority sizes="100%" className="object-cover" />
+                </div>
+              </Link>
+            ))}
           </div>
           <motion.div
             animate={!isScrolled ? { opacity: 0.8, x: 0 } : { opacity: 0, x: -10 }}

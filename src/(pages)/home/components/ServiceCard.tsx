@@ -7,7 +7,6 @@ import { Link } from "@/i18n";
 
 function ServiceCard({ service }: ServiceCardProps) {
   const [isHovered, setIsHovered] = useState(false);
-  console.log(service.image);
 
   return (
     <Link
