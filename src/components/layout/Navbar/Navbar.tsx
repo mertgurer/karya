@@ -11,8 +11,10 @@ import { Link, routing, usePathname } from "@/i18n";
 import { easeInOut, motion } from "motion/react";
 import { Globe } from "lucide-react";
 import { useLocale } from "next-intl";
+import { useMobile } from "@/hooks";
 
 export const Navbar = () => {
+  const isMobile = useMobile();
   const pathname = usePathname();
   const locale = useLocale();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +27,7 @@ export const Navbar = () => {
     if (!lenis) return;
 
     const onScroll = ({ scroll }: { scroll: number }) => {
-      setIsScrolled(scroll >= SCROLL_UPDATE_THRESHOLD);
+      setIsScrolled(scroll >= (isMobile ? SCROLL_UPDATE_THRESHOLD / 4 : SCROLL_UPDATE_THRESHOLD));
     };
 
     lenis.on("scroll", onScroll);

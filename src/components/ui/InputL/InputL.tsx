@@ -46,9 +46,9 @@ export const InputL = ({
       )}
 
       {type === "text-area" ? (
-        <motion.textarea {...commonProps} className={`${commonProps.className} min-h-44 max-md:min-h-32`} />
+        <motion.textarea maxLength={500} {...commonProps} className={`${commonProps.className} min-h-44 max-md:min-h-32`} />
       ) : (
-        <motion.input {...commonProps} type={type === InputType.PASSWORD ? "password" : "text"} />
+        <motion.input maxLength={100} {...commonProps} type={type === InputType.PASSWORD ? "password" : "text"} />
       )}
     </div>
   );

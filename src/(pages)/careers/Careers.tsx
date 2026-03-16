@@ -10,6 +10,8 @@ import { RadioGroupL } from "@/components/ui/RadioGroupL";
 import { RiTeamFill } from "react-icons/ri";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const formPositionOptions = [
   { value: "siteEngineer", label: "Careers.Form.Positions.siteEngineer" },
@@ -30,16 +32,90 @@ const blockVariants = {
   visible: { opacity: 1, y: 0, filter: "blur(0px)" },
 };
 
-const HandleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-
-  const formData = new FormData(e.currentTarget);
-  const data = Object.fromEntries(formData.entries());
-  console.log(data);
-};
+const toBase64 = (file: File): Promise<string> =>
+  new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = () => res((r.result as string).split(",")[1]);
+    r.onerror = rej;
+    r.readAsDataURL(file);
+  });
 
 export const Careers = () => {
   const t = useTranslations();
+  const [loading, setLoading] = useState(false);
+  const [formKey, setFormKey] = useState(0);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+
+    const data: Record<string, string> = {};
+    for (const [key, value] of formData.entries()) {
+      if (typeof value === "string") {
+        data[key] = value.trim();
+      }
+    }
+
+    const cvFile = formData.get("cv") as File | null;
+
+    const requiredFields = ["fullName", "position", "email", "workedHere"];
+    for (const field of requiredFields) {
+      if (!data[field]) {
+        toast.error(t("Careers.Error.required"));
+        return;
+      }
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email)) {
+      toast.error(t("Careers.Error.invalidEmail"));
+      return;
+    }
+
+    console.log("CV FILE", cvFile);
+    if (!cvFile || cvFile.size === 0) {
+      toast.error(t("Careers.Error.resumeRequired"));
+      return;
+    }
+
+    setLoading(true);
+
+    toast
+      .promise(
+        (async () => {
+          const resumeBase64 = await toBase64(cvFile);
+
+          const res = await fetch("/api/send-mail", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              type: "application",
+              fullName: data.fullName,
+              position: t(`Careers.Form.Positions.${data.position}`),
+              email: data.email,
+              phone: data.phone ?? "",
+              message: data.message ?? "",
+              workedWithUsBefore: data.workedHere === "yes",
+              resumeBase64,
+              resumeFileName: cvFile.name,
+            }),
+          });
+
+          const result = await res.json();
+          if (!result.success) throw new Error("Failed to send application");
+
+          setFormKey((k) => k + 1);
+          return result;
+        })(),
+        {
+          loading: t("Careers.sending"),
+          success: t("Careers.Success.applicationSent"),
+          error: t("Careers.Error.applicationFailed"),
+        },
+      )
+      .finally(() => setLoading(false));
+  };
+
   return (
     <div className="flex flex-col w-full">
       <WelcomeHeader image={Welcome} title={"Careers.title"} subtitle={"Careers.subtitle"} />
@@ -49,14 +125,15 @@ export const Careers = () => {
         viewport={{ once: true }}
         className="flex px-[11%] py-32 gap-20 bg-surface max-2xl:px-[8%] max-2xl:py-20 max-md:flex-col-reverse max-md:px-[3%] max-md:py-12"
       >
-        <form onSubmit={HandleSubmit} className="flex flex-col gap-3 flex-5 bg-background p-8 rounded-sm max-md:px-4">
+        <form key={formKey} onSubmit={handleSubmit} className="flex flex-col gap-3 flex-5 bg-background p-8 rounded-sm max-md:px-4">
           <div className="flex flex-col gap-1 mb-10 ml-2">
             <SpanL className="text-3xl text-primary-variant font-medium">Careers.formTitle</SpanL>
             <SpanL className="text-sm opacity-70">Careers.formDescription</SpanL>
           </div>
           <div className="flex gap-3 max-md:flex-col">
-            <InputL variants={blockVariants} transition={{ delay: 0.3, duration: 0.3 }} required name="nameSurname" placeholder="Careers.Form.nameSurname" />
+            <InputL variants={blockVariants} transition={{ delay: 0.3, duration: 0.3 }} required name="fullName" placeholder="Careers.Form.nameSurname" />
             <ComboBoxL
+              name="position"
               variants={blockVariants}
               transition={{ delay: 0.4, duration: 0.3 }}
               options={formPositionOptions}
@@ -80,10 +157,9 @@ export const Careers = () => {
             variants={blockVariants}
             transition={{ delay: 0.8, duration: 0.3 }}
             placeholder="Careers.Form.resume"
-            required
             acceptedFileTypes={["pdf"]}
           />
-          <RadioGroupL name={"workedHere"} label="Careers.Form.workedHere" options={haveYouWorkedOptions} required className="mt-5 mb-2 ml-2" />
+          <RadioGroupL name="workedHere" label="Careers.Form.workedHere" options={haveYouWorkedOptions} required className="mt-5 mb-2 ml-2" />
           <CheckboxL className="text-primary/80 text-sm mt-5" required>
             {t.rich("Contact.Form.acceptTerms", {
               a: (chunks) => (
@@ -93,7 +169,12 @@ export const Careers = () => {
               ),
             })}
           </CheckboxL>
-          <ButtonL upperCase type="submit" className="bg-primary-variant text-on-primary text-sm font-medium px-6 py-3 h-max min-w-max mr-auto">
+          <ButtonL
+            upperCase
+            type="submit"
+            disabled={loading}
+            className="bg-primary-variant text-on-primary text-sm font-medium px-6 py-3 h-max min-w-max mr-auto"
+          >
             Careers.Form.submit
           </ButtonL>
         </form>

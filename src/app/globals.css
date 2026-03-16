@@ -51,6 +51,7 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 75px;
+    background-color: var(--primary-variant);
   }
 
   body {

@@ -7,6 +7,8 @@ import { Addresses } from "@/constants";
 import { Link } from "@/i18n";
 import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
+import toast from "react-hot-toast";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdMailOutline, MdOutlinePhoneEnabled } from "react-icons/md";
 
@@ -24,6 +26,69 @@ const blockVariants = {
 
 export const Contact = () => {
   const t = useTranslations();
+  const [loading, setLoading] = useState(false);
+  const [formKey, setFormKey] = useState(0);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+
+    const data: Record<string, string> = {};
+    for (const [key, value] of formData.entries()) {
+      if (typeof value === "string") {
+        data[key] = value.trim();
+      }
+    }
+
+    const requiredFields = ["reason", "nameSurname", "subject", "email", "message"];
+    for (const field of requiredFields) {
+      if (!data[field]) {
+        toast.error(t("Contact.Error.required"));
+        return;
+      }
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email)) {
+      toast.error(t("Contact.Error.invalidEmail"));
+      return;
+    }
+
+    if (data.message.length < 10) {
+      toast.error(t("Contact.Error.invalidMessage"));
+      return;
+    }
+
+    setLoading(true);
+
+    toast
+      .promise(
+        fetch("/api/send-mail", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            type: "contact",
+            reason: t(`Contact.Form.Reasons.${data.reason}`),
+            fullName: data.nameSurname,
+            subject: data.subject,
+            email: data.email,
+            phone: data.phone ?? "",
+            message: data.message,
+          }),
+        }).then(async (res) => {
+          const result = await res.json();
+          if (!result.success) throw new Error("Failed to send message");
+          setFormKey((k) => k + 1);
+          return result;
+        }),
+        {
+          loading: t("Contact.sending"),
+          success: t("Contact.Success.messageSent"),
+          error: t("Contact.Error.messageFailed"),
+        },
+      )
+      .finally(() => setLoading(false));
+  };
 
   return (
     <div className="flex flex-col w-full">
@@ -46,30 +111,32 @@ export const Contact = () => {
               Contact.contactDescription
             </SpanL>
           </div>
-          <motion.form variants={blockVariants} transition={{ delay: 0.5, duration: 0.3 }} className="flex-5 flex flex-col gap-4">
-            <ComboBoxL options={formReasonOptions} placeholder="Contact.Form.reason" required />
-            <div className="flex gap-4 max-md:flex-col">
-              <InputL required name="nameSurname" placeholder="Contact.Form.nameSurname" />
-              <InputL required name="subject" placeholder="Contact.Form.subject" />
-            </div>
-            <div className="flex gap-4 max-md:flex-col">
-              <InputL required name="email" placeholder="Contact.Form.email" />
-              <InputL name="phone" placeholder="Contact.Form.phone" />
-            </div>
-            <InputL required type={InputType.TEXT_AREA} name="message" placeholder="Contact.Form.message" />
-            <CheckboxL className="text-surface/80 text-sm" required>
-              {t.rich("Contact.Form.acceptTerms", {
-                a: (chunks) => (
-                  <Link target="_blank" rel="noopener noreferrer" href="/corporate?privacy">
-                    {chunks}
-                  </Link>
-                ),
-              })}
-            </CheckboxL>
-            <ButtonL upperCase type="submit" className="bg-primary-variant text-on-primary text-sm font-medium px-6 py-3">
-              Contact.Form.submit
-            </ButtonL>
-          </motion.form>
+          <motion.div variants={blockVariants} transition={{ delay: 0.5, duration: 0.3 }} className="flex-5 flex flex-col gap-4">
+            <form key={formKey} onSubmit={handleSubmit} className="flex flex-col gap-4">
+              <ComboBoxL name="reason" options={formReasonOptions} placeholder="Contact.Form.reason" required />
+              <div className="flex gap-4 max-md:flex-col">
+                <InputL required name="nameSurname" placeholder="Contact.Form.nameSurname" />
+                <InputL required name="subject" placeholder="Contact.Form.subject" />
+              </div>
+              <div className="flex gap-4 max-md:flex-col">
+                <InputL required name="email" placeholder="Contact.Form.email" />
+                <InputL name="phone" placeholder="Contact.Form.phone" />
+              </div>
+              <InputL required type={InputType.TEXT_AREA} name="message" placeholder="Contact.Form.message" />
+              <CheckboxL className="text-surface/80 text-sm" required>
+                {t.rich("Contact.Form.acceptTerms", {
+                  a: (chunks) => (
+                    <Link target="_blank" rel="noopener noreferrer" href="/corporate?privacy">
+                      {chunks}
+                    </Link>
+                  ),
+                })}
+              </CheckboxL>
+              <ButtonL upperCase type="submit" className="bg-primary-variant text-on-primary text-sm font-medium px-6 py-3" disabled={loading}>
+                Contact.Form.submit
+              </ButtonL>
+            </form>
+          </motion.div>
         </div>
       </motion.div>
       <motion.div

@@ -381,6 +381,7 @@
     "contactDescription": "For more information on Karya Engineering and how we can meet your needs, please fill out the form below and we will respond to your inquiry within 24 hours.",
     "addressesTitle": "Our Offices",
     "addressesDescription": "Feel free to contact our offices located in Türkiye and Iraq.",
+    "sending": "Sending your message.",
     "Form": {
       "nameSurname": "Full Name",
       "email": "Email Address",
@@ -406,6 +407,15 @@
         "title": "Iraq Office",
         "address": "Iraq, Erbil, Atconz Village Villa No. S3/10"
       }
+    },
+    "Error": {
+      "required": "Please fill out all required fields.",
+      "invalidEmail": "Please enter a valid email address.",
+      "invalidMessage": "Please enter a message longer than 10 characters.",
+      "messageFailed": "An error occurred while sending your message. Please try again later."
+    },
+    "Success": {
+      "messageSent": "Your message has been sent successfully. We will get back to you shortly."
     }
   },
   "Careers": {
@@ -414,6 +424,7 @@
     "description": "Join us at Karya Engineering and be part of a dynamic team dedicated to excellence in E&I Engineering and Construction. We are always looking for talented individuals who are passionate about making a difference in the industry. Whether you're an experienced professional or just starting your career, we offer opportunities for growth, learning, and development in a supportive work environment.",
     "formTitle": "Application Form",
     "formDescription": "Please fill out the form below to apply for a position with Karya Engineering. We look forward to reviewing your application and potentially welcoming you to our team.",
+    "sending": "Submitting your application.",
     "Form": {
       "nameSurname": "Full Name",
       "email": "Email Address",
@@ -437,6 +448,15 @@
       "challengingProjects": "Challenging and Impactful Projects",
       "collaborative": "Collaborative Team Culture",
       "inclusiveEnvironment": "Inclusive Work Environment"
+    },
+    "Error": {
+      "required": "Please fill out all required fields.",
+      "invalidEmail": "Please enter a valid email address.",
+      "resumeRequired": "Please upload your resume.",
+      "applicationFailed": "An error occurred while submitting your application. Please try again later."
+    },
+    "Success": {
+      "applicationSent": "Your application has been submitted successfully. We will get back to you shortly."
     }
   },
   "Services": {

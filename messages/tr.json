@@ -381,6 +381,7 @@
     "contactDescription": "Karya Mühendislik ve ihtiyaçlarınızı nasıl karşılayabileceğimiz hakkında daha fazla bilgi edinmek için lütfen aşağıdaki formu doldurun; talebinize 24 saat içinde yanıt vereceğiz.",
     "addressesTitle": "Ofislerimiz",
     "addressesDescription": "Türkiye ve Irak'ta bulunan ofislerimizle dilediğiniz zaman iletişime geçebilirsiniz.",
+    "sending": "Mesaj Gönderiliyor.",
     "Form": {
       "nameSurname": "Ad Soyad",
       "email": "E-posta Adresi",
@@ -406,6 +407,15 @@
         "title": "Irak Ofisi",
         "address": "Irak, Erbil, Atconz Village Villa No. S3/10"
       }
+    },
+    "Error": {
+      "required": "Lütfen tüm zorunlu alanları doldurun.",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi girin.",
+      "invalidMessage": "Lütfen 10 karakterden daha uzun bir mesaj girin.",
+      "messageFailed": "Mesajınız gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+    },
+    "Success": {
+      "messageSent": "Mesajınız başarıyla gönderildi. Kısa sürede sizinle iletişime geçeceğiz."
     }
   },
   "Careers": {
@@ -414,6 +424,7 @@
     "description": "Karya Mühendislik'e katılın ve E&I (Elektrik & Enstrümantasyon) alanında mükemmelliğe adanmış dinamik bir ekibin parçası olun. Sektörde fark yaratma konusunda tutkulu olan yetenekli bireyleri aramızda görmekten mutluluk duyuyoruz. İster deneyimli bir profesyonel olun ister kariyerinizin başında, destekleyici bir çalışma ortamında büyüme ve öğrenme fırsatları sunuyoruz.",
     "formTitle": "Başvuru Formu",
     "formDescription": "Karya Mühendislik bünyesindeki bir pozisyona başvurmak için lütfen aşağıdaki formu doldurun. Başvurunuzu incelemekten ve sizi ekibimizde görmekten mutluluk duyarız.",
+    "sending": "Başvuru Gönderiliyor.",
     "Form": {
       "nameSurname": "Ad Soyad",
       "email": "E-posta Adresi",
@@ -437,6 +448,15 @@
       "challengingProjects": "Zorlu ve Etki Yaratan Projeler",
       "collaborative": "Köklü Ekip Kültürü",
       "inclusiveEnvironment": "Pozitif Çalışma Ortamı"
+    },
+    "Error": {
+      "required": "Lütfen tüm zorunlu alanları doldurun.",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi girin.",
+      "resumeRequired": "Lütfen özgeçmişinizi yükleyin.",
+      "applicationFailed": "Başvurunuz gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+    },
+    "Success": {
+      "applicationSent": "Başvurunuz başarıyla gönderildi. Kısa sürede sizinle iletişime geçeceğiz."
     }
   },
   "Services": {
