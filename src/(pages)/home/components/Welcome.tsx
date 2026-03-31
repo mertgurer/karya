@@ -14,7 +14,7 @@ export const Welcome = () => {
   return (
     <section
       id="welcome"
-      className="relative min-h-screen w-full flex items-end text-on-primary max-md:min-h max-md:pt-[50%] max-md:items-start max-md:text-center"
+      className="relative min-h-screen w-full flex items-end text-on-primary max-md:min-h max-md:pt-[40%] max-md:items-start max-md:text-center"
     >
       <div className="absolute left-0 right-0 top-0 bottom-0 shadow-xl shadow-black/20 z-5">
         <Image src={WelcomeImage} alt={"welcome"} fill priority sizes="100%" className="object-cover max-md:hidden" />
@@ -62,11 +62,11 @@ export const Welcome = () => {
               bg-linear-to-br from-primary/70 to-primary-variant/70 backdrop-blur-sm
               max-md:px-5"
           >
-            <SpanL className="text-5xl mb-5 max-2xl:text-[42px] max-md:mb-10">Home.Welcome.title</SpanL>
-            <SpanL className="text-2xl">Home.Welcome.subtitle</SpanL>
-            <div>
+            <SpanL className="text-5xl mb-3 max-2xl:text-[42px] max-md:mb-10">Home.Welcome.title</SpanL>
+            <SpanL className="text-xl italic opacity-80">Home.Welcome.subtitle</SpanL>
+            {/* <div>
               - <SpanL className="font-light italic">Home.Welcome.motto</SpanL>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

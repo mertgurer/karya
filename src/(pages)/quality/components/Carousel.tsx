@@ -7,16 +7,16 @@ import { motion } from "motion/react";
 
 const carouselItems = [
   {
-    id: "ISO 9001:2015",
-    title: "Quality.Certificates.qualityManagement",
-    registered: "Reg. No: QMS/1234/5678",
-    icon: <IoConstructOutline size={40} />,
-  },
-  {
     id: "ISO 45001:2018",
     title: "Quality.Certificates.occupationalHealth",
-    registered: "Reg. No: OHS/1234/5678",
+    registered: "Reg. No: TR004948-1026-0356",
     icon: <IoShieldCheckmarkOutline size={40} />,
+  },
+  {
+    id: "ISO 9001:2015",
+    title: "Quality.Certificates.qualityManagement",
+    registered: "Reg. No: TR-006314-1026-0943",
+    icon: <IoConstructOutline size={40} />,
   },
   {
     id: "ISO 14001:2015",

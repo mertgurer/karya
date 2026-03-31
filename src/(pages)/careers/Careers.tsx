@@ -157,7 +157,7 @@ export const Careers = () => {
             variants={blockVariants}
             transition={{ delay: 0.8, duration: 0.3 }}
             placeholder="Careers.Form.resume"
-            acceptedFileTypes={["pdf"]}
+            acceptedFileTypes={["pdf", "docx"]}
           />
           <RadioGroupL name="workedHere" label="Careers.Form.workedHere" options={haveYouWorkedOptions} required className="mt-5 mb-2 ml-2" />
           <CheckboxL className="text-primary/80 text-sm mt-5" required>
