@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Karya Engineering",
+  title: "Karya Engineering - Trusted E&I Solution Partner",
   description:
     "Karya Engineering is a leading provider of innovative engineering solutions, specializing in electrical and mechanical systems for commercial and industrial projects. With a commitment to excellence and sustainability, Karya delivers cutting-edge designs and reliable installations that meet the highest industry standards.",
   icons: {
